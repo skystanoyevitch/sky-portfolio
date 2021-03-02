@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div>
-            this is a footer
+        <div className="w-screen h-32">
+            <p>Footer!</p>
         </div>
     )
 }
