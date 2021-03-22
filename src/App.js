@@ -9,7 +9,6 @@ function App() {
     <div>
       <Nav />
       <MainContent />
-      <Footer />
     </div>
   );
 }
