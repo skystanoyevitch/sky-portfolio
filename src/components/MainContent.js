@@ -5,13 +5,17 @@ import Footer from "./Footer"
 const MainContent = () => {
     return (
         <div className="w-screen h-screen">
-            <div className="flex flex-col h-full bg-gray-200">
+            <div className="flex flex-col h-full bg-gray-300">
                 <div className="flex items-center justify-center h-screen">
-                    <div className={"flex-col"}>
-                        <div className={"text-2xl text-center"}>Welcome to my page</div>
-                        <div className={"text-2xl text-center"}>my name is</div>
-                        <p className={"font-permanentMarker text-center"} style={{fontSize: 50}}>Sky</p>
-                        <p className={"text-3xl"}>{"< Front-End Web Developer >"}</p>
+                    <div>
+                        <div className={"flex-col text-center"}>
+                            <div className={"text-2xl font-montserrat"}>Welcome to my portfolio</div>
+                            <div className={"text-2xl font-montserrat"}>my name is</div>
+                            <p className={"font-majorMonoDisplay"} style={{fontSize: 70}}>Sky</p>
+                        </div>
+
+                        {/* TODO: replace flex with Grid */}
+                        {/* <p className={"text-3xl font-mono flex-wrap"}>as a {"< Front-End Web Developer >"} i love to build and design fast mobile centric web apps</p> */}
                     </div>
                 </div>
                 <div>
