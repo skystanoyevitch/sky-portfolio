@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Projects = () => {
+function Projects() {
     return (
-        <div>
-            this is the Projects section
+        <div className="">
+            <p>This is the Projects section....</p>
         </div>
     )
 }
