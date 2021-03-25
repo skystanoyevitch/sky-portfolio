@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 import { RiInstagramFill } from "react-icons/ri"
 import { SiDevDotTo } from "react-icons/si"
 import { FaTwitterSquare } from "react-icons/fa"
