@@ -9,22 +9,18 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import Projects from "./Page-components/Projects"
 // import Contact from "../Page-components/Contact"
 
-function App() {
+export default function App() {
   return (
     <Router>
-      <div>
         <Nav />
         <Switch>
             <Route exact path="/">
               <MainContent />
             </Route>
-            <Route path="./Page-components/Projects">
+            <Route path="/Projects">
               <Projects />
             </Route>
         </Switch>
-      </div>
     </Router>
   );
 }
-
-export default App;
