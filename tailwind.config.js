@@ -11,7 +11,10 @@ module.exports = {
         'montserrat': ['"Montserrat"', 'sans-serif'],
         'majorMonoDisplay': ['"Major Mono Display"', 'monospace'],
 
-      }
+      },
+      backgroundImage: theme => ({
+        'coming-soon': "url('./images/coming-soon.jpg')",
+      })
     }
   },
   variants: {
