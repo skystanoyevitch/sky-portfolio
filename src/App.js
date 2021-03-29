@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 // Page Component Imports //
 import Projects from "./Page-components/Projects"
-// import Contact from "../Page-components/Contact"
+import Contact from './Page-components/Contact';
 
 export default function App() {
   return (
@@ -19,6 +19,9 @@ export default function App() {
             </Route>
             <Route path="/Projects">
               <Projects />
+            </Route>
+            <Route path="/Contact">
+              <Contact />
             </Route>
         </Switch>
     </Router>
