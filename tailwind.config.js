@@ -4,16 +4,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'permanentMarker': ['"Permanent Marker"', 'cursive'],
         'gruppo': ['"Gruppo"', 'cursive'],
-        'bungeeShade': ['"Bungee Shade"', 'cursive'],
-        'lemon': ['"Lemon"', 'cursive'],
         'montserrat': ['"Montserrat"', 'sans-serif'],
         'majorMonoDisplay': ['"Major Mono Display"', 'monospace'],
-
+        'Open-Sans': ['"Open Sans"', 'sans-serif'],
+        'Ubuntu': ['"Ubuntu"', 'sans-serif'],
+        'Zilla-Slab-Highlight': ['"Zilla Slab Highlight"', 'cursive'],
       },
       backgroundImage: theme => ({
         'coming-soon': "url('./images/coming-soon.jpg')",
+        'gradient-BG': "url('./images/cool-background.png')",
       })
     }
   },

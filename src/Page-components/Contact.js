@@ -15,7 +15,7 @@ function Contact() {
         alert('A name was submitted: ' + firstName + " " + lastName);
     }
     return (
-        <div className="w-screen h-screen bg-gray-300">
+        <div className="w-screen h-screen">
             <div className="container mx-auto h-screen py-4 grid grid-cols-2">
                 <div className="grid grid-cols-1">
                     <h1 className="flex justify-center items-center font-majorMonoDisplay" style={{fontSize: 70}}>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Projects() {
     return (
-        <div className="w-screen h-screen bg-gray-300">
+        <div className="w-screen h-screen">
             <div className="container mx-auto h-screen py-4">
                 <div className="flex h-1/2 justify-center items-center">
             <div className="text-center text-2xl font-montserrat">Welcome to my Proejcts page , feel free to browse around and take a look at my finished projects.</div>
