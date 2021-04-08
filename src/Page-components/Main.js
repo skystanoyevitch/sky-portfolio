@@ -14,18 +14,24 @@ const MainContent = () => {
                     </div>
                 </div>
                 <div className="container px-20">
-                    <h2 className="font-Open-Sans text-3xl py-6">ABOUT ME</h2>
-                    <p className="text-2xl font-Open-Sans tracking-wider leading-relaxed">I am currently working as a <span className="bg-black text-white">freelance Web designer | Developer</span> living in 
-                        the sunny side of southern California.</p>
-                        <h2 className="font-Open-Sans text-3xl py-6">MY GOAL</h2>
-                        <p className="text-2xl font-Open-Sans tracking-wider leading-relaxed">My goal is to provide a modern Look with performance
-                        as a priority while keeping it professional.
-                        Above you can find linkes to my projects and services..
+                    <h2 className="font-Open-Sans text-3xl py-6 font-extrabold" style={{fontSize: 40}}>Who am i?</h2>
+                    <p className="text-2xl font-Open-Sans tracking-wider leading-relaxed">I am a <span className="bg-black text-white">Freelance Web Designer | Developer</span> living in 
+                        the sunny side of San Diego, CA.
+                        <br/>
+                        When i'm not programming or designing i am at the beach or somewhere near it.
+                        </p>
+                        <h2 className="font-Open-Sans text-3xl py-6" style={{fontSize: 40}}>MY GOAL</h2>
+                        <p className="text-2xl font-Open-Sans tracking-wider leading-relaxed">My goal is quite simple: i aim to build apps based on Modern Design principles with performance
+                        in Mind... all aspects of my Goals lead to the same destination: Making sure that what i build for a client meets their expectations and beyond.
+                        </p>
+                        <p className="text-2xl font-Open-Sans tracking-wider leading-relaxed mt-4">Above you can find links to my projects and services {"&"} More.
+                        <br/>
                         Feel free to have a look around and if you have any questions,
-                        would like to work together
-                        or are interested in having a website designed and built,
+                        or are interested in having a website or app designed and built,
                         please don't hesitate to Contact me.
                         </p>
+                        
+                        
                         
                     
                     <div className="text-2xl pt-10 text-center"><cite>- Have a wonderful day!</cite></div>
