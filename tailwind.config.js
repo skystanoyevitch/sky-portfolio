@@ -14,6 +14,7 @@ module.exports = {
       backgroundImage: theme => ({
         'coming-soon': "url('./images/coming-soon.jpg')",
         'gradient-BG': "url('./images/cool-background.png')",
+        'profile-BG': "url('./images/profilephoto.png')",
       })
     }
   },

@@ -5,7 +5,7 @@ import Footer from "./Footer"
 const MainContent = () => {
     return (
         <div className="w-screen h-screen">
-            <div className="grid grid-cols-2 items-center justify-center h-screen divide-x-8 divide-black">
+            <div className="grid grid-cols-2 items-center justify-center h-screen divide-x-4 divide-black">
                 <div className="grid grid-col-1">
                     <div className={"flex-col px-4 font-Zilla-Slab-Highlight"}>
                         <div className={""} style={{fontSize: 90}}>Welcome <br/> to my portfolio,</div>
@@ -14,12 +14,13 @@ const MainContent = () => {
                     </div>
                 </div>
                 <div className="container px-20">
-                    <h2 className="font-Open-Sans text-3xl py-6 font-extrabold" style={{fontSize: 40}}>Who am i?</h2>
+                    <h2 className="font-Open-Sans text-3xl py-6 font-extrabold" style={{fontSize: 40}}>WHO AM I?</h2>
                     <p className="text-2xl font-Open-Sans tracking-wider leading-relaxed">I am a <span className="bg-black text-white">Freelance Web Designer | Developer</span> living in 
                         the sunny side of San Diego, CA.
                         <br/>
                         When i'm not programming or designing i am at the beach or somewhere near it.
                         </p>
+                        <div className="profile-BG"></div>
                         <h2 className="font-Open-Sans text-3xl py-6" style={{fontSize: 40}}>MY GOAL</h2>
                         <p className="text-2xl font-Open-Sans tracking-wider leading-relaxed">My goal is quite simple: i aim to build apps based on Modern Design principles with performance
                         in Mind... all aspects of my Goals lead to the same destination: Making sure that what i build for a client meets their expectations and beyond.
