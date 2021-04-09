@@ -6,13 +6,16 @@ const MainContent = () => {
     return (
         <div className="w-screen h-screen">
             <div className="grid grid-cols-2 items-center justify-center h-screen divide-x-4 divide-black">
-                <div className="grid grid-col-1">
-                    <div className={"flex-col px-4 font-Zilla-Slab-Highlight"}>
-                        <div className={""} style={{fontSize: 90}}>Welcome <br/> to my portfolio,</div>
+
+                <div className="grid grid-col-2">
+                    <div className={"flex-col pl-4 font-Zilla-Slab-Highlight"}>
+                        <div className={""} style={{fontSize: 90}}>Welcome <br/> to my Portfolio,</div>
                         <div className={""} style={{fontSize: 90}}>I'm</div>
                         <p className={"font-bold"} style={{fontSize: 130}}>SKY</p>
                     </div>
+                    <div className="bg-profile-BG h-80 w-60 bg-contain bg-no-repeat object-contain inline-block rounded-lg"></div>
                 </div>
+
                 <div className="container px-20">
                     <h2 className="font-Open-Sans text-3xl py-6 font-extrabold" style={{fontSize: 40}}>WHO AM I?</h2>
                     <p className="text-2xl font-Open-Sans tracking-wider leading-relaxed">I am a <span className="bg-black text-white">Freelance Web Designer | Developer</span> living in 
@@ -20,7 +23,6 @@ const MainContent = () => {
                         <br/>
                         When i'm not programming or designing i am at the beach or somewhere near it.
                         </p>
-                        <div className="profile-BG"></div>
                         <h2 className="font-Open-Sans text-3xl py-6" style={{fontSize: 40}}>MY GOAL</h2>
                         <p className="text-2xl font-Open-Sans tracking-wider leading-relaxed">My goal is quite simple: i aim to build apps based on Modern Design principles with performance
                         in Mind... all aspects of my Goals lead to the same destination: Making sure that what i build for a client meets their expectations and beyond.
