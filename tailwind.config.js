@@ -15,6 +15,8 @@ module.exports = {
         'coming-soon': "url('./images/coming-soon.jpg')",
         'gradient-BG': "url('./images/cool-background.png')",
         'profile-BG': "url('./images/profilephoto.png')",
+        'skyCafe': "url('./images/skycafe.png')",
+        'this-is-sky': "url('./images/This-is-Sky-.png')",
       })
     }
   },
