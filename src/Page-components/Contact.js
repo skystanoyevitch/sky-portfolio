@@ -16,14 +16,18 @@ function Contact() {
     }
     return (
         <div className="w-screen h-screen">
-            <div className="container mx-auto h-screen py-4 grid grid-cols-2">
-                <div className="grid grid-cols-1">
-                    <h1 className="flex justify-center items-center font-majorMonoDisplay" style={{fontSize: 70}}>
-                        CONTACT ME
+            <div className="container mx-auto h-screen grid grid-cols-2">
+                <div className="grid gap-14">
+                    <h1 className="flex items-end font-Zilla-Slab-Highlight" style={{fontSize: 70}}>
+                        Need a Website Built?
+                        <br/>
+                        Want to Colaborate?
+                        <br/>
+                        or just want to say hi...
                     </h1>
-                    <p className="text-center text-2xl font-montserrat">
-                    Thanks for taking an interest in my portfolio, if you have any questions
-                    or Inquiries , please feel free to ask using the form.
+                    <p className="text-2xl font-Open-Sans tracking-wider leading-relaxed">
+                    If you are looking to have a Website or App built, please include those details and i will get back to you shortly to discuss further about it.
+                    I love talking to people, and value communication with my Clients, so please don't hesitate to contact me.
                     </p>
                 </div>
 

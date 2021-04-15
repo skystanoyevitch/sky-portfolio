@@ -4,8 +4,9 @@ function Projects() {
     return (
     <div className="w-screen h-screen">
         <div className="container mx-auto h-screen py-4">
-            <div className="grid h-1/2 justify-center items-center">
-                <div className="text-center font-Open-Sans text-3xl mx-6" style={{fontSize: 30}}>Here you will find a range of Projects that include the latest in Web Technoliges with my own personal Design inspiration</div>
+            <div className="flex h-1/2 justify-center items-center">
+                <h1 className="text-center font-Open-Sans text-3xl mx-6" style={{fontSize: 30}}>"DESIGN IS INTELLIGENCE MADE VISIBLE."</h1>
+                <h2><cite className="font-semibold">- Alina Wheeler</cite></h2>
             </div>
 
             <div className="grid grid-cols-2 gap-10 justify-center items-center">

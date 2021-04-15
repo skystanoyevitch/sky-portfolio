@@ -2,17 +2,17 @@
 import './App.css';
 import Nav from "./Page-components/Nav"
 import MainContent from "./Page-components/Main"
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
-
+import { BrowserRouter as Router, Route, Switch, withRouter } from "react-router-dom"
 
 // Page Component Imports //
 import Projects from "./Page-components/Projects"
 import Contact from './Page-components/Contact';
 
-export default function App() {
-  return (
+const App = ({location}) => (
     <Router>
-        <Nav />
+      <>
+      {/* {location.pathname !== "/Projects" && <Nav />} */}
+      <Nav />
         <Switch>
             <Route exact path="/">
               <MainContent />
@@ -24,6 +24,9 @@ export default function App() {
               <Contact />
             </Route>
         </Switch>
+      </>
     </Router>
   );
-}
+
+
+export default withRouter(App)
