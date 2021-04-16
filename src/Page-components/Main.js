@@ -9,8 +9,8 @@ const MainContent = () => {
 
                 <div className="grid grid-col-2">
                     <div className={"flex-col pl-4 font-Zilla-Slab-Highlight"}>
-                        <div style={{fontSize: 80}}>WELCOME <br/> TO MY PORTFOLIO,</div>
-                        <div style={{fontSize: 80}}>I'M</div>
+                        <div style={{fontSize: 90}}>WELCOME <br/> TO MY PORTFOLIO,</div>
+                        <div style={{fontSize: 90}}>I'M</div>
                         <p className={"font-bold"} style={{fontSize: 130}}>SKY</p>
                     </div>
                     <div className="bg-profile-BG h-80 w-60 bg-contain bg-no-repeat rounded-lg"></div>

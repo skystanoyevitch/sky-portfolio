@@ -4,6 +4,9 @@ function Contact() {
 
     const [firstName, setFirstName] = useState("")
     const [lastName, setLastName] = useState("")
+    const [email, setEmail] = useState("")
+    const [subject, setSubject] = useState("")
+    const [message, setMessage] = useState("")
 
     // const handleChange = event => {
     //     setFirstName(event.target.first)
@@ -27,73 +30,65 @@ function Contact() {
                     </h1>
                     <p className="text-2xl font-Open-Sans tracking-wider leading-relaxed">
                     If you are looking to have a Website or App built, please include those details and i will get back to you shortly to discuss further about it.
-                    I love talking to people, and value communication with my Clients, so please don't hesitate to contact me.
+                    I love talking to people, and value communication with my Clients, so please don't hesitate to contact me using the form.
                     </p>
                 </div>
 
 
-                <div className="grid grid-cols-1">
-                    <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center">
+                    <div className="">
                         <form onSubmit={handleSubmit}>
+
                             <div className="flex">
-                                <div className="flex flex-col pr-6">
-                                    <label>
-                                        First Name
-                                    </label>
+                                <div className="flex border-black border-solid border-2 rounded mr-6 h-14 w-60 pl-4">
                                     <input
                                         type="text" 
                                         value={firstName} 
                                         onChange={(e) => setFirstName(e.target.value)} 
                                         name="first"
+                                        placeholder="First Name"
                                     />
                                 </div>
-                                <div className="flex flex-col">
-                                    <label>
-                                        Last Name
-                                    </label>
+                                <div className="flex border-black border-solid border-2 rounded h-14 w-60 pl-4">
                                     <input
                                         type="text" 
                                         value={lastName} 
                                         onChange={(e) => setLastName(e.target.value)} 
                                         name="last"
+                                        placeholder="Last Name"
                                     />
                                 </div>
                             </div>
                             
                             <div>
-                                <div className="flex flex-col pt-6">
-                                    <label>
-                                        Email
-                                    </label>
+                                <div className="flex border-black border-solid border-2 rounded h-14 pl-4 mt-8">
                                     <input
                                         type="text" 
-                                        value={lastName} 
-                                        onChange={(e) => setLastName(e.target.value)} 
-                                        name="last"
+                                        value={email} 
+                                        onChange={(e) => setEmail(e.target.value)} 
+                                        name="email"
+                                        placeholder="Email"
                                     />
                                 </div>
-                                <div className="flex flex-col pt-6">
-                                    <label>
-                                        Subject
-                                    </label>
+
+                                <div className="flex border-black border-solid border-2 rounded h-14 pl-4 mt-8">
                                     <input
                                         type="text" 
-                                        value={lastName} 
-                                        onChange={(e) => setLastName(e.target.value)} 
-                                        name="last"
+                                        value={subject} 
+                                        onChange={(e) => setSubject(e.target.value)} 
+                                        name="subject"
+                                        placeholder="Subject"
                                     />
                                 </div>
-                                <div className="flex flex-col pt-6">
-                                    <label>
-                                        Message
-                                    </label>
-                                    <input
+
+                                    <textarea
+                                    className="border-black border-solid border-2 rounded h-48 w-full mt-8"
                                         type="text" 
-                                        value={lastName} 
-                                        onChange={(e) => setLastName(e.target.value)} 
-                                        name="last"
-                                    />
-                                </div>
+                                        value={message} 
+                                        onChange={(e) => setMessage(e.target.value)} 
+                                        name="message"
+                                        placeholder="Message"
+                                    ></textarea>
                             </div>
 
                                 
