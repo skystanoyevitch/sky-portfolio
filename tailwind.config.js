@@ -18,6 +18,7 @@ module.exports = {
         'skyCafe': "url('./images/skycafe.png')",
         'this-is-sky': "url('./images/This-is-Sky-.png')",
         'hero-image': "url('./images/hero-image.jpg')",
+        'aboutDesign': "url('./images/about-design.jpg')",
       })
     },
     backgroundColor: theme => ({
