@@ -5,13 +5,12 @@ import { Link } from "react-router-dom"
 
 function Nav() {
     return (
-        <div className="md:w-screen md:flex md:items-center absolute text-white border-b border-gray-500" style={{ background: "#2B3D41" }}>
-            <h1 className="flex-1 text-center font-Zilla-Slab-Highlight md:text-6xl">SKY</h1>
+        <div className="md:w-screen md:flex md:items-center absolute text-white">
             <nav className="md:flex md:justify-center flex-1">
-                <ul className="flex text-3xl p-x tracking-widest">
-                    <li className={"m-10 p-3  font-Ubuntu"}><Link to="/">HOME</Link></li>
-                    <li className={"m-10 p-3  font-Ubuntu"}><Link to="/Projects">PROJECTS</Link></li>
-                    <li className={"m-10 p-3  font-Ubuntu"}><Link to="/Contact">CONTACT</Link></li>
+                <ul className="flex text-2xl p-x tracking-widest font-extrabold">
+                    <li className={"m-10 p-3  font-robotoThin"}><Link to="/">HOME</Link></li>
+                    <li className={"m-10 p-3  font-robotoThin"}><Link to="/Projects">PROJECTS</Link></li>
+                    <li className={"m-10 p-3  font-robotoThin"}><Link to="/Contact">CONTACT</Link></li>
                 </ul>
             </nav>
         </div>

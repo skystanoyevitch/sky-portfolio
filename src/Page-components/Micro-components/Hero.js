@@ -1,38 +1,31 @@
 import React from "react";
-// import heroImg from "../../images/hero-image.jpg";
 
 function Hero() {
-    return (
-        <div className="w-screen">
-        <div
-            className="md:flex md:place-content-center md:place-items-center md:space-x-28 py-56"
-            style={{ background: "#2B3D41", color: "white" }}
-        >
-            <div
-            className="w-80 h-96 rounded-md"
-            style={{ background: "#B9F5D8" }}
+  return (
+    <div className="w-screen h-2/3">
+      <div className="bg-hero-image bg-cover bg-no-repeat bg-center h-full z-0">
+        <div className="z-10 bg-gradient-to-b from-gray-700 w-full h-full md:flex md:place-items-center">
+          <div className="md:pl-96 md:flex md:flex-col md:max-w-4xl max-w-md text-white">
+            <h1 className="font-rockSalt md:text-7xl font-bold">WELCOME</h1>
+            <p
+              className="font-thin text-2xl pt-6"
+              style={{ textShadow: "-2px 2px 6px rgba(0, 0, 0, 0.31)" }}
             >
-            <div className="border-gray-400 border-2 w-80 h-96 relative -right-4 -top-5 bg-profile-BG bg-cover bg-no-repeat bg-center rounded-md shadow-xl"></div>
-            </div>
-            <div className="md:pl-14 md:flex md:flex-col md:max-w-xl">
-            <h1 className="font-Open-Sans md:text-7xl font-bold">HEY THERE!</h1>
-            {/* <h2 className="md:text-4xl">to my website</h2> */}
-            <p className="font-thin text-2xl pt-6">
-                If you are looking for a way to help{" "}
-                <span className="font-bold" style={{ color: "#B9F5D8" }}>Build</span> and{" "}
-                <span className="font-bold" style={{ color: "#B9F5D8" }}>Define</span> your business for the
-                modern world,  you are in the right place.
+              to the Beginning of a new Journey.
             </p>
             <button
-                className="rounded-lg w-40 py-2 mt-14 font-bold text-black"
-                style={{ background: "#93C5FD" }}
+              className="rounded-lg md:w-max md:px-4 md:py-2 md:mt-14 font-bold text-white"
+              style={{ background: "#43AA8B" }}
             >
-                I'M INTERESTED
+              <span style={{ textShadow: "-2px 2px 6px rgba(0, 0, 0, 0.31)" }}>
+                Take Journey
+              </span>
             </button>
-            </div>
+          </div>
         </div>
-        </div>
-    );
+      </div>
+    </div>
+  );
 }
 
 export default Hero;

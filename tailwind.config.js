@@ -4,12 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'gruppo': ['"Gruppo"', 'cursive'],
-        'montserrat': ['"Montserrat"', 'sans-serif'],
-        'majorMonoDisplay': ['"Major Mono Display"', 'monospace'],
-        'Open-Sans': ['"Open Sans"', 'sans-serif'],
-        'Ubuntu': ['"Ubuntu"', 'sans-serif'],
-        'Zilla-Slab-Highlight': ['"Zilla Slab Highlight"', 'cursive'],
+        'rockSalt': ['"Rock Salt"', 'cursive'],
+        'robotoThin': ['"Roboto"', 'sans-serif'],
       },
       backgroundImage: theme => ({
         'coming-soon': "url('./images/coming-soon.jpg')",
@@ -17,7 +13,7 @@ module.exports = {
         'profile-BG': "url('./images/sky2.png')",
         'skyCafe': "url('./images/skycafe.png')",
         'this-is-sky': "url('./images/This-is-Sky-.png')",
-        'hero-image': "url('./images/hero-image.jpg')",
+        'hero-image': "url('./images/hero-carlsbad.jpg')",
         'aboutDesign': "url('./images/about-design.jpg')",
       })
     },
