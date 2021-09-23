@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 
 const Footer = () => {
     return (
-        <div className="flex p-4 w-screen justify-center h-1/4" style={{ background: "#2B3D41" }}>
+        <div className="flex p-4 w-full justify-center h-1/4" style={{ background: "#E8F1F2" }}>
             <div className="flex text-xl space-x-9 mb-6 text-white items-center">
                 <a href="https://dev.to/rolypolie" target="_blank" rel="noreferrer"><SiDevDotTo size={50}/></a>
                 <a href="https://www.instagram.com/spacebars_and_tabs/" rel="noreferrer" target="_blank"><RiInstagramFill size={50} /></a>

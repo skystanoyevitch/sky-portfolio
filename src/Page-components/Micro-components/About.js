@@ -3,7 +3,7 @@ import React from "react";
 function About() {
 	return (
 		<div className="container mx-auto flex items-center py-44 justify-between h-2/3">
-			<div className="flex-1 md:max-w-2xl p-10 border-2 border-primary">
+			<div className="flex-1 md:max-w-2xl p-10 border-r-2 border-primary">
 				<h2 className="text-5xl font-rockSalt text-primary">
 					Who am i?
 				</h2>
@@ -27,7 +27,7 @@ function About() {
 					className="w-full bg-profileImage bg-cover bg-no-repeat bg-center"
 					style={{
 						height: "30rem",
-						boxShadow: "18px 18px 0px 1px rgba(0, 0, 0, 0.36)",
+						filter: "drop-shadow(18px 18px 0px rgba(17, 75, 95, 0.19))",
 					}}
 				></div>
 			</div>

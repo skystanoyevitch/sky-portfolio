@@ -4,6 +4,7 @@ import About from "./Micro-components/About";
 import Footer from "./Footer";
 import MyServices from "./Micro-components/MyServices";
 import MainShowcase from "./Micro-components/MainShowcase";
+import MainContact from "./Micro-components/MainContact";
 
 const MainContent = () => {
 	return (
@@ -12,6 +13,7 @@ const MainContent = () => {
 			<About />
 			<MyServices />
             <MainShowcase />
+            <MainContact />
 			<Footer />
 		</div>
 	);
