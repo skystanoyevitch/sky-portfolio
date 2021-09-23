@@ -10,16 +10,18 @@ module.exports = {
 			backgroundImage: (theme) => ({
 				"coming-soon": "url('./images/coming-soon.jpg')",
 				"gradient-BG": "url('./images/cool-background.png')",
-				profileImage: "url('./images/profilephoto2.jpg')",
-				skyCafe: "url('./images/skycafe.png')",
+				"profileImage": "url('./images/profilephoto2.jpg')",
+				"skyCafe": "url('./images/skycafe.png')",
 				"this-is-sky": "url('./images/This-is-Sky-.png')",
-				"hero-image": "url('./images/hero-carlsbad.jpg')",
-				aboutDesign: "url('./images/about-design.jpg')",
+				"oceanBg": "url('./images/ocean_sd.jpg')",
+				"heroImage": "url('./images/hero-carlsbad.jpg')",
+				"aboutDesign": "url('./images/about-design.jpg')",
 			}),
 		},
 		backgroundColor: (theme) => ({
 			...theme("colors"),
-			secondary: "#838FC7",
+			"secondary": "#E8F1F2",
+      "primary": "#114B5F"
 		}),
 		textColor: {
 			primary: "#114B5F",
