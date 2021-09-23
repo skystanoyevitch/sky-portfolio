@@ -14,7 +14,7 @@ const MyServices = () => {
 								<h2 className="font-rockSalt text-3xl p-6">
 									Design
 								</h2>
-								<p>
+								<p className="text-xl font-robotoThin">
 									When Designing and Developing Websites for
 									my Clients.. My goals are simple
 								</p>
@@ -23,7 +23,7 @@ const MyServices = () => {
 								<h2 className="font-rockSalt text-3xl p-6">
 									E-Commerce
 								</h2>
-								<p>
+								<p className="text-xl font-robotoThin">
 									If you are looking to expand your business
 									into the online world, My Goal is to
 									Transform Businesses and Brands into a
