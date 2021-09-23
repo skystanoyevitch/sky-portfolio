@@ -1,28 +1,38 @@
 import React from "react";
 
 function About() {
-    return (
-        <div className="flex items-center py-44 px-24 justify-evenly">
-            <div className=" w-1/3 h-96 p-10">
-                <h2 className="text-5xl font-bold">Who am i?</h2>
-                <h3 className="pt-3 pb-4 text-3xl">I go by the name <span className="font-semibold italic">Sky</span> </h3>
-                <p className="font-light text-xl">
-                I am a Freelance Web Developer | Designer living in the sunny side of San Diego,CA.
-                that aims to provide a way for my
-                Clients to grow, weather it's a Website to showcase their personality
-                or a Website to connect them with their Customers.
-                </p>
-            </div>
-            <div className="w-2/6">
-                <div
-                className=" w-full h-96 rounded-md"
-                style={{ background: "#E57A44" }}
-                >
-                <div className="border-gray-400 border-2 w-full h-96 relative -right-4 -top-5 bg-aboutDesign bg-cover bg-no-repeat bg-center rounded-md shadow-xl"></div>
-                </div>
-            </div>
-        </div>
-    );
+	return (
+		<div className="container mx-auto flex items-center py-44 justify-between h-2/3">
+			<div className="flex-1 md:max-w-2xl p-10 border-2 border-primary">
+				<h2 className="text-5xl font-rockSalt text-primary">
+					Who am i?
+				</h2>
+				<h3 className="pt-6 pb-8 text-3xl">
+					I go by the name <span className="font-bold">Sky</span>{" "}
+				</h3>
+				<p className="text-3xl font-robotoThin tracking-wider leading-normal text-paragraph">
+					I am a freelance web developer and Designer living in the
+					sunny side of San Diego,CA. Weather it is a Website for
+					Personal Branding or a Website for your Company, i aim to
+					help build an Experience that you and your customers will
+					love.
+				</p>
+			</div>
+			<div
+				className="absolute border-2 border-primary"
+				style={{ left: "74rem", width: "19rem" }}
+			></div>
+			<div className="md:max-w-3xl w-full pl-52">
+				<div
+					className="w-full bg-profileImage bg-cover bg-no-repeat bg-center"
+					style={{
+						height: "30rem",
+						boxShadow: "18px 18px 0px 1px rgba(0, 0, 0, 0.36)",
+					}}
+				></div>
+			</div>
+		</div>
+	);
 }
 
 export default About;
