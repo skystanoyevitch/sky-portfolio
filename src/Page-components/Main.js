@@ -1,16 +1,20 @@
 import React from "react";
 import Hero from "./Micro-components/Hero";
 import About from "./Micro-components/About";
-import Footer from "./Footer"
+import Footer from "./Footer";
+import MyServices from "./Micro-components/MyServices";
+import MainShowcase from "./Micro-components/MainShowcase";
 
 const MainContent = () => {
-    return (
-    <div className="h-screen w-screen">
-        <Hero />
-        <About />
-        <Footer />
-    </div>
-    )
-}
+	return (
+		<div className="h-screen w-screen">
+			<Hero />
+			<About />
+			<MyServices />
+            <MainShowcase />
+			<Footer />
+		</div>
+	);
+};
 
-export default MainContent
+export default MainContent;

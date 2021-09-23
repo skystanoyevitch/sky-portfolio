@@ -4,7 +4,7 @@ function Hero() {
 	// TODO: make responsive
 	return (
 		<div className="w-screen h-2/3">
-			<div className="bg-hero-image bg-cover bg-no-repeat bg-center h-full z-0">
+			<div className="bg-heroImage bg-cover bg-no-repeat bg-center h-full z-0">
 				<div className="z-10 bg-gradient-to-b from-gray-700 w-full h-full md:flex md:place-items-center">
 					<div className="md:pl-96 md:flex md:flex-col md:max-w-4xl max-w-md text-secondary">
 						<h1 className="font-rockSalt md:text-7xl font-bold">
@@ -18,7 +18,7 @@ function Hero() {
 						>
 							to the Beginning of a new Journey.
 						</p>
-						<button
+						{/* <button
 							className="rounded-lg md:w-max md:px-4 md:py-2 md:mt-14 font-bold text-white"
 							style={{ background: "#43AA8B" }}
 						>
@@ -30,7 +30,7 @@ function Hero() {
 							>
 								Take Journey
 							</span>
-						</button>
+						</button> */}
 					</div>
 				</div>
 			</div>
