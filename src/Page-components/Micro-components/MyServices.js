@@ -11,14 +11,18 @@ const MyServices = () => {
 						</h1>
 						<div className="flex content-center text-center md:h-2/3 flex-wrap justify-between">
 							<div className="flex-1 md:max-w-xl">
-								<h2 className="font-rockSalt text-3xl p-6">Design</h2>
+								<h2 className="font-rockSalt text-3xl p-6">
+									Design
+								</h2>
 								<p>
 									When Designing and Developing Websites for
 									my Clients.. My goals are simple
 								</p>
 							</div>
 							<div className="flex-1 md:max-w-xl">
-								<h2 className="font-rockSalt text-3xl p-6">E-Commerce</h2>
+								<h2 className="font-rockSalt text-3xl p-6">
+									E-Commerce
+								</h2>
 								<p>
 									If you are looking to expand your business
 									into the online world, My Goal is to
