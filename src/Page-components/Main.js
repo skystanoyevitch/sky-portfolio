@@ -5,12 +5,10 @@ import Footer from "./Footer";
 import MyServices from "./Micro-components/MyServices";
 import MainShowcase from "./Micro-components/MainShowcase";
 import MainContact from "./Micro-components/MainContact";
-import Nav from "./Nav";
 
 const MainContent = () => {
 	return (
 		<div className="h-screen min-w-screen">
-			{/* <Nav /> */}
 			<Hero />
 			<About />
 			<MyServices />

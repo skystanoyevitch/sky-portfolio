@@ -11,7 +11,7 @@ import {
 // Page Component Imports //
 import Showcase from "./Page-components/Showcase";
 import Contact from "./Page-components/Contact";
-import Footer from "./Page-components/Footer";
+// import Footer from "./Page-components/Footer";
 
 // const person = {
 // 	firstName: "Lindsay",
