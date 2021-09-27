@@ -7,7 +7,7 @@ function Hero() {
 			<div className="bg-heroImage bg-cover bg-no-repeat bg-center h-full z-0">
 				<div className="z-10 bg-gradient-to-b from-gray-700 w-full h-full md:flex md:place-items-center">
 					<div className="md:pl-96 md:flex md:flex-col md:max-w-4xl max-w-md text-secondary">
-						<h1 className="md:text-8xl font-bold">
+						<h1 className="md:text-9xl font-bold">
 							WELCOME
 						</h1>
 						<p

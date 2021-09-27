@@ -6,7 +6,7 @@ const MainContact = () => {
 			<section className="w-full h-2/3 bg-oceanBg bg-fixed bg-center bg-no-repeat">
 				<div className="w-full h-full bg-primary bg-opacity-90">
 					<div className="container mx-auto h-full text-center text-secondary flex flex-col items-center justify-center">
-						<h1 className="font-rockSalt text-6xl pb-12">
+						<h1 className="font-semibold text-7xl pb-12">
 							Let's Work Together
 						</h1>
 

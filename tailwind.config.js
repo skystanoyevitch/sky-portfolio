@@ -8,8 +8,6 @@ module.exports = {
 				robotoThin: ['"Roboto"', "sans-serif"],
 			},
 			backgroundImage: (theme) => ({
-				"coming-soon": "url('./images/coming-soon.jpg')",
-				"gradient-BG": "url('./images/cool-background.png')",
 				profileImage: "url('./images/profilephoto2.jpg')",
 				skyCafe: "url('./images/skycafe.png')",
 				"this-is-sky": "url('./images/This-is-Sky-.png')",
