@@ -25,7 +25,12 @@ const Nav = () => {
 						</NavLink>
 					</li>
 					<li className={"m-10 p-3  font-robotoThin"}>
-						<Link to="/Contact">CONTACT</Link>
+						<NavLink
+							to="/Contact"
+							activeStyle={{ color: "orange" }}
+						>
+							CONTACT
+						</NavLink>
 					</li>
 				</ul>
 			</nav>

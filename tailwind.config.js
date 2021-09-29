@@ -6,6 +6,7 @@ module.exports = {
 			fontFamily: {
 				rockSalt: ['"Rock Salt"', "cursive"],
 				robotoThin: ['"Roboto"', "sans-serif"],
+				anton: ['"Anton"', "sans-serif"],
 			},
 			backgroundImage: (theme) => ({
 				profileImage: "url('./images/profilephoto2.jpg')",
@@ -14,6 +15,7 @@ module.exports = {
 				oceanBg: "url('./images/ocean_sd.jpg')",
 				heroImage: "url('./images/hero-carlsbad.jpg')",
 				aboutDesign: "url('./images/about-design.jpg')",
+				comingSoon: "url('./images/coming-soon.jpg')",
 			}),
 		},
 		backgroundColor: (theme) => ({
