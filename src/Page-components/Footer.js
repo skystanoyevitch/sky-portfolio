@@ -9,12 +9,9 @@ import { FooterNav } from "./Micro-components/FooterNav";
 const Footer = () => {
 	return (
 		<>
-			<footer className="h-96">
-				<div
-					className="flex p-4 w-full justify-center h-1/2"
-					style={{ background: "#E8F1F2" }}
-				>
-					<div className="flex space-x-9 text-white items-center">
+			<footer className="relative h-80" style={{ backgroundColor: "#E8F1F2" }}>
+				<div className="flex flex-col p-4 w-full h-full justify-center">
+					<div className="flex space-x-4 lg:space-x-9 text-white items-center justify-center">
 						<a
 							href="https://dev.to/rolypolie"
 							target="_blank"
@@ -44,14 +41,14 @@ const Footer = () => {
 							<AiTwotoneMail size={50} />
 						</a>
 					</div>
+					<div className="flex flex-row justify-center">
+						<FooterNav />
+					</div>
 				</div>
-				<div className="flex flex-row justify-center">
-					<FooterNav />
-				</div>
+				<p className="absolute bottom-0 text-center text-sm inset-x-1/4">
+					Made With <Emoji symbol="❤" label="sheep" /> by Sky - 2021
+				</p>
 			</footer>
-			<p className="text-center text-sm font-">
-				Made With <Emoji symbol="❤" label="sheep" /> by Sky - 2021
-			</p>
 		</>
 	);
 };

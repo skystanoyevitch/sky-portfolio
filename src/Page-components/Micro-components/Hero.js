@@ -3,7 +3,7 @@ import React from "react";
 function Hero() {
 	// TODO: make responsive
 	return (
-		<div className="w-screen h-2/3">
+		<div className="h-2/3">
 			<div className="bg-heroImage bg-cover bg-no-repeat bg-center h-full z-0">
 				<div className="z-10 bg-gradient-to-b from-gray-700 w-full h-full flex place-items-center justify-center lg:justify-start">
 					<div className="lg:pl-96 flex flex-col md:max-w-4xl text-secondary">

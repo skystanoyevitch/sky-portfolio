@@ -1,15 +1,15 @@
-import react from "react";
+import React from "react";
 
 const MyServices = () => {
 	return (
 		<>
-			<section className="w-full h-3/4 bg-oceanBg bg-fixed bg-cover bg-center bg-no-repeat">
-				<div className="w-full h-full bg-primary bg-opacity-90 text-secondary p-10 lg:p-0">
+			<section className="w-full xl:h-3/4 bg-oceanBg bg-fixed bg-cover bg-center bg-no-repeat">
+				<div className="w-full h-full bg-primary bg-opacity-90 text-secondary p-8 md:px-16 lg:p-0">
 					<div className="mx-auto h-full">
 						<h1 className="text-center font-robotoThin text-4xl md:text-5xl pb-16  lg:p-6">
 							MY SERVICES
 						</h1>
-						<div className="flex flex-col items-center space-y-16 lg:space-y-0 lg:flex lg:flex-row lg:items-center text-center lg:h-2/3 lg:justify-evenly">
+						<div className="flex flex-col items-center md:pt-6 md:pb-16 space-y-16 lg:space-y-0 lg:flex lg:flex-row lg:items-center text-center lg:h-2/3 lg:justify-evenly">
 							<div className="md:flex-1 md:max-w-lg pt-10 md:pt-0">
 								<h2 className="font-anton text-3xl md:text-5xl mb-10">
 									Design

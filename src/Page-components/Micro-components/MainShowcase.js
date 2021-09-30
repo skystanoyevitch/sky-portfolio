@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 
 const MainShowcase = () => {
 	return (
@@ -9,37 +9,24 @@ const MainShowcase = () => {
 						SHOWCASE
 					</h1>
 
-					<div className="flex flex-col items-center space-y-16 xl:space-y-0 w-full px-8 md:px-0 py-20 xl:py-0 lg:px-0 xl:h-full xl:flex xl:flex-row xl:justify-evenly xl:place-items-center">
-						<div
-							className="relative h-96"
-							style={{ width: "40rem" }}
+					<div className="flex flex-col space-y-16 xl:space-y-0 w-full px-8 md:px-16 xl:px-0 py-20 xl:py-0 lg:px-0 xl:h-full xl:flex xl:flex-row xl:justify-evenly xl:place-items-center">
+						<a
+							href="https://rolypolie.github.io/skystanoyevitch/"
+							target="_blank"
+							rel="noreferrer"
 						>
-							<a
-								href="https://rolypolie.github.io/skystanoyevitch/"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<div className="absolute w-full h-full bg-this-is-sky bg-cover bg-no-repeat bg-center rounded-lg"></div>
-							</a>
-						</div>
-						<div
-							className="relative h-96 shadow-xl"
-							style={{ width: "40rem" }}
+							<div className="w-full h-36 md:h-80 bg-this-is-sky bg-cover bg-no-repeat bg-center rounded-lg"></div>
+						</a>
+
+						<a
+							href="https://rolypolie.github.io/SkysCafe/index.html#"
+							target="_blank"
+							rel="noreferrer"
 						>
-							<a
-								href="https://rolypolie.github.io/SkysCafe/index.html#"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<div className="absolute w-full h-full bg-skyCafe bg-cover bg-no-repeat bg-center rounded-lg"></div>
-							</a>
-						</div>
-						<div
-							className="relative h-96"
-							style={{ width: "40rem" }}
-						>
-							<div className="absolute w-full h-full bg-comingSoon bg-cover bg-no-repeat bg-center rounded-lg"></div>
-						</div>
+							<div className="w-full h-36 md:h-80 bg-skyCafe bg-cover bg-no-repeat bg-center rounded-lg"></div>
+						</a>
+
+						<div className="w-full h-36 md:h-80 bg-comingSoon bg-cover bg-no-repeat bg-center rounded-lg"></div>
 					</div>
 				</div>
 			</section>
