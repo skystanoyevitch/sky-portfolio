@@ -3,13 +3,13 @@ import react from "react";
 const MainShowcase = () => {
 	return (
 		<>
-			<section className="w-full h-3/4 bg-secondary">
+			<section className="w-full xl:h-3/4 bg-secondary">
 				<div className="mx-auto h-full">
-					<h1 className="text-center font-robotoThin text-5xl p-8 tracking-widest text-primary">
+					<h1 className="text-center font-robotoThin text-4xl md:text-5xl p-8 tracking-widest text-primary">
 						SHOWCASE
 					</h1>
 
-					<div className="w-full h-3/4 flex flex-row justify-evenly place-items-center">
+					<div className="flex flex-col items-center space-y-16 xl:space-y-0 w-full px-8 md:px-0 py-20 xl:py-0 lg:px-0 xl:h-full xl:flex xl:flex-row xl:justify-evenly xl:place-items-center">
 						<div
 							className="relative h-96"
 							style={{ width: "40rem" }}

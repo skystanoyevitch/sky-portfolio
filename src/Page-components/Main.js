@@ -8,7 +8,7 @@ import MainContact from "./Micro-components/MainContact";
 
 const MainContent = () => {
 	return (
-		<div className="h-screen min-w-screen">
+		<div className="h-screen w-screen">
 			<Hero />
 			<About />
 			<MyServices />

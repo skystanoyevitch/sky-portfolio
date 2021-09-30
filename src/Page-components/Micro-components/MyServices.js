@@ -4,17 +4,17 @@ const MyServices = () => {
 	return (
 		<>
 			<section className="w-full h-3/4 bg-oceanBg bg-fixed bg-cover bg-center bg-no-repeat">
-				<div className="w-full h-full bg-primary bg-opacity-90 text-secondary">
-					<div className="mx-auto h-full overflow-auto">
-						<h1 className="text-center font-robotoThin text-5xl p-6">
+				<div className="w-full h-full bg-primary bg-opacity-90 text-secondary p-10 lg:p-0">
+					<div className="mx-auto h-full">
+						<h1 className="text-center font-robotoThin text-4xl md:text-5xl pb-16  lg:p-6">
 							MY SERVICES
 						</h1>
-						<div className="flex content-center text-center md:h-2/3 flex-wrap justify-evenly">
-							<div className="flex-1 md:max-w-lg">
-								<h2 className="font-anton text-5xl mb-10">
+						<div className="flex flex-col items-center space-y-16 lg:space-y-0 lg:flex lg:flex-row lg:items-center text-center lg:h-2/3 lg:justify-evenly">
+							<div className="md:flex-1 md:max-w-lg pt-10 md:pt-0">
+								<h2 className="font-anton text-3xl md:text-5xl mb-10">
 									Design
 								</h2>
-								<p className="tracking-wider text-2xl font-robotoThin leading-relaxed">
+								<p className="tracking-wider text-lg md:text-2xl font-robotoThin leading-relaxed">
 									When Designing and Developing Websites for
 									my Clients.. My goals are simple, make them{" "}
 									<span
@@ -43,19 +43,19 @@ const MyServices = () => {
 								</p>
 							</div>
 
-							<div
+							{/* <div
 								className="absolute border-l-2 border-secondary"
 								style={{
 									left: "50%",
 									height: "40rem",
 									top: "149%",
 								}}
-							></div>
-							<div className="flex-1 md:max-w-lg">
-								<h2 className="font-anton text-5xl mb-10">
+							></div> */}
+							<div className="md:flex-1 md:max-w-lg">
+								<h2 className="font-anton text-3xl md:text-5xl mb-10">
 									E-Commerce
 								</h2>
-								<p className="tracking-wider text-2xl font-robotoThin leading-relaxed">
+								<p className="tracking-wider text-lg md:text-2xl font-robotoThin leading-relaxed">
 									Using the Two Biggest Ecommerce platforms in
 									the industry,{" "}
 									<span
