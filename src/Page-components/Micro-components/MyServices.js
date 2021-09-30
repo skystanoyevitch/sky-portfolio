@@ -3,18 +3,18 @@ import React from "react";
 const MyServices = () => {
 	return (
 		<>
-			<section className="w-full xl:h-3/4 bg-oceanBg bg-fixed bg-cover bg-center bg-no-repeat">
+			<section className="w-full xl:h-2/4 bg-oceanBg bg-fixed bg-cover bg-center bg-no-repeat">
 				<div className="w-full h-full bg-primary bg-opacity-90 text-secondary p-8 md:px-16 lg:p-0">
 					<div className="mx-auto h-full">
-						<h1 className="text-center font-robotoThin text-4xl md:text-5xl pb-16  lg:p-6">
+						<h1 className="text-center font-anton text-4xl md:text-5xl pb-16 lg:p-6">
 							MY SERVICES
 						</h1>
-						<div className="flex flex-col items-center md:pt-6 lg:p-24 xl:p-0 md:pb-16 space-y-16 xl:flex xl:flex-row xl:items-center text-center xl:h-2/3 xl:justify-evenly">
-							<div className="xl:flex-1 xl:max-w-xl pt-10 md:pt-0">
-								<h2 className="font-anton text-3xl lg:text-4xl xl:text-5xl">
+						<div className="flex flex-col items-center md:pt-6 lg:p-24 xl:p-0 md:pb-16 space-y-16 xl:space-y-0 xl:flex xl:flex-row xl:items-center text-center xl:h-2/3 xl:justify-evenly">
+							<div className="xl:flex-1 xl:max-w-2xl pt-10 md:pt-0">
+								<h2 className="font-robotoThin font-semibold lg:tracking-widest text-3xl lg:text-4xl xl:text-5xl xl:pb-8">
 									Design
 								</h2>
-								<p className="lg:pt-4 xl:p-0 tracking-wider text-lg md:text-xl xl:2xl font-robotoThin leading-relaxed">
+								<p className="lg:pt-4 xl:p-0 tracking-wider text-lg md:text-xl xl:text-2xl font-robotoThin leading-relaxed">
 									When Designing and Developing Websites for
 									my Clients.. My goals are simple, make them{" "}
 									<span
@@ -51,11 +51,11 @@ const MyServices = () => {
 									top: "149%",
 								}}
 							></div> */}
-							<div className="xl:flex-1 xl:max-w-xl">
-								<h2 className="font-anton text-3xl lg:text-4xl xl:text-5xl">
+							<div className="xl:flex-1 xl:max-w-2xl">
+								<h2 className="font-robotoThin font-semibold lg:tracking-widest text-3xl lg:text-4xl xl:text-5xl xl:pb-8">
 									E-Commerce
 								</h2>
-								<p className="lg:pt-4 xl:p-0 tracking-wider text-lg md:text-xl xl:2xl font-robotoThin leading-relaxed">
+								<p className="lg:pt-4 xl:pt-0 tracking-wider text-lg md:text-xl xl:text-2xl font-robotoThin leading-relaxed">
 									Using the Two Biggest Ecommerce platforms in
 									the industry,{" "}
 									<span
