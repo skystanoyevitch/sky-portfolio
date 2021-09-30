@@ -6,17 +6,17 @@ const Nav = () => {
 	return (
 		<div
 			className={`hidden md:visible w-screen md:flex md:items-center absolute ${
-				window.location.pathname === "/"
-					? "text-secondary"
-					: "text-primary"
+				window.location.pathname === "/Contact"
+					? "text-primary"
+					: "text-secondary"
 			}`}
 		>
 			<nav className="md:flex md:justify-center flex-1">
-				<ul className="flex text-2xl p-x tracking-widest font-extrabold">
-					<li className={"m-10 p-3  font-robotoThin"}>
+				<ul className="flex text-xl p-x tracking-wide">
+					<li className={"m-10 p-3"}>
 						<Link to="/">HOME</Link>
 					</li>
-					<li className={"m-10 p-3  font-robotoThin"}>
+					<li className={"m-10 p-3"}>
 						<NavLink
 							to="/Showcase"
 							activeStyle={{ color: "orange" }}
@@ -24,7 +24,7 @@ const Nav = () => {
 							SHOWCASE
 						</NavLink>
 					</li>
-					<li className={"m-10 p-3  font-robotoThin"}>
+					<li className={"m-10 p-3"}>
 						<NavLink
 							to="/Contact"
 							activeStyle={{ color: "orange" }}
