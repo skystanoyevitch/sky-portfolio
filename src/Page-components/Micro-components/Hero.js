@@ -5,8 +5,8 @@ function Hero() {
 	return (
 		<div className="h-2/3">
 			<div className="bg-heroImage bg-cover bg-no-repeat bg-center h-full z-0">
-				<div className="z-10 bg-gradient-to-b from-gray-700 w-full h-full flex place-items-center justify-center lg:justify-start">
-					<div className="lg:pl-96 flex flex-col md:max-w-4xl text-secondary">
+				<div className="z-10 bg-gradient-to-b from-gray-700 w-full h-full flex place-items-center justify-center xl:justify-start">
+					<div className="xl:pl-96 flex flex-col md:max-w-4xl text-secondary">
 						<h1 className="text-center text-7xl md:text-9xl font-anton">
 							WELCOME
 						</h1>

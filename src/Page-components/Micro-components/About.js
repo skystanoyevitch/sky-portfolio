@@ -2,8 +2,8 @@ import React from "react";
 
 function About() {
 	return (
-		<div className="container mx-auto px-8 py-20 md:p-16 lg:px-0 lg:flex lg:items-center lg:py-44 lg:justify-between lg:h-2/3 space-y-20">
-			<div className="flex-1 lg:max-w-2xl xl:p-10">
+		<div className="container mx-auto px-8 py-20 lg:p-24 xl:p-0 xl:flex xl:items-center xl:py-44 lg:justify-between xl:h-2/3 space-y-20">
+			<div className="xl:flex-1 xl:max-w-2xl xl:p-10">
 				<h2 className="text-3xl md:text-4xl lg:text-5xl font-anton text-primary">
 					Who Am i?
 				</h2>
@@ -20,7 +20,7 @@ function About() {
 					and your customers will love.
 				</p>
 			</div>
-			<div className="xl:max-w-3xl w-full lg:pl-52">
+			<div className="xl:max-w-3xl w-full xl:pl-52">
 				<div
 					className="w-full bg-profileImage bg-cover bg-no-repeat bg-center rounded-lg"
 					style={{
