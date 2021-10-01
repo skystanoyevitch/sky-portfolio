@@ -37,7 +37,7 @@ function Contact() {
 
 				<div className="pt-10 text-center md:text-left">
 					<form onSubmit={handleSubmit}>
-						<div className="flex flex-col px-8 md:px-0 lg:flex lg:flex-row place-items-end space-y-8 pb-8 lg:space-x-9">
+						<div className="flex flex-col px-8 md:px-0 lg:flex lg:flex-row xl:place-items-end space-y-8 pb-8 lg:space-x-9">
 							<input
 								type="text"
 								value={firstName}
