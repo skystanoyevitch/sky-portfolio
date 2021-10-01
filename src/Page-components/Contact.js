@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import Footer from "./Footer";
 import Nav from "./Nav";
+import { useForm } from "react-hook-form";
 
 function Contact() {
+	const {
+		register,
+		handleSubmit,
+		formState: { errors },
+	} = useForm();
+	const onSubmit = (data) => console.log(data);
 	const [firstName, setFirstName] = useState("");
 	const [lastName, setLastName] = useState("");
 	const [email, setEmail] = useState("");
@@ -14,10 +21,11 @@ function Contact() {
 	//     setLastName(event.target.last)
 	// }
 
-	const handleSubmit = (event) => {
-		event.preventDefault();
-		alert("A name was submitted: " + firstName + " " + lastName);
-	};
+	// const handleSubmit = (event) => {
+	// 	event.preventDefault();
+	// 	alert("A name was submitted: " + firstName + " " + lastName);
+	// };
+
 	return (
 		<div className="w-screen h-screen">
 			<Nav />
@@ -36,23 +44,22 @@ function Contact() {
 				</div>
 
 				<div className="pt-10 text-center md:text-left">
-					<form onSubmit={handleSubmit}>
+					<form onSubmit={handleSubmit(onSubmit)}>
 						<div className="flex flex-col px-8 md:px-0 lg:flex lg:flex-row xl:place-items-end space-y-8 pb-8 lg:space-x-9">
+							{errors.first_name?.type === "required" &&
+								console.log("First name is required")}
 							<input
+								{...register("first_name", { required: true })}
 								type="text"
-								value={firstName}
-								onChange={(e) => setFirstName(e.target.value)}
 								className="p-4 border-primary border bg-secondary"
-								name="first"
+								name="first_name"
 								placeholder="First Name"
 							/>
-
 							<input
 								type="text"
-								value={lastName}
-								onChange={(e) => setLastName(e.target.value)}
+								{...register("last")}
 								className="p-4 border-primary border bg-secondary"
-								name="last"
+								name="last_name"
 								placeholder="Last Name"
 							/>
 						</div>
@@ -61,6 +68,7 @@ function Contact() {
 							<input
 								type="text"
 								value={email}
+								{...register("email")}
 								onChange={(e) => setEmail(e.target.value)}
 								className="p-4 border-primary border bg-secondary"
 								name="email"
@@ -70,6 +78,7 @@ function Contact() {
 							<input
 								type="text"
 								value={subject}
+								{...register("subject")}
 								onChange={(e) => setSubject(e.target.value)}
 								className="p-4 border-primary border bg-secondary"
 								name="subject"
@@ -80,6 +89,7 @@ function Contact() {
 								className="border-primary border h-24 p-4 bg-secondary"
 								type="text"
 								value={message}
+								{...register("message")}
 								onChange={(e) => setMessage(e.target.value)}
 								name="message"
 								placeholder="Message"
