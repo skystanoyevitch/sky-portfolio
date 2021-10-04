@@ -58,9 +58,9 @@ function Contact() {
 					</p>
 				</div>
 
-				<div className="pt-10 text-center md:text-left">
-					<form onSubmit={handleSubmit(onSubmit)} id="contactForm" name="contact-form" data-netlify="true">
-						{errors.first_name?.type === "required" && (
+				{/* <div className="pt-10 text-center md:text-left"> */}
+					{/* <form onSubmit={handleSubmit(onSubmit)} id="contactForm"> */}
+						{/* {errors.first_name?.type === "required" && (
 							<div style={{ color: "red" }}>
 								First name is required
 							</div>
@@ -120,10 +120,43 @@ function Contact() {
 							style={{ background: "#B02E0C" }}
 						>
 							LETS DO THIS !
-						</button>
-					</form>
-				</div>
+						</button> */}
+					{/* </form> */}
+				{/* </div> */}
 			</div>
+			<form name="contact" method="POST" data-netlify="true" className="container mx-auto flex flex-col w-60 justify-center">
+							<p>
+								<label>
+									Your Name: <input type="text" name="name" />
+								</label>
+							</p>
+							<p>
+								<label>
+									Your Email:{" "}
+									<input type="email" name="email" />
+								</label>
+							</p>
+							<p>
+								<label>
+									Your Role:{" "}
+									<select name="role[]" multiple>
+										<option value="leader">Leader</option>
+										<option value="follower">
+											Follower
+										</option>
+									</select>
+								</label>
+							</p>
+							<p>
+								<label>
+									Message:{" "}
+									<textarea name="message"></textarea>
+								</label>
+							</p>
+							<p>
+								<button type="submit">Send</button>
+							</p>
+						</form>
 			<Footer />
 		</div>
 	);
