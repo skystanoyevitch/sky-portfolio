@@ -59,7 +59,7 @@ function Contact() {
 				</div>
 
 				<div className="pt-10 text-center md:text-left">
-					<form onSubmit={handleSubmit(onSubmit)} id="contactForm" data-netlify="true">
+					<form onSubmit={handleSubmit(onSubmit)} id="contactForm" name="contact-form" data-netlify="true">
 						{errors.first_name?.type === "required" && (
 							<div style={{ color: "red" }}>
 								First name is required
