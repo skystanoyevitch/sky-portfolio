@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const MainContact = () => {
 	return (
 		<>
-			<section className="w-full xl:h-2/3 bg-oceanBg bg-fixed bg-center bg-no-repeat">
-				<div className="w-full h-full bg-primary bg-opacity-90">
+			<section className="w-full xl:h-2/3 bg-primary">
+				<div className="w-full h-full">
 					<div className="container mx-auto h-full p-8 lg:p-24 xl:p-0 text-center text-secondary flex flex-col items-center justify-center">
 						<h1 className="font-anton text-4xl lg:text-5xl xl:text-7xl">
 							Let's Work Together!
@@ -20,7 +20,7 @@ const MainContact = () => {
 
 						<Link to="/Contact">
 							<button
-								className="rounded-lg xl:w-48 px-4 lg:px-4 lg:py-2 font-semibold text-md xl:text-2xl"
+								className="xl:w-48 px-4 lg:px-4 lg:py-2 font-semibold text-md xl:text-2xl"
 								style={{ background: "#B02E0C" }}
 							>
 								LETS DO THIS

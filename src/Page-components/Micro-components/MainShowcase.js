@@ -15,18 +15,18 @@ const MainShowcase = () => {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<div className="w-full xl:w-144 h-36 md:h-80 xl:h-96 bg-this-is-sky bg-cover bg-no-repeat bg-center rounded-lg"></div>
+							<div className="w-full xl:w-144 h-36 md:h-80 xl:h-96 bg-this-is-sky bg-contain bg-no-repeat bg-center"></div>
 						</a>
 
 						<a
-							href="https://rolypolie.github.io/SkysCafe/index.html#"
+							href="https://rolypolie.github.io/SkysCafe/"
 							target="_blank"
 							rel="noreferrer"
 						>
-							<div className="w-full xl:w-144 h-36 md:h-80 xl:h-96 bg-skyCafe bg-cover bg-no-repeat bg-center rounded-lg"></div>
+							<div className="w-full xl:w-144 h-36 md:h-80 xl:h-96 bg-skyCafe bg-contain bg-no-repeat bg-center"></div>
 						</a>
 
-						<div className="w-full xl:w-144 h-36 md:h-80 xl:h-96 bg-comingSoon bg-cover bg-no-repeat bg-center rounded-lg"></div>
+						<div className="w-full xl:w-144 h-36 md:h-80 xl:h-96 bg-comingSoon bg-contain bg-no-repeat bg-center"></div>
 					</div>
 				</div>
 			</section>

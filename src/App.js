@@ -13,11 +13,6 @@ import Showcase from "./Page-components/Showcase";
 import Contact from "./Page-components/Contact";
 // import Footer from "./Page-components/Footer";
 
-// const person = {
-// 	firstName: "Lindsay",
-// 	lastName: "Criswell",
-// 	city: "NYC",
-// };
 
 const App = ({ location }) => (
 	<Router>

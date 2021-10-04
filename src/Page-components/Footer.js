@@ -1,6 +1,6 @@
 import React from "react";
 import { RiInstagramFill } from "react-icons/ri";
-import { SiDevDotTo } from "react-icons/si";
+import { SiDevdotto } from "react-icons/si";
 import { FaTwitterSquare } from "react-icons/fa";
 import { AiTwotoneMail } from "react-icons/ai";
 import Emoji from "../assets/heart-emoji";
@@ -23,7 +23,7 @@ const Footer = () => {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<SiDevDotTo size={50} />
+							<SiDevdotto size={50} />
 						</a>
 						<a
 							href="https://www.instagram.com/spacebars_and_tabs/"

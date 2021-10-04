@@ -9,13 +9,12 @@ module.exports = {
 				anton: ['"Anton"', "sans-serif"],
 			},
 			backgroundImage: (theme) => ({
-				profileImage: "url('./images/profilephoto2.jpg')",
-				skyCafe: "url('./images/skycafe.png')",
-				"this-is-sky": "url('./images/This-is-Sky-.png')",
+				profileImage: "url('./images/profilephoto3.webp')",
+				skyCafe: "url('./images/skycafe.webp')",
+				"this-is-sky": "url('./images/projectsky.webp')",
 				oceanBg: "url('./images/ocean_sd.jpg')",
 				heroImage: "url('./images/hero-carlsbad.jpg')",
-				aboutDesign: "url('./images/about-design.jpg')",
-				comingSoon: "url('./images/coming-soon.jpg')",
+				comingSoon: "url('./images/comingsoon.webp')",
 			}),
 			spacing: {
 				72: "18rem",
@@ -27,6 +26,12 @@ module.exports = {
 				144: "36rem",
 			},
 		},
+		divideColor: (theme) => ({
+			...theme("borderColors"),
+			primary: "#114B5F",
+			secondary: "#E8F1F2",
+			danger: "#e3342f",
+		}),
 		backgroundColor: (theme) => ({
 			...theme("colors"),
 			secondary: "#E8F1F2",

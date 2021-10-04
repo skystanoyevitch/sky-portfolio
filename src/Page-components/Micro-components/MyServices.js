@@ -1,16 +1,20 @@
 import React from "react";
+import { MdAddBusiness, MdOutlineDesignServices } from "react-icons/md";
 
 const MyServices = () => {
 	return (
 		<>
-			<section className="w-full xl:h-2/4 bg-oceanBg bg-fixed bg-cover bg-center bg-no-repeat">
-				<div className="w-full h-full bg-primary bg-opacity-90 text-secondary p-8 md:px-16 lg:p-0">
+			<section className="relative w-full xl:h-2/4 bg-primary">
+				<div className="text-secondary p-8 md:px-16 lg:p-0">
 					<div className="mx-auto h-full">
 						<h1 className="text-center font-anton text-4xl md:text-5xl pb-16 lg:p-6">
 							MY SERVICES
 						</h1>
-						<div className="flex flex-col items-center md:pt-6 lg:p-24 xl:p-0 md:pb-16 space-y-16 xl:space-y-0 xl:flex xl:flex-row xl:items-center text-center xl:h-2/3 xl:justify-evenly">
-							<div className="xl:flex-1 xl:max-w-2xl pt-10 md:pt-0">
+						<div className="flex flex-col divide-y-2 divide-secondary xl:divide-y-0 xl:divide-x-2 xl:divide-secondary items-center md:pt-6 lg:p-24 xl:p-0 xl:pt-16 md:pb-16 xl:space-y-0 xl:flex xl:flex-row xl:items-center text-center xl:h-2/3 xl:justify-center">
+							<div className="xl:max-w-3xl pt-10 xl:pt-0 pb-10 xl:pb-0 xl:pr-24">
+								<div className="xl:flex xl:justify-center xl:p-4">
+									<MdOutlineDesignServices size={70} />
+								</div>
 								<h2 className="font-robotoThin font-semibold lg:tracking-widest text-3xl lg:text-4xl xl:text-5xl xl:pb-8">
 									Design
 								</h2>
@@ -42,16 +46,10 @@ const MyServices = () => {
 									Mobile Devices to Desktop Computers.
 								</p>
 							</div>
-
-							{/* <div
-								className="absolute border-l-2 border-secondary"
-								style={{
-									left: "50%",
-									height: "40rem",
-									top: "149%",
-								}}
-							></div> */}
-							<div className="xl:flex-1 xl:max-w-2xl">
+							<div className="xl:max-w-3xl pt-10 xl:pt-0 xl:pl-24">
+								<div className="xl:flex xl:justify-center xl:p-4">
+									<MdAddBusiness size={70} />
+								</div>
 								<h2 className="font-robotoThin font-semibold lg:tracking-widest text-3xl lg:text-4xl xl:text-5xl xl:pb-8">
 									E-Commerce
 								</h2>
