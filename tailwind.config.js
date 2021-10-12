@@ -37,11 +37,12 @@ module.exports = {
 			secondary: "#E8F1F2",
 			primary: "#114B5F",
 		}),
-		textColor: {
+		textColor: (theme) => ({
+			...theme("colors"),
 			primary: "#114B5F",
 			secondary: "#E8F1F2",
 			paragraph: "#4A5255",
-		},
+		}),
 		borderColor: (theme) => ({
 			DEFAULT: theme("colors.gray.300", "currentColor"),
 			primary: "#114B5F",

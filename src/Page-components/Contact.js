@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { useEffect } from "react";
 import Footer from "./Footer";
 import Nav from "./Nav";
 import { useForm } from "react-hook-form";
@@ -10,20 +11,18 @@ function Contact() {
 		register,
 		watch,
 		handleSubmit,
-		formState: { errors },
+		reset,
+		formState: { isSubmitSuccessful, errors },
 	} = useForm();
-	// const [firstName, setFirstName] = useState("");
-	// const [lastName, setLastName] = useState("");
-	// const [email, setEmail] = useState("");
-	// const [subject, setSubject] = useState("");
-	// const [message, setMessage] = useState("");
 	const message = watch("message") || "";
 	const messagesLeft = 1500 - message.length;
+	const successMessage = "Success";
 
 	const onSubmit = (data) => {
 		sendForm("contact_form_id", "template_nfydqkj", "#contactForm").then(
 			function (response) {
 				console.log("SUCCESS!", response.status, response.text);
+				reset();
 			},
 			function (error) {
 				console.log("FAILED...", error);
@@ -31,15 +30,9 @@ function Contact() {
 		);
 	};
 
-	// const handleChange = event => {
-	//     setFirstName(event.target.first)
-	//     setLastName(event.target.last)
-	// }
-
-	// const handleSubmit = (event) => {
-	// 	event.preventDefault();
-	// 	alert("A name was submitted: " + firstName + " " + lastName);
-	// };
+	// useEffect(() => {
+	// 	reset({ first_name: "" }); // asynchronously reset your form values
+	// }, [reset]);
 
 	return (
 		<div className="w-screen h-screen">
@@ -60,25 +53,40 @@ function Contact() {
 
 				<div className="pt-10 text-center md:text-left">
 					<form onSubmit={handleSubmit(onSubmit)} id="contactForm">
-						{errors.first_name?.type === "required" && (
-							<div style={{ color: "red" }}>
-								First name is required
-							</div>
-						)}
+						<div className="text-center text-red-600">
+							{errors.first_name && (
+								<p>{errors.first_name.message}</p>
+							)}
+							{errors.last_name && (
+								<p>{errors.last_name.message}</p>
+							)}
+							{errors.email && <p>{errors.email.message}</p>}
+							{errors.message && <p>{errors.message.message}</p>}
+						</div>
+						<h3>{isSubmitSuccessful && successMessage}</h3>
 						<div className="flex flex-col px-8 md:px-0 lg:flex lg:flex-row xl:place-items-end space-y-8 pb-8 lg:space-x-9">
 							<input
 								{...register("first_name", {
-									required: true,
-									maxLength: 3,
+									required: {
+										value: true,
+										message: "First Name is Required",
+									},
+									maxLength: 15,
 								})}
 								type="text"
-								className="p-4 border-primary border bg-secondary"
+								className="p-4 border-primary border bg-secondary flex flex-col"
 								name="first_name"
 								placeholder="First Name"
 							/>
+
 							<input
 								type="text"
-								{...register("last_name", { required: true })}
+								{...register("last_name", {
+									required: {
+										value: true,
+										message: "Last Name is Required",
+									},
+								})}
 								className="p-4 border-primary border bg-secondary"
 								name="last_name"
 								placeholder="Last Name"
@@ -88,7 +96,12 @@ function Contact() {
 						<div className="flex flex-col space-y-8 px-8 md:px-0">
 							<input
 								type="text"
-								{...register("email", { required: true })}
+								{...register("email", {
+									required: {
+										value: true,
+										message: "Email is Required",
+									},
+								})}
 								className="p-4 border-primary border bg-secondary"
 								name="email"
 								placeholder="Email"
@@ -96,7 +109,7 @@ function Contact() {
 
 							<input
 								type="text"
-								{...register("subject", { required: true })}
+								{...register("subject", { maxLength: 15 })}
 								className="p-4 border-primary border bg-secondary"
 								name="subject"
 								placeholder="Subject"
@@ -105,7 +118,13 @@ function Contact() {
 							<textarea
 								className="border-primary border h-24 p-4 bg-secondary"
 								type="text"
-								{...register("message", { required: true })}
+								{...register("message", {
+									required: {
+										value: true,
+										message: "Message Field is Required",
+									},
+									minLength: 10,
+								})}
 								// onChange={(e) => setMessage(e.target.value)}
 								name="message"
 								placeholder="Message"
