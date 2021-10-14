@@ -17,7 +17,7 @@ const Footer = () => {
 				}`}
 			>
 				<div className="flex flex-col p-4 w-full h-full justify-center">
-					<div className="flex space-x-4 lg:space-x-9 text-white items-center justify-center">
+					<div className="flex space-x-4 lg:space-x-9 items-center justify-center">
 						<a
 							href="https://dev.to/rolypolie"
 							target="_blank"
