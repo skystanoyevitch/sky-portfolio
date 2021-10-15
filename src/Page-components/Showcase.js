@@ -9,7 +9,7 @@ function Showcase() {
 			<Nav />
 			<ShowcaseHero />
 			<div className="w-full xl:h-full bg-secondary">
-				<div className="container mx-auto md:max-w-2xl lg:max-w-none p-8 md:p-16 lg:p-24 xl:py-20 md:space-y-20">
+				<div className="container mx-auto md:max-w-2xl lg:max-w-screen-2xl p-8 md:p-16 lg:p-24 xl:py-20 md:space-y-20">
 					<div className="w-full grid grid-rows-2 lg:grid-rows-none lg:grid lg:grid-cols-2 lg:gap-10 lg:justify-center lg:items-center">
 						<div>
 							<h3 className="font-anton text-3xl xl:text-5xl mb-6">
