@@ -9,7 +9,7 @@ const MainShowcase = () => {
 						SHOWCASE
 					</h1>
 
-					<div className="container mx-auto flex flex-col pb-10 space-y-16 md:max-w-l lg:max-w-noneg xl:space-y-0 w-full px-8 md:px-0 lg:p-24 xl:px-0 xl:py-14 xl:flex xl:flex-row xl:justify-evenly xl:place-items-center">
+					<div className="container mx-auto flex flex-col pb-10 space-y-16 md:max-w-l lg:max-w-none xl:space-y-0 w-full px-8 md:px-0 lg:p-24 xl:px-0 xl:py-14 xl:flex xl:flex-row xl:justify-evenly xl:place-items-center">
 						<a
 							href="https://rolypolie.github.io/skystanoyevitch/"
 							target="_blank"
