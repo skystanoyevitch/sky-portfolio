@@ -7,7 +7,7 @@ const MyServices = () => {
 			<section className="relative w-full xl:h-2/4 bg-primary">
 				<div className="text-secondary p-8 md:px-16 lg:p-0">
 					<div className="mx-auto h-full">
-						<h1 className="text-center font-anton text-4xl md:text-5xl pb-16 lg:p-6">
+						<h1 className="text-center font-anton tracking-widest text-4xl md:text-5xl xl:p-8 lg:p-6">
 							MY SERVICES
 						</h1>
 						<div className="flex flex-col divide-y-2 divide-secondary xl:divide-y-0 xl:divide-x-2 xl:divide-secondary items-center md:pt-0 xl:p-0 xl:pt-16 md:pb-16 xl:space-y-0 xl:flex xl:flex-row xl:items-center text-center xl:h-2/3 xl:justify-center">

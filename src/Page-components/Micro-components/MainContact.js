@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const MainContact = () => {
 	return (
 		<>
-			<section className="w-full xl:h-2/3 bg-primary">
+			<section className="w-full xl:h-2/5 bg-primary">
 				<div className="w-full h-full">
 					<div className="container mx-auto lg:max-w-xl xl:max-w-4xl h-full p-8 lg:p-16 xl:p-0 text-center text-secondary flex flex-col items-center justify-center">
 						<h1 className="font-anton text-4xl lg:text-5xl xl:text-7xl">
