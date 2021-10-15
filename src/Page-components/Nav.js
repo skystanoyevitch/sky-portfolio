@@ -12,7 +12,7 @@ const Nav = () => {
 			}`}
 		>
 			<nav className="md:flex md:justify-center flex-1">
-				<ul className="flex text-xl p-x tracking-wide">
+				<ul className="flex xl:text-xl p-x tracking-wide">
 					<li className={"m-10 p-3"}>
 						<Link to="/">HOME</Link>
 					</li>

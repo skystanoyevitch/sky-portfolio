@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import Footer from "./Footer";
 import Nav from "./Nav";
 import { useForm } from "react-hook-form";
@@ -9,13 +9,12 @@ init("user_UjPKV0EnHoctjH33XHpvR");
 function Contact() {
 	const {
 		register,
-		watch,
 		handleSubmit,
 		reset,
 		formState: { isSubmitSuccessful, errors },
 	} = useForm();
-	const message = watch("message") || "";
-	const messagesLeft = 1500 - message.length;
+	// const message = watch("message") || "";
+	// const messagesLeft = 1500 - message.length;
 	const successMessage = "Success";
 
 	const onSubmit = (data) => {
@@ -37,9 +36,9 @@ function Contact() {
 	return (
 		<div className="w-screen h-screen">
 			<Nav />
-			<div className="container mx-auto md:h-full flex flex-col justify-around px-4 py-14 md:py-0 md:grid md:grid-cols-2 md:justify-items-center md:items-center lg:pt-32 lg:px-10">
+			<div className="container mx-auto md:h-full flex flex-col justify-around px-4 py-14 md:py-0 md:grid md:grid-cols-2 md:justify-items-center md:items-center lg:py-32 lg:px-10">
 				<div className="text-center md:text-left">
-					<div className="font-anton text-2xl md:text-3xl lg:text-4xl xl:text-7xl tracking-wide px-8">
+					<div className="font-anton text-2xl md:text-4xl xl:text-7xl tracking-wide px-8">
 						Let Me Help You
 					</div>
 					<p className="text-md md:text-2xl xl:text-3xl font-robotoThin tracking-wider leading-relaxed pt-10 px-8">
@@ -64,7 +63,7 @@ function Contact() {
 							{errors.message && <p>{errors.message.message}</p>}
 						</div>
 						<h3>{isSubmitSuccessful && successMessage}</h3>
-						<div className="flex flex-col px-8 md:px-0 lg:flex lg:flex-row xl:place-items-end space-y-8 pb-8 lg:space-x-9">
+						<div className="flex flex-col px-8 md:px-0 lg:flex lg:flex-row lg:place-items-end space-y-8 pb-8 lg:space-x-9">
 							<input
 								{...register("first_name", {
 									required: {
@@ -74,7 +73,7 @@ function Contact() {
 									maxLength: 15,
 								})}
 								type="text"
-								className="p-4 border-primary border bg-secondary flex flex-col"
+								className="p-4 border-primary border bg-secondary"
 								name="first_name"
 								placeholder="First Name"
 							/>
@@ -129,13 +128,13 @@ function Contact() {
 								name="message"
 								placeholder="Message"
 							></textarea>
-							<p style={{ color: "red" }}>{messagesLeft}</p>
+							{/* <p style={{ color: "red" }}>{messagesLeft}</p> */}
 						</div>
 
 						<button
 							type="submit"
 							value="submit"
-							className=" text-secondary p-2 text-xl font-semibold mt-8 mx-8 md:mx-0"
+							className=" text-secondary p-2 text-xl font-semibold mt-4 mx-8 md:mx-0 rounded-lg"
 							style={{ background: "#B02E0C" }}
 						>
 							LETS DO THIS !

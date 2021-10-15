@@ -6,7 +6,7 @@ const MainContact = () => {
 		<>
 			<section className="w-full xl:h-2/3 bg-primary">
 				<div className="w-full h-full">
-					<div className="container mx-auto h-full p-8 lg:p-24 xl:p-0 text-center text-secondary flex flex-col items-center justify-center">
+					<div className="container mx-auto lg:max-w-xl h-full p-8 lg:p-16 xl:p-0 text-center text-secondary flex flex-col items-center justify-center">
 						<h1 className="font-anton text-4xl lg:text-5xl xl:text-7xl">
 							Let's Work Together!
 						</h1>
@@ -20,7 +20,7 @@ const MainContact = () => {
 
 						<Link to="/Contact">
 							<button
-								className="xl:w-48 px-4 lg:px-4 lg:py-2 font-semibold text-md xl:text-2xl"
+								className="xl:w-48 py-1 px-2 lg:px-4 lg:py-2 font-semibold text-md xl:text-2xl rounded-lg"
 								style={{ background: "#B02E0C" }}
 							>
 								LETS DO THIS
