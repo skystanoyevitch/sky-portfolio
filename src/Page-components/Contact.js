@@ -39,7 +39,7 @@ function Contact() {
 			<div className="container mx-auto md:h-full flex flex-col justify-around px-4 py-14 md:py-0 md:grid md:grid-cols-2 md:justify-items-center md:items-center lg:py-32 lg:px-10">
 				<div className="text-center md:text-left">
 					<div className="font-anton text-2xl md:text-4xl xl:text-7xl tracking-wide px-8">
-						Let Me Help You
+						Let me help <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-700">YOU!</span>
 					</div>
 					<p className="text-md md:text-2xl xl:text-3xl font-robotoThin tracking-wider leading-relaxed pt-10 px-8">
 						If you are looking to have a Website or App built,
@@ -73,7 +73,7 @@ function Contact() {
 									maxLength: 15,
 								})}
 								type="text"
-								className="p-4 border-primary border bg-secondary"
+								className="p-4 border-primary border bg-secondary rounded-md"
 								name="first_name"
 								placeholder="First Name"
 							/>
@@ -86,7 +86,7 @@ function Contact() {
 										message: "Last Name is Required",
 									},
 								})}
-								className="p-4 border-primary border bg-secondary"
+								className="p-4 border-primary border bg-secondary rounded-md"
 								name="last_name"
 								placeholder="Last Name"
 							/>
@@ -101,7 +101,7 @@ function Contact() {
 										message: "Email is Required",
 									},
 								})}
-								className="p-4 border-primary border bg-secondary"
+								className="p-4 border-primary border bg-secondary rounded-md"
 								name="email"
 								placeholder="Email"
 							/>
@@ -109,13 +109,13 @@ function Contact() {
 							<input
 								type="text"
 								{...register("subject", { maxLength: 15 })}
-								className="p-4 border-primary border bg-secondary"
+								className="p-4 border-primary border bg-secondary rounded-md"
 								name="subject"
 								placeholder="Subject"
 							/>
 
 							<textarea
-								className="border-primary border h-24 p-4 bg-secondary"
+								className="border-primary border h-24 p-4 bg-secondary rounded-md"
 								type="text"
 								{...register("message", {
 									required: {
@@ -137,7 +137,7 @@ function Contact() {
 							className=" text-secondary p-2 text-xl font-semibold mt-4 mx-8 md:mx-0 rounded-lg"
 							style={{ background: "#B02E0C" }}
 						>
-							LETS DO THIS !
+							SUBMIT
 						</button>
 					</form>
 				</div>
