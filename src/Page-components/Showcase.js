@@ -19,21 +19,22 @@ function Showcase() {
 								This was my Original Design for a Portfolio
 								styled app that was Designed using the Bulma CSS
 								framework and JavaScript, this concept was to
-								create a mobile friendly wite that was fast and
-								simple. this Webapp has -
+								create a mobile friendly website that was fast
+								and simple. <br />
+								This Webapp has:
 							</p>
 							<ul className="text-xl xl:text-2xl italic tracking-wider py-4">
 								<li className="pb-4">Smooth Animations</li>
 								<li className="pb-4">Responsive</li>
 								<li className="pb-4">Mobile First</li>
-								<li className="pb-4">Minimalistic Design</li>
+								<li className="">Minimalistic Design</li>
 							</ul>
 						</div>
 						<a
 							href="https://rolypolie.github.io/skystanoyevitch/"
 							target="_blank"
 							rel="noreferrer"
-							className="w-full h-1/2 md:h-full"
+							className="w-full h-1/2 md:h-full transform transition duration-300 hover:scale-110"
 						>
 							<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat h-full rounded-lg"></div>
 						</a>
@@ -47,24 +48,24 @@ function Showcase() {
 							<p className="text-md xl:text-2xl font-robotoThin tracking-wide leading-relaxed overflow-ellipsis">
 								This Concept was Designed from the Ground up,
 								Inspired by my Love for all things coffee and
-								coffe culture, I wanted to bring the Cafe shope
+								coffe culture. I wanted to bring the Cafe shope
 								Vibes to the digital world while keeping
-								functionality and usability are as vibrant as
-								the flavors of the beans are. This website was
-								built on these Concepts -
+								functionality and usability as vibrant as the
+								flavors of the beans are. <br />
+								This website was built on these Concepts:
 							</p>
 							<ul className="text-xl xl:text-2xl font-Open-Sans italic tracking-wider py-4">
 								<li className="pb-4">Aesthetic Design</li>
 								<li className="pb-4">Mobile Resposiveness</li>
 								<li className="pb-4">Clean feel</li>
-								<li className="pb-4">User Friendly</li>
+								<li className="">User Friendly</li>
 							</ul>
 						</div>
 						<a
 							href="https://rolypolie.github.io/SkysCafe/index.html#"
 							target="_blank"
 							rel="noreferrer"
-							className="w-full h-1/2 md:h-full"
+							className="w-full h-1/2 md:h-full transform transition duration-300 hover:scale-110"
 						>
 							<div className="bg-skyCafe bg-cover bg-left bg-no-repeat h-full rounded-lg"></div>
 						</a>

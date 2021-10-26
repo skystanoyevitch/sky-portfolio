@@ -5,6 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 const Nav = () => {
 	return (
 		<div
+			id="nav-text"
 			className={`hidden md:visible md:shadow-md md:h-24 lg:h-16 xl:h-24 w-screen md:flex md:items-center absolute ${
 				window.location.pathname === "/Contact"
 					? "text-primary"
