@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion, useViewportScroll } from "framer-motion";
 
 function Hero() {
-	// TODO: make responsive
+	// const { scrollYProgress } = useViewportScroll();
 	return (
 		<div className="h-2/4">
 			<div className="bg-cover bg-primary h-full">
@@ -20,12 +21,13 @@ function Hero() {
 							to my Personal Website
 						</p>
 						<Link to="/Showcase">
-							<button
+							<motion.button
+								whileHover={{ scale: 1.4 , boxShadow: "5px 5px 0 rgba(0, 0, 0, 0.2)" }}
 								className="py-1 px-2 lg:px-4 lg:py-2 font-semibold text-md xl:text-xl xl:w-30 mt-4 xl:mt-6 rounded-lg"
 								style={{ background: "#B02E0C" }}
 							>
 								SEE MY WORK
-							</button>
+							</motion.button>
 						</Link>
 					</div>
 				</div>
