@@ -1,21 +1,81 @@
 import React from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import { wrap } from "@popmotion/popcorn";
+import { quotes } from "./Quotes";
+
+const quoteVariants = {
+	enter: (direction) => {
+		return {
+			x: direction > 0 ? 1000 : -1000,
+			opacity: 0,
+		};
+	},
+	center: {
+		zIndex: 1,
+		x: 0,
+		opacity: 1,
+	},
+	exit: (direction) => {
+		return {
+			zIndex: 0,
+			x: direction < 0 ? 1000 : -1000,
+			opacity: 0,
+		};
+	},
+};
 
 const ShowcaseHero = () => {
+	const [[page, direction], setPage] = useState([0, 0]);
+
+	const quotesIndex = wrap(0, quotes.length, page);
+
+	const paginate = (newDirection) => {
+		setPage([page + newDirection, newDirection]);
+	};
+
 	//TODO: Add Slider Component to slide between every quote every 3 seconds.
 	return (
 		<>
-			<section className="w-screen h-2/4 bg-primary">
-				<div className="container mx-auto h-full text-center flex flex-col justify-center lg:flex lg:place-items-center lg:justify-center text-secondary">
-					<h1 className="text-center italic text-xl lg:text-2xl xl:text-3xl mx-6">
-						"DESIGN IS INTELLIGENCE MADE VISIBLE."
-					</h1>
-					<h2>
-						<cite className="font-robotThin text-sm">
-							- Alina Wheeler
-						</cite>
-					</h2>
-				</div>
-			</section>
+			<AnimatePresence>
+				<section className="w-screen h-2/4 bg-primary">
+					<div className="container mx-auto h-full text-center flex flex-col justify-center lg:flex lg:place-items-center lg:justify-center text-secondary">
+						<motion.h1
+							key={page}
+							custom={direction}
+							variants={quoteVariants}
+							initial="enter"
+							animate="center"
+							exit="exit"
+							transition={{
+								x: {
+									type: "spring",
+									stiffness: 300,
+									damping: 30,
+								},
+								opacity: { duration: 0.2 },
+							}}
+							className="text-center italic text-xl lg:text-2xl xl:text-3xl mx-6"
+						>
+							{quotes[quotesIndex]}
+						</motion.h1>
+					</div>
+				</section>
+			</AnimatePresence>
+			<div className="text-center container mx-auto">
+				<button
+					className="w-24 h-9 bg-gray-200"
+					onClick={() => paginate(1)}
+				>
+					Prev
+				</button>
+				<button
+					className="w-24 h-9 bg-gray-200"
+					onClick={() => paginate(-1)}
+				>
+					Next
+				</button>
+			</div>
 		</>
 	);
 };

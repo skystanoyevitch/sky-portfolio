@@ -57,7 +57,7 @@ function About() {
 			</div>
 			<div className="xl:max-w-3xl w-full xl:pl-52 lg:flex-1">
 				<div
-					className="w-full bg-profileImage bg-cover bg-no-repeat bg-center rounded-full shadow-lg border-2 border-primary border-dotted"
+					className="w-full bg-profileImage bg-cover bg-no-repeat bg-center rounded-full shadow-lg border-2"
 					style={{
 						height: "30rem",
 					}}

@@ -2,14 +2,37 @@ import React from "react";
 import Footer from "./Footer";
 import Nav from "./Nav";
 import ShowcaseHero from "./Micro-components/ShowcaseHero";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+
+const page2Variant = {
+	initial: {
+		opacity: 0,
+	},
+	animate: {
+		opacity: 1,
+		transition: {
+			duration: 1,
+		},
+	},
+};
 
 function Showcase() {
+	const { ref, inView } = useInView({
+		triggerOnce: true,
+	});
 	return (
 		<div className="w-screen h-screen">
 			<Nav />
 			<ShowcaseHero />
 			<div className="w-full xl:h-full bg-secondary">
-				<div className="container mx-auto md:max-w-2xl lg:max-w-screen-2xl p-8 md:p-16 lg:p-24 xl:py-20 md:space-y-20">
+				<motion.div
+					ref={ref}
+					variants={page2Variant}
+					initial="initial"
+					animate={inView ? "animate" : "initial"}
+					className="container mx-auto md:max-w-2xl lg:max-w-screen-2xl p-8 md:p-16 lg:p-24 xl:py-20 md:space-y-20"
+				>
 					<div className="w-full grid grid-rows-2 lg:grid-rows-none lg:grid lg:grid-cols-2 lg:gap-10 lg:justify-center lg:items-center">
 						<div>
 							<h3 className="font-anton text-3xl xl:text-5xl mb-6">
@@ -70,7 +93,7 @@ function Showcase() {
 							<div className="bg-skyCafe bg-cover bg-left bg-no-repeat h-full rounded-lg"></div>
 						</a>
 					</div>
-				</div>
+				</motion.div>
 			</div>
 			<Footer />
 		</div>
