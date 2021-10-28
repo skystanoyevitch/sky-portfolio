@@ -1,11 +1,34 @@
+import { motion } from "framer-motion";
 import React from "react";
+import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 
+const contactVariant = {
+	initial: {
+		opacity: 0,
+	},
+	animate: {
+		opacity: 1,
+		transition: {
+			duration: 1,
+		},
+	},
+};
+
 const MainContact = () => {
+	const { ref, inView } = useInView({
+		triggerOnce: true,
+	});
 	return (
 		<>
 			<section className="w-full xl:h-2/5 bg-primary">
-				<div className="w-full h-full">
+				<motion.div
+					ref={ref}
+					variants={contactVariant}
+					initial="initial"
+					animate={inView ? "animate" : "initial"}
+					className="w-full h-full"
+				>
 					<div className="container mx-auto lg:max-w-xl xl:max-w-4xl h-full p-8 lg:p-16 xl:p-0 text-center text-secondary flex flex-col items-center justify-center">
 						<h1 className="font-anton text-4xl lg:text-5xl xl:text-7xl">
 							Let's Work Together!
@@ -27,7 +50,7 @@ const MainContact = () => {
 							</button>
 						</Link>
 					</div>
-				</div>
+				</motion.div>
 			</section>
 		</>
 	);

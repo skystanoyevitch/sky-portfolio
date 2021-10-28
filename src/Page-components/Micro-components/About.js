@@ -1,8 +1,30 @@
+import { motion } from "framer-motion";
 import React from "react";
+import { useInView } from "react-intersection-observer";
 
+const aboutSectionVariant = {
+	initial: {
+		opacity: 0,
+	},
+	animate: {
+		opacity: 1,
+		transition: {
+			duration: 1,
+		},
+	},
+};
 function About() {
+	const { ref, inView } = useInView({
+		triggerOnce: true,
+	});
 	return (
-		<div className="container mx-auto max-w-xs py-20 md:max-w-lg lg:max-w-none xl:p-0 lg:flex lg:p-24 xl:flex lg:items-center xl:py-44 lg:justify-evenly xl:h-2/3 space-y-20 xl:space-y-0">
+		<motion.section
+			ref={ref}
+			variants={aboutSectionVariant}
+			initial="initial"
+			animate={inView ? "animate" : "initial"}
+			className="container mx-auto max-w-xs py-20 md:max-w-lg lg:max-w-none xl:p-0 lg:flex lg:p-24 xl:flex lg:items-center xl:py-44 lg:justify-evenly xl:h-2/3 space-y-20 xl:space-y-0"
+		>
 			<div className="xl:max-w-2xl xl:p-10 lg:flex-1">
 				<h2 className="text-primary font-anton text-3xl md:text-4xl lg:text-5xl lg:pb-8">
 					Who Am i?
@@ -35,13 +57,13 @@ function About() {
 			</div>
 			<div className="xl:max-w-3xl w-full xl:pl-52 lg:flex-1">
 				<div
-					className="w-full bg-profileImage bg-cover bg-no-repeat bg-center rounded-lg"
+					className="w-full bg-profileImage bg-cover bg-no-repeat bg-center rounded-full shadow-lg border-2 border-primary border-dotted"
 					style={{
 						height: "30rem",
 					}}
 				></div>
 			</div>
-		</div>
+		</motion.section>
 	);
 }
 

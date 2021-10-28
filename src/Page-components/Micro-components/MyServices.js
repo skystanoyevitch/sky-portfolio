@@ -1,13 +1,35 @@
 import React from "react";
 import { MdAddBusiness, MdOutlineDesignServices } from "react-icons/md";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const textVariant = {
+	initial: {
+		opacity: 0,
+	},
+	animate: {
+		opacity: 1,
+		transition: {
+			duration: 1,
+		},
+	},
+};
 
 const MyServices = () => {
+	const { ref, inView } = useInView({
+		triggerOnce: true,
+	});
 	// const scrollYProgress = useViewportScroll();
 	return (
 		<>
 			<section className="relative w-full xl:h-2/4 bg-primary">
-				<div className="text-secondary p-8 md:px-16 lg:p-0">
+				<motion.div
+					ref={ref}
+					variants={textVariant}
+					initial="initial"
+					animate={inView ? "animate" : "initial"}
+					className="text-secondary p-8 md:px-16 lg:p-0"
+				>
 					<div className="mx-auto">
 						<h1 className="text-center font-anton tracking-widest text-4xl md:text-5xl xl:p-8 lg:p-6">
 							MY SERVICES
@@ -17,14 +39,9 @@ const MyServices = () => {
 								<div className="flex justify-center">
 									<MdOutlineDesignServices size={70} />
 								</div>
-								<motion.h2
-									initial={{ opacity: 0 }}
-									animate={{ opacity: 1 }}
-									transition={{ delay: 1.0, duration: 3 }}
-									className="pb-8 font-robotoThin font-semibold lg:tracking-widest text-3xl lg:text-4xl xl:text-5xl xl:pb-8"
-								>
+								<h2 className="pb-8 font-robotoThin font-semibold lg:tracking-widest text-3xl lg:text-4xl xl:text-5xl xl:pb-8">
 									Design
-								</motion.h2>
+								</h2>
 								<p className="md:max-w-lg lg:pt-4 xl:p-0 tracking-wider text-lg md:text-xl xl:text-2xl font-robotoThin leading-relaxed">
 									When Designing and Developing Websites for
 									my Clients.. My goals are simple, make them{" "}
@@ -84,7 +101,7 @@ const MyServices = () => {
 							</div>
 						</div>
 					</div>
-				</div>
+				</motion.div>
 			</section>
 		</>
 	);
