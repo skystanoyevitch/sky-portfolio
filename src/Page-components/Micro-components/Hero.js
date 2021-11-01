@@ -1,20 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { motion, useViewportScroll } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+// import { useInView } from "react-intersection-observer";
 
 const buttonVarant = {
 	hover: {
 		scale: 1.2,
 		boxShadow: "5px 5px 0 rgba(0, 0, 0, 0.2)",
-		transition: {
-			yoyo: Infinity,
-		},
 	},
 };
 function Hero() {
 	// const { ref, inView, entry } = useInView();
-
 	// const { scrollYProgress } = useViewportScroll();
 	return (
 		<div className="h-2/4">

@@ -15,6 +15,13 @@ const contactVariant = {
 	},
 };
 
+const buttonVarant = {
+	hover: {
+		scale: 1.2,
+		boxShadow: "5px 5px 0 rgba(0, 0, 0, 0.2)",
+	},
+};
+
 const MainContact = () => {
 	const { ref, inView } = useInView({
 		triggerOnce: true,
@@ -42,12 +49,14 @@ const MainContact = () => {
 						</p>
 
 						<Link to="/Contact">
-							<button
-								className="xl:w-48 py-1 px-2 lg:px-4 lg:py-2 font-semibold text-md xl:text-2xl rounded-lg"
+							<motion.button
+								variants={buttonVarant}
+								whileHover="hover"
+								className="py-1 px-2 lg:px-4 lg:py-2 font-semibold text-md xl:text-xl xl:w-30 rounded-lg"
 								style={{ background: "#B02E0C" }}
 							>
 								LETS DO THIS
-							</button>
+							</motion.button>
 						</Link>
 					</div>
 				</motion.div>

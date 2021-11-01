@@ -25,20 +25,12 @@ module.exports = {
 				132: "33rem",
 				144: "36rem",
 			},
-			kleyframes: {
-				"fade-in-down": {
-					"0%": {
-						opacity: "0",
-						transform: "translateY(-10px)",
-					},
-					"100%": {
-						opacity: "1",
-						transform: "translateY(0)",
-					},
-				},
-			},
-			animation: {
-				"fade-in-down": "fade-in-down 0.5s ease-out",
+			width: {
+				108: "27rem",
+				120: "30rem",
+				132: "33rem",
+				144: "36rem",
+				156: "39rem",
 			},
 		},
 		divideColor: (theme) => ({
