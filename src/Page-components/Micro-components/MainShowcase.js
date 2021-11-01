@@ -32,13 +32,13 @@ const MainShowcase = () => {
 						SHOWCASE
 					</h1>
 
-					<div className="container mx-auto flex flex-col pb-10 space-y-16 md:max-w-l lg:max-w-none xl:space-y-0 w-full px-8 md:px-0 lg:p-24 xl:px-0 xl:py-14 xl:flex xl:flex-row xl:justify-evenly xl:place-items-center">
+					<div className="container mx-auto flex flex-col pb-10 space-y-16 md:max-w-l lg:max-w-none xl:space-y-0 w-full px-10 md:px-16 xl:px-0 lg:p-24 xl:py-14 xl:flex xl:flex-row xl:justify-evenly xl:place-items-center">
 						<a
 							href="https://rolypolie.github.io/skystanoyevitch/"
 							target="_blank"
 							rel="noreferrer"
 						>
-							<div className="w-full xl:w-144 h-36 md:h-80 xl:h-96 bg-this-is-sky bg-cover bg-no-repeat shadow-md rounded-xl"></div>
+							<div className="w-full xl:w-144 h-44 md:h-96 lg:h-108 bg-this-is-sky bg-cover bg-no-repeat shadow-md rounded-xl"></div>
 						</a>
 
 						<a
@@ -46,10 +46,10 @@ const MainShowcase = () => {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<div className="w-full xl:w-144 h-36 md:h-80 xl:h-96 bg-skyCafe bg-cover bg-no-repeat shadow-md rounded-xl"></div>
+							<div className="w-full xl:w-144 h-44 md:h-80 lg:h-108 bg-skyCafe bg-cover bg-no-repeat shadow-md rounded-xl"></div>
 						</a>
 
-						<div className="w-full xl:w-144 h-36 md:h-80 xl:h-96 bg-comingSoon bg-cover bg-no-repeat shadow-md rounded-xl"></div>
+						<div className="w-full xl:w-144 h-44 md:h-80 lg:h-108 bg-comingSoon bg-cover bg-no-repeat shadow-md rounded-xl"></div>
 					</div>
 				</motion.div>
 			</section>
