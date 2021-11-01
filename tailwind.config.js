@@ -9,12 +9,10 @@ module.exports = {
 				anton: ['"Anton"', "sans-serif"],
 			},
 			backgroundImage: (theme) => ({
-				profileImage: "url('./images/profilephoto3.webp')",
-				skyCafe: "url('./images/skycafe.webp')",
-				"this-is-sky": "url('./images/projectsky.webp')",
-				oceanBg: "url('./images/ocean_sd.jpg')",
-				heroImage: "url('./images/hero-carlsbad.jpg')",
-				comingSoon: "url('./images/comingsoon.webp')",
+				profileImage: "url('./images/sky2.png')",
+				skyCafe: "url('./images/project2snap.png')",
+				"this-is-sky": "url('./images/project1snap.png')",
+				comingSoon: "url('./images/comingsoonsnap.jpg')",
 			}),
 			spacing: {
 				72: "18rem",
