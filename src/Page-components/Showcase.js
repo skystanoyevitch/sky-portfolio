@@ -63,7 +63,7 @@ function Showcase() {
 						</a>
 					</div>
 
-					<div className="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 lg:gap-10 pt-10 lg:pt-24 xl:pt-40 lg:justify-center lg:items-center">
+					<div className="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 lg:gap-10 pt-10 lg:pt-24 lg:justify-center lg:items-center">
 						<div>
 							<h3 className="font-anton text-3xl xl:text-5xl mb-6">
 								Cafe Lounge

@@ -38,7 +38,7 @@ const MainShowcase = () => {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<div className="w-full xl:w-144 h-44 md:h-96 lg:h-108 bg-this-is-sky bg-cover bg-center bg-no-repeat shadow-md rounded-xl border border-primary"></div>
+							<div className="w-full xl:w-144 h-44 md:h-96 lg:h-108 bg-this-is-sky bg-cover bg-center bg-no-repeat rounded-xl"></div>
 						</a>
 
 						<a
@@ -46,10 +46,10 @@ const MainShowcase = () => {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<div className="w-full xl:w-144 h-44 md:h-80 lg:h-108 bg-skyCafe bg-cover bg-no-repeat shadow-md rounded-xl border border-primary"></div>
+							<div className="w-full xl:w-144 h-44 md:h-80 lg:h-108 bg-skyCafe bg-cover bg-no-repeat rounded-xl"></div>
 						</a>
 
-						<div className="w-full xl:w-144 h-44 md:h-80 lg:h-108 bg-comingSoon bg-cover bg-no-repeat shadow-md rounded-xl border border-primary"></div>
+						<div className="w-full xl:w-144 h-44 md:h-80 lg:h-108 bg-comingSoon bg-cover bg-no-repeat rounded-xl"></div>
 					</div>
 				</motion.div>
 			</section>
