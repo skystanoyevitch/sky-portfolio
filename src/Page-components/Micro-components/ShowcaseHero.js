@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { wrap } from "@popmotion/popcorn";
@@ -30,9 +30,22 @@ const ShowcaseHero = () => {
 
 	const quotesIndex = wrap(0, quotes.length, page);
 
-	const paginate = (newDirection) => {
-		setPage([page + newDirection, newDirection]);
-	};
+	useEffect(() => {
+		const paginate = (newDirection) => {
+			setPage([page + newDirection, newDirection]);
+		};
+		setInterval(() => {
+			console.log(paginate);
+			return paginate(1)
+		}, 8000);
+		return () => {
+			clearInterval();
+		};
+	}, [page, direction]);
+
+	// const paginate = (newDirection) => {
+	// 	setPage([page + newDirection, newDirection]);
+	// };
 
 	//TODO: Add Slider Component to slide between every quote every 3 seconds.
 	return (
@@ -62,7 +75,7 @@ const ShowcaseHero = () => {
 					</div>
 				</section>
 			</AnimatePresence>
-			<div className="text-center container mx-auto">
+			{/* <div className="text-center container mx-auto">
 				<button
 					className="w-24 h-9 bg-gray-200"
 					onClick={() => paginate(1)}
@@ -75,7 +88,7 @@ const ShowcaseHero = () => {
 				>
 					Next
 				</button>
-			</div>
+			</div> */}
 		</>
 	);
 };
