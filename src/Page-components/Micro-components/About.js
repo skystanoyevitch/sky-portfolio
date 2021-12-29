@@ -41,7 +41,7 @@ function About() {
 			</div>
 			<div className="flex justify-center xl:max-w-3xl xl:pl-52 lg:flex-1">
 				<div
-					className="bg-profileImage bg-cover bg-no-repeat bg-center rounded-full shadow-lg border-2 w-60 h-60 md:w-80 md:h-80 xl:w-120 xl:h-120"
+					className="bg-profileImage bg-cover bg-no-repeat bg-center rounded-full w-60 h-60 md:w-80 md:h-80 xl:w-120 xl:h-120"
 				></div>
 			</div>
 		</motion.section>

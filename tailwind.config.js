@@ -9,7 +9,7 @@ module.exports = {
 				anton: ['"Anton"', "sans-serif"],
 			},
 			backgroundImage: (theme) => ({
-				profileImage: "url('./images/sky2.png')",
+				profileImage: "url('./images/bighead.svg')",
 				skyCafe: "url('./images/project2snap.png')",
 				"this-is-sky": "url('./images/project1snap.png')",
 				comingSoon: "url('./images/comingsoonsnap.jpg')",

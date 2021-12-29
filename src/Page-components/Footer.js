@@ -1,6 +1,5 @@
 import React from "react";
 import { RiInstagramFill } from "react-icons/ri";
-import { SiDevdotto } from "react-icons/si";
 import { FaTwitterSquare } from "react-icons/fa";
 import { AiTwotoneMail } from "react-icons/ai";
 import Emoji from "../assets/heart-emoji";
@@ -18,13 +17,6 @@ const Footer = () => {
 			>
 				<div className="flex flex-col p-4 w-full h-full justify-center">
 					<div className="flex space-x-4 lg:space-x-9 items-center justify-center">
-						<a
-							href="https://dev.to/rolypolie"
-							target="_blank"
-							rel="noreferrer"
-						>
-							<SiDevdotto size={50} />
-						</a>
 						<a
 							href="https://www.instagram.com/spacebars_and_tabs/"
 							rel="noreferrer"

@@ -4,14 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
 	return (
-		<div
-			id="nav-text"
-			className={`hidden md:visible md:shadow-md md:h-24 lg:h-16 xl:h-24 w-screen md:flex md:items-center absolute ${
-				window.location.pathname === "/Contact"
-					? "text-primary"
-					: "text-secondary"
-			}`}
-		>
+		<div className="hidden md:visible md:fixed md:shadow-md md:h-24 lg:h-16 xl:h-24 w-screen md:flex md:items-center absolute text-white bg-primary z-10">
 			<nav className="md:flex md:justify-center flex-1">
 				<ul className="flex xl:text-xl p-x tracking-wide">
 					<li className={"m-10 p-3"}>
