@@ -10,8 +10,8 @@ module.exports = {
 			},
 			backgroundImage: (theme) => ({
 				profileImage: "url('./images/bighead.svg')",
-				skyCafe: "url('./images/project2snap.png')",
-				"this-is-sky": "url('./images/project1snap.png')",
+				skyCafe: "url('./images/project2snap(1).png')",
+				"this-is-sky": "url('./images/project1snap(1).png')",
 				comingSoon: "url('./images/comingsoonsnap.jpg')",
 			}),
 			spacing: {

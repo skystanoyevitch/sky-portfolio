@@ -40,63 +40,62 @@ const MyServices = () => {
 									<MdOutlineDesignServices size={70} />
 								</div>
 								<h2 className="pb-8 font-robotoThin font-semibold lg:tracking-widest text-3xl lg:text-4xl xl:text-5xl xl:pb-8">
-									Design
+									UI Design
 								</h2>
 								<p className="md:max-w-lg lg:pt-4 xl:p-0 tracking-wider text-lg md:text-xl xl:text-2xl font-robotoThin leading-relaxed">
-									When Designing and Developing Websites for
-									my Clients.. My goals are simple, make them{" "}
+									When Designing Websites for my Clients.. My
+									goals are simple, make them{" "}
 									<span
 										className="font-sans font-bold italic"
 										style={{ color: "#F8DD74" }}
 									>
-										Blazing Fast
+										Responsive
 									</span>
 									,{" "}
 									<span
 										className="font-sans font-bold italic"
 										style={{ color: "#85FFC7" }}
 									>
-										Fluidily Responsive
+										Practical
 									</span>{" "}
 									and{" "}
 									<span
 										className="font-sans font-bold italic"
 										style={{ color: "#DAC4F7" }}
 									>
-										Absolutely Beautiful
+										Beautiful
 									</span>{" "}
 									all while making sure that each website is
-									built and made to be on all Devices, from
-									Mobile Devices to Desktop Computers.
+									Designed to be on all Devices, from Mobile
+									Devices to Desktop Computers.
 								</p>
 							</div>
-							<div className="xl:max-w-3xl pt-10 xl:pt-0 xl:pl-24">
+							<div className="xl:max-w-3xl pt-10 xl:pt-0 pb-0 xl:pb-0 xl:pl-24">
 								<div className="flex justify-center">
 									<MdAddBusiness size={70} />
 								</div>
 								<h2 className="pb-8 font-robotoThin font-semibold lg:tracking-widest text-3xl lg:text-4xl xl:text-5xl xl:pb-8">
-									E-Commerce
+									UX Design
 								</h2>
-								<p className="md:max-w-lg lg:pt-4 xl:pt-0 tracking-wider text-lg md:text-xl xl:text-2xl font-robotoThin leading-relaxed">
-									Using the Two Biggest Ecommerce platforms in
-									the industry,{" "}
+								<p className="md:max-w-lg lg:pt-4 xl:p-0 tracking-wider text-lg md:text-xl xl:text-2xl font-robotoThin leading-relaxed">
+									Using UX Principles i help build{" "}
 									<span
 										className="font-sans font-bold"
 										style={{ color: "#00B899" }}
 									>
-										Shopify
+										Experiences
 									</span>{" "}
 									and{" "}
 									<span
 										className="font-sans font-bold"
 										style={{ color: "#00A7F5" }}
 									>
-										WordPress
-									</span>
-									..I Transform Businesses and Brands into a
-									Website that will last and be Realiable
-									helping them to focus on what matters most,
-									business.
+										Products
+									</span>{" "}
+									that bring the users to the forefront of my
+									goal and your goal so that you can focus on
+									what matters most, building a brand and
+									business that matters.
 								</p>
 							</div>
 						</div>
