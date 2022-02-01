@@ -42,7 +42,7 @@ function Contact() {
 						Let me help <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-700">YOU!</span>
 					</div>
 					<p className="text-md md:text-2xl xl:text-3xl font-robotoThin tracking-wider leading-relaxed pt-10 px-8">
-						If you are looking to have a Website or App built,
+						If you are looking to have a Website or App Designed,
 						please include those details and i will get back to you
 						shortly to discuss further about it. I love talking to
 						people, and value communication with my Clients, so

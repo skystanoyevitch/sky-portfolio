@@ -42,7 +42,7 @@ const MainContact = () => {
 						</h1>
 
 						<p className="font-robotoThin tracking-wide text-xl lg:text-2xl xl:text-3xl my-10 lg:my-14">
-							Need a Website Built? Want to Colaborate? or just
+							Need a Website Designed? Want to Colaborate? or just
 							want to say hi, please don't hesitate to contact me
 							using the link Below.. I look Forward to hearing
 							from you.
