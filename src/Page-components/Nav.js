@@ -4,13 +4,13 @@ import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
 	return (
-		<div className="md:flex">
+		<div className="bg-secondary md:flex md:flex-col md:">
 			<nav className="container mx-auto hidden md:visible md:flex md:justify-center flex-1">
-				<ul className="flex p-x font-poppins font-light lg:text-xl xl:text-2xl text-black place-items-center">
-					<li className={"mb-10 p-3"}>
+				<ul className="md:p-10 md:space-x-16 flex p-x font-poppins font-light lg:text-xl xl:text-2xl text-black place-items-center">
+					<li className={""}>
 						<Link to="/">Home</Link>
 					</li>
-					<li className={"mb-10 md:mx-12 lg:mx-24 p-3"}>
+					<li className={""}>
 						<NavLink
 							to="/Showcase"
 							activeStyle={{
@@ -21,8 +21,8 @@ const Nav = () => {
 							About
 						</NavLink>
 					</li>
-					<li className={"mb-10 p-3"}>
-						<button className="p-3">
+					<li className={""}>
+						<button className="">
 							<NavLink
 								to="/Contact"
 								activeStyle={{

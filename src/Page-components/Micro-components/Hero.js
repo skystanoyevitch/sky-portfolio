@@ -13,17 +13,17 @@ function Hero() {
 	// const { ref, inView, entry } = useInView();
 	// const { scrollYProgress } = useViewportScroll();
 	return (
-		<div className="grid place-items-center xl:h-3/4 p-10 xl:p-0 lg:mt-24">
+		<div className="grid place-items-center xl:h-3/4 p-10 xl:p-0 md:mt-24">
 			<div className="container mx-auto">
-				<div className="static mx-auto w-32 h-40 md:w-48 md:h-56 lg:w-80 lg:h-96 border-2 border-black">
-					<div className="relative right-2 bottom-2 lg:right-4 lg:bottom-4 mx-auto w-32 h-40 md:w-48 md:h-56 lg:w-80 lg:h-96 bg-profileImage bg-cover bg-center bg-no-repeat"></div>
+				<div className="static mx-auto w-48 h-64 md:w-48 md:h-56 lg:w-80 lg:h-96 border-2 border-black">
+					<div className="relative right-2 bottom-2 lg:right-4 lg:bottom-4 mx-auto w-48 h-64 md:w-48 md:h-56 lg:w-80 lg:h-96 bg-profileImage bg-cover bg-center bg-no-repeat"></div>
 				</div>
 
 				<div className="text-center mt-10 lg:flex lg:flex-col lg:items-center">
 					<p className="font-poppins font-light">
 						UI | UX Designer
 					</p>
-					<h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl lg:font-poppins font-bold text-mainOrange">
+					<h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-playFair font-semibold text-mainOrange">
 						Sky Stanojevic
 					</h1>
 					<p className="mt-10 font-poppins font-light text-xl leading-7 lg:text-3xl lg:leading-10 text-gray-600 lg:max-w-3xl xl:max-w-4xl lg:tracking-wide">

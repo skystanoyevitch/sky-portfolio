@@ -4,10 +4,8 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				rockSalt: ['"Rock Salt"', "cursive"],
-				robotoThin: ['"Roboto"', "sans-serif"],
-				anton: ['"Anton"', "sans-serif"],
 				poppins: ['"Poppins"', "sans-serif"],
+				playFair: ['"Playfair Display"', "serif"],
 			},
 			backgroundImage: (theme) => ({
 				profileImage: "url('./images/mainpicsky.jpg')",
