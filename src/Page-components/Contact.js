@@ -35,7 +35,7 @@ function Contact() {
 
 	return (
 		<div className="w-screen h-screen">
-			<Nav />
+			{/* <Nav /> */}
 			<div className="container mx-auto md:h-full flex flex-col justify-around px-4 py-14 md:py-0 md:grid md:grid-cols-2 md:justify-items-center md:items-center lg:py-32 lg:px-10">
 				<div className="text-center md:text-left">
 					<div className="font-anton text-2xl md:text-4xl xl:text-7xl tracking-wide px-8">

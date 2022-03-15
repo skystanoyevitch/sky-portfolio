@@ -6,34 +6,29 @@ const Nav = () => {
 	return (
 		<div className="bg-secondary md:flex md:flex-col md:">
 			<nav className="container mx-auto hidden md:visible md:flex md:justify-center flex-1">
-				<ul className="md:p-10 md:space-x-16 flex p-x font-poppins font-light lg:text-xl xl:text-2xl text-black place-items-center">
-					<li className={""}>
+				<ul className="md:p-10 md:space-x-16 lg:space-x-32 flex p-x font-poppins font-light lg:text-xl xl:text-2xl text-black place-items-center">
+					<li className={"lg:px-4"}>
 						<Link to="/">Home</Link>
 					</li>
+					<li className={""} id="portfolio" >
+						<Link to="/">Portfolio</Link>
+					</li>
 					<li className={""}>
-						<NavLink
-							to="/Showcase"
-							activeStyle={{
-								color: "#FF5722",
-								fontWeight: "bold",
-							}}
-						>
-							About
+						<NavLink to="#" activeStyle={{}}>
+							Experimental
 						</NavLink>
 					</li>
 					<li className={""}>
-						<button className="">
-							<NavLink
-								to="/Contact"
-								activeStyle={{
-									backgroundColor: "#FF5722",
-									color: "white",
-								}}
-								className="border-solid border-2 border-black md:py-1 md:px-4 lg:py-1 lg:px-8"
-							>
-								Contact
-							</NavLink>
-						</button>
+						<NavLink
+							to="/Contact"
+							activeStyle={{
+								backgroundColor: "#FF5722",
+								color: "white",
+							}}
+							className="border-solid border-2 border-black lg:py-1 lg:px-4"
+						>
+							Contact
+						</NavLink>
 					</li>
 				</ul>
 			</nav>

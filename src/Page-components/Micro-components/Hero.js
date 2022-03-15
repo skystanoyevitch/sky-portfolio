@@ -23,7 +23,7 @@ function Hero() {
 					<p className="font-poppins font-light">
 						UI | UX Designer
 					</p>
-					<h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-playFair font-semibold text-mainOrange">
+					<h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-playFair font-semibold text-mainOrange">
 						Sky Stanojevic
 					</h1>
 					<p className="mt-10 font-poppins font-light text-xl leading-7 lg:text-3xl lg:leading-10 text-gray-600 lg:max-w-3xl xl:max-w-4xl lg:tracking-wide">
