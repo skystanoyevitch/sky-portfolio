@@ -37,8 +37,8 @@ function About() {
 				</ul>
 
 				<div className="grid lg:grid-cols-2 gap-x-9 gap-y-9">
-					<div className="border-2 border-black h-96"></div>
-					<div className="border-2 border-black h-96"></div>
+					<div className="h-96 bg-skyCafe bg-cover bg-no-repeat"></div>
+					<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat h-96"></div>
 					<div className="border-2 border-black h-96"></div>
 					<div className="border-2 border-black h-96"></div>
 					<div className="border-2 border-black h-96"></div>
