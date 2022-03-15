@@ -43,10 +43,6 @@ const ShowcaseHero = () => {
 		};
 	}, [page, direction]);
 
-	// const paginate = (newDirection) => {
-	// 	setPage([page + newDirection, newDirection]);
-	// };
-
 	//TODO: Add Slider Component to slide between every quote every 3 seconds.
 	return (
 		<>
@@ -75,20 +71,7 @@ const ShowcaseHero = () => {
 					</div>
 				</section>
 			</AnimatePresence>
-			{/* <div className="text-center container mx-auto">
-				<button
-					className="w-24 h-9 bg-gray-200"
-					onClick={() => paginate(1)}
-				>
-					Prev
-				</button>
-				<button
-					className="w-24 h-9 bg-gray-200"
-					onClick={() => paginate(-1)}
-				>
-					Next
-				</button>
-			</div> */}
+
 		</>
 	);
 };

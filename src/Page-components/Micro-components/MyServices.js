@@ -30,7 +30,7 @@ const MyServices = () => {
 					animate={inView ? "animate" : "initial"}
 					className="text-secondary p-8 md:px-16 lg:p-0"
 				>
-					<div className="mx-auto">
+					{/* <div className="mx-auto">
 						<h1 className="text-center font-anton tracking-widest text-4xl md:text-5xl xl:p-8 lg:p-6">
 							MY SERVICES
 						</h1>
@@ -99,7 +99,7 @@ const MyServices = () => {
 								</p>
 							</div>
 						</div>
-					</div>
+					</div> */}
 				</motion.div>
 			</section>
 		</>

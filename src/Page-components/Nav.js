@@ -4,30 +4,44 @@ import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
 	return (
-		<div className="hidden md:visible md:fixed md:shadow-md md:h-24 lg:h-16 xl:h-24 w-screen md:flex md:items-center absolute text-white bg-primary z-10">
-			<nav className="md:flex md:justify-center flex-1">
-				<ul className="flex xl:text-xl p-x tracking-wide">
-					<li className={"m-10 p-3"}>
-						<Link to="/">HOME</Link>
+		<div className="md:flex">
+			<nav className="container mx-auto hidden md:visible md:flex md:justify-center flex-1">
+				<ul className="flex p-x font-poppins font-light lg:text-xl xl:text-2xl text-black place-items-center">
+					<li className={"mb-10 p-3"}>
+						<Link to="/">Home</Link>
 					</li>
-					<li className={"m-10 p-3"}>
+					<li className={"mb-10 md:mx-12 lg:mx-24 p-3"}>
 						<NavLink
 							to="/Showcase"
-							activeStyle={{ color: "orange" }}
+							activeStyle={{
+								color: "#FF5722",
+								fontWeight: "bold",
+							}}
 						>
-							SHOWCASE
+							About
 						</NavLink>
 					</li>
-					<li className={"m-10 p-3"}>
-						<NavLink
-							to="/Contact"
-							activeStyle={{ color: "orange" }}
-						>
-							CONTACT
-						</NavLink>
+					<li className={"mb-10 p-3"}>
+						<button className="p-3">
+							<NavLink
+								to="/Contact"
+								activeStyle={{
+									backgroundColor: "#FF5722",
+									color: "white",
+								}}
+								className="border-solid border-2 border-black md:py-1 md:px-4 lg:py-1 lg:px-8"
+							>
+								Contact
+							</NavLink>
+						</button>
 					</li>
 				</ul>
 			</nav>
+			<div className="container mx-auto flex flex-col items-end p-6 md:hidden space-y-2">
+				<div className="w-8 h-0.5 bg-gray-600"></div>
+				<div className="w-8 h-0.5 bg-gray-600"></div>
+				<div className="w-8 h-0.5 bg-gray-600"></div>
+			</div>
 		</div>
 	);
 };

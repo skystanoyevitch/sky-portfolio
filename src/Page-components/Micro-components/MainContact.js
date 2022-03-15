@@ -28,7 +28,7 @@ const MainContact = () => {
 	});
 	return (
 		<>
-			<section className="w-full xl:h-2/5 bg-primary">
+			<section className="w-full xl:h-2/5">
 				<motion.div
 					ref={ref}
 					variants={contactVariant}
@@ -36,12 +36,12 @@ const MainContact = () => {
 					animate={inView ? "animate" : "initial"}
 					className="w-full h-full"
 				>
-					<div className="container mx-auto lg:max-w-xl xl:max-w-4xl h-full p-8 lg:p-16 xl:p-0 text-center text-secondary flex flex-col items-center justify-center">
-						<h1 className="font-anton text-4xl lg:text-5xl xl:text-7xl">
-							Let's Work Together!
+					<div className="container mx-auto mb-24 lg:max-w-3xl xl:max-w-4xl  p-8 lg:p-16 xl:p-0 text-center flex flex-col items-center justify-center">
+						<h1 className="font-poppins font-light text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+							Let's Work Together
 						</h1>
 
-						<p className="font-robotoThin tracking-wide text-xl lg:text-2xl xl:text-3xl my-10 lg:my-14">
+						<p className="font-poppins font-light leading-7 md:leading-9 lg:leading-10 text-xl lg:text-2xl xl:text-3xl my-10 lg:my-14 text-gray-600 lg:tracking-wide">
 							Need a Website Designed? Want to Colaborate? or just
 							want to say hi, please don't hesitate to contact me
 							using the link Below.. I look Forward to hearing
@@ -52,10 +52,9 @@ const MainContact = () => {
 							<motion.button
 								variants={buttonVarant}
 								whileHover="hover"
-								className="py-1 px-2 lg:px-4 lg:py-2 font-semibold text-md xl:text-xl xl:w-30 rounded-lg"
-								style={{ background: "#B02E0C" }}
+								className="py-1 px-8 font-poppins text-md xl:text-2xl xl:w-30 border-2 border-black lg:py-2 lg:px-8"
 							>
-								LETS DO THIS
+								Get In Touch
 							</motion.button>
 						</Link>
 					</div>

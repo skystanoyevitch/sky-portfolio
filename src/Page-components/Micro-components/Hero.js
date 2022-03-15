@@ -6,39 +6,44 @@ import { motion } from "framer-motion";
 const buttonVarant = {
 	hover: {
 		scale: 1.2,
-		boxShadow: "5px 5px 0 rgba(0, 0, 0, 0.2)",
+		boxShadow: "5px 5px 0 rgba(255, 87, 34, 0.2)",
 	},
 };
 function Hero() {
 	// const { ref, inView, entry } = useInView();
 	// const { scrollYProgress } = useViewportScroll();
 	return (
-		<div className="h-2/4">
-			<div className="bg-cover bg-primary h-full">
-				<div className="w-full h-full flex place-items-center justify-center">
-					<div className="flex flex-col text-secondary text-center">
-						<h1 className="text-7xl md:text-7xl xl:text-9xl font-anton xl:tracking-wider">
-							WELCOME
-						</h1>
-						<p
-							className="text-xl md:text-xl xl:text-2xl"
-							style={{
-								textShadow: "-2px 2px 6px rgba(0, 0, 0, 0.31)",
-							}}
+		<div className="grid place-items-center xl:h-3/4 p-10 xl:p-0 lg:mt-24">
+			<div className="container mx-auto">
+				<div className="static mx-auto w-32 h-40 md:w-48 md:h-56 lg:w-80 lg:h-96 border-2 border-black">
+					<div className="relative right-2 bottom-2 lg:right-4 lg:bottom-4 mx-auto w-32 h-40 md:w-48 md:h-56 lg:w-80 lg:h-96 bg-profileImage bg-cover bg-center bg-no-repeat"></div>
+				</div>
+
+				<div className="text-center mt-10 lg:flex lg:flex-col lg:items-center">
+					<p className="font-poppins font-light">
+						UI | UX Designer
+					</p>
+					<h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl lg:font-poppins font-bold text-mainOrange">
+						Sky Stanojevic
+					</h1>
+					<p className="mt-10 font-poppins font-light text-xl leading-7 lg:text-3xl lg:leading-10 text-gray-600 lg:max-w-3xl xl:max-w-4xl lg:tracking-wide">
+						I am an experienced UI/UX Designer living in the sunny
+						side of San Diego, CA.
+						<br/> 
+						If you are looking for a Website
+						for Personal Branding or a Website for your Company, i
+						Build Designs that Brings both you and your users
+						together
+					</p>
+					<Link to="/Showcase">
+						<motion.button
+							variants={buttonVarant}
+							whileHover="hover"
+							className="py-1 px-8 font-poppins text-md xl:text-2xl xl:w-30 border-2 border-black lg:py-2 lg:px-8 mt-8 xl:mt-10"
 						>
-							to my Personal Website
-						</p>
-						<Link to="/Showcase">
-							<motion.button
-								variants={buttonVarant}
-								whileHover="hover"
-								className="py-1 px-2 lg:px-4 lg:py-2 font-semibold text-md xl:text-xl xl:w-30 mt-4 xl:mt-6 rounded-lg"
-								style={{ background: "#B02E0C" }}
-							>
-								SEE MY WORK
-							</motion.button>
-						</Link>
-					</div>
+							Hire Me
+						</motion.button>
+					</Link>
 				</div>
 			</div>
 		</div>

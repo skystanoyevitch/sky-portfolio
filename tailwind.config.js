@@ -7,9 +7,10 @@ module.exports = {
 				rockSalt: ['"Rock Salt"', "cursive"],
 				robotoThin: ['"Roboto"', "sans-serif"],
 				anton: ['"Anton"', "sans-serif"],
+				poppins: ['"Poppins"', "sans-serif"],
 			},
 			backgroundImage: (theme) => ({
-				profileImage: "url('./images/bighead.svg')",
+				profileImage: "url('./images/mainpicsky.jpg')",
 				skyCafe: "url('./images/project2snap(1).png')",
 				"this-is-sky": "url('./images/project1snap(1).png')",
 				comingSoon: "url('./images/comingsoonsnap.jpg')",
@@ -44,11 +45,13 @@ module.exports = {
 		}),
 		textColor: (theme) => ({
 			...theme("colors"),
+			mainOrange: "#FF5722",
 			primary: "#114B5F",
 			secondary: "#E8F1F2",
 			paragraph: "#4A5255",
 		}),
 		borderColor: (theme) => ({
+			...theme("colors"),
 			DEFAULT: theme("colors.gray.300", "currentColor"),
 			primary: "#114B5F",
 		}),

@@ -5,24 +5,24 @@ export const FooterNav = () => {
 	return (
 		<>
 			<nav>
-				<ul className="flex lg:tracking-widest font-bold">
-					<li className="m-6 lg:p-3 font-robotoThin">
-						<NavLink to="/">HOME</NavLink>
+				<ul className="flex font-poppins font-light">
+					<li className="m-6 lg:p-3">
+						<NavLink to="/">Home</NavLink>
 					</li>
-					<li className="m-6 lg:p-3 font-robotoThin">
+					<li className="m-6 lg:p-3">
 						<NavLink
 							to="/Showcase"
 							activeStyle={{ color: "orange" }}
 						>
-							SHOWCASE
+							Showcase
 						</NavLink>
 					</li>
-					<li className="m-6 lg:p-3 font-robotoThin">
+					<li className="m-6 lg:p-3">
 						<NavLink
 							to="/Contact"
 							activeStyle={{ color: "orange" }}
 						>
-							CONTACT
+							Contact
 						</NavLink>
 					</li>
 				</ul>
