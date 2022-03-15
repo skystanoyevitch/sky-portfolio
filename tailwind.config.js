@@ -38,6 +38,7 @@ module.exports = {
 		}),
 		backgroundColor: (theme) => ({
 			...theme("colors"),
+			mainOrange: "#FF5722",
 			secondary: "#E8F1F2",
 			primary: "#114B5F",
 		}),

@@ -25,7 +25,7 @@ const Nav = () => {
 								backgroundColor: "#FF5722",
 								color: "white",
 							}}
-							className="border-solid border-2 border-black lg:py-1 lg:px-4"
+							className="border-solid border-2 border-black md:py-1 md:px-4"
 						>
 							Contact
 						</NavLink>
