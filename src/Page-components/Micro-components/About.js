@@ -37,7 +37,7 @@ function About() {
 			className="container mx-auto max-w-xs py-20 md:max-w-lg xl:p-0 xl:flex lg:max-w-5xl lg:flex lg:p-24 lg:items-center xl:py-44 lg:justify-evenly space-y-20 xl:space-y-0"
 		>
 			<div className="container mx-auto">
-				<h1 className="text-center font-playFair font-regular text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-12 xl:mb-32">
+				<h1 className="text-center font-playFair font-regular text-5xl lg:text-6xl xl:text-7xl mb-12 xl:mb-32">
 					Portfolio
 				</h1>
 				<ul className="hidden md:visible md:flex justify-evenly max-w-2xl xl:max-w-none md:my-12 lg:my-20 font-poppins font-light lg:text-xl">
@@ -79,8 +79,8 @@ function About() {
 					</li>
 				</ul>
 
-				<div className="grid lg:grid-cols-3 lg:grid-row-2 gap-x-2 gap-y-3">
-					<div className="col-span-2 h-96 bg-skyCafe bg-cover bg-no-repeat"></div>
+				<div className="grid grid-cols-1 grid-rows-2 gap-y-2 lg:grid lg:grid-cols-3 lg:grid-row-2 lg:gap-x-2 lg:gap-y-3">
+					<div className="lg:col-span-2 h-96 bg-skyCafe bg-cover bg-no-repeat"></div>
 					<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat h-full"></div>
 					<div className="border-2 border-black h-96"></div>
 					<div className="border-2 border-black h-96"></div>

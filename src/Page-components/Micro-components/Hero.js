@@ -18,12 +18,12 @@ function Hero() {
 				{/* <div className="static mx-auto w-48 h-64 md:w-48 md:h-56 lg:w-80 lg:h-80 border-2 border-black rounded-full">
 				</div> */}
 				<div className="border-8 border-buttonBG right-2 bottom-2 lg:right-4 lg:bottom-4 mx-auto w-48 h-64 md:w-48 md:h-56 lg:w-80 lg:h-80 bg-profileImage rounded-full bg-cover bg-center bg-no-repeat"></div>
-				<div className="text-center mt-10 lg:flex lg:flex-col lg:items-center">
+				<div className="md:text-center mt-10 lg:flex lg:flex-col lg:items-center">
 					<p className="font-poppins font-light">UI | UX Designer</p>
-					<h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-playFair font-semibold text-mainOrange">
+					<h1 className="text-6xl xl:text-8xl font-playFair font-semibold text-mainOrange">
 						Sky Stanojevic
 					</h1>
-					<p className="mt-10 font-poppins font-light text-xl leading-7 lg:text-3xl lg:leading-10 text-gray-500 lg:max-w-3xl xl:max-w-7xl">
+					<p className="mt-10 font-poppins font-light text-xl leading-7 lg:text-3xl lg:leading-10 text-gray-500 md:max-w-2xl lg:max-w-3xl xl:max-w-7xl">
 						I am an experienced UI/UX Designer living in the sunny
 						side of San Diego, CA.
 						<br />
@@ -32,7 +32,7 @@ function Hero() {
 						Brings both you and your users together
 					</p>
 				</div>
-				<div className="flex flex-col md:flex-row md:justify-center text-center xl:space-x-10 md:space-x-6 md:space-x-4">
+				<div className="text-left flex flex-col md:flex-row md:justify-center xl:space-x-10 md:space-x-6 md:space-x-4">
 					<Link to="/Contact">
 						<motion.button
 							variants={buttonVarant}
