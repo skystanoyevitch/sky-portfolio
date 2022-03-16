@@ -36,22 +36,19 @@ function Contact() {
 	return (
 		<div className="">
 			{/* <Nav /> */}
-			<div className="container mx-auto md:h-full flex flex-col justify-around px-8 py-14 md:py-0 md:items-center md:my-24 md:px-20 lg:px-32 xl:my-0">
-				<div className="text-center xl:mb-20">
-					<h1 className="font-playFair text-4xl xl:text-7xl px-8 lg:px-0">
+			<div className="container mx-auto md:h-full flex flex-col justify-around xl:justify-center xl:gap-32 px-8 py-14 md:py-0 md:items-center md:my-24 md:px-20 lg:px-32 xl:my-0 xl:h-screen">
+				<div className="text-center">
+					<h1 className="font-playFair text-5xl md:text-6xl xl:text-8xl px-8 lg:px-0">
 						Let's Work Together
 					</h1>
-					<p className="text-gray-500 text-lg md:text-2xl xl:text-2xl font-poppins font-light text-gray-00 leading-loose pt-8 lg:pt-10">
+					<p className="text-gray-500 text-lg md:text-2xl xl:text-2xl font-poppins font-light text-gray-00 leading-loose pt-8 lg:pt-10 xl:max-w-5xl">
 						If you are looking to have a Website or App Designed,
 						please include those details and i will get back to you
 						shortly to discuss further about it.
-						<br />I love talking to people, and value communication
-						with my Clients, so please don't hesitate to contact me
-						using the form.
 					</p>
 				</div>
 
-				<div className="pt-10 text-center md:text-left">
+				<div className="pt-10 xl:pt-0 text-center md:text-left md:w-1/2">
 					<form
 						onSubmit={handleSubmit(onSubmit)}
 						id="contactForm"
@@ -78,7 +75,7 @@ function Contact() {
 									maxLength: 15,
 								})}
 								type="text"
-								className="p-4 bg-secondary rounded-md"
+								className="p-4 bg-secondaryBtn rounded-md w-full"
 								name="first_name"
 								placeholder="First Name"
 							/>
@@ -91,7 +88,7 @@ function Contact() {
 										message: "Last Name is Required",
 									},
 								})}
-								className="p-4 bg-secondary rounded-md"
+								className="p-4 bg-secondaryBtn rounded-md w-full"
 								name="last_name"
 								placeholder="Last Name"
 							/>
@@ -106,7 +103,7 @@ function Contact() {
 										message: "Email is Required",
 									},
 								})}
-								className="p-4 bg-secondary rounded-md"
+								className="p-4 bg-secondaryBtn rounded-md"
 								name="email"
 								placeholder="Email"
 							/>
@@ -114,13 +111,13 @@ function Contact() {
 							<input
 								type="text"
 								{...register("subject", { maxLength: 15 })}
-								className="p-4 bg-secondary rounded-md"
+								className="p-4 bg-secondaryBtn rounded-md"
 								name="subject"
 								placeholder="Subject"
 							/>
 
 							<textarea
-								className="h-24 p-4 bg-secondary rounded-md"
+								className="h-24 p-4 bg-secondaryBtn rounded-md"
 								type="text"
 								{...register("message", {
 									required: {

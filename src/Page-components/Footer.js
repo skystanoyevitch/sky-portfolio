@@ -9,7 +9,7 @@ const Footer = () => {
 	return (
 		<>
 			<footer
-				className={"bg-secondary relative p-4 md:p-6 lg:p-8 xl:h-68"}
+				className={"bg-primaryNav relative p-4 md:p-6 lg:p-8 xl:h-68"}
 			>
 				<div className="flex flex-col p-4 w-full h-full justify-center">
 					<div className="flex space-x-4 lg:space-x-9 items-center justify-center">

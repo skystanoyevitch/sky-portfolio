@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
 	return (
-		<div className="bg-secondary md:flex md:flex-col md:">
+		<div className="bg-primaryNav md:flex md:flex-col md:">
 			<nav className="container mx-auto hidden md:visible md:flex md:justify-center flex-1">
 				<ul className="md:p-10 md:space-x-16 lg:space-x-32 flex p-x font-poppins font-light lg:text-xl xl:text-2xl text-black place-items-center">
 					<li className={"lg:px-4"}>
@@ -25,7 +25,7 @@ const Nav = () => {
 								backgroundColor: "#FF5722",
 								color: "white",
 							}}
-							className="border-solid border-2 border-black md:py-1 md:px-4"
+							className="border-solid md:py-3 md:px-8 rounded-full bg-body"
 						>
 							Contact
 						</NavLink>

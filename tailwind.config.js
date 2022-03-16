@@ -39,8 +39,10 @@ module.exports = {
 		backgroundColor: (theme) => ({
 			...theme("colors"),
 			mainOrange: "#FF5722",
-			secondary: "#E8F1F2",
-			primary: "#114B5F",
+			secondaryBtn: "#E8F1F2",
+			primaryBtn: "#233D4D",
+			body: "#FFFBFC",
+			primaryNav: "#E8F1F2",
 		}),
 		textColor: (theme) => ({
 			...theme("colors"),
@@ -51,6 +53,7 @@ module.exports = {
 		}),
 		borderColor: (theme) => ({
 			...theme("colors"),
+			buttonBG: "#FFC0AD",
 			DEFAULT: theme("colors.gray.300", "currentColor"),
 			primary: "#114B5F",
 		}),

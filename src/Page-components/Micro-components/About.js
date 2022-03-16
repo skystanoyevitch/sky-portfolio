@@ -13,6 +13,17 @@ const aboutSectionVariant = {
 		},
 	},
 };
+
+const buttonVarant = {
+	hover: {
+		backgroundColor: "#233D4D",
+		color: "white",
+		transition: {
+			duration: 0.1,
+		},
+	},
+};
+
 function About() {
 	const { ref, inView } = useInView({
 		triggerOnce: true,
@@ -29,16 +40,48 @@ function About() {
 				<h1 className="text-center font-playFair font-regular text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-12 xl:mb-32">
 					Portfolio
 				</h1>
-				<ul className="hidden md:visible lg:mx-auto md:flex justify-evenly max-w-2xl md:my-12 lg:my-20 font-poppins font-light lg:text-xl">
-					<li>All Projects</li>
-					<li>Design</li>
-					<li>Development</li>
-					<li>For Fun</li>
+				<ul className="hidden md:visible md:flex justify-evenly max-w-2xl xl:max-w-none md:my-12 lg:my-20 font-poppins font-light lg:text-xl">
+					<li>
+						<motion.button
+							variants={buttonVarant}
+							whileHover="hover"
+							className="lg:py-3 lg:px-8 rounded-full bg-primaryBtn text-white "
+						>
+							All Projects
+						</motion.button>
+					</li>
+					<li>
+						<motion.button
+							variants={buttonVarant}
+							whileHover="hover"
+							className="lg:py-3 lg:px-8 rounded-full bg-secondaryBtn"
+						>
+							Design
+						</motion.button>
+					</li>
+					<li>
+						<motion.button
+							variants={buttonVarant}
+							whileHover="hover"
+							className="lg:py-3 lg:px-8 rounded-full bg-secondaryBtn"
+						>
+							Development
+						</motion.button>
+					</li>
+					<li>
+						<motion.button
+							variants={buttonVarant}
+							whileHover="hover"
+							className="lg:py-3 lg:px-8 rounded-full bg-secondaryBtn"
+						>
+							For Fun
+						</motion.button>
+					</li>
 				</ul>
 
-				<div className="grid lg:grid-cols-2 gap-x-9 gap-y-9">
-					<div className="h-96 bg-skyCafe bg-cover bg-no-repeat"></div>
-					<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat h-96"></div>
+				<div className="grid lg:grid-cols-3 lg:grid-row-2 gap-x-2 gap-y-3">
+					<div className="col-span-2 h-96 bg-skyCafe bg-cover bg-no-repeat"></div>
+					<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat h-full"></div>
 					<div className="border-2 border-black h-96"></div>
 					<div className="border-2 border-black h-96"></div>
 					<div className="border-2 border-black h-96"></div>
