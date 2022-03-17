@@ -9,7 +9,7 @@ import MainContact from "./Micro-components/MainContact";
 
 const MainContent = () => {
 	return (
-		<div id="main-page" className="h-screen bg-body">
+		<div id="main-page" className="h-screen">
 			<Hero />
 			<About />
 			{/* <MyServices /> */}
