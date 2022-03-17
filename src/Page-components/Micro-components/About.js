@@ -40,12 +40,12 @@ function About() {
 				<h1 className="text-center font-playFair font-regular text-5xl lg:text-6xl xl:text-7xl mb-12 xl:mb-32">
 					Portfolio
 				</h1>
-				<ul className="hidden md:visible md:flex justify-evenly max-w-2xl xl:max-w-none md:my-12 lg:my-20 font-poppins font-light lg:text-xl">
+				<ul className="hidden md:visible md:flex justify-evenly md:mx-auto lg: max-w-2xl xl:max-w-none md:my-12 lg:my-20 font-poppins font-light lg:text-xl">
 					<li>
 						<motion.button
 							variants={buttonVarant}
 							whileHover="hover"
-							className="lg:py-3 lg:px-8 rounded-full bg-primaryBtn text-white "
+							className="md:py-1 md:px-4 lg:py-2 lg:px-6 xl:py-3 xl:px-8 rounded-full bg-primaryBtn text-white "
 						>
 							All Projects
 						</motion.button>
@@ -54,7 +54,7 @@ function About() {
 						<motion.button
 							variants={buttonVarant}
 							whileHover="hover"
-							className="lg:py-3 lg:px-8 rounded-full bg-secondaryBtn"
+							className="md:py-1 md:px-4 lg:py-2 lg:px-6 rounded-full bg-secondaryBtn"
 						>
 							Design
 						</motion.button>
@@ -63,7 +63,7 @@ function About() {
 						<motion.button
 							variants={buttonVarant}
 							whileHover="hover"
-							className="lg:py-3 lg:px-8 rounded-full bg-secondaryBtn"
+							className="md:py-1 md:px-4 lg:py-2 lg:px-6 rounded-full bg-secondaryBtn"
 						>
 							Development
 						</motion.button>
@@ -72,7 +72,7 @@ function About() {
 						<motion.button
 							variants={buttonVarant}
 							whileHover="hover"
-							className="lg:py-3 lg:px-8 rounded-full bg-secondaryBtn"
+							className="md:py-1 md:px-4 lg:py-2 lg:px-6 rounded-full bg-secondaryBtn"
 						>
 							For Fun
 						</motion.button>

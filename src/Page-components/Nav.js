@@ -2,29 +2,17 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { motion, useCycle } from "framer-motion";
-import HamMenu from "./Micro-components/HamMenu";
-import { useState } from "react";
+// import HamMenu from "./Micro-components/HamMenu";
+// import { useState } from "react";
 
 const menuVar = {
 	open: {
-		rotateX: 0,
-		y: 0,
-		transition: {
-			duration: 0.3,
-			mass: 0.8,
-			type: "spring",
-		},
 		display: "block",
+		y: 0,
 	},
 	closed: {
-		rotateX: -30,
-		y: -320,
-		transition: {
-			duration: 0.3,
-		},
-		transitionEnd: {
-			display: "none",
-		},
+		y: -500,
+		display: "none",
 	},
 };
 
@@ -74,7 +62,7 @@ const Nav = () => {
 					</li>
 				</ul>
 			</nav>
-			<div className="container mx-auto flex flex-col items-start">
+			<div className="md:hidden container mx-auto flex flex-col items-start">
 				<motion.button
 					initial={false}
 					onClick={setOpen}
@@ -99,13 +87,39 @@ const Nav = () => {
 				</motion.button>
 
 				{/* {open && } */}
-				<motion.div
+
+				<motion.nav
 					initial={false}
 					animate={open ? "open" : "closed"}
 					variants={menuVar}
 				>
-					<HamMenu />
-				</motion.div>
+					{/* <div className="bg-primaryNav"></div> */}
+					<ul className="font-poppins font-light flex flex-col text-3xl space-y-10 p-10">
+						<li className="">
+							<Link to="/">Home</Link>
+						</li>
+						<li id="portfolio">
+							<Link to="/">Portfolio</Link>
+						</li>
+						<li>
+							<NavLink to="#" activeStyle={{}}>
+								Experimental
+							</NavLink>
+						</li>
+						<li>
+							<NavLink
+								to="/Contact"
+								activeStyle={{
+									color: "#FF5722",
+									fontWeight: "bold",
+								}}
+								className=""
+							>
+								Contact
+							</NavLink>
+						</li>
+					</ul>
+				</motion.nav>
 
 				{/* {open && <HamMenu />} */}
 			</div>
