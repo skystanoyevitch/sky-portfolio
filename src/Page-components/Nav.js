@@ -67,7 +67,7 @@ const Nav = () => {
 					initial={false}
 					onClick={setOpen}
 					open={open}
-					className="p-10 md:hidden space-y-2"
+					className="px-10 py-5 md:hidden space-y-2"
 				>
 					<motion.div
 						animate={open ? "open" : "closed"}

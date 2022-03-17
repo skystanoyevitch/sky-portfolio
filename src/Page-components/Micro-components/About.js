@@ -79,13 +79,13 @@ function About() {
 					</li>
 				</ul>
 
-				<div className="grid grid-cols-1 grid-rows-2 gap-y-2 lg:grid lg:grid-cols-3 lg:grid-row-2 lg:gap-x-2 lg:gap-y-3">
+				<div className="grid grid-cols-1 grid-rows-4 gap-y-2 lg:grid lg:grid-cols-3 lg:grid-row-2 lg:gap-x-2 lg:gap-y-3">
 					<div className="lg:col-span-2 h-96 bg-skyCafe bg-cover bg-no-repeat"></div>
 					<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat h-full"></div>
-					<div className="border-2 border-black h-96"></div>
-					<div className="border-2 border-black h-96"></div>
-					<div className="border-2 border-black h-96"></div>
-					<div className="border-2 border-black h-96"></div>
+					<div className="lg:row-span-2 bg-cover bg-center bg-no-repeat h-full bg-placeholder1"></div>
+					<div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder2"></div>
+					<div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder3"></div>
+					<div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder4"></div>
 					<div className="border-2 border-black h-96"></div>
 					<div className="border-2 border-black h-96"></div>
 				</div>

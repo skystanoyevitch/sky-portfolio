@@ -13,11 +13,9 @@ function Hero() {
 	// const { ref, inView, entry } = useInView();
 	// const { scrollYProgress } = useViewportScroll();
 	return (
-		<div className="xl:h-3/4 p-10 xl:p-0 md:mt-24">
+		<div className="h-3/4 p-10 xl:p-0 md:mt-24">
 			<div className="container mx-auto">
-				{/* <div className="static mx-auto w-48 h-64 md:w-48 md:h-56 lg:w-80 lg:h-80 border-2 border-black rounded-full">
-				</div> */}
-				<div className="border-8 border-buttonBG right-2 bottom-2 lg:right-4 lg:bottom-4 mx-auto w-48 h-64 md:w-48 md:h-56 lg:w-80 lg:h-80 bg-profileImage rounded-full bg-cover bg-center bg-no-repeat"></div>
+				<div className="border-8 border-buttonBG right-2 bottom-2 xl:mt-32 mx-auto w-48 h-64 md:w-48 md:h-56 lg:w-80 lg:h-80 bg-profileImage rounded-full bg-cover bg-center bg-no-repeat"></div>
 				<div className="md:text-center mt-10 lg:flex lg:flex-col lg:items-center">
 					<p className="font-poppins font-light">UI | UX Designer</p>
 					<h1 className="text-6xl xl:text-8xl font-playFair font-semibold text-mainOrange">
@@ -37,7 +35,7 @@ function Hero() {
 						<motion.button
 							variants={buttonVarant}
 							whileHover="hover"
-							className="text-white py-1 px-8 font-poppins text-md xl:text-2xl xl:w-30 border border-gray-500 lg:py-3 lg:px-8 mt-8 xl:mt-10 rounded-full bg-primaryBtn"
+							className="text-white py-2 px-8 font-poppins text-md xl:text-2xl xl:w-30 border border-gray-500 lg:py-3 lg:px-8 mt-8 xl:mt-10 rounded-full bg-primaryBtn"
 						>
 							Resume
 						</motion.button>
@@ -46,7 +44,7 @@ function Hero() {
 						<motion.button
 							variants={buttonVarant}
 							whileHover="hover"
-							className="py-1 px-8 font-poppins text-md xl:text-2xl xl:w-30 border border-gray-500 lg:py-3 lg:px-8 mt-8 xl:mt-10 rounded-full"
+							className="py-2 px-8 font-poppins text-md xl:text-2xl xl:w-30 border border-gray-500 lg:py-3 lg:px-8 mt-8 xl:mt-10 rounded-full"
 						>
 							Hire Me
 						</motion.button>
