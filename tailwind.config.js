@@ -11,7 +11,10 @@ module.exports = {
 				profileImage: "url('./images/mainpicsky.jpg')",
 				skyCafe: "url('./images/project2snap(1).png')",
 				"this-is-sky": "url('./images/project1snap(1).png')",
-				comingSoon: "url('./images/comingsoonsnap.jpg')",
+				placeholder1: "url('./images/placeholder1.jpg')",
+				placeholder2: "url('./images/placeholder2.jpg')",
+				placeholder3: "url('./images/placeholder3.jpg')",
+				placeholder4: "url('./images/placeholder4.jpg')",
 			}),
 			spacing: {
 				72: "18rem",
