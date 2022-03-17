@@ -13,7 +13,7 @@ function Hero() {
 	// const { ref, inView, entry } = useInView();
 	// const { scrollYProgress } = useViewportScroll();
 	return (
-		<div className="h-3/4 p-10 xl:p-0 md:mt-24">
+		<div className=" p-10 xl:p-0 md:mt-24">
 			<div className="container mx-auto">
 				<div className="border-8 border-buttonBG right-2 bottom-2 xl:mt-32 mx-auto w-48 h-64 md:w-48 md:h-56 lg:w-80 lg:h-80 bg-profileImage rounded-full bg-cover bg-center bg-no-repeat"></div>
 				<div className="md:text-center mt-10 lg:flex lg:flex-col lg:items-center">
