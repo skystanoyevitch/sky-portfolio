@@ -56,6 +56,7 @@ module.exports = {
 		}),
 		borderColor: (theme) => ({
 			...theme("colors"),
+			btnOrange: "#FF5722",
 			buttonBG: "#FFC0AD",
 			DEFAULT: theme("colors.gray.300", "currentColor"),
 			primary: "#114B5F",

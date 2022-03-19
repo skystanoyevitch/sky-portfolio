@@ -2,6 +2,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { motion, useCycle } from "framer-motion";
+import { useState } from "react";
 // import HamMenu from "./Micro-components/HamMenu";
 // import { useState } from "react";
 
@@ -31,10 +32,23 @@ const hamClosed = {
 };
 
 const Nav = () => {
+	const [navbar, setNavbar] = useState(false);
 	const [open, setOpen] = useCycle(false, true);
+
+	const navbarOnScroll = () => {
+		if (window.scrollY >= 100) {
+			setNavbar(true);
+			console.log("true");
+		} else {
+			setNavbar(false);
+		}
+	};
+
+	// window.addEventListener('scroll', navbarOnScroll);
 	return (
 		// Desktop Navigation Menu //
-		<div className="bg-primaryNav md:flex md:flex-col md:">
+
+		<div className={"bg-primaryNav md:flex md:flex-col"}>
 			<nav className="container mx-auto hidden md:visible md:flex md:justify-center flex-1">
 				<ul className="md:p-10 md:space-x-16 lg:space-x-32 flex p-x font-poppins font-light lg:text-xl xl:text-2xl text-black place-items-center">
 					<li className={"lg:px-4"}>
@@ -55,7 +69,7 @@ const Nav = () => {
 								backgroundColor: "#FF5722",
 								color: "white",
 							}}
-							className="border-solid md:py-3 md:px-8 rounded-full bg-body"
+							className="hover:bg-mainOrange hover:text-white active:text-white border-solid md:py-3 md:px-8 rounded-full bg-body"
 						>
 							Contact
 						</NavLink>
