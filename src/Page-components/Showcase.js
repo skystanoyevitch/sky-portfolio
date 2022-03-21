@@ -55,7 +55,7 @@ function Showcase() {
 								rel="noreferrer"
 								className=""
 							>
-								<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full"></div>
+								<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full rounded-md"></div>
 							</a>
 						</div>
 						<div>
@@ -70,7 +70,7 @@ function Showcase() {
 								rel="noreferrer"
 								className=""
 							>
-								<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full"></div>
+								<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full rounded-md"></div>
 							</a>
 						</div>
 						<div>
@@ -85,7 +85,7 @@ function Showcase() {
 								rel="noreferrer"
 								className=""
 							>
-								<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full"></div>
+								<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full rounded-md"></div>
 							</a>
 						</div>
 					</div>
