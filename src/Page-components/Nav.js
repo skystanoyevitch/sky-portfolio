@@ -68,6 +68,7 @@ const Nav = () => {
 							activeStyle={{
 								backgroundColor: "#FF5722",
 								color: "white",
+								fontWeight: "bold",
 							}}
 							className="hover:bg-mainOrange hover:text-white active:text-white border-solid md:py-3 md:px-8 rounded-full bg-body"
 						>

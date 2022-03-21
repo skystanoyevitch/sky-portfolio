@@ -7,20 +7,31 @@ export const FooterNav = () => {
 			<nav>
 				<ul className="flex font-poppins font-light">
 					<li className="m-6 lg:p-3">
-						<NavLink to="/">Home</NavLink>
+						<NavLink
+							to="/"
+							activeStyle={{
+								color: "#FF5722",
+								fontWeight: "bold",
+							}}
+						>
+							Home
+						</NavLink>
 					</li>
 					<li className="m-6 lg:p-3">
 						<NavLink
 							to="/Showcase"
 							activeStyle={{ color: "orange" }}
 						>
-							Showcase
+							Portfolio
 						</NavLink>
 					</li>
 					<li className="m-6 lg:p-3">
 						<NavLink
 							to="/Contact"
-							activeStyle={{ color: "orange" }}
+							activeStyle={{
+								color: "#FF5722",
+								fontWeight: "bold",
+							}}
 						>
 							Contact
 						</NavLink>
