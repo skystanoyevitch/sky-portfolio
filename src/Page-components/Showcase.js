@@ -70,8 +70,7 @@ function Showcase() {
 								rel="noreferrer"
 								className=""
 							>
-								<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full">
-								</div>
+								<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full"></div>
 							</a>
 						</div>
 						<div>
@@ -98,9 +97,3 @@ function Showcase() {
 }
 
 export default Showcase;
-
-{
-	/* <li className="pb-4">Responsive</li>
-								<li className="pb-4">Mobile First</li>
-								<li className="">Minimalistic Design</li> */
-}
