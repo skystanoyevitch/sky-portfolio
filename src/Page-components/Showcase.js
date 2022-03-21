@@ -30,25 +30,25 @@ function Showcase() {
 					variants={page2Variant}
 					initial="initial"
 					animate={inView ? "animate" : "initial"}
-					className="container mx-auto md:max-w-2xl lg:max-w-screen-2xl p-8 md:p-16 lg:p-24 xl:my-24"
+					className="container mx-auto md:max-w-2xl lg:max-w-screen-2xl py-10 px-8 xl:p-0 md:my-12 xl:my-24"
 				>
-					<h3 className=" text-center font-playFair text-3xl xl:text-7xl xl:mb-6">
+					<h3 className="md:text-center font-playFair text-6xl mb-6 md:text-7xl xl:text-8xl md:mb-6">
 						Project{" "}
 						<span className="text-mainOrange font-bold">One</span>
 					</h3>
-					<p className="text-center font-poppins font-light text-gray-600 xl:text-2xl xl:tracking-wide leading-loose md:pb-16 xl:pb-32 xl:px-40">
+					<p className="md:text-center font-poppins font-light text-xl leading-7 text-gray-500 xl:text-2xl xl:tracking-wide xl:leading-9 md:mt-4 md:px-10 md:pb-16 xl:pb-32 xl:px-40">
 						This was my Original Design for a Portfolio styled app
 						that was Designed using the Bulma CSS framework and
 						JavaScript, this concept was to create a mobile friendly
 						website that was fast and simple.
 					</p>
-					<div className="xl:flex xl:flex-col xl:items-center text-center">
+					<div className="flex flex-col items-center mt-24 md:mt-0 md:text-center">
 						<div>
-							<h2 className="font-poppins font-bold text-2xl xl:pb-8">
+							<h2 className="font-poppins font-light text-2xl pb-4 text-gray-700">
 								Minimal Design
 							</h2>
 						</div>
-						<div className="w-3/4 h-120">
+						<div className="w-full xl:w-3/4 h-120">
 							<a
 								href="https://rolypolie.github.io/skystanoyevitch/"
 								target="_blank"
@@ -59,11 +59,11 @@ function Showcase() {
 							</a>
 						</div>
 						<div>
-							<h2 className="font-poppins font-bold text-2xl xl:pb-8 xl:mt-24">
+							<h2 className="font-poppins font-light text-gray-700 text-2xl pb-4 mt-24">
 								Smooth Animations
 							</h2>
 						</div>
-						<div className="w-3/4 h-120">
+						<div className="w-full xl:w-3/4 h-120">
 							<a
 								href="https://rolypolie.github.io/skystanoyevitch/"
 								target="_blank"
@@ -75,11 +75,11 @@ function Showcase() {
 							</a>
 						</div>
 						<div>
-							<h2 className="font-poppins font-bold text-2xl xl:pb-8 xl:mt-24">
+							<h2 className="font-poppins font-light text-gray-700 text-2xl pb-4 mt-24">
 								Responsive
 							</h2>
 						</div>
-						<div className="w-3/4 h-120">
+						<div className="w-full xl:w-3/4 h-120">
 							<a
 								href="https://rolypolie.github.io/skystanoyevitch/"
 								target="_blank"
