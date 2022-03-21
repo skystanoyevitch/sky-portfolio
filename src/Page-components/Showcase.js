@@ -24,7 +24,7 @@ function Showcase() {
 	return (
 		<div className="">
 			{/* <ShowcaseHero /> */}
-			<div className="">
+			<div className="bg">
 				<motion.div
 					ref={ref}
 					variants={page2Variant}
