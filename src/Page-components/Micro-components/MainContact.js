@@ -28,7 +28,7 @@ const MainContact = () => {
 	});
 	return (
 		<>
-			<section className="w-full xl:h-2/5">
+			<section className="w-full xl:h-2/5 md:mb-24">
 				<motion.div
 					ref={ref}
 					variants={contactVariant}
