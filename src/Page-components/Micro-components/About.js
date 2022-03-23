@@ -90,10 +90,10 @@ function About() {
 					</li>
 				</ul>
 
-				<div className="grid grid-cols-1 grid-rows-4 gap-y-2 lg:grid lg:grid-cols-3 lg:grid-row-2 lg:gap-x-2 lg:gap-y-3">
-					<div className="lg:col-span-2 h-96 bg-skyCafe bg-cover bg-no-repeat rounded-md"></div>
+				<div className="grid grid-cols-1 grid-rows-3 gap-y-2 lg:grid lg:grid-cols-3 lg:grid-row-2 lg:gap-x-1 lg:gap-y-1">
+					<div className="h-96 bg-skyCafe bg-cover bg-no-repeat rounded-md"></div>
 					<NavLink to={"/Showcase"} className="group">
-						<div className="group-hover:scale-y-50 relative bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full rounded-md">
+						<div className="group-hover:scale-y-50 relative bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full">
 							<div className="bg-opacity-0 group-hover:bg-opacity-80 bg-black w-full h-full">
 								<div className="text-opacity-0 group-hover:text-opacity-100 absolute top-1/2 w-full h-full text-white text-center font-poppins font-extrabold text-4xl">
 									Project One
@@ -101,10 +101,10 @@ function About() {
 							</div>
 						</div>
 					</NavLink>
-					<div className="lg:row-span-2 bg-cover bg-center bg-no-repeat h-full bg-placeholder1 rounded-md"></div>
-					<div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder2 rounded-md"></div>
-					<div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder3 rounded-md"></div>
-					<div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder4 rounded-md"></div>
+					<div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder1"></div>
+					<div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder2"></div>
+					<div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder3"></div>
+					<div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder4"></div>
 					{/* <div className="border-2 border-black h-96"></div>
 					<div className="border-2 border-black h-96"></div> */}
 				</div>
