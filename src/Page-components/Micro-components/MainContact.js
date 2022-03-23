@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
+import HandShake from "../../icons/HandShake";
 
 const contactVariant = {
 	initial: {
@@ -40,12 +41,14 @@ const MainContact = () => {
 							Let's Work Together
 						</h1>
 
-						<p className="font-poppins font-light leading-7 md:leading-9 lg:leading-10 text-xl lg:text-2xl xl:text-3xl my-10 lg:my-14 text-gray-600 lg:tracking-wide">
+						<p className="font-poppins font-light leading-7 md:leading-9 lg:leading-10 text-xl lg:text-2xl xl:text-3xl my-10 lg:mt-10 text-gray-600 lg:tracking-wide">
 							Need a Website Designed? Want to Colaborate? or just
 							want to say hi, please don't hesitate to contact me
 							using the link Below.. I look Forward to hearing
 							from you.
 						</p>
+
+						<HandShake />
 
 						<Link to="/Contact">
 							<motion.button
@@ -55,7 +58,7 @@ const MainContact = () => {
 										"5px 5px 0 rgba(255, 192, 173, 0.8)",
 								}}
 								whileHover="hover"
-								className="py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 border border-black lg:px-8 rounded-full"
+								className="py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 border border-black lg:px-8 rounded-full mt-6"
 							>
 								Get In Touch
 							</motion.button>

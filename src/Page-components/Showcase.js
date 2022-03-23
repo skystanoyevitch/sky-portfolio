@@ -32,7 +32,7 @@ function Showcase() {
 					animate={inView ? "animate" : "initial"}
 					className="container mx-auto md:max-w-2xl lg:max-w-screen-2xl py-10 px-8 xl:p-0 md:my-12 xl:my-24"
 				>
-					<h3 className="md:text-center font-playFair text-6xl mb-6 md:text-7xl xl:text-8xl md:mb-6">
+					<h3 className="md:text-center font-playFair text-4xl mb-6 md:text-6xl xl:text-7xl md:mb-10">
 						Project{" "}
 						<span className="text-mainOrange font-bold">One</span>
 					</h3>
@@ -55,7 +55,7 @@ function Showcase() {
 								rel="noreferrer"
 								className=""
 							>
-								<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full rounded-md"></div>
+								<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full"></div>
 							</a>
 						</div>
 						<div>
@@ -70,7 +70,7 @@ function Showcase() {
 								rel="noreferrer"
 								className=""
 							>
-								<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full rounded-md"></div>
+								<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full"></div>
 							</a>
 						</div>
 						<div>
@@ -85,7 +85,7 @@ function Showcase() {
 								rel="noreferrer"
 								className=""
 							>
-								<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full rounded-md"></div>
+								<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full"></div>
 							</a>
 						</div>
 					</div>
