@@ -17,8 +17,7 @@ const contactVariant = {
 
 const buttonVarant = {
 	hover: {
-		scale: 1.2,
-		boxShadow: "5px 5px 0 rgba(255, 192, 173, 0.8)",
+		scale: 1.1,
 	},
 };
 
@@ -51,8 +50,12 @@ const MainContact = () => {
 						<Link to="/Contact">
 							<motion.button
 								variants={buttonVarant}
+								style={{
+									boxShadow:
+										"5px 5px 0 rgba(255, 192, 173, 0.8)",
+								}}
 								whileHover="hover"
-								className="py-1 px-8 font-poppins text-md xl:text-2xl xl:w-30 border-2 border-gray-500 lg:py-3 lg:px-8 rounded-full"
+								className="py-1 px-8 font-poppins text-md xl:text-xl xl:w-30 border border-black lg:py-3 lg:px-8 rounded-full"
 							>
 								Get In Touch
 							</motion.button>
