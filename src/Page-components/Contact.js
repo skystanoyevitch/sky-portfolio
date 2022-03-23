@@ -3,6 +3,7 @@ import React from "react";
 import Footer from "./Footer";
 import Nav from "./Nav";
 import { useForm } from "react-hook-form";
+import { motion } from "framer-motion";
 import { init, sendForm } from "emailjs-com";
 init("user_UjPKV0EnHoctjH33XHpvR");
 
@@ -133,13 +134,16 @@ function Contact() {
 							{/* <p style={{ color: "red" }}>{messagesLeft}</p> */}
 						</div>
 
-						<button
+						<motion.button
+							style={{
+								boxShadow: "5px 5px 0 rgba(255, 192, 173, 0.8)",
+							}}
 							type="submit"
 							value="submit"
-							className="text-white bg-mainOrange font-poppins py-2 px-8 text-xl font-light mt-4 mx-8 md:mx-0 rounded-full"
+							className="border border-black hover:bg-mainOrange hover:border-btnOrange hover:text-white font-poppins py-2 px-6 text-xl font-light mt-4 mx-8 md:mx-0 rounded-full"
 						>
 							Send
-						</button>
+						</motion.button>
 					</form>
 				</div>
 			</div>

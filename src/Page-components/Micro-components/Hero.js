@@ -17,7 +17,7 @@ function Hero() {
 			<div className="container mx-auto">
 				<div className="border-8 border-buttonBG right-2 bottom-2 xl:mt-32 mx-auto w-48 h-64 md:w-48 md:h-56 lg:w-80 lg:h-80 bg-profileImage rounded-full bg-cover bg-center bg-no-repeat"></div>
 				<div className="md:text-center mt-10 lg:flex lg:flex-col lg:items-center">
-					<p className="font-poppins font-light">UI | UX Designer</p>
+					<p className="font-poppins text-lg">UI | UX Designer</p>
 					<h1
 						className={`text-6xl xl:text-8xl font-playFair font-semibold text-mainOrange ${
 							window.scrollY > 100 && "text-2xl"
@@ -43,7 +43,7 @@ function Hero() {
 							}}
 							whileHover="hover"
 							whileTap={{ scale: 0.9 }}
-							className="border border-gray-500 py-2 px-8 font-poppins text-md xl:text-xl xl:w-30 lg:px-8 mt-8 xl:mt-10 rounded-full md:mr-4"
+							className="border border-gray-500 py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 rounded-full md:mr-4"
 						>
 							Resume
 						</motion.button>
@@ -56,7 +56,7 @@ function Hero() {
 							}}
 							whileHover="hover"
 							whileTap={{ scale: 0.9 }}
-							className="border-2 border-btnOrange bg-mainOrange text-white hover:rotate-3  py-2 px-8 font-poppins text-md xl:text-xl xl:w-30 lg:px-8 mt-8 xl:mt-10 rounded-full md:ml-4"
+							className="border-2 border-btnOrange bg-mainOrange text-white hover:rotate-3  py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 rounded-full md:ml-4"
 						>
 							Hire Me
 						</motion.button>

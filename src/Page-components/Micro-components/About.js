@@ -56,7 +56,7 @@ function About() {
 						<motion.button
 							variants={buttonVarant}
 							whileHover="hover"
-							className="md:py-1 md:px-4 lg:py-2 lg:px-6 xl:py-2 xl:px-8 rounded-full bg-primaryBtn text-white "
+							className="px-6 py-2 rounded-full bg-primaryBtn text-white "
 						>
 							All Projects
 						</motion.button>
@@ -65,7 +65,7 @@ function About() {
 						<motion.button
 							variants={buttonVarant}
 							whileHover="hover"
-							className="md:py-1 md:px-4 lg:py-2 lg:px-6 rounded-full border border-black"
+							className="px-6 py-2 rounded-full border border-black"
 						>
 							Design
 						</motion.button>
@@ -74,7 +74,7 @@ function About() {
 						<motion.button
 							variants={buttonVarant}
 							whileHover="hover"
-							className="md:py-1 md:px-4 lg:py-2 lg:px-6 rounded-full border border-black"
+							className="px-6 py-2 rounded-full border border-black"
 						>
 							Development
 						</motion.button>
@@ -83,7 +83,7 @@ function About() {
 						<motion.button
 							variants={buttonVarant}
 							whileHover="hover"
-							className="md:py-1 md:px-4 lg:py-2 lg:px-6 rounded-full border border-black"
+							className="px-6 py-2 rounded-full border border-black"
 						>
 							For Fun
 						</motion.button>
