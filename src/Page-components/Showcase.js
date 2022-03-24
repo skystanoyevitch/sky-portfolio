@@ -36,7 +36,7 @@ function Showcase() {
 						Project{" "}
 						<span className="text-mainOrange font-bold">One</span>
 					</h3>
-					<p className="md:text-center font-poppins font-light text-xl leading-7 text-gray-500 xl:text-2xl xl:tracking-wide xl:leading-9 md:mt-4 md:px-10 md:pb-16 xl:pb-32 xl:px-40">
+					<p className="md:text-center font-poppins text-xl leading-7 text-gray-700 xl:text-3xl xl:tracking-wide xl:leading-snug md:mt-4 md:px-10 md:pb-16 xl:pb-32 xl:px-40">
 						This was my Original Design for a Portfolio styled app
 						that was Designed using the Bulma CSS framework and
 						JavaScript, this concept was to create a mobile friendly

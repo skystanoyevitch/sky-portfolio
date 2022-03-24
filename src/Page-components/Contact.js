@@ -42,7 +42,7 @@ function Contact() {
 					<h1 className="font-playFair text-5xl md:text-6xl xl:text-8xl px-8 lg:px-0">
 						Contact
 					</h1>
-					<p className="text-gray-500 text-lg md:text-2xl xl:text-2xl font-poppins font-light text-gray-00 leading-loose pt-8 lg:pt-10 xl:max-w-5xl">
+					<p className="text-gray-500 text-lg md:text-2xl xl:text-3xl font-poppins font-light leading-loose pt-8 lg:pt-10 xl:max-w-5xl">
 						If you are looking to have a Website or App Designed,
 						please include those details and i will get back to you
 						shortly to discuss further about it.

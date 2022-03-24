@@ -25,7 +25,7 @@ function Hero() {
 					>
 						Sky Stanojevic
 					</h1>
-					<p className="mt-10 font-poppins font-light text-xl leading-7 lg:text-3xl lg:leading-10 text-gray-500  lg:max-w-3xl xl:max-w-7xl">
+					<p className="mt-10 font-poppins font-light text-xl leading-7 lg:text-3xl lg:leading-snug text-gray-700  lg:max-w-3xl xl:max-w-7xl">
 						I am an experienced UI/UX Designer living in the sunny
 						side of San Diego, CA.
 						<br />
