@@ -40,7 +40,7 @@ function Contact() {
 			<div className="container mx-auto md:h-full flex flex-col justify-around xl:justify-center xl:gap-32 px-8 py-14 md:py-0 md:items-center md:my-24 md:px-20 lg:px-32 xl:my-0 xl:h-screen">
 				<div className="text-center">
 					<h1 className="font-playFair text-5xl md:text-6xl xl:text-8xl px-8 lg:px-0">
-						Contact Me
+						Contact
 					</h1>
 					<p className="text-gray-500 text-lg md:text-2xl xl:text-2xl font-poppins font-light text-gray-00 leading-loose pt-8 lg:pt-10 xl:max-w-5xl">
 						If you are looking to have a Website or App Designed,
