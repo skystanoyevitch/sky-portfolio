@@ -49,10 +49,10 @@ module.exports = {
 		backgroundColor: (theme) => ({
 			...theme("colors"),
 			mainOrange: "#FF5722",
-			secondaryBtn: "#E8F1F2",
+			secondaryBtn: "#EDF1FF",
 			primaryBtn: "#233D4D",
 			body: "#FFFBFC",
-			primaryNav: "#E8F1F2",
+			primaryNav: "#EDF1FF",
 		}),
 		textColor: (theme) => ({
 			...theme("colors"),

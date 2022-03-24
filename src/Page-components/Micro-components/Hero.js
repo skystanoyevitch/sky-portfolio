@@ -25,13 +25,16 @@ function Hero() {
 					>
 						Sky Stanojevic
 					</h1>
-					<p className="mt-10 font-poppins font-light text-xl leading-7 lg:text-3xl lg:leading-snug text-gray-700  lg:max-w-3xl xl:max-w-7xl">
+					<p className="mt-10 font-poppins font-light text-xl leading-7 lg:text-3xl lg:leading-snug text-gray-700  lg:max-w-3xl xl:max-w-6xl">
 						I am an experienced UI/UX Designer living in the sunny
 						side of San Diego, CA.
 						<br />
-						If you are looking for a Website for Personal Branding
-						or a Website for your Company, i Build Designs that
-						Brings both you and your users together
+						If you are looking for a Website for{" "}
+						<span className="font-bold">Personal Branding, </span>
+						or for{" "}
+						<span className="font-bold">your Company</span>, I
+						build designs that Brings both you and your users
+						together
 					</p>
 				</div>
 				<div className="text-center flex flex-col md:flex-row md:justify-center">

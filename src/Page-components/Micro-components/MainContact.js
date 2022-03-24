@@ -41,7 +41,7 @@ const MainContact = () => {
 							Let's Work Together
 						</h1>
 
-						<p className="font-poppins font-light leading-7 md:leading-9 lg:leading-10 text-xl lg:text-2xl xl:text-3xl my-10 lg:mt-10 text-gray-600 lg:tracking-wide">
+						<p className="font-poppins leading-7 md:leading-9 lg:leading-snug text-xl lg:text-2xl xl:text-3xl my-10 lg:mt-10 text-gray-700 lg:tracking-wide">
 							Need a Website Designed? Want to Colaborate? or just
 							want to say hi, please don't hesitate to contact me
 							using the link Below.. I look Forward to hearing
