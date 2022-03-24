@@ -37,7 +37,7 @@ const MainContact = () => {
 					className="w-full h-full"
 				>
 					<div className="container mx-auto mb-24 lg:max-w-3xl xl:max-w-4xl  p-8 lg:p-16 xl:p-0 text-center flex flex-col items-center justify-center">
-						<h1 className="font-playFair font-normal text-5xl lg:text-5xl xl:text-6xl">
+						<h1 className="text-primary font-playFair font-normal text-5xl lg:text-5xl xl:text-6xl">
 							Let's Work Together
 						</h1>
 

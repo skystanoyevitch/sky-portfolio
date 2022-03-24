@@ -50,7 +50,7 @@ const Nav = () => {
 
 		<div className={"bg-primaryNav md:flex md:flex-col"}>
 			<nav className="container mx-auto hidden md:visible md:flex md:justify-center flex-1">
-				<ul className="md:p-10 md:space-x-16 lg:space-x-32 flex p-x font-poppins font-light lg:text-xl xl:text-2xl text-black place-items-center">
+				<ul className="md:p-10 md:space-x-16 lg:space-x-24 flex p-x font-poppins font-light lg:text-xl xl:text-2xl text-black place-items-center">
 					<li className={"lg:px-4"}>
 						<Link to="/">Home</Link>
 					</li>
