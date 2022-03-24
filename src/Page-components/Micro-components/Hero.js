@@ -34,7 +34,7 @@ function Hero() {
 						Brings both you and your users together
 					</p>
 				</div>
-				<div className="text-left flex flex-col md:flex-row md:justify-center">
+				<div className="text-center flex flex-col md:flex-row md:justify-center">
 					<Link to="/Contact">
 						<motion.button
 							variants={buttonVarant}
