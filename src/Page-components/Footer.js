@@ -3,7 +3,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaTwitterSquare } from "react-icons/fa";
 import { AiTwotoneMail } from "react-icons/ai";
 import Emoji from "../assets/heart-emoji";
-import { FooterNav } from "./Micro-components/FooterNav";
+import { FooterNav } from "./Macro-components/FooterNav";
 
 const Footer = () => {
 	return (
