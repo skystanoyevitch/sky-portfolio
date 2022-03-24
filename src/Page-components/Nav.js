@@ -30,27 +30,25 @@ const hamClosed = {
 	closed: { opacity: 1 },
 	open: { opacity: 0, duration: 0.1 },
 };
-
 const Nav = () => {
-	const [navbar, setNavbar] = useState(false);
+	// const [navbar, setNavbar] = useState(false);
 	const [open, setOpen] = useCycle(false, true);
 
-	const navbarOnScroll = () => {
-		if (window.scrollY >= 100) {
-			setNavbar(true);
-			console.log("true");
-		} else {
-			setNavbar(false);
-		}
-	};
+	// const navbarOnScroll = () => {
+	// 	if (window.scrollY >= 100) {
+	// 		setNavbar(true);
+	// 		console.log("true");
+	// 	} else {
+	// 		setNavbar(false);
+	// 	}
+	// };
 
 	// window.addEventListener('scroll', navbarOnScroll);
 	return (
-		// Desktop Navigation Menu //
-
+		// Desktop Navigation Top Menu
 		<div className={"bg-primaryNav md:flex md:flex-col"}>
 			<nav className="container mx-auto hidden md:visible md:flex md:justify-center flex-1">
-				<ul className="md:p-10 md:space-x-16 lg:space-x-24 flex p-x font-poppins font-light lg:text-xl xl:text-2xl text-black place-items-center">
+				<ul className="md:p-10 md:space-x-16 lg:space-x-24 flex p-x font-poppins lg:text-xl xl:text-2xl text-black place-items-center">
 					<li className={"lg:px-4"}>
 						<Link to="/">Home</Link>
 					</li>
@@ -76,6 +74,8 @@ const Nav = () => {
 					</li>
 				</ul>
 			</nav>
+
+			{/* Moible Navigation Hamburger Menu */}
 			<div className="md:hidden container mx-auto flex flex-col items-start">
 				<motion.button
 					initial={false}
@@ -109,18 +109,18 @@ const Nav = () => {
 				>
 					{/* <div className="bg-primaryNav"></div> */}
 					<ul className="font-poppins font-light flex flex-col text-3xl space-y-10 p-10">
-						<li className="">
+						<motion.li onClick={setOpen} open={open} className="">
 							<Link to="/">Home</Link>
-						</li>
-						<li id="portfolio">
+						</motion.li>
+						<motion.li onClick={setOpen} open={open} id="portfolio">
 							<Link to="/">Portfolio</Link>
-						</li>
-						<li>
+						</motion.li>
+						<motion.li onClick={setOpen} open={open}>
 							<NavLink to="#" activeStyle={{}}>
 								Experimental
 							</NavLink>
-						</li>
-						<li>
+						</motion.li>
+						<motion.li onClick={setOpen} open={open}>
 							<NavLink
 								to="/Contact"
 								activeStyle={{
@@ -131,7 +131,7 @@ const Nav = () => {
 							>
 								Contact
 							</NavLink>
-						</li>
+						</motion.li>
 					</ul>
 				</motion.nav>
 

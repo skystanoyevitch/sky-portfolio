@@ -90,7 +90,7 @@ function About() {
 					</li>
 				</ul>
 
-				<div className="grid grid-cols-1 grid-rows-2 gap-y-2 lg:grid lg:grid-cols-3 lg:grid-row-2 lg:gap-x-1 lg:gap-y-1">
+				<div className="grid grid-cols-1 grid-rows-4 lg:grid-rows-2 gap-y-2 lg:grid lg:grid-cols-3 lg:gap-x-1 lg:gap-y-1">
 					<div className="h-96 bg-skyCafe bg-cover bg-no-repeat rounded-md"></div>
 					<NavLink to={"/Showcase"} className="group">
 						<div className="group-hover:scale-y-50 relative bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full">
