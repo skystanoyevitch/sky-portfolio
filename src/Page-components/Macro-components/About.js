@@ -16,7 +16,7 @@ const aboutSectionVariant = {
 	},
 };
 
-const buttonVarant = {
+const buttonVariant = {
 	hover: {
 		backgroundColor: "#233D4D",
 		color: "white",
@@ -34,6 +34,16 @@ const divVariant = {
 	},
 	tap: { scale: 0.9 },
 };
+
+// const cardVariant = {
+// 	hover: {
+// 		zIndex: 1,
+// 		boxShadow: "8px 8px 0px #FF5722",
+// 		transition: {
+// 			duration: 0.3,
+// 		},
+// 	},
+// };
 
 function About() {
 	const { ref, inView } = useInView({
@@ -54,7 +64,7 @@ function About() {
 				<ul className="hidden md:visible md:flex justify-evenly md:mx-auto lg: max-w-2xl xl:max-w-none md:my-12 lg:my-20 font-poppins font-light lg:text-xl">
 					<li>
 						<motion.button
-							variants={buttonVarant}
+							variants={buttonVariant}
 							whileHover="hover"
 							className="px-6 py-2 rounded-full bg-primaryBtn text-white "
 						>
@@ -63,7 +73,7 @@ function About() {
 					</li>
 					<li>
 						<motion.button
-							variants={buttonVarant}
+							variants={buttonVariant}
 							whileHover="hover"
 							className="px-6 py-2 rounded-full border border-black"
 						>
@@ -72,7 +82,7 @@ function About() {
 					</li>
 					<li>
 						<motion.button
-							variants={buttonVarant}
+							variants={buttonVariant}
 							whileHover="hover"
 							className="px-6 py-2 rounded-full border border-black"
 						>
@@ -81,7 +91,7 @@ function About() {
 					</li>
 					<li>
 						<motion.button
-							variants={buttonVarant}
+							variants={buttonVariant}
 							whileHover="hover"
 							className="px-6 py-2 rounded-full border border-black"
 						>
@@ -91,11 +101,14 @@ function About() {
 				</ul>
 
 				<div className="grid grid-cols-1 grid-rows-4 lg:grid-rows-2 gap-y-2 lg:grid lg:grid-cols-3 lg:gap-x-1 lg:gap-y-1">
-					<div className="h-96 bg-skyCafe bg-cover bg-no-repeat rounded-md"></div>
+					<motion.div
+						whileHover="hover"
+						className="h-96 bg-skyCafe bg-cover bg-no-repeat"
+					></motion.div>
 					<NavLink to={"/Showcase"} className="group">
-						<div className="group-hover:scale-y-50 relative bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full">
+						<div className="relative bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full">
 							<div className="bg-opacity-0 group-hover:bg-opacity-80 bg-black w-full h-full">
-								<div className="text-opacity-0 group-hover:text-opacity-100 absolute top-1/2 w-full h-full text-white text-center font-poppins font-extrabold text-4xl">
+								<div className="text-opacity-0 group-hover:text-opacity-100 absolute top-1/2 w-full h-full text-white text-center font-poppins font-extrabold text-4xl shadow-lg">
 									Project One
 								</div>
 							</div>

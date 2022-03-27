@@ -17,22 +17,22 @@ function Hero() {
 			<div className="container mx-auto">
 				<div className="border-8 border-buttonBG right-2 bottom-2 xl:mt-32 mx-auto w-48 h-64 md:w-48 md:h-56 lg:w-80 lg:h-80 bg-profileImage rounded-full bg-cover bg-center bg-no-repeat"></div>
 				<div className="text-center mt-10 lg:flex lg:flex-col lg:items-center">
-					<p className="font-poppins text-lg">UI | UX Designer</p>
+					<p className="font-poppins text-lg italic text-gray-800">UI / UX Designer</p>
 					<h1
-						className={`text-6xl xl:text-8xl font-playFair font-semibold text-mainOrange ${
+						className={`text-6xl xl:text-8xl font-playFair font-bold italic text-mainOrange ${
 							window.scrollY > 100 && "text-2xl"
 						}`}
 					>
 						Sky Stanojevic
 					</h1>
-					<p className="mt-10 font-poppins font-light text-xl leading-7 lg:text-3xl lg:leading-snug text-gray-700  lg:max-w-3xl xl:max-w-6xl">
+					<p className="mt-10 font-poppins text-xl leading-7 lg:text-3xl lg:leading-normal text-gray-800  lg:max-w-3xl xl:max-w-6xl">
 						I am an experienced UI/UX Designer living in the sunny
 						side of San Diego, CA.
 						<br />
 						If you are looking for a Website for{" "}
-						<span className="font-bold">Personal Branding, </span>
+						<span className="font-bold italic text-mainOrange">Personal Branding, </span>
 						or for{" "}
-						<span className="font-bold">your Company</span>, I
+						<span className="font-bold italic text-mainOrange">your Company</span>, I
 						build designs that Brings both you and your users
 						together
 					</p>
