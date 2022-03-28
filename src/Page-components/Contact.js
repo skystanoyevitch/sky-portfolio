@@ -140,7 +140,7 @@ function Contact() {
 							}}
 							type="submit"
 							value="submit"
-							className="border border-black hover:bg-mainOrange hover:border-btnOrange hover:text-white font-poppins py-2 px-6 text-xl font-light mt-4 mx-8 md:mx-0 rounded-full"
+							className="border border-black hover:bg-mainOrange hover:border-btnOrange hover:text-white font-poppins font-bold py-2 px-6 text-xl mt-4 mx-8 md:mx-0 rounded-full"
 						>
 							Send
 						</motion.button>

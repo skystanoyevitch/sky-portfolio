@@ -28,7 +28,6 @@ function Hero() {
 					<p className="mt-10 font-poppins text-xl leading-7 lg:text-3xl lg:leading-normal text-gray-800  lg:max-w-3xl xl:max-w-6xl">
 						I am an experienced UI/UX Designer living in the sunny
 						side of San Diego, CA.
-						<br />
 						If you are looking for a Website for{" "}
 						<span className="font-bold italic text-mainOrange">Personal Branding, </span>
 						or for{" "}
@@ -46,7 +45,7 @@ function Hero() {
 							}}
 							whileHover="hover"
 							whileTap={{ scale: 0.9 }}
-							className="border border-gray-500 py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 rounded-full md:mr-4"
+							className="border border-gray-500 py-2 px-6 font-poppins font-bold text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 rounded-full md:mr-4"
 						>
 							Resume
 						</motion.button>
@@ -59,7 +58,7 @@ function Hero() {
 							}}
 							whileHover="hover"
 							whileTap={{ scale: 0.9 }}
-							className="border-2 border-btnOrange bg-mainOrange text-white hover:rotate-3  py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 rounded-full md:ml-4"
+							className="border-2 border-btnOrange bg-mainOrange text-white hover:rotate-3 py-2 px-6 font-poppins font-bold text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 rounded-full md:ml-4"
 						>
 							Hire Me
 						</motion.button>
