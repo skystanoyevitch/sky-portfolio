@@ -86,17 +86,17 @@ const Nav = () => {
 					<motion.div
 						animate={open ? "open" : "closed"}
 						variants={ham1}
-						className="w-8 h-0.5 bg-gray-600 rounded-full"
+						className="w-8 h-1 bg-gray-800 rounded-full"
 					></motion.div>
 					<motion.div
 						animate={open ? "open" : "closed"}
 						variants={hamClosed}
-						className="w-8 h-0.5 bg-gray-600 rounded-full"
+						className="w-8 h-1 bg-gray-800 rounded-full"
 					></motion.div>
 					<motion.div
 						animate={open ? "open" : "closed"}
 						variants={ham3}
-						className="w-8 h-0.5 bg-gray-600 rounded-full"
+						className="w-8 h-1 bg-gray-800 rounded-full"
 					></motion.div>
 				</motion.button>
 
