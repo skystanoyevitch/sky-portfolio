@@ -51,7 +51,7 @@ module.exports = {
 			mainOrange: "#FF5722",
 			secondaryBtn: "#E8F1F2",
 			primaryBtn: "#233D4D",
-			body: "#FFFBFC",
+			body: "#E8F1F2",
 			primaryNav: "#E8F1F2",
 		}),
 		textColor: (theme) => ({

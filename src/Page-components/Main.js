@@ -12,8 +12,6 @@ const MainContent = () => {
 		<div id="main-page" className="h-screen">
 			<Hero />
 			<About />
-			{/* <MyServices /> */}
-			{/* <MainShowcase /> */}
 			<MainContact />
 			<Footer />
 		</div>

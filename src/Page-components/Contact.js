@@ -76,7 +76,7 @@ function Contact() {
 									maxLength: 15,
 								})}
 								type="text"
-								className="p-4 bg-secondaryBtn rounded-full w-full"
+								className="p-4 bg-white w-full"
 								name="first_name"
 								placeholder="First Name"
 							/>
@@ -89,7 +89,7 @@ function Contact() {
 										message: "Last Name is Required",
 									},
 								})}
-								className="p-4 bg-secondaryBtn rounded-full w-full"
+								className="p-4 bg-white w-full"
 								name="last_name"
 								placeholder="Last Name"
 							/>
@@ -104,7 +104,7 @@ function Contact() {
 										message: "Email is Required",
 									},
 								})}
-								className="p-4 bg-secondaryBtn rounded-full"
+								className="p-4 bg-white"
 								name="email"
 								placeholder="Email"
 							/>
@@ -112,13 +112,13 @@ function Contact() {
 							<input
 								type="text"
 								{...register("subject", { maxLength: 15 })}
-								className="p-4 bg-secondaryBtn rounded-full"
+								className="p-4 bg-white"
 								name="subject"
 								placeholder="Subject"
 							/>
 
 							<textarea
-								className="h-24 p-4 bg-secondaryBtn rounded-full"
+								className="h-24 p-4 bg-white"
 								type="text"
 								{...register("message", {
 									required: {
@@ -140,7 +140,7 @@ function Contact() {
 							}}
 							type="submit"
 							value="submit"
-							className="border border-black hover:bg-mainOrange hover:border-btnOrange hover:text-white font-poppins font-bold py-2 px-6 text-xl mt-4 mx-8 md:mx-0 rounded-full"
+							className="bg-white border border-black hover:bg-mainOrange hover:border-btnOrange hover:text-white font-poppins py-2 px-6 text-xl mt-4 mx-8 md:mx-0"
 						>
 							Send
 						</motion.button>

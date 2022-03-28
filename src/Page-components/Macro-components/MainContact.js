@@ -56,7 +56,7 @@ const MainContact = () => {
 										"5px 5px 0 rgba(255, 192, 173, 0.8)",
 								}}
 								whileHover="hover"
-								className="py-2 px-6 font-poppins font-bold text-md xl:text-xl xl:w-30 border border-black lg:px-8 rounded-full"
+								className="bg-white py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 border border-black lg:px-8"
 							>
 								Get In Touch
 							</motion.button>

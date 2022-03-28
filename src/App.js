@@ -18,7 +18,7 @@ const App = ({ location }) => (
 	<Router>
 		<>
 			{/* {location.pathname !== "/Projects" && <Nav />} */}
-			<Nav style={{ color: "#114B5F" }} />
+			<Nav />
 			<ScrollToTop />
 			<Switch>
 				<Route exact path="/">

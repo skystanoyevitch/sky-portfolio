@@ -1,4 +1,4 @@
-import { toBeVisible } from "@testing-library/jest-dom/dist/matchers";
+// import { toBeVisible } from "@testing-library/jest-dom/dist/matchers";
 import { motion } from "framer-motion";
 import React from "react";
 import { useInView } from "react-intersection-observer";
@@ -18,11 +18,8 @@ const aboutSectionVariant = {
 
 const buttonVariant = {
 	hover: {
-		backgroundColor: "#233D4D",
+		backgroundColor: "#FF5722",
 		color: "white",
-		transition: {
-			duration: 0.1,
-		},
 	},
 };
 const divVariant = {
@@ -66,7 +63,7 @@ function About() {
 						<motion.button
 							variants={buttonVariant}
 							whileHover="hover"
-							className="px-6 py-2 rounded-full bg-primaryBtn text-white "
+							className="px-6 py-2 bg-mainOrange text-white"
 						>
 							All Projects
 						</motion.button>
@@ -75,7 +72,7 @@ function About() {
 						<motion.button
 							variants={buttonVariant}
 							whileHover="hover"
-							className="px-6 py-2 rounded-full border border-black"
+							className="px-6 py-2 bg-white"
 						>
 							Design
 						</motion.button>
@@ -84,7 +81,7 @@ function About() {
 						<motion.button
 							variants={buttonVariant}
 							whileHover="hover"
-							className="px-6 py-2 rounded-full border border-black"
+							className="px-6 py-2 bg-white"
 						>
 							Development
 						</motion.button>
@@ -93,7 +90,7 @@ function About() {
 						<motion.button
 							variants={buttonVariant}
 							whileHover="hover"
-							className="px-6 py-2 rounded-full border border-black"
+							className="px-6 py-2 bg-white"
 						>
 							For Fun
 						</motion.button>
