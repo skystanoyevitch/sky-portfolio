@@ -27,19 +27,9 @@ function Hero() {
 					>
 						Sky Stanojevic
 					</h1>
-					<p className="mt-10 font-poppins text-xl leading-7 lg:text-3xl lg:leading-normal text-gray-800  lg:max-w-3xl xl:max-w-6xl">
+					<p className="mt-10 font-poppins text-primary text-xl leading-7 lg:text-3xl lg:leading-normal  lg:max-w-3xl xl:max-w-6xl">
 						I am an experienced UI/UX Designer living in the sunny
-						side of San Diego, CA. If you are looking for a Website
-						for{" "}
-						<span className="font-bold italic text-mainOrange">
-							Personal Branding,{" "}
-						</span>
-						or for{" "}
-						<span className="font-bold italic text-mainOrange">
-							your Company
-						</span>
-						, I build designs that Brings both you and your users
-						together
+						side of San Diego, CA.
 					</p>
 				</div>
 				<div className="text-center flex flex-col md:flex-row md:justify-center">
@@ -51,12 +41,12 @@ function Hero() {
 							}}
 							whileHover="hover"
 							whileTap={{ scale: 0.9 }}
-							className="bg-white border border-black py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 md:mr-4"
+							className="bg-white py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 md:mr-4"
 						>
 							Resume
 						</motion.button>
 					</Link>
-					<Link to="/Contact">
+					{/* <Link to="/Contact">
 						<motion.button
 							variants={buttonVarant}
 							style={{
@@ -64,11 +54,11 @@ function Hero() {
 							}}
 							whileHover="hover"
 							whileTap={{ scale: 0.9 }}
-							className="bg-white border border-black hover:rotate-3 py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 md:ml-4"
+							className="bg-white hover:rotate-3 py-4 px-6 font-poppins text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 md:ml-4"
 						>
 							Contact
 						</motion.button>
-					</Link>
+					</Link> */}
 				</div>
 			</div>
 		</div>

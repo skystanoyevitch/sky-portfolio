@@ -40,16 +40,19 @@ function Contact() {
 			<div className="container mx-auto md:h-full flex flex-col justify-around xl:justify-center xl:gap-32 px-8 py-14 md:py-0 md:items-center md:my-24 md:px-20 lg:px-32 xl:my-0 xl:h-screen">
 				<div className="text-center">
 					<h1 className="text-primary font-playFair text-5xl xl:text-7xl px-8 lg:px-0">
-						Contact
+						<span className="font-bold text-mainOrange">C</span>ontact
 					</h1>
-					<p className="text-gray-800 text-lg md:text-3xl font-poppins leading-7 xl:leading-normal pt-8 lg:pt-10 xl:max-w-5xl">
-						If you are looking to have a Website or App Designed,
-						please include those details and i will get back to you
-						shortly to discuss further about it.
+					<p className="text-primary text-lg md:text-3xl font-poppins leading-7 xl:leading-normal pt-4 lg:pt-10 xl:max-w-5xl">
+						Need a Website Designed? Want to Colaborate? or just
+						want to say hi, please don't hesitate to contact me
+						using the form Below..
+						<br/>
+						I look Forward to hearing from
+						you.
 					</p>
 				</div>
 
-				<div className="pt-10 xl:pt-0 text-center md:text-left md:w-1/2">
+				<div className="py-24 xl:pt-0 text-center md:text-left md:w-1/2">
 					<form
 						onSubmit={handleSubmit(onSubmit)}
 						id="contactForm"
@@ -140,7 +143,7 @@ function Contact() {
 							}}
 							type="submit"
 							value="submit"
-							className="bg-white border border-black hover:bg-mainOrange hover:border-btnOrange hover:text-white font-poppins py-2 px-6 text-xl mt-4 mx-8 md:mx-0"
+							className="bg-white hover:bg-mainOrange hover:border-btnOrange hover:text-white font-poppins py-2 px-6 text-xl mt-4 mx-8 md:mx-0"
 						>
 							Send
 						</motion.button>

@@ -32,15 +32,13 @@ const divVariant = {
 	tap: { scale: 0.9 },
 };
 
-// const cardVariant = {
-// 	hover: {
-// 		zIndex: 1,
-// 		boxShadow: "8px 8px 0px #FF5722",
-// 		transition: {
-// 			duration: 0.3,
-// 		},
-// 	},
-// };
+const cardVariant = {
+	hover: {
+		scale: 1.03,
+		zIndex: 1,
+		boxShadow: "13px 13px 40px 0px rgba(0,0,0,0.1)",
+	},
+};
 
 function About() {
 	const { ref, inView } = useInView({
@@ -97,24 +95,29 @@ function About() {
 					</li>
 				</ul>
 
-				<div className="grid grid-cols-1 grid-rows-4 lg:grid-rows-2 gap-y-2 lg:grid lg:grid-cols-3 lg:gap-x-1 lg:gap-y-1">
+				<div className="grid grid-rows-2 gap-y-10">
 					<motion.div
 						whileHover="hover"
+						variants={cardVariant}
 						className="h-96 bg-skyCafe bg-cover bg-no-repeat"
 					></motion.div>
 					<NavLink to={"/Showcase"} className="group">
-						<div className="relative bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full">
-							<div className="bg-opacity-0 group-hover:bg-opacity-80 bg-black w-full h-full">
+						<motion.div
+							whileHover="hover"
+							variants={cardVariant}
+							className="relative bg-this-is-sky bg-cover bg-no-repeat w-full h-full"
+						>
+							{/* <div className="bg-opacity-0 group-hover:bg-opacity-80 bg-black w-full h-full">
 								<div className="text-opacity-0 group-hover:text-opacity-100 absolute top-1/2 w-full h-full text-white text-center font-poppins font-extrabold text-4xl shadow-lg">
 									Project One
 								</div>
-							</div>
-						</div>
+							</div> */}
+						</motion.div>
 					</NavLink>
-					<div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder1"></div>
+					{/* <div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder1"></div>
 					<div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder2"></div>
 					<div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder3"></div>
-					<div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder4"></div>
+					<div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder4"></div> */}
 					{/* <div className="border-2 border-black h-96"></div>
 					<div className="border-2 border-black h-96"></div> */}
 				</div>

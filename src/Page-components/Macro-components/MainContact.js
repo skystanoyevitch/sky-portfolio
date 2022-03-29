@@ -41,13 +41,9 @@ const MainContact = () => {
 						<h1 className="text-primary font-playFair text-5xl lg:text-5xl xl:text-6xl">
 							Let's Work Together
 						</h1>
-						<p className="font-poppins leading-7 lg:leading-normal text-xl lg:text-2xl xl:text-3xl my-10 lg:mt-10 text-gray-800 lg:max-w-3xl xl:max-w-6xl">
-							Need a Website Designed? Want to Colaborate? or just
-							want to say hi, please don't hesitate to contact me
-							using the link Below....
-							I look forward to hearing
-							from you.
-						</p>
+						{/* <p className="font-poppins leading-7 lg:leading-normal text-xl lg:text-2xl xl:text-3xl my-10 lg:mt-10 text-gray-800 lg:max-w-3xl xl:max-w-6xl">
+							
+						</p> */}
 						<Link to="/Contact">
 							<motion.button
 								variants={buttonVarant}
@@ -56,7 +52,7 @@ const MainContact = () => {
 										"5px 5px 0 rgba(255, 192, 173, 0.8)",
 								}}
 								whileHover="hover"
-								className="bg-white py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 border border-black lg:px-8"
+								className="bg-white py-2 px-8 font-poppins text-md xl:text-xl xl:w-30 lg:px-8 mt-8"
 							>
 								Get In Touch
 							</motion.button>
