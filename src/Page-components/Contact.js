@@ -30,6 +30,12 @@ function Contact() {
 		);
 	};
 
+	const buttonVarant = {
+		hover: {
+			scale: 1.03,
+		},
+	};
+
 	// useEffect(() => {
 	// 	reset({ first_name: "" }); // asynchronously reset your form values
 	// }, [reset]);
@@ -40,15 +46,14 @@ function Contact() {
 			<div className="container mx-auto md:h-full flex flex-col justify-around xl:justify-center xl:gap-32 px-8 py-14 md:py-0 md:items-center md:my-24 md:px-20 lg:px-32 xl:my-0 xl:h-screen">
 				<div className="text-center">
 					<h1 className="text-primary font-playFair text-5xl xl:text-7xl px-8 lg:px-0">
-						<span className="font-bold text-mainOrange">C</span>ontact
+						<span className="font-bold text-mainOrange">C</span>
+						ontact
 					</h1>
 					<p className="text-primary text-lg md:text-3xl font-poppins leading-7 xl:leading-normal pt-4 lg:pt-10 xl:max-w-5xl">
 						Need a Website Designed? Want to Colaborate? or just
 						want to say hi, please don't hesitate to contact me
 						using the form Below..
-						<br/>
-						I look Forward to hearing from
-						you.
+						<br />I look Forward to hearing from you.
 					</p>
 				</div>
 
@@ -141,6 +146,8 @@ function Contact() {
 							style={{
 								boxShadow: "5px 5px 0 rgba(255, 192, 173, 0.8)",
 							}}
+							whileHover="hover"
+							variants={buttonVarant}
 							type="submit"
 							value="submit"
 							className="bg-white hover:bg-mainOrange hover:border-btnOrange hover:text-white font-poppins py-2 px-6 text-xl mt-4 mx-8 md:mx-0"

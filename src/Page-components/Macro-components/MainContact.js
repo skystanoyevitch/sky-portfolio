@@ -18,7 +18,7 @@ const contactVariant = {
 
 const buttonVarant = {
 	hover: {
-		scale: 1.1,
+		scale: 1.03,
 	},
 };
 
@@ -52,7 +52,7 @@ const MainContact = () => {
 										"5px 5px 0 rgba(255, 192, 173, 0.8)",
 								}}
 								whileHover="hover"
-								className="bg-white py-2 px-8 font-poppins text-md xl:text-xl xl:w-30 lg:px-8 mt-8"
+								className="hover:bg-mainOrange hover:text-white bg-white py-2 px-8 font-poppins text-md xl:text-xl xl:w-30 lg:px-8 mt-8"
 							>
 								Get In Touch
 							</motion.button>

@@ -96,11 +96,15 @@ function About() {
 				</ul>
 
 				<div className="grid grid-rows-2 gap-y-10">
-					<motion.div
-						whileHover="hover"
-						variants={cardVariant}
-						className="h-96 bg-skyCafe bg-cover bg-no-repeat"
-					></motion.div>
+					<motion.div whileHover="hover" variants={cardVariant}>
+						<a
+							href="https://rolypolie.github.io/SkysCafe/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<div className="h-96 bg-skyCafe bg-cover bg-no-repeat"></div>
+						</a>
+					</motion.div>
 
 					<motion.div
 						whileHover="hover"

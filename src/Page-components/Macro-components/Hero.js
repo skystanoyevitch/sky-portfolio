@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const buttonVarant = {
 	hover: {
-		scale: 0.9,
+		scale: 1.03,
 	},
 };
 function Hero() {
@@ -41,7 +41,7 @@ function Hero() {
 							}}
 							whileHover="hover"
 							whileTap={{ scale: 0.9 }}
-							className="bg-white py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 md:mr-4"
+							className="hover:bg-mainOrange hover:text-white bg-white py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 md:mr-4"
 						>
 							Resume
 						</motion.button>

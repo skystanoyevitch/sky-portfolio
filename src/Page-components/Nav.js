@@ -67,7 +67,7 @@ const Nav = () => {
 								backgroundColor: "#FF5722",
 								color: "white",
 							}}
-							className="bg-white hover:bg-mainOrange hover:border-btnOrange hover:shadow-lg hover:text-whiteactive:text-white md:py-2 md:px-6"
+							className="bg-white hover:bg-mainOrange hover:text-white hover:border-btnOrange hover:shadow-lg hover:text-whiteactive:text-white md:py-2 md:px-6"
 						>
 							Contact
 						</NavLink>
