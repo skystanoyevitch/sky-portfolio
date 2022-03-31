@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 const aboutSectionVariant = {
 	initial: {
@@ -34,9 +34,9 @@ const divVariant = {
 
 const cardVariant = {
 	hover: {
-		scale: 1.03,
+		scale: 1.01,
 		zIndex: 1,
-		boxShadow: "13px 13px 40px 0px rgba(0,0,0,0.1)",
+		boxShadow: "13px 13px 0px 0px rgba(0,0,0,0.2)",
 	},
 };
 
@@ -101,19 +101,21 @@ function About() {
 						variants={cardVariant}
 						className="h-96 bg-skyCafe bg-cover bg-no-repeat"
 					></motion.div>
-					<NavLink to={"/Showcase"} className="group">
-						<motion.div
-							whileHover="hover"
-							variants={cardVariant}
-							className="relative bg-this-is-sky bg-cover bg-no-repeat w-full h-full"
+
+					<motion.div
+						whileHover="hover"
+						variants={cardVariant}
+						className="group"
+					>
+						<a
+							href="https://teknipak.com/"
+							target="_blank"
+							rel="noreferrer"
 						>
-							{/* <div className="bg-opacity-0 group-hover:bg-opacity-80 bg-black w-full h-full">
-								<div className="text-opacity-0 group-hover:text-opacity-100 absolute top-1/2 w-full h-full text-white text-center font-poppins font-extrabold text-4xl shadow-lg">
-									Project One
-								</div>
-							</div> */}
-						</motion.div>
-					</NavLink>
+							<div className="relative bg-teknipak bg-center bg-cover bg-no-repeat w-full h-full"></div>
+						</a>
+					</motion.div>
+
 					{/* <div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder1"></div>
 					<div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder2"></div>
 					<div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder3"></div>

@@ -19,7 +19,7 @@ function Contact() {
 	const successMessage = "Success";
 
 	const onSubmit = (data) => {
-		sendForm("contact_form_id", "template_nfydqkj", "#contactForm").then(
+		sendForm("service_b25r6f3", "template_nfydqkj", "#contactForm").then(
 			function (response) {
 				console.log("SUCCESS!", response.status, response.text);
 				reset();
