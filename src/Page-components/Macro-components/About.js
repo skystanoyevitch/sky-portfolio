@@ -54,7 +54,7 @@ function About() {
 		>
 			<div className="container mx-auto">
 				<h1 className="text-primary text-center font-playFair font-regular text-5xl lg:text-6xl xl:text-7xl mb-12 xl:mb-32">
-					Portfolio
+					<span className="font-bold text-mainOrange">P</span>ortfolio
 				</h1>
 				<ul className="hidden md:visible md:flex justify-evenly md:mx-auto lg: max-w-2xl xl:max-w-none md:my-12 lg:my-20 font-poppins font-light lg:text-xl">
 					<li>

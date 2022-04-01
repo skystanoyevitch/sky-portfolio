@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import toast, { Toaster } from "react-hot-toast";
 // import { useInView } from "react-intersection-observer";
+
+const notify = () => toast("Oppsies, Coming Soon i promise!");
 
 const buttonVarant = {
 	hover: {
@@ -27,13 +30,13 @@ function Hero() {
 					>
 						Sky Stanojevic
 					</h1>
-					<p className="mt-10 font-poppins text-primary text-xl leading-7 lg:text-3xl lg:leading-normal  lg:max-w-3xl xl:max-w-6xl">
+					<p className="mt-10 font-poppins font-light text-primary text-xl leading-7 lg:text-3xl lg:leading-normal  lg:max-w-3xl xl:max-w-6xl">
 						I am an experienced UI/UX Designer living in the sunny
 						side of San Diego, CA.
 					</p>
 				</div>
 				<div className="text-center flex flex-col md:flex-row md:justify-center">
-					<Link to="/Contact">
+					<Link to={"/Contact"}>
 						<motion.button
 							variants={buttonVarant}
 							style={{
@@ -43,10 +46,10 @@ function Hero() {
 							whileTap={{ scale: 0.9 }}
 							className="hover:bg-mainOrange hover:text-white bg-white py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 md:mr-4"
 						>
-							Resume
+							Contact
 						</motion.button>
 					</Link>
-					{/* <Link to="/Contact">
+					<div>
 						<motion.button
 							variants={buttonVarant}
 							style={{
@@ -54,11 +57,13 @@ function Hero() {
 							}}
 							whileHover="hover"
 							whileTap={{ scale: 0.9 }}
-							className="bg-white hover:rotate-3 py-4 px-6 font-poppins text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 md:ml-4"
+							onClick={notify}
+							className="hover:bg-mainOrange hover:text-white bg-white py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 md:mr-4"
 						>
-							Contact
+							Resume
 						</motion.button>
-					</Link> */}
+						<Toaster />
+					</div>
 				</div>
 			</div>
 		</div>
