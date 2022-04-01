@@ -20,7 +20,7 @@ function Hero() {
 			<div className="container mx-auto">
 				<div className="border-8 border-buttonBG right-2 bottom-2 xl:mt-32 mx-auto w-48 h-64 md:w-48 md:h-56 lg:w-80 lg:h-80 bg-profileImage rounded-full bg-cover bg-center bg-no-repeat"></div>
 				<div className="text-center mt-10 lg:flex lg:flex-col lg:items-center">
-					<p className="font-poppins text-lg italic text-gray-800">
+					<p className="font-poppins text-lg italic text-gray-">
 						UI / UX Designer
 					</p>
 					<h1
