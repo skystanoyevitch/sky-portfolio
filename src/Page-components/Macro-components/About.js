@@ -22,15 +22,15 @@ const buttonVariant = {
 		color: "white",
 	},
 };
-const divVariant = {
-	hover: {
-		scale: 1,
-		transition: {
-			duration: 0.3,
-		},
-	},
-	tap: { scale: 0.9 },
-};
+// const divVariant = {
+// 	hover: {
+// 		scale: 1,
+// 		transition: {
+// 			duration: 0.3,
+// 		},
+// 	},
+// 	tap: { scale: 0.9 },
+// };
 
 const cardVariant = {
 	hover: {

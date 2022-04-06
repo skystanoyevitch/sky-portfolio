@@ -2,12 +2,7 @@ import "./App.css";
 import Nav from "./Page-components/Nav";
 import MainContent from "./Page-components/Main";
 import ScrollToTop from "./Page-components/Helper-components/ScrollToTop";
-import {
-	BrowserRouter as Router,
-	Route,
-	Switch,
-	withRouter,
-} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // Page Component Imports //
 import Showcase from "./Page-components/Showcase";
@@ -15,24 +10,16 @@ import Contact from "./Page-components/Contact";
 // import Footer from "./Page-components/Footer";
 
 const App = ({ location }) => (
-	<Router>
-		<>
-			{/* {location.pathname !== "/Projects" && <Nav />} */}
-			<Nav />
-			<ScrollToTop />
-			<Switch>
-				<Route exact path="/">
-					<MainContent />
-				</Route>
-				<Route path="/Showcase">
-					<Showcase />
-				</Route>
-				<Route path="/Contact">
-					<Contact />
-				</Route>
-			</Switch>
-		</>
-	</Router>
+	<BrowserRouter>
+		{/* {location.pathname !== "/Projects" && <Nav />} */}
+		<Nav />
+		<ScrollToTop />
+		<Routes>
+			<Route path="/" element={<MainContent />} />
+			<Route path="/Showcase" element={<Showcase />} />
+			<Route path="/Contact" element={<Contact />} />
+		</Routes>
+	</BrowserRouter>
 );
 
-export default withRouter(App);
+export default App;

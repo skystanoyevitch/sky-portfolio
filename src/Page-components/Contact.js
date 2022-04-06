@@ -1,13 +1,13 @@
 import React from "react";
 // import { useEffect } from "react";
 import Footer from "./Footer";
-import Nav from "./Nav";
+// import Nav from "./Nav";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import { init, sendForm } from "emailjs-com";
-import toast, { Toaster } from "react-hot-toast";
+// import toast from "react-hot-toast";
 
-const notify = () => toast("Here is your toast.");
+// const notify = () => toast("Here is your toast.");
 init("user_UjPKV0EnHoctjH33XHpvR");
 
 function Contact() {
