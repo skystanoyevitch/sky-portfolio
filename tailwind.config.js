@@ -4,7 +4,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				poppins: ['"Poppins"', "sans-serif"],
-				playFair: ['"Playfair Display"', "serif"],
+				bebas: ['"Bebas Neue"', "cursive"],
 			},
 			backgroundImage: (theme) => ({
 				profileImage: "url('./images/mainpicsky.jpg')",
@@ -66,6 +66,10 @@ module.exports = {
 			buttonBG: "#FFC0AD",
 			DEFAULT: theme("colors.gray.300", "currentColor"),
 			primary: "#114B5F",
+		}),
+		textDecorationColor: (theme) => ({
+			...theme("colors"),
+			mainColor: "#FF5722",
 		}),
 	},
 	plugins: [],

@@ -1,7 +1,5 @@
 import React from "react";
 import Footer from "./Footer";
-// import Nav from "./Nav";
-// import ShowcaseHero from "./Micro-components/ShowcaseHero";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
@@ -23,7 +21,6 @@ function Showcase() {
 	});
 	return (
 		<div className="">
-			{/* <ShowcaseHero /> */}
 			<div className="bg">
 				<motion.div
 					ref={ref}
@@ -58,36 +55,6 @@ function Showcase() {
 								<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full"></div>
 							</a>
 						</div>
-						{/* <div>
-							<h2 className="font-poppins font-light text-gray-700 text-2xl pb-4 mt-24">
-								Smooth Animations
-							</h2>
-						</div> */}
-						{/* <div className="w-full xl:w-3/4 h-120">
-							<a
-								href="https://rolypolie.github.io/skystanoyevitch/"
-								target="_blank"
-								rel="noreferrer"
-								className=""
-							>
-								<div className="border-2 border-black w-full h-full"></div>
-							</a>
-						</div>
-						<div>
-							<h2 className="font-poppins font-light text-gray-700 text-2xl pb-4 mt-24">
-								Responsive
-							</h2>
-						</div>
-						<div className="w-full xl:w-3/4 h-120">
-							<a
-								href="https://rolypolie.github.io/skystanoyevitch/"
-								target="_blank"
-								rel="noreferrer"
-								className=""
-							>
-								<div className="border-2 border-black w-full h-full"></div>
-							</a>
-						</div> */}
 					</div>
 				</motion.div>
 			</div>

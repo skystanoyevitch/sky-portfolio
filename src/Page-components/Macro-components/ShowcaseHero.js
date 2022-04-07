@@ -36,14 +36,13 @@ const ShowcaseHero = () => {
 		};
 		setInterval(() => {
 			console.log(paginate);
-			return paginate(1)
+			return paginate(1);
 		}, 8000);
 		return () => {
 			clearInterval();
 		};
 	}, [page, direction]);
 
-	//TODO: Add Slider Component to slide between every quote every 3 seconds.
 	return (
 		<>
 			<AnimatePresence>
@@ -71,7 +70,6 @@ const ShowcaseHero = () => {
 					</div>
 				</section>
 			</AnimatePresence>
-
 		</>
 	);
 };

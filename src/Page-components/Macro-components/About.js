@@ -13,14 +13,6 @@ const aboutSectionVariant = {
 		},
 	},
 };
-
-// const buttonVariant = {
-// 	hover: {
-// 		borderWidth: "4px",
-// 		scale: 1,
-// 	},
-// };
-
 const cardVariant = {
 	hover: {
 		scale: 1.01,
@@ -42,14 +34,14 @@ function About() {
 			className="container mx-auto max-w-xs py-20 md:max-w-lg xl:p-0 xl:flex lg:max-w-5xl lg:flex lg:p-24 lg:items-center xl:py-44 lg:justify-evenly space-y-20 xl:space-y-0"
 		>
 			<div className="container mx-auto">
-				<h1 className="text-primary text-center font-playFair font-regular text-5xl lg:text-6xl xl:text-7xl mb-12 xl:mb-32">
-					<span className="font-bold text-mainOrange">P</span>ortfolio
+				<h1 className="text-gray-700 text-center font-bebas text-5xl lg:text-6xl xl:text-7xl mb-12 xl:mb-32">
+					<span className="text-mainOrange">P</span>ortfolio
 				</h1>
-				<ul className="hidden md:visible md:flex justify-evenly md:mx-auto lg: max-w-2xl xl:max-w-none md:my-12 lg:my-20 font-poppins font-light lg:text-xl">
+				<ul className="hidden md:visible md:flex justify-evenly md:mx-auto lg: max-w-2xl xl:max-w-none md:my-12 lg:my-20 font-poppins lg:text-xl">
 					<li>
 						<motion.button
 							whileHover="hover"
-							className="px-6 py-2 hover:underline underline-offset-4 decoration-4 "
+							className="px-6 py-2 hover:underline underline-offset-4  decoration-4 decoration-mainColor"
 						>
 							All Projects
 						</motion.button>
@@ -57,7 +49,7 @@ function About() {
 					<li>
 						<motion.button
 							whileHover="hover"
-							className="px-6 py-2  hover:underline underline-offset-4 decoration-4"
+							className="px-6 py-2  hover:underline underline-offset-4 decoration-4 decoration-mainColor"
 						>
 							Design
 						</motion.button>
@@ -65,7 +57,7 @@ function About() {
 					<li>
 						<motion.button
 							whileHover="hover"
-							className="px-6 py-2  hover:underline underline-offset-4 decoration-4"
+							className="px-6 py-2  hover:underline underline-offset-4 decoration-4 decoration-mainColor"
 						>
 							Development
 						</motion.button>
@@ -73,7 +65,7 @@ function About() {
 					<li>
 						<motion.button
 							whileHover="hover"
-							className="px-6 py-2  hover:underline underline-offset-4 decoration-4"
+							className="px-6 py-2  hover:underline underline-offset-4 decoration-4 decoration-mainColor"
 						>
 							For Fun
 						</motion.button>
@@ -104,13 +96,6 @@ function About() {
 							<div className="relative bg-teknipak bg-center bg-cover bg-no-repeat w-full h-full hover:border-4 hover:border-gray-700"></div>
 						</a>
 					</motion.div>
-
-					{/* <div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder1"></div>
-					<div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder2"></div>
-					<div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder3"></div>
-					<div className="bg-cover bg-center bg-no-repeat h-full bg-placeholder4"></div> */}
-					{/* <div className="border-2 border-black h-96"></div>
-					<div className="border-2 border-black h-96"></div> */}
 				</div>
 			</div>
 		</motion.section>

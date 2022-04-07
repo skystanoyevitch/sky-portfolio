@@ -1,10 +1,6 @@
-// React Imports //
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { motion, useCycle } from "framer-motion";
-// import { useState } from "react";
-// import HamMenu from "./Micro-components/HamMenu";
-// import { useState } from "react";
 
 const menuVar = {
 	open: {
@@ -31,19 +27,8 @@ const hamClosed = {
 	open: { opacity: 0, duration: 0.1 },
 };
 const Nav = () => {
-	// const [navbar, setNavbar] = useState(false);
 	const [open, setOpen] = useCycle(false, true);
 
-	// const navbarOnScroll = () => {
-	// 	if (window.scrollY >= 100) {
-	// 		setNavbar(true);
-	// 		console.log("true");
-	// 	} else {
-	// 		setNavbar(false);
-	// 	}
-	// };
-
-	// window.addEventListener('scroll', navbarOnScroll);
 	return (
 		// Desktop Navigation Top Menu
 		<div className={"bg-primaryNav md:flex md:flex-col"}>
