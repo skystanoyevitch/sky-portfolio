@@ -49,28 +49,33 @@ const Nav = () => {
 		<div className={"bg-primaryNav md:flex md:flex-col"}>
 			<nav className="container mx-auto hidden md:visible md:flex md:justify-center flex-1">
 				<ul className="md:p-10 md:space-x-16 lg:space-x-24 flex p-x font-poppins lg:text-xl xl:text-2xl text-black place-items-center">
-					<li className={"lg:px-4"}>
-						<Link to="/">Home</Link>
+					<li>
+						<Link to="/">
+							<button className="hover:transition ease-in-out hover:text-mainOrange hover:font-extrabold hover:-translate-y-1 hover:scale-125 duration-500">
+								Home
+							</button>
+						</Link>
 					</li>
-					<li className={""} id="portfolio">
-						<Link to="/">Portfolio</Link>
+					<li id="portfolio">
+						<Link to="/">
+							<button className="hover:transition ease-in-out hover:text-mainOrange hover:font-extrabold hover:-translate-y-1 hover:scale-125 duration-500">
+								Portfolio
+							</button>
+						</Link>
 					</li>
-					<li className={""}>
-						<NavLink to="#" activeStyle={{}}>
-							Experimental
-						</NavLink>
+					<li>
+						<Link to="#">
+							<button className="hover:transition ease-in-out hover:text-mainOrange hover:font-extrabold hover:-translate-y-1 hover:scale-115 duration-500">
+								Experimental
+							</button>
+						</Link>
 					</li>
-					<li className={""}>
-						<NavLink
-							to="/Contact"
-							activeStyle={{
-								backgroundColor: "#FF5722",
-								color: "white",
-							}}
-							className="bg-white hover:bg-mainOrange hover:text-white hover:border-btnOrange hover:shadow-lg hover:text-whiteactive:text-white md:py-2 md:px-6"
-						>
-							Contact
-						</NavLink>
+					<li>
+						<Link to="/Contact">
+							<button className="hover:transition ease-in-out hover:text-mainOrange hover:font-extrabold hover:-translate-y-1 hover:scale-125 duration-500">
+								Contact
+							</button>
+						</Link>
 					</li>
 				</ul>
 			</nav>

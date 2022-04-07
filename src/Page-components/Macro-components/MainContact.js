@@ -49,10 +49,10 @@ const MainContact = () => {
 								variants={buttonVarant}
 								style={{
 									boxShadow:
-										"5px 5px 0 rgba(255, 192, 173, 0.8)",
+										"5px 5px 0 rgba(55, 65, 81, 1)",
 								}}
 								whileHover="hover"
-								className="hover:bg-mainOrange hover:text-white bg-white py-2 px-8 font-poppins text-md xl:text-xl xl:w-30 lg:px-8 mt-8"
+								className="hover:bg-mainOrange hover:text-white bg-white border-4 border-gray-700 font-bold text-gray-700 py-2 px-8 font-poppins text-md xl:text-xl xl:w-30 lg:px-8 mt-8 rounded-full"
 							>
 								Get In Touch
 							</motion.button>

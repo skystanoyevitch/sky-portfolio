@@ -1,8 +1,6 @@
-// import { toBeVisible } from "@testing-library/jest-dom/dist/matchers";
 import { motion } from "framer-motion";
 import React from "react";
 import { useInView } from "react-intersection-observer";
-// import { NavLink } from "react-router-dom";
 
 const aboutSectionVariant = {
 	initial: {
@@ -16,20 +14,11 @@ const aboutSectionVariant = {
 	},
 };
 
-const buttonVariant = {
-	hover: {
-		backgroundColor: "#FF5722",
-		color: "white",
-	},
-};
-// const divVariant = {
+// const buttonVariant = {
 // 	hover: {
+// 		borderWidth: "4px",
 // 		scale: 1,
-// 		transition: {
-// 			duration: 0.3,
-// 		},
 // 	},
-// 	tap: { scale: 0.9 },
 // };
 
 const cardVariant = {
@@ -59,36 +48,32 @@ function About() {
 				<ul className="hidden md:visible md:flex justify-evenly md:mx-auto lg: max-w-2xl xl:max-w-none md:my-12 lg:my-20 font-poppins font-light lg:text-xl">
 					<li>
 						<motion.button
-							variants={buttonVariant}
 							whileHover="hover"
-							className="px-6 py-2 bg-mainOrange text-white"
+							className="px-6 py-2 hover:underline underline-offset-4 decoration-4 "
 						>
 							All Projects
 						</motion.button>
 					</li>
 					<li>
 						<motion.button
-							variants={buttonVariant}
 							whileHover="hover"
-							className="px-6 py-2 bg-white"
+							className="px-6 py-2  hover:underline underline-offset-4 decoration-4"
 						>
 							Design
 						</motion.button>
 					</li>
 					<li>
 						<motion.button
-							variants={buttonVariant}
 							whileHover="hover"
-							className="px-6 py-2 bg-white"
+							className="px-6 py-2  hover:underline underline-offset-4 decoration-4"
 						>
 							Development
 						</motion.button>
 					</li>
 					<li>
 						<motion.button
-							variants={buttonVariant}
 							whileHover="hover"
-							className="px-6 py-2 bg-white"
+							className="px-6 py-2  hover:underline underline-offset-4 decoration-4"
 						>
 							For Fun
 						</motion.button>
@@ -102,7 +87,7 @@ function About() {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<div className="h-96 bg-skyCafe bg-cover bg-no-repeat"></div>
+							<div className="h-96 bg-skyCafe bg-cover bg-no-repeat hover:border-4 hover:border-gray-700"></div>
 						</a>
 					</motion.div>
 
@@ -116,7 +101,7 @@ function About() {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<div className="relative bg-teknipak bg-center bg-cover bg-no-repeat w-full h-full"></div>
+							<div className="relative bg-teknipak bg-center bg-cover bg-no-repeat w-full h-full hover:border-4 hover:border-gray-700"></div>
 						</a>
 					</motion.div>
 

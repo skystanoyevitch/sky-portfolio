@@ -53,8 +53,9 @@ function Contact() {
 						ontact
 					</h1>
 					<p className="text-primary text-lg md:text-3xl font-poppins font-light leading-7 xl:leading-normal pt-4 lg:pt-6">
-						Need a Website Designed? Want to Colaborate? please don't hesitate to contact me
-						using the form below..I look Forward to hearing from you.
+						Need a Website Designed? Want to Colaborate? please
+						don't hesitate to contact me using the form below..I
+						look Forward to hearing from you.
 					</p>
 				</div>
 
@@ -145,13 +146,13 @@ function Contact() {
 
 						<motion.button
 							style={{
-								boxShadow: "5px 5px 0 rgba(255, 192, 173, 0.8)",
+								boxShadow: "5px 5px 0 rgba(55, 65, 81, 1)",
 							}}
 							whileHover="hover"
 							variants={buttonVarant}
 							type="submit"
 							value="submit"
-							className="bg-white hover:bg-mainOrange hover:border-btnOrange hover:text-white font-poppins py-2 px-6 text-xl mt-4 mx-8 md:mx-0"
+							className="hover:bg-mainOrange hover:text-white bg-white border-4 border-gray-700 font-bold text-gray-700 font-poppins py-2 px-6 text-xl mt-4 mx-8 md:mx-0 rounded-full"
 						>
 							Send
 						</motion.button>
