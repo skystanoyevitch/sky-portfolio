@@ -39,9 +39,8 @@ function Contact() {
 			{/* <Nav /> */}
 			<div className="container mx-auto md:h-full flex flex-col justify-around xl:justify-center xl:gap-32 px-8 py-14 md:py-0 md:items-center md:my-24 md:px-20 lg:px-32 xl:my-0 xl:h-screen">
 				<div className="text-center">
-					<h1 className="font-bebas text-gray-700 text-5xl xl:text-7xl xl:leading-normal px-8 lg:px-0">
-						<span className="font-bold text-mainOrange">C</span>
-						ontact
+					<h1 className="font-bebas text-mainOrange text-5xl xl:text-7xl xl:leading-normal px-8 lg:px-0">
+						Contact
 					</h1>
 					<p className="text-primary text-lg md:text-3xl font-poppins leading-7 xl:leading-normal pt-4 lg:pt-6">
 						Need a Website Designed? Want to Colaborate? please
@@ -77,7 +76,7 @@ function Contact() {
 									maxLength: 15,
 								})}
 								type="text"
-								className="p-4 bg-white w-full"
+								className="p-4 bg-white w-full rounded-full"
 								name="first_name"
 								placeholder="First Name"
 							/>
@@ -90,7 +89,7 @@ function Contact() {
 										message: "Last Name is Required",
 									},
 								})}
-								className="p-4 bg-white w-full"
+								className="p-4 bg-white w-full rounded-full"
 								name="last_name"
 								placeholder="Last Name"
 							/>
@@ -105,7 +104,7 @@ function Contact() {
 										message: "Email is Required",
 									},
 								})}
-								className="p-4 bg-white"
+								className="p-4 bg-white rounded-full"
 								name="email"
 								placeholder="Email"
 							/>
@@ -113,13 +112,13 @@ function Contact() {
 							<input
 								type="text"
 								{...register("subject", { maxLength: 15 })}
-								className="p-4 bg-white"
+								className="p-4 bg-white rounded-full"
 								name="subject"
 								placeholder="Subject"
 							/>
 
 							<textarea
-								className="h-24 p-4 bg-white"
+								className="h-24 p-4 bg-white rounded-full"
 								type="text"
 								{...register("message", {
 									required: {
