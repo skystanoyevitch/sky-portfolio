@@ -101,7 +101,7 @@ const Nav = () => {
 							<Link to="/">Home</Link>
 						</motion.li>
 						<motion.li onClick={setOpen} open={open} id="portfolio">
-							<Link to="/">Portfolio</Link>
+							<Link to="/Showcase">Portfolio</Link>
 						</motion.li>
 						<motion.li onClick={setOpen} open={open}>
 							<NavLink to="#" activeStyle={{}}>
