@@ -16,8 +16,8 @@ const aboutSectionVariant = {
 const cardVariant = {
 	hover: {
 		scale: 1.01,
-		zIndex: 1,
-		boxShadow: "13px 13px 0px 0px rgba(0,0,0,0.2)",
+		// zIndex: 1,
+		// boxShadow: "13px 13px 0px 0px rgba(0,0,0,0.2)",
 	},
 };
 
@@ -35,42 +35,8 @@ function About() {
 		>
 			<div className="container mx-auto">
 				<h1 className="text-gray-700 text-center font-bebas text-5xl lg:text-6xl xl:text-7xl mb-12 xl:mb-32">
-					<span className="text-mainOrange">P</span>ortfolio
+					<span className="text-mainOrange">F</span>eatured Projects
 				</h1>
-				<ul className="hidden md:visible md:flex justify-evenly md:mx-auto lg: max-w-2xl xl:max-w-none md:my-12 lg:my-20 font-poppins lg:text-xl">
-					<li>
-						<motion.button
-							whileHover="hover"
-							className="px-6 py-2 hover:underline underline-offset-4  decoration-4 decoration-mainColor"
-						>
-							All Projects
-						</motion.button>
-					</li>
-					<li>
-						<motion.button
-							whileHover="hover"
-							className="px-6 py-2  hover:underline underline-offset-4 decoration-4 decoration-mainColor"
-						>
-							Design
-						</motion.button>
-					</li>
-					<li>
-						<motion.button
-							whileHover="hover"
-							className="px-6 py-2  hover:underline underline-offset-4 decoration-4 decoration-mainColor"
-						>
-							Development
-						</motion.button>
-					</li>
-					<li>
-						<motion.button
-							whileHover="hover"
-							className="px-6 py-2  hover:underline underline-offset-4 decoration-4 decoration-mainColor"
-						>
-							For Fun
-						</motion.button>
-					</li>
-				</ul>
 
 				<div className="grid grid-rows-2 gap-y-10">
 					<motion.div whileHover="hover" variants={cardVariant}>
@@ -79,7 +45,7 @@ function About() {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<div className="h-96 bg-skyCafe bg-cover bg-no-repeat hover:border-4 hover:border-gray-700"></div>
+							<div className="h-96 bg-skyCafe bg-cover bg-no-repeat border-4 border-gray-700 shadow-mainBoxShadow hover:shadow-shadowOrange"></div>
 						</a>
 					</motion.div>
 
@@ -92,8 +58,9 @@ function About() {
 							href="https://teknipak.com/"
 							target="_blank"
 							rel="noreferrer"
+							className=""
 						>
-							<div className="relative bg-teknipak bg-center bg-cover bg-no-repeat w-full h-full hover:border-4 hover:border-gray-700"></div>
+							<div className="h-96 bg-teknipak bg-center bg-cover bg-no-repeat border-4 border-gray-700 shadow-mainBoxShadow hover:shadow-shadowOrange"></div>
 						</a>
 					</motion.div>
 				</div>
