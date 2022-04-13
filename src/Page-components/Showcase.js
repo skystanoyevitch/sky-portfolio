@@ -29,30 +29,55 @@ function Showcase() {
 					animate={inView ? "animate" : "initial"}
 					className="container mx-auto md:max-w-2xl lg:max-w-screen-2xl py-10 px-8 xl:p-0 md:my-12 xl:my-32"
 				>
-					<h3 className="text-center font-playFair text-4xl mb-6 md:text-6xl xl:text-7xl md:mb-10">
-						Project{" "}
-						<span className="text-mainOrange font-bold">One</span>
+					<h3 className="text-center font-bebas text-4xl mb-6 md:text-6xl xl:text-7xl md:mb-10">
+						<span className="text-mainOrange font-bold">
+							Portfolio
+						</span>
 					</h3>
-					<p className="text-center font-poppins text-xl leading-7 text-gray-800 xl:text-3xl xl:leading-normal md:mt-4 md:px-10 md:pb-16 xl:pb-32 xl:px-40">
-						This was my Original project for a Portfolio styled app
-						that was Designed using the Bulma CSS framework and
-						JavaScript, this concept was to create a mobile friendly
-						website that was fast and with a simplistic design.
-					</p>
+
+					<ul className="hidden md:visible md:flex justify-evenly md:mx-auto lg: max-w-2xl xl:max-w-none md:my-12 lg:my-20 font-poppins lg:text-xl">
+						<li>
+							<motion.button
+								whileHover="hover"
+								className="px-6 py-2 hover:underline underline-offset-4  decoration-4 decoration-mainColor"
+							>
+								All Projects
+							</motion.button>
+						</li>
+						<li>
+							<motion.button
+								whileHover="hover"
+								className="px-6 py-2  hover:underline underline-offset-4 decoration-4 decoration-mainColor"
+							>
+								Design
+							</motion.button>
+						</li>
+						<li>
+							<motion.button
+								whileHover="hover"
+								className="px-6 py-2  hover:underline underline-offset-4 decoration-4 decoration-mainColor"
+							>
+								Development
+							</motion.button>
+						</li>
+						<li>
+							<motion.button
+								whileHover="hover"
+								className="px-6 py-2  hover:underline underline-offset-4 decoration-4 decoration-mainColor"
+							>
+								For Fun
+							</motion.button>
+						</li>
+					</ul>
 					<div className="flex flex-col items-center mt-24 md:mt-0 md:text-center">
-						<div>
-							<h2 className="font-poppins font-light text-2xl pb-4 text-gray-700">
-								Minimal Design
-							</h2>
-						</div>
-						<div className="w-full xl:w-3/4 h-120">
+						<div className="w-full xl:w-3/4 h-60">
 							<a
 								href="https://rolypolie.github.io/skystanoyevitch/"
 								target="_blank"
 								rel="noreferrer"
 								className=""
 							>
-								<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full"></div>
+								<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full border-4 border-gray-700 shadow-mainBoxShadow hover:shadow-shadowOrange"></div>
 							</a>
 						</div>
 					</div>
