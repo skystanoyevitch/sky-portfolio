@@ -38,6 +38,10 @@ module.exports = {
 				144: "36rem",
 				156: "39rem",
 			},
+			boxShadow: {
+				mainBoxShadow: "7px 7px 0 rgba(55, 65, 81, 1)",
+				shadowOrange: "7px 7px 0 rgba(255, 87, 34, 1)",
+			}
 		},
 		divideColor: (theme) => ({
 			...theme("borderColors"),
