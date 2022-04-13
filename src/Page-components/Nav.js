@@ -36,28 +36,28 @@ const Nav = () => {
 				<ul className="md:p-10 md:space-x-16 lg:space-x-24 flex p-x font-poppins lg:text-xl xl:text-2xl text-black place-items-center">
 					<li>
 						<Link to="/">
-							<button className="hover:transition ease-in-out hover:text-mainOrange hover:font-extrabold hover:-translate-y-1 hover:scale-125 duration-500">
+							<button className=" hover:text-mainOrange">
 								Home
 							</button>
 						</Link>
 					</li>
 					<li id="portfolio">
-						<Link to="/">
-							<button className="hover:transition ease-in-out hover:text-mainOrange hover:font-extrabold hover:-translate-y-1 hover:scale-125 duration-500">
+						<Link to="/Showcase">
+							<button className=" hover:text-mainOrange">
 								Portfolio
 							</button>
 						</Link>
 					</li>
 					<li>
 						<Link to="#">
-							<button className="hover:transition ease-in-out hover:text-mainOrange hover:font-extrabold hover:-translate-y-1 hover:scale-115 duration-500">
+							<button className=" hover:text-mainOrange">
 								Experimental
 							</button>
 						</Link>
 					</li>
 					<li>
 						<Link to="/Contact">
-							<button className="hover:transition ease-in-out hover:text-mainOrange hover:font-extrabold hover:-translate-y-1 hover:scale-125 duration-500">
+							<button className=" hover:text-mainOrange">
 								Contact
 							</button>
 						</Link>
