@@ -45,7 +45,7 @@ function About() {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<div className="h-96 bg-skyCafe bg-cover bg-no-repeat border-4 border-gray-700 shadow-mainBoxShadow hover:shadow-shadowOrange"></div>
+							<div className="h-60 lg:h-96 bg-skyCafe bg-cover bg-no-repeat border-4 border-gray-700 shadow-mainBoxShadow hover:shadow-shadowOrange"></div>
 						</a>
 					</motion.div>
 
@@ -60,7 +60,7 @@ function About() {
 							rel="noreferrer"
 							className=""
 						>
-							<div className="h-96 bg-teknipak bg-center bg-cover bg-no-repeat border-4 border-gray-700 shadow-mainBoxShadow hover:shadow-shadowOrange"></div>
+							<div className="h-60 lg:h-96 bg-teknipak bg-center bg-cover bg-no-repeat border-4 border-gray-700 shadow-mainBoxShadow hover:shadow-shadowOrange"></div>
 						</a>
 					</motion.div>
 				</div>
