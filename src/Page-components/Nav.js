@@ -15,16 +15,16 @@ const menuVar = {
 
 const ham1 = {
 	closed: { rotate: 0 },
-	open: { rotate: 45, translateY: 8 },
+	open: { rotate: 45, translateY: 11 },
 };
 const ham3 = {
 	closed: { rotate: 0 },
-	open: { rotate: -45, translateY: -12 },
+	open: { rotate: -45, translateY: -13 },
 };
 
 const hamClosed = {
-	closed: { opacity: 1 },
-	open: { opacity: 0, duration: 0.1 },
+	closed: { display: "block" },
+	open: { visibility: "hidden", duration: 0.2 },
 };
 const Nav = () => {
 	const [open, setOpen] = useCycle(false, true);
@@ -76,17 +76,17 @@ const Nav = () => {
 					<motion.div
 						animate={open ? "open" : "closed"}
 						variants={ham1}
-						className="w-8 h-1 bg-gray-800 rounded-full"
+						className="w-8 h-1 bg-gray-700 rounded-full"
 					></motion.div>
 					<motion.div
 						animate={open ? "open" : "closed"}
 						variants={hamClosed}
-						className="w-8 h-1 bg-gray-800 rounded-full"
+						className="w-8 h-1 bg-gray-700 rounded-full"
 					></motion.div>
 					<motion.div
 						animate={open ? "open" : "closed"}
 						variants={ham3}
-						className="w-8 h-1 bg-gray-800 rounded-full"
+						className="w-8 h-1 bg-gray-700 rounded-full"
 					></motion.div>
 				</motion.button>
 
