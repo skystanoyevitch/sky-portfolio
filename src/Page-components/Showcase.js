@@ -29,8 +29,8 @@ function Showcase() {
 					animate={inView ? "animate" : "initial"}
 					className="container mx-auto md:max-w-2xl lg:max-w-screen-2xl py-10 px-8 xl:p-0 md:my-12 xl:my-32"
 				>
-					<h3 className="text-center font-bebas text-4xl mb-6 md:text-6xl xl:text-7xl md:mb-10">
-						<span className="text-mainOrange font-bold">
+					<h3 className="text-center font-bebas text-5xl mb-6 md:text-6xl xl:text-7xl md:mb-10">
+						<span className="text-mainOrange">
 							Portfolio
 						</span>
 					</h3>
