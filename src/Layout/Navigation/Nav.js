@@ -4,12 +4,15 @@ import { motion, useCycle } from "framer-motion";
 
 const menuVar = {
 	open: {
-		display: "block",
-		y: 0,
+		height: "100%",
+		visibility: "visible",
+		opacity: "1",
 	},
 	closed: {
-		y: -500,
-		display: "none",
+		height: "0",
+		visibility: "hidden",
+		display: "block",
+		opacity: "0",
 	},
 };
 
@@ -88,30 +91,18 @@ const Nav = () => {
 					animate={open ? "open" : "closed"}
 					variants={menuVar}
 				>
-					{/* <div className="bg-primaryNav"></div> */}
-					<ul className="font-poppins flex flex-col text-3xl space-y-6 p-10">
-						<motion.li onClick={setOpen} open={open} className="">
+					<ul className="font-poppins text-3xl space-y-6 p-10">
+						<motion.li onClick={setOpen} open={open}>
 							<Link to="/">Home</Link>
 						</motion.li>
 						<motion.li onClick={setOpen} open={open} id="portfolio">
 							<Link to="/Portfolio">Portfolio</Link>
 						</motion.li>
 						<motion.li onClick={setOpen} open={open}>
-							<NavLink
-								to="/Contact"
-								activeStyle={{
-									color: "#FF5722",
-									fontWeight: "bold",
-								}}
-								className=""
-							>
-								Contact
-							</NavLink>
+							<NavLink to="/Contact">Contact</NavLink>
 						</motion.li>
 					</ul>
 				</motion.nav>
-
-				{/* {open && <HamMenu />} */}
 			</div>
 		</div>
 	);
