@@ -10,7 +10,7 @@ module.exports = {
 				profileImage: "url('./images/mainpicsky.jpg')",
 				skyCoffee: "url('./images/skyscoffee.png')",
 				"this-is-sky": "url('./images/project1snap(1).png')",
-				teknipak: "url('./images/Teknipak.png')",
+				teknipak: "url('./images/teknipak.png')",
 			}),
 			spacing: {
 				72: "18rem",
