@@ -25,7 +25,7 @@ const quoteVariants = {
 	},
 };
 
-const ShowcaseHero = () => {
+const Slider = () => {
 	const [[page, direction], setPage] = useState([0, 0]);
 
 	const quotesIndex = wrap(0, quotes.length, page);
@@ -74,4 +74,4 @@ const ShowcaseHero = () => {
 	);
 };
 
-export default ShowcaseHero;
+export default Slider;

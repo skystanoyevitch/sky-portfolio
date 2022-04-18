@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
-import HandShake from "../../icons/HandShake";
+import HandShake from "../../../icons/HandShake";
 
 const contactVariant = {
 	initial: {

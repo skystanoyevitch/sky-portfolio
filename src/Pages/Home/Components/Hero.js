@@ -16,12 +16,12 @@ function Hero() {
 				<div className="border-4 border-gray-700 right-2 bottom-2 xl:mt-32 mx-auto w-48 h-64 md:w-48 md:h-56 lg:w-80 lg:h-80 bg-profileImage rounded-full bg-cover bg-center bg-no-repeat"></div>
 				<div className="text-center mt-10 lg:flex lg:flex-col lg:items-center">
 					<p className="font-poppins text-lg font-semibold text-primary">
-						Web Designer
+						Web Developer | Designer
 					</p>
 					<h1 className="text-6xl xl:text-8xl font-bebas text-mainOrange">
 						Sky Stanoyevitch
 					</h1>
-					<p className="mt-4 font-poppins text-primary text-xl leading-7 lg:text-3xl lg:leading-normal  lg:max-w-3xl xl:max-w-6xl">
+					<p className="mt-4 font-poppins text-primary text-lg md:text-xl xl:text-2xl leading-normal  lg:max-w-3xl xl:max-w-6xl">
 						I am an experienced UI/UX Designer living in the sunny
 						side of San Diego, CA.
 					</p>

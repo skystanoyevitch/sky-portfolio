@@ -1,24 +1,24 @@
 import "./App.css";
-import Nav from "./Page-components/Nav";
-import MainContent from "./Page-components/Main";
-import ScrollToTop from "./Page-components/Helper-components/ScrollToTop";
+import Nav from "./Layout/Navigation/Nav";
+import Homepage from "./Pages/Home/Homepage";
+import ScrollToTop from "./Global-Components/ScrollToTop";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // Page Component Imports //
-import Showcase from "./Page-components/Showcase";
-import Contact from "./Page-components/Contact";
-// import Footer from "./Page-components/Footer";
+import Portfolio from "./Pages/Portfolio/Portfolio";
+import Contact from "./Pages/Contact/Contact";
+import Footer from "./Layout/Navigation/Footer";
 
 const App = ({ location }) => (
 	<BrowserRouter>
-		{/* {location.pathname !== "/Projects" && <Nav />} */}
 		<Nav />
 		<ScrollToTop />
 		<Routes>
-			<Route path="/" element={<MainContent />} />
-			<Route path="/Showcase" element={<Showcase />} />
+			<Route path="/" element={<Homepage />} />
+			<Route path="/Portfolio" element={<Portfolio />} />
 			<Route path="/Contact" element={<Contact />} />
 		</Routes>
+		<Footer />
 	</BrowserRouter>
 );
 

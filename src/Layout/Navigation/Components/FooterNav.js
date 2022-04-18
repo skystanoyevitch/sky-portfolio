@@ -5,19 +5,19 @@ export const FooterNav = () => {
 	return (
 		<>
 			<nav>
-				<ul className="flex font-poppins font-light">
-					<li className="m-6 lg:p-3">
+				<ul className="flex font-poppins space-x-8 m-6">
+					<li className="">
 						<NavLink to="/">Home</NavLink>
 					</li>
-					<li className="m-6 lg:p-3">
+					<li className="">
 						<NavLink
-							to="/Showcase"
+							to="/Portfolio"
 							activeStyle={{ color: "orange" }}
 						>
 							Portfolio
 						</NavLink>
 					</li>
-					<li className="m-6 lg:p-3">
+					<li className="">
 						<NavLink
 							to="/Contact"
 							activeStyle={{

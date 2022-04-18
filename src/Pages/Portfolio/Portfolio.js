@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
@@ -15,13 +15,12 @@ const page2Variant = {
 	},
 };
 
-function Showcase() {
+function Portfolio() {
 	const { ref, inView } = useInView({
 		triggerOnce: true,
 	});
 	return (
-		<div className="">
-			<div className="bg">
+			<div className="md:h-screen">
 				<motion.div
 					ref={ref}
 					variants={page2Variant}
@@ -83,9 +82,7 @@ function Showcase() {
 					</div>
 				</motion.div>
 			</div>
-			<Footer />
-		</div>
 	);
 }
 
-export default Showcase;
+export default Portfolio;

@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "./Footer";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import { init, sendForm } from "emailjs-com";
@@ -36,13 +35,12 @@ function Contact() {
 
 	return (
 		<div className="">
-			{/* <Nav /> */}
 			<div className="container mx-auto md:h-full flex flex-col justify-around xl:justify-center xl:gap-32 px-8 py-14 md:py-0 md:items-center md:my-24 md:px-20 lg:px-32 xl:my-0 xl:h-screen">
 				<div className="text-center">
 					<h1 className="font-bebas text-mainOrange text-5xl md:text-6xl xl:text-7xl xl:leading-normal px-8 lg:px-0">
 						Contact
 					</h1>
-					<p className="text-primary text-lg md:text-3xl font-poppins leading-7 xl:leading-normal pt-4 lg:pt-6">
+					<p className="text-primary text-lg md:text-xl xl:text-2xl font-poppins leading-normal pt-4 lg:pt-6">
 						Need a Website Designed? Want to Colaborate? please
 						don't hesitate to contact me using the form below..I
 						look Forward to hearing from you.
@@ -149,7 +147,6 @@ function Contact() {
 					</form>
 				</div>
 			</div>
-			<Footer />
 		</div>
 	);
 }

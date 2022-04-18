@@ -42,16 +42,9 @@ const Nav = () => {
 						</Link>
 					</li>
 					<li id="portfolio">
-						<Link to="/Showcase">
+						<Link to="/Portfolio">
 							<button className=" hover:text-mainOrange">
 								Portfolio
-							</button>
-						</Link>
-					</li>
-					<li>
-						<Link to="#">
-							<button className=" hover:text-mainOrange">
-								Experimental
 							</button>
 						</Link>
 					</li>
@@ -96,17 +89,12 @@ const Nav = () => {
 					variants={menuVar}
 				>
 					{/* <div className="bg-primaryNav"></div> */}
-					<ul className="font-poppins font-light flex flex-col text-3xl space-y-10 p-10">
+					<ul className="font-poppins flex flex-col text-3xl space-y-6 p-10">
 						<motion.li onClick={setOpen} open={open} className="">
 							<Link to="/">Home</Link>
 						</motion.li>
 						<motion.li onClick={setOpen} open={open} id="portfolio">
-							<Link to="/Showcase">Portfolio</Link>
-						</motion.li>
-						<motion.li onClick={setOpen} open={open}>
-							<NavLink to="#" activeStyle={{}}>
-								Experimental
-							</NavLink>
+							<Link to="/Portfolio">Portfolio</Link>
 						</motion.li>
 						<motion.li onClick={setOpen} open={open}>
 							<NavLink

@@ -21,7 +21,7 @@ const cardVariant = {
 	},
 };
 
-function About() {
+function FeaturedProjects() {
 	const { ref, inView } = useInView({
 		triggerOnce: true,
 	});
@@ -69,4 +69,4 @@ function About() {
 	);
 }
 
-export default About;
+export default FeaturedProjects;
