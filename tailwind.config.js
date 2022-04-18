@@ -8,9 +8,9 @@ module.exports = {
 			},
 			backgroundImage: (theme) => ({
 				profileImage: "url('./images/mainpicsky.jpg')",
-				skyCafe: "url('./images/project2snap(1).png')",
+				skyCoffee: "url('./images/skyscoffee.png')",
 				"this-is-sky": "url('./images/project1snap(1).png')",
-				teknipak: "url('./images/teknipak2.png')",
+				teknipak: "url('./images/Teknipak.png')",
 				placeholder2: "url('./images/placeholder2.jpg')",
 				placeholder3: "url('./images/placeholder3.jpg')",
 				placeholder4: "url('./images/placeholder4.jpg')",

@@ -38,14 +38,15 @@ function FeaturedProjects() {
 					<span className="text-mainOrange">F</span>eatured Projects
 				</h1>
 
-				<div className="grid grid-rows-2 gap-y-10">
+				<div className="grid grid-rows-2 gap-y-20">
 					<motion.div whileHover="hover" variants={cardVariant}>
 						<a
 							href="https://rolypolie.github.io/SkysCafe/"
 							target="_blank"
 							rel="noreferrer"
 						>
-							<div className="h-60 lg:h-96 bg-skyCafe bg-cover bg-no-repeat border-4 border-gray-700 shadow-mainBoxShadow hover:shadow-shadowOrange"></div>
+							<h2 className="font-poppins lg:text-4xl font-bold text-gray-700 pb-2 md:pb-4"> <span className="inline-block h-2 w-2 md:h-6 md:w-6 bg-mainOrange rounded-full mr-4"></span>Coffee Shop</h2>
+							<div className="bg-skyCoffee bg-cover bg-center bg-no-repeat font-bold h-60 lg:h-96 border-4 border-gray-700 shadow-mainBoxShadow hover:shadow-shadowOrange"></div>
 						</a>
 					</motion.div>
 
@@ -60,6 +61,7 @@ function FeaturedProjects() {
 							rel="noreferrer"
 							className=""
 						>
+							<h2 className="font-poppins lg:text-4xl font-bold text-gray-700 pb-2 md:pb-4"><span className="inline-block h-2 w-2 md:h-6 md:w-6 bg-mainOrange rounded-full mr-4"></span>Teknipak: E-commerce</h2>
 							<div className="h-60 lg:h-96 bg-teknipak bg-center bg-cover bg-no-repeat border-4 border-gray-700 shadow-mainBoxShadow hover:shadow-shadowOrange"></div>
 						</a>
 					</motion.div>
