@@ -1,7 +1,7 @@
 import React from "react";
-import { RiInstagramFill } from "react-icons/ri";
-import { FaTwitterSquare } from "react-icons/fa";
-import { AiTwotoneMail } from "react-icons/ai";
+// import { RiInstagramFill } from "react-icons/ri";
+// import { FaTwitterSquare } from "react-icons/fa";
+// import { AiTwotoneMail } from "react-icons/ai";
 import Emoji from "./Assests/heart-emoji";
 import { FooterNav } from "./Components/FooterNav";
 
@@ -12,7 +12,7 @@ const Footer = () => {
 				className="bg-primaryNav p-4 md:p-6 lg:p-8"
 			>
 				<div className="flex flex-col p-4 w-full h-full justify-center">
-					<div className="flex space-x-4 lg:space-x-9 items-center justify-center">
+					{/* <div className="flex space-x-4 lg:space-x-9 items-center justify-center">
 						<a
 							href="https://www.instagram.com/spacebars_and_tabs/"
 							rel="noreferrer"
@@ -34,7 +34,7 @@ const Footer = () => {
 						>
 							<AiTwotoneMail size={50} />
 						</a>
-					</div>
+					</div> */}
 					<div className="flex flex-row justify-center">
 						<FooterNav />
 					</div>
