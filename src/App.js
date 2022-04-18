@@ -9,7 +9,7 @@ import Portfolio from "./Pages/Portfolio/Portfolio";
 import Contact from "./Pages/Contact/Contact";
 import Footer from "./Layout/Navigation/Footer";
 
-const App = ({ location }) => (
+const App = () => (
 	<BrowserRouter>
 		<Nav />
 		<ScrollToTop />
