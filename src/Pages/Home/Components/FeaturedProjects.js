@@ -13,13 +13,13 @@ const aboutSectionVariant = {
 		},
 	},
 };
-const cardVariant = {
-	hover: {
-		scale: 1.01,
-		// zIndex: 1,
-		// boxShadow: "13px 13px 0px 0px rgba(0,0,0,0.2)",
-	},
-};
+// const cardVariant = {
+// 	focus: {
+// 		scale: 1.01,
+// zIndex: 1,
+// boxShadow: "13px 13px 0px 0px rgba(0,0,0,0.2)",
+// 	},
+// };
 
 function FeaturedProjects() {
 	const { ref, inView } = useInView({
@@ -39,32 +39,39 @@ function FeaturedProjects() {
 				</h1>
 
 				<div className="grid grid-rows-2 gap-y-20">
-					<motion.div whileHover="hover" variants={cardVariant}>
+					<motion.div>
 						<a
 							href="https://rolypolie.github.io/SkysCafe/"
 							target="_blank"
 							rel="noreferrer"
 						>
-							<h2 className="font-poppins lg:text-4xl font-bold text-gray-700 pb-2 md:pb-4"> <span className="inline-block h-2 w-2 md:h-6 md:w-6 bg-mainOrange rounded-full mr-4"></span>Coffee Shop</h2>
-							<div className="bg-skyCoffee bg-cover bg-center bg-no-repeat font-bold h-60 lg:h-96 border-4 border-gray-700 shadow-mainBoxShadow hover:shadow-shadowOrange"></div>
+							<h2 className="font-poppins lg:text-4xl font-bold text-gray-700 pb-2 md:pb-4">
+								{" "}
+								<span className="inline-block h-2 w-2 md:h-6 md:w-6 bg-mainOrange rounded-full mr-4"></span>
+								Coffee Shop
+							</h2>
+							<div className="relative border-4 border-gray-700 overflow-hidden h-60 lg:h-96 shadow-mainBoxShadow hover:shadow-shadowOrange">
+								<div className="absolute hover:scale-110 transition-all duration-500 ease-in-out transform h-full w-full bg-skyCoffee bg-cover bg-center bg-no-repeat h-60 lg:h-96"></div>
+							</div>
 						</a>
 					</motion.div>
 
-					<motion.div
-						whileHover="hover"
-						variants={cardVariant}
-						className="group"
-					>
+					<motion className="group">
 						<a
 							href="https://teknipak.com/"
 							target="_blank"
 							rel="noreferrer"
 							className=""
 						>
-							<h2 className="font-poppins lg:text-4xl font-bold text-gray-700 pb-2 md:pb-4"><span className="inline-block h-2 w-2 md:h-6 md:w-6 bg-mainOrange rounded-full mr-4"></span>Teknipak: E-commerce</h2>
-							<div className="h-60 lg:h-96 bg-teknipak bg-center bg-cover bg-no-repeat border-4 border-gray-700 shadow-mainBoxShadow hover:shadow-shadowOrange"></div>
+							<h2 className="font-poppins lg:text-4xl font-bold text-gray-700 pb-2 md:pb-4">
+								<span className="inline-block h-2 w-2 md:h-6 md:w-6 bg-mainOrange rounded-full mr-4"></span>
+								Teknipak: E-commerce
+							</h2>
+							<div className="relative border-4 border-gray-700 overflow-hidden h-60 lg:h-96 shadow-mainBoxShadow hover:shadow-shadowOrange">
+								<div className="absolute hover:scale-110 transition-all duration-500 ease-in-out transform h-full w-full bg-teknipak bg-center bg-cover bg-no-repeat"></div>
+							</div>
 						</a>
-					</motion.div>
+					</motion>
 				</div>
 			</div>
 		</motion.section>
