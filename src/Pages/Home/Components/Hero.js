@@ -28,18 +28,22 @@ function Hero() {
 				</div>
 				<div className="text-center flex flex-col md:flex-row md:justify-center lg:space-x-10">
 					<Link to={"/Contact"}>
-						<motion.button
-							variants={buttonVarant}
-							style={{
-								boxShadow: "5px 5px 0 rgba(55, 65, 81, 1)",
-							}}
-							whileHover="hover"
-							whileTap={{ scale: 0.9 }}
-							className="hover:bg-mainOrange hover:text-white bg-white border-4 border-gray-700 font-bold text-gray-700 py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 md:mr-4 rounded-full"
-						>
-							Contact
-						</motion.button>
+						<div className="relative">
+							<motion.button
+								variants={buttonVarant}
+								whileHover="hover"
+								style={{
+									boxShadow: "5px 5px 0 rgba(55, 65, 81, 1)",
+								}}
+								whileTap={{ scale: 0.9 }}
+								className="relative z-20 hover:bg-mainOrange hover:text-white bg-white border-4 border-gray-700 font-bold text-gray-700 py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 md:mr-4 rounded-full"
+							>
+								Contact
+							</motion.button>
+							{/* <div className="absolute h-14 w-36 top-12 left-3 bg-white border-4 border-gray-700 z-10"></div> */}
+						</div>
 					</Link>
+
 					<div>
 						<motion.button
 							variants={buttonVarant}

@@ -76,7 +76,7 @@ function Portfolio() {
 								rel="noreferrer"
 								className=""
 							>
-								<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full border-4 border-gray-700 shadow-mainBoxShadow hover:shadow-shadowOrange"></div>
+								<div className="bg-this-is-sky bg-cover bg-center bg-no-repeat w-full h-full shadow-mainBoxShadow hover:shadow-shadowOrange"></div>
 							</a>
 						</div>
 					</div>

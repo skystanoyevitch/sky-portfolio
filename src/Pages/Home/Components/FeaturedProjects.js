@@ -39,7 +39,7 @@ function FeaturedProjects() {
 				</h1>
 
 				<div className="grid grid-rows-2 gap-y-20">
-					<motion.div>
+					<motion.div className="relative">
 						<a
 							href="https://rolypolie.github.io/SkysCafe/"
 							target="_blank"
@@ -47,16 +47,16 @@ function FeaturedProjects() {
 						>
 							<h2 className="font-poppins lg:text-4xl font-bold text-gray-700 pb-2 md:pb-4">
 								{" "}
-								<span className="inline-block h-2 w-2 md:h-6 md:w-6 bg-mainOrange rounded-full mr-4"></span>
 								Coffee Shop
 							</h2>
-							<div className="relative border-4 border-gray-700 overflow-hidden h-60 lg:h-96 shadow-mainBoxShadow hover:shadow-shadowOrange">
-								<div className="absolute hover:scale-110 transition-all duration-500 ease-in-out transform h-full w-full bg-skyCoffee bg-cover bg-center bg-no-repeat h-60 lg:h-96"></div>
+							<div className="relative overflow-hidden h-60 lg:h-96 z-20 shadow-mainBoxShadow">
+								<div className="absolute hover:scale-110 transition-all duration-500 ease-in-out transform w-full bg-skyCoffee bg-cover bg-center bg-no-repeat h-60 lg:h-96"></div>
 							</div>
+							{/* <div className="absolute border-4 border-gray-700 w-full xl:h-96 top-20 left-6 z-10 bg-white"></div> */}
 						</a>
 					</motion.div>
 
-					<motion className="group">
+					<motion.div className="relative group">
 						<a
 							href="https://teknipak.com/"
 							target="_blank"
@@ -64,14 +64,14 @@ function FeaturedProjects() {
 							className=""
 						>
 							<h2 className="font-poppins lg:text-4xl font-bold text-gray-700 pb-2 md:pb-4">
-								<span className="inline-block h-2 w-2 md:h-6 md:w-6 bg-mainOrange rounded-full mr-4"></span>
-								Teknipak: E-commerce
+								Teknipak
 							</h2>
-							<div className="relative border-4 border-gray-700 overflow-hidden h-60 lg:h-96 shadow-mainBoxShadow hover:shadow-shadowOrange">
+							<div className="relative overflow-hidden h-60 lg:h-96 z-20 shadow-mainBoxShadow">
 								<div className="absolute hover:scale-110 transition-all duration-500 ease-in-out transform h-full w-full bg-teknipak bg-center bg-cover bg-no-repeat"></div>
 							</div>
+							{/* <div className="absolute border-4 border-gray-700 w-full xl:h-96 top-20 left-6 z-10 bg-white"></div> */}
 						</a>
-					</motion>
+					</motion.div>
 				</div>
 			</div>
 		</motion.section>
