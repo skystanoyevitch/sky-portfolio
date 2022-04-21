@@ -47,7 +47,7 @@ function Contact() {
 					</p>
 				</div>
 
-				<div className="py-24 xl:pt-0 text-center md:text-left md:w-1/2">
+				<div className="py-24 xl:pt-0 text-center md:text-left md:w-3/4">
 					<form
 						onSubmit={handleSubmit(onSubmit)}
 						id="contactForm"
