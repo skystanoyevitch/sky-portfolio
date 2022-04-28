@@ -41,16 +41,15 @@ function FeaturedProjects() {
 				<div className="grid grid-rows-2 gap-y-20">
 					<motion.div className="relative">
 						<a
-							href="https://rolypolie.github.io/SkysCafe/"
+							href="https://traveling-pal.netlify.app/"
 							target="_blank"
 							rel="noreferrer"
 						>
 							<h2 className="font-poppins lg:text-4xl font-bold text-gray-700 pb-2 md:pb-4">
-								{" "}
-								Coffee Shop
+								Travel Pal
 							</h2>
 							<div className="relative overflow-hidden h-60 lg:h-96 z-20 shadow-mainBoxShadow">
-								<div className="absolute hover:scale-110 transition-all duration-500 ease-in-out transform w-full bg-skyCoffee bg-cover bg-center bg-no-repeat h-60 lg:h-96"></div>
+								<div className="absolute hover:scale-110 transition-all duration-500 ease-in-out transform w-full bg-travelpal bg-cover bg-center bg-no-repeat h-60 lg:h-96"></div>
 							</div>
 							{/* <div className="absolute border-4 border-gray-700 w-full xl:h-96 top-20 left-6 z-10 bg-white"></div> */}
 						</a>

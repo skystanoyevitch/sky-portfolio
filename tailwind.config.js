@@ -8,8 +8,7 @@ module.exports = {
 			},
 			backgroundImage: (theme) => ({
 				profileImage: "url('./images/mainpicsky.jpg')",
-				skyCoffee: "url('./images/skyscoffee.png')",
-				"this-is-sky": "url('./images/project1snap(1).png')",
+				travelpal: "url('./images/travelpal.png')",
 				teknipak: "url('./images/teknipak.png')",
 			}),
 			spacing: {
@@ -38,7 +37,7 @@ module.exports = {
 			boxShadow: {
 				mainBoxShadow: "7px 7px 0 rgba(55, 65, 81, 1)",
 				shadowOrange: "7px 7px 0 rgba(255, 87, 34, 1)",
-			}
+			},
 		},
 		divideColor: (theme) => ({
 			...theme("borderColors"),

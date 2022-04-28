@@ -70,12 +70,12 @@ function Portfolio() {
 					<div className="flex flex-col items-center mt-24 md:mt-0">
 						<div className="w-full xl:w-3/4">
 							<a
-								href="https://rolypolie.github.io/skystanoyevitch/"
+								href="https://rolypolie.github.io/SkysCafe/"
 								target="_blank"
 								rel="noreferrer"
 							>
 								<div className="border-gray-700 border-t-2 border-b-2 hover:border-t-btnOrange hover:border-b-btnOrange w-full h-28 lg:h-full lg:p-16 lg:text-5xl font-poppins font-bold text-gray-700 flex items-center">
-									Sample Portfolio
+									Coffe Shop
 								</div>
 							</a>
 						</div>
