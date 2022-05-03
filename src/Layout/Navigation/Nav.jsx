@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { motion, useCycle } from "framer-motion";
 
@@ -31,6 +31,17 @@ const hamClosed = {
 };
 const Nav = () => {
 	const [open, setOpen] = useCycle(false, true);
+	// const [navFixed, setNavFixed] = useState(false);
+
+	useEffect(() => {
+		window.onscroll = () => {
+			if (window.scrollY > 100) {
+				console.log(window.scrollY);
+				document.getElementById("fixed-nav").classList.add("fixed");
+			} else
+				document.getElementById("fixed-nav").classList.remove("fixed");
+		};
+	}, []);
 
 	return (
 		// Desktop Navigation Top Menu
@@ -62,29 +73,36 @@ const Nav = () => {
 			</nav>
 
 			{/* Moible Navigation Hamburger Menu */}
-			<div className="md:hidden container mx-auto flex flex-col items-start">
-				<motion.button
-					initial={false}
-					onClick={setOpen}
-					open={open}
-					className="px-10 py-5 md:hidden space-y-2"
-				>
-					<motion.div
-						animate={open ? "open" : "closed"}
-						variants={ham1}
-						className="w-8 h-1 bg-gray-700 rounded-full"
-					></motion.div>
-					<motion.div
-						animate={open ? "open" : "closed"}
-						variants={hamClosed}
-						className="w-8 h-1 bg-gray-700 rounded-full"
-					></motion.div>
-					<motion.div
-						animate={open ? "open" : "closed"}
-						variants={ham3}
-						className="w-8 h-1 bg-gray-700 rounded-full"
-					></motion.div>
-				</motion.button>
+			<div
+				id="fixed-nav"
+				className={`md:hidden container mx-auto flex flex-col items-start shadow-lg bg-body z-40`}
+			>
+				<div className="px-5 py-5 rounded-lg">
+					<div className=" p-2 rounded-lg">
+						<motion.button
+							initial={false}
+							onClick={setOpen}
+							open={open}
+							className="md:hidden space-y-2"
+						>
+							<motion.div
+								animate={open ? "open" : "closed"}
+								variants={ham1}
+								className="w-8 h-1 bg-gray-700 rounded-full"
+							></motion.div>
+							<motion.div
+								animate={open ? "open" : "closed"}
+								variants={hamClosed}
+								className="w-8 h-1 bg-gray-700 rounded-full"
+							></motion.div>
+							<motion.div
+								animate={open ? "open" : "closed"}
+								variants={ham3}
+								className="w-8 h-1 bg-gray-700 rounded-full"
+							></motion.div>
+						</motion.button>
+					</div>
+				</div>
 
 				<motion.nav
 					initial={false}

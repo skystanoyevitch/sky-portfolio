@@ -4,7 +4,7 @@ import MainContact from "./Components/MainContact";
 
 const Homepage = () => {
 	return (
-		<div className="">
+		<div>
 			<Hero />
 			<FeaturedProjects />
 			<MainContact />

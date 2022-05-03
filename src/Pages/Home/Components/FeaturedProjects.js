@@ -13,13 +13,6 @@ const aboutSectionVariant = {
 		},
 	},
 };
-// const cardVariant = {
-// 	focus: {
-// 		scale: 1.01,
-// zIndex: 1,
-// boxShadow: "13px 13px 0px 0px rgba(0,0,0,0.2)",
-// 	},
-// };
 
 function FeaturedProjects() {
 	const { ref, inView } = useInView({
@@ -35,7 +28,7 @@ function FeaturedProjects() {
 		>
 			<div className="container mx-auto">
 				<h1 className="text-gray-700 text-center font-bebas text-5xl lg:text-6xl xl:text-7xl mb-12 xl:mb-32">
-					<span className="text-mainOrange">F</span>eatured Projects
+					Featured Projects
 				</h1>
 
 				<div className="grid grid-rows-2 gap-y-20">
@@ -51,7 +44,6 @@ function FeaturedProjects() {
 							<div className="relative overflow-hidden h-60 lg:h-96 z-20 shadow-mainBoxShadow">
 								<div className="absolute hover:scale-110 transition-all duration-500 ease-in-out transform w-full bg-travelpal bg-cover bg-center bg-no-repeat h-60 lg:h-96"></div>
 							</div>
-							{/* <div className="absolute border-4 border-gray-700 w-full xl:h-96 top-20 left-6 z-10 bg-white"></div> */}
 						</a>
 					</motion.div>
 
@@ -68,7 +60,6 @@ function FeaturedProjects() {
 							<div className="relative overflow-hidden h-60 lg:h-96 z-20 shadow-mainBoxShadow">
 								<div className="absolute hover:scale-110 transition-all duration-500 ease-in-out transform h-full w-full bg-teknipak bg-center bg-cover bg-no-repeat"></div>
 							</div>
-							{/* <div className="absolute border-4 border-gray-700 w-full xl:h-96 top-20 left-6 z-10 bg-white"></div> */}
 						</a>
 					</motion.div>
 				</div>
