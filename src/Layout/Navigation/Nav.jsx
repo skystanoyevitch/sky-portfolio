@@ -29,14 +29,15 @@ const hamClosed = {
 	closed: { display: "block" },
 	open: { visibility: "hidden", duration: 0.2 },
 };
-const Nav = () => {
+export const Nav = ({ navLinks }) => {
+	console.log(navLinks);
 	const [open, setOpen] = useCycle(false, true);
 	// const [navFixed, setNavFixed] = useState(false);
 
 	useEffect(() => {
 		window.onscroll = () => {
 			if (window.scrollY > 100) {
-				console.log(window.scrollY);
+				// console.log(window.scrollY);
 				document.getElementById("fixed-nav").classList.add("fixed");
 			} else
 				document.getElementById("fixed-nav").classList.remove("fixed");
@@ -47,29 +48,17 @@ const Nav = () => {
 		// Desktop Navigation Top Menu
 		<div className={"bg-primaryNav md:flex md:flex-col"}>
 			<nav className="container mx-auto hidden md:visible md:flex md:justify-center flex-1">
-				<ul className="md:p-10 md:space-x-16 lg:space-x-24 flex p-x font-poppins lg:text-xl xl:text-2xl text-black place-items-center">
-					<li>
-						<Link to="/">
-							<button className=" hover:text-mainOrange">
-								Home
-							</button>
-						</Link>
-					</li>
-					<li id="portfolio">
-						<Link to="/Portfolio">
-							<button className=" hover:text-mainOrange">
-								Portfolio
-							</button>
-						</Link>
-					</li>
-					<li>
-						<Link to="/Contact">
-							<button className=" hover:text-mainOrange">
-								Contact
-							</button>
-						</Link>
-					</li>
-				</ul>
+				{navLinks.map((link) => (
+					<ul className="md:p-10 md:space-x-16 lg:space-x-24 flex p-x font-poppins lg:text-xl xl:text-2xl text-black place-items-center">
+						<li>
+							<Link key={link.id} to={link.to}>
+								<button className=" hover:text-mainOrange">
+									{link.name}
+								</button>
+							</Link>
+						</li>
+					</ul>
+				))}
 			</nav>
 
 			{/* Moible Navigation Hamburger Menu */}
@@ -110,20 +99,16 @@ const Nav = () => {
 					variants={menuVar}
 				>
 					<ul className="font-poppins text-3xl space-y-6 p-10">
-						<motion.li onClick={setOpen} open={open}>
-							<Link to="/">Home</Link>
-						</motion.li>
-						<motion.li onClick={setOpen} open={open} id="portfolio">
-							<Link to="/Portfolio">Portfolio</Link>
-						</motion.li>
-						<motion.li onClick={setOpen} open={open}>
-							<NavLink to="/Contact">Contact</NavLink>
-						</motion.li>
+						{navLinks?.map((link) => (
+							<motion.li onClick={setOpen} open={open}>
+								<Link key={link.id} to={link.to}>
+									{link.name}
+								</Link>
+							</motion.li>
+						))}
 					</ul>
 				</motion.nav>
 			</div>
 		</div>
 	);
 };
-
-export default Nav;
