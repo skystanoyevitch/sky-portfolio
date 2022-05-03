@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, useCycle } from "framer-motion";
 
@@ -30,18 +30,23 @@ const hamClosed = {
 	open: { visibility: "hidden", duration: 0.2 },
 };
 export const Nav = ({ navLinks }) => {
-	console.log(navLinks);
+	// console.log(navLinks);
 	const [open, setOpen] = useCycle(false, true);
-	const divRef = useRef();
-	// const [navFixed, setNavFixed] = useState(false);
+	// const divRef = useRef(null);
+	const [navFixed, setNavFixed] = useState(false);
 
 	useEffect(() => {
 		window.onscroll = () => {
-			if (window.scrollY > 100) {
+			if (window.scrollY > 250) {
 				// console.log(window.scrollY);
-				divRef.current.classList.add("fixed");
-			} else divRef.current.classList.remove("fixed");
+				setNavFixed(true);
+				// divRef.current.classList.add("fixed");
+			} else {
+				setNavFixed(false);
+				// divRef.current.classList.remove("fixed");
+			}
 		};
+		setNavFixed(false);
 	}, []);
 
 	return (
@@ -63,8 +68,9 @@ export const Nav = ({ navLinks }) => {
 
 			{/* Moible Navigation Hamburger Menu */}
 			<div
-				ref={divRef}
-				className={`md:hidden container mx-auto flex flex-col items-start shadow-lg bg-body z-40`}
+				className={`${
+					navFixed ? "fixed" : "sticky"
+				} md:hidden container mx-auto flex flex-col items-start shadow-lg bg-body z-40`}
 			>
 				<div className="px-5 py-5 rounded-lg">
 					<div className=" p-2 rounded-lg">
@@ -99,7 +105,7 @@ export const Nav = ({ navLinks }) => {
 					variants={menuVar}
 				>
 					<ul className="font-poppins text-3xl space-y-6 p-10">
-						{navLinks?.map((link) => (
+						{navLinks.map((link) => (
 							<motion.li onClick={setOpen} open={open}>
 								<Link key={link.id} to={link.to}>
 									{link.name}

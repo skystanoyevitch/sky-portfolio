@@ -71,22 +71,22 @@ function Portfolio() {
 				<div className="space-y-4">
 					<div className="flex flex-col items-center mt-24 md:mt-0">
 						<div className="w-full xl:w-3/4">
-							{allProjects?.map((name, i) => (
-								<a
-									href={name.to}
-									target="_blank"
-									rel="noreferrer"
-								>
-									<ul>
+							<ul>
+								{allProjects.map((name, i) => (
+									<a
+										href={name.to}
+										target="_blank"
+										rel="noreferrer"
+									>
 										<li
 											key={i}
 											className="m-4 md:my-10 border-gray-700 border-t-2 border-b-2 hover:border-t-btnOrange hover:border-b-btnOrange w-full h-28 lg:h-full lg:p-16 lg:text-5xl font-poppins font-bold text-gray-700 flex items-center"
 										>
 											{name.name}
 										</li>
-									</ul>
-								</a>
-							))}
+									</a>
+								))}
+							</ul>
 						</div>
 					</div>
 				</div>
