@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion, useCycle } from "framer-motion";
 
@@ -32,15 +32,15 @@ const hamClosed = {
 export const Nav = ({ navLinks }) => {
 	console.log(navLinks);
 	const [open, setOpen] = useCycle(false, true);
+	const divRef = useRef();
 	// const [navFixed, setNavFixed] = useState(false);
 
 	useEffect(() => {
 		window.onscroll = () => {
 			if (window.scrollY > 100) {
 				// console.log(window.scrollY);
-				document.getElementById("fixed-nav").classList.add("fixed");
-			} else
-				document.getElementById("fixed-nav").classList.remove("fixed");
+				divRef.current.classList.add("fixed");
+			} else divRef.current.classList.remove("fixed");
 		};
 	}, []);
 
@@ -63,7 +63,7 @@ export const Nav = ({ navLinks }) => {
 
 			{/* Moible Navigation Hamburger Menu */}
 			<div
-				id="fixed-nav"
+				ref={divRef}
 				className={`md:hidden container mx-auto flex flex-col items-start shadow-lg bg-body z-40`}
 			>
 				<div className="px-5 py-5 rounded-lg">

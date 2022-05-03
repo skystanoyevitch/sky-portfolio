@@ -77,12 +77,14 @@ function Portfolio() {
 									target="_blank"
 									rel="noreferrer"
 								>
-									<div
-										key={i}
-										className="m-4 md:my-10 border-gray-700 border-t-2 border-b-2 hover:border-t-btnOrange hover:border-b-btnOrange w-full h-28 lg:h-full lg:p-16 lg:text-5xl font-poppins font-bold text-gray-700 flex items-center"
-									>
-										{name.name}
-									</div>
+									<ul>
+										<li
+											key={i}
+											className="m-4 md:my-10 border-gray-700 border-t-2 border-b-2 hover:border-t-btnOrange hover:border-b-btnOrange w-full h-28 lg:h-full lg:p-16 lg:text-5xl font-poppins font-bold text-gray-700 flex items-center"
+										>
+											{name.name}
+										</li>
+									</ul>
 								</a>
 							))}
 						</div>
