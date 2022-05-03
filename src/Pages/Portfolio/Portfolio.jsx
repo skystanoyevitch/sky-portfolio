@@ -2,6 +2,8 @@ import React from "react";
 // import Footer from "./Footer";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import { allProjects } from "./allProjects";
+console.log(allProjects[0]);
 
 const page2Variant = {
 	initial: {
@@ -69,28 +71,20 @@ function Portfolio() {
 				<div className="space-y-4">
 					<div className="flex flex-col items-center mt-24 md:mt-0">
 						<div className="w-full xl:w-3/4">
-							<a
-								href="https://rolypolie.github.io/SkysCafe/"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<div className="border-gray-700 border-t-2 border-b-2 hover:border-t-btnOrange hover:border-b-btnOrange w-full h-28 lg:h-full lg:p-16 lg:text-5xl font-poppins font-bold text-gray-700 flex items-center">
-									Coffe Shop
-								</div>
-							</a>
-						</div>
-					</div>
-					<div className="flex flex-col items-center md:mt-0">
-						<div className="w-full xl:w-3/4">
-							<a
-								href="https://github.com/RolyPolie/To-do-App"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<div className="border-gray-700 border-t-2 border-b-2 hover:border-t-btnOrange hover:border-b-btnOrange w-full h-28 lg:h-full lg:p-16 lg:text-5xl font-poppins font-bold text-gray-700 flex items-center">
-									Todo App
-								</div>
-							</a>
+							{allProjects?.map((name, i) => (
+								<a
+									href={name.to}
+									target="_blank"
+									rel="noreferrer"
+								>
+									<div
+										key={i}
+										className="m-4 md:my-10 border-gray-700 border-t-2 border-b-2 hover:border-t-btnOrange hover:border-b-btnOrange w-full h-28 lg:h-full lg:p-16 lg:text-5xl font-poppins font-bold text-gray-700 flex items-center"
+									>
+										{name.name}
+									</div>
+								</a>
+							))}
 						</div>
 					</div>
 				</div>
