@@ -22,7 +22,7 @@ function Portfolio() {
 		triggerOnce: true,
 	});
 	return (
-		<div className="md:h-screen">
+		<div className="">
 			<motion.div
 				ref={ref}
 				variants={page2Variant}
@@ -73,18 +73,25 @@ function Portfolio() {
 						<div className="w-full xl:w-3/4">
 							<ul>
 								{allProjects.map((name, i) => (
-									<a
-										href={name.to}
-										target="_blank"
-										rel="noreferrer"
-									>
+									<div className="group">
+										{/* <a
+											href="blank"
+											target="_blank"
+											rel="noreferrer"
+										> */}
 										<li
 											key={i}
-											className="m-4 md:my-10 border-gray-700 border-t-2 border-b-2 hover:border-t-btnOrange hover:border-b-btnOrange w-full h-28 lg:h-full lg:p-16 lg:text-5xl font-poppins font-bold text-gray-700 flex items-center"
+											className="hover:transition-all hover:duration-300 my-4 md:my-10 border-gray-700 border-t-2 border-b-2 hover:border-t-btnOrange hover:border-b-btnOrange w-full h-28 hover:h-64 md:hover:h-96 lg:p-16 flex items-center hover:items-start hover:flex-col"
 										>
-											{name.name}
+											<h1 className="font-poppins font-bold text-mainOrange lg:text-5xl">
+												{name.name}
+											</h1>
+											<h3 className="font-poppins lg:text-3xl text-gray-700 h-28 invisible group-hover:visible group-hover:transition group-hover:duration-300 opacity-0 group-hover:opacity-100">
+												Project Details
+											</h3>
 										</li>
-									</a>
+										{/* </a> */}
+									</div>
 								))}
 							</ul>
 						</div>
