@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import Footer from "./Footer";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
@@ -18,9 +18,15 @@ const page2Variant = {
 };
 
 function Portfolio() {
+	const [projectDeets, setProjectDeets] = useState(false);
 	const { ref, inView } = useInView({
 		triggerOnce: true,
 	});
+
+	function handleClick() {
+		console.log(projectDeets);
+		setProjectDeets((prevState) => !prevState);
+	}
 	return (
 		<div className="">
 			<motion.div
@@ -73,10 +79,17 @@ function Portfolio() {
 						<div className="w-full">
 							<ul>
 								{allProjects.map((project, i) => (
-									<div className="group">
+									<div
+										className="group"
+										onClick={handleClick}
+									>
 										<li
 											key={i}
-											className="hover:transition-all hover:duration-300 my-4 md:my-10 w-full h-64 border-b-2 lg:hover:h-156 flex items-center lg:items-start lg:flex-col"
+											className={`${
+												projectDeets
+													? "transition-all duration-300 h-156 "
+													: "h-64 flex"
+											}hover:transition-all hover:duration-300 my-4 md:my-10 w-full border-b-2 lg:h-64 lg:hover:h-156 items-center lg:items-start lg:flex-col`}
 										>
 											<a
 												href={project.to}
@@ -84,12 +97,20 @@ function Portfolio() {
 												rel="noreferrer"
 												className=""
 											>
-												<h1 className="font-poppins font-bold text-gray-700 lg:text-4xl p-8 lg:p-16 hover:scale-200 hover:underline hover:underline-offset-4  decoration-4 hover:decoration-mainColor">
+												<h1
+													className={`font-poppins font-bold text-gray-700 lg:text-4xl p-8 lg:p-16 hover:underline hover:underline-offset-4  decoration-4 hover:decoration-mainColor`}
+												>
 													{project.name}
 												</h1>
 											</a>
 											<div
-												className={`${project.thumbnail} lg:h-full lg:w-full shadow-mainBoxShadow opacity-0 group-hover:opacity-100 group-hover:transition-all`}
+												className={`${
+													project.thumbnail
+												} ${
+													projectDeets
+														? "transition-all duration-300 opacity-100 w-full h-48 "
+														: "transition-all duration-300 opactiy-0 "
+												} lg:h-full lg:w-full shadow-mainBoxShadow group-hover:opacity-100 group-hover:transition-all`}
 											></div>
 										</li>
 									</div>
