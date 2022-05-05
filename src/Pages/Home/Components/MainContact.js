@@ -38,7 +38,7 @@ const MainContact = () => {
 				>
 					<div className="container mx-auto mb-24  p-8 lg:p-16 xl:p-0 text-center flex flex-col items-center justify-center">
 						<HandShake />
-						<h1 className="font-poppins font-light text-gray-700 text-3xl lg:text-4xl">
+						<h1 className="font-poppins font-bold text-gray-700 text-3xl lg:text-4xl">
 							Let's Work Together
 						</h1>
 						<Link to="/Contact">

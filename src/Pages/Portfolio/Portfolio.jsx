@@ -110,9 +110,9 @@ function Portfolio() {
 													project.thumbnail
 												} ${
 													projectDeets === project.id
-														? "transition-all duration-300 lg:w-1/2 h-1/2 lg:h-3/4 "
+														? "transition-all duration-300 w-full h-1/2 lg:h-3/4 "
 														: "transition-all duration-300 h-0 w-0"
-												} lg:w-1/2 shadow-mainBoxShadow`}
+												} w-full shadow-mainBoxShadow`}
 											></div>
 
 											<div className="p-4">
