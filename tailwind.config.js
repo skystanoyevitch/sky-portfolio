@@ -5,6 +5,7 @@ module.exports = {
 			fontFamily: {
 				poppins: ['"Poppins"', "sans-serif"],
 				bebas: ['"Bebas Neue"', "cursive"],
+				caveat: ['"Caveat"', "cursive"],
 			},
 			backgroundImage: (theme) => ({
 				profileImage: "url('./images/mainpicsky.jpg')",

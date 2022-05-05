@@ -36,11 +36,11 @@ function Portfolio() {
 				animate={inView ? "animate" : "initial"}
 				className="container mx-auto md:max-w-2xl lg:max-w-screen-2xl py-10 px-8 xl:p-0 md:my-12 xl:my-32"
 			>
-				<h3 className="text-center font-bebas text-5xl mb-6 md:text-6xl xl:text-7xl md:mb-10">
+				<h3 className="text-center font-poppins font-light text-5xl mb-6 md:text-6xl xl:text-7xl md:mb-10">
 					<span className="text-mainOrange">Projects</span>
 				</h3>
 
-				<ul className="hidden md:visible md:flex justify-evenly md:mx-auto lg: max-w-2xl xl:max-w-none md:my-12 lg:my-20 font-poppins lg:text-xl">
+				<ul className="hidden md:visible md:flex justify-evenly md:mx-auto lg:max-w-2xl xl:max-w-none md:my-12 lg:my-20 font-poppins font-light lg:text-xl">
 					<li>
 						<motion.button
 							whileHover="hover"
@@ -92,27 +92,28 @@ function Portfolio() {
 													: "transition-all duration-300 lg:h-96 h-64 "
 											}my-4 md:my-10 w-full border-b-2 items-center lg:items-start`}
 										>
+											<h1
+												className={`font-caveat font- text-gray-700 lg:text-4xl p-8 lg:p-16 hover:underline hover:underline-offset-4  decoration-4 hover:decoration-mainColor`}
+											>
+												{project.name}
+											</h1>
 											<a
 												href={project.to}
 												target="_blank"
 												rel="noreferrer"
 												className=""
 											>
-												<h1
-													className={`font-poppins font-bold text-gray-700 lg:text-4xl p-8 lg:p-16 hover:underline hover:underline-offset-4  decoration-4 hover:decoration-mainColor`}
-												>
-													{project.name}
-												</h1>
+												<div
+													className={`${
+														project.thumbnail
+													} ${
+														projectDeets ===
+														project.id
+															? "transition-all duration-300 w-full h-1/2 lg:h-3/4 "
+															: "transition-all duration-300 h-0 w-0"
+													} lg:w-full shadow-mainBoxShadow`}
+												></div>
 											</a>
-											<div
-												className={`${
-													project.thumbnail
-												} ${
-													projectDeets === project.id
-														? "transition-all duration-300 w-full h-1/2 lg:h-3/4 "
-														: "transition-all duration-300 h-0 w-0"
-												} lg:w-full shadow-mainBoxShadow`}
-											></div>
 										</li>
 									</div>
 								))}

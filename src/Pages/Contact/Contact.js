@@ -37,7 +37,7 @@ function Contact() {
 		<div className="">
 			<div className="container mx-auto md:h-full flex flex-col justify-around xl:justify-center xl:gap-32 px-8 py-14 md:py-0 md:items-center md:my-24 md:px-20 lg:px-32 xl:my-0 xl:h-screen">
 				<div className="text-center">
-					<h1 className="font-bebas text-mainOrange text-5xl md:text-6xl xl:text-7xl xl:leading-normal px-8 lg:px-0">
+					<h1 className="font-poppins font-light text-mainOrange text-5xl md:text-6xl xl:text-7xl xl:leading-normal px-8 lg:px-0">
 						Contact
 					</h1>
 					<p className="text-primary text-lg md:text-xl xl:text-2xl font-poppins leading-normal pt-4 lg:pt-6">
@@ -74,7 +74,7 @@ function Contact() {
 									maxLength: 15,
 								})}
 								type="text"
-								className="p-4 bg-white w-full rounded-full"
+								className="p-4 bg-body w-full rounded-xl"
 								name="first_name"
 								placeholder="First Name"
 							/>
@@ -87,7 +87,7 @@ function Contact() {
 										message: "Last Name is Required",
 									},
 								})}
-								className="p-4 bg-white w-full rounded-full"
+								className="p-4 bg-body w-full rounded-xl"
 								name="last_name"
 								placeholder="Last Name"
 							/>
@@ -102,7 +102,7 @@ function Contact() {
 										message: "Email is Required",
 									},
 								})}
-								className="p-4 bg-white rounded-full"
+								className="p-4 bg-body rounded-xl"
 								name="email"
 								placeholder="Email"
 							/>
@@ -110,13 +110,13 @@ function Contact() {
 							<input
 								type="text"
 								{...register("subject", { maxLength: 15 })}
-								className="p-4 bg-white rounded-full"
+								className="p-4 bg-body rounded-xl"
 								name="subject"
 								placeholder="Subject"
 							/>
 
 							<textarea
-								className="h-24 p-4 bg-white rounded-full"
+								className="h-24 p-4 bg-body rounded-xl"
 								type="text"
 								{...register("message", {
 									required: {
@@ -140,7 +140,7 @@ function Contact() {
 							variants={buttonVarant}
 							type="submit"
 							value="submit"
-							className="hover:bg-mainOrange hover:text-white bg-white border-4 border-gray-700 font-bold text-gray-700 font-poppins py-2 px-6 text-xl mt-4 mx-8 md:mx-0 rounded-full"
+							className="hover:bg-mainOrange hover:text-white bg-white font-bold border border-gray-700 text-gray-700 font-poppins py-2 px-6 text-xl mt-4 mx-8 md:mx-0 rounded-xl"
 						>
 							Send
 						</motion.button>
