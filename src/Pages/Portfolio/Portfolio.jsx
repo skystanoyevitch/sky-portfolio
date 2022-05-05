@@ -17,15 +17,15 @@ const page2Variant = {
 };
 
 function Portfolio() {
-	const [projectDeets, setProjectDeets] = useState(false);
+	const [projectDeets, setProjectDeets] = useState(-1);
 	const { ref, inView } = useInView({
 		triggerOnce: true,
 	});
 
 	function handleClick(id) {
 		// const projId =
-		console.log(projectDeets);
-		setProjectDeets(id);
+		// console.log(projectDeets);
+		setProjectDeets((prev) => (prev === -1 ? id : -1));
 	}
 	return (
 		<div className="">
@@ -88,8 +88,8 @@ function Portfolio() {
 											}
 											className={`${
 												projectDeets === project.id
-													? "transition-all duration-300 lg:h-156 "
-													: "lg:h-96 "
+													? "transition-all duration-300 lg:h-156 h-120 "
+													: "transition-all duration-300 lg:h-96 h-64 "
 											}my-4 md:my-10 w-full border-b-2 items-center lg:items-start`}
 										>
 											<a
@@ -109,8 +109,8 @@ function Portfolio() {
 													project.thumbnail
 												} ${
 													projectDeets === project.id
-														? "transition-all duration-300 opacity-100 w-full h-1/2 "
-														: "transition-all duration-300 opacity-0 "
+														? "transition-all duration-300 w-full h-1/2 lg:h-3/4 "
+														: "transition-all duration-300 h-0 w-0"
 												} lg:w-full shadow-mainBoxShadow`}
 											></div>
 										</li>

@@ -13,9 +13,9 @@ function Hero() {
 	return (
 		<div className="xl:h-4/6 p-10 xl:p-0 md:mt-24">
 			<div className="container mx-auto">
-				<div className="border-4 border-gray-700 right-2 bottom-2 xl:mt-32 mx-auto w-48 h-64 md:w-48 md:h-56 lg:w-80 lg:h-80 bg-profileImage rounded-full bg-cover bg-center bg-no-repeat"></div>
+				<div className="right-2 bottom-2 xl:mt-32 mx-auto w-48 h-64 md:w-48 md:h-56 lg:w-80 lg:h-80 bg-profileImage bg-contain md:bg-cover bg-center bg-no-repeat"></div>
 				<div className="text-center mt-10 lg:flex lg:flex-col lg:items-center">
-					<p className="font-poppins text-lg font-semibold text-primary">
+					<p className="font-poppins text-sm font-semibold text-primary">
 						Web Developer | Designer
 					</p>
 					<h1 className="text-6xl xl:text-8xl font-bebas text-mainOrange">
@@ -26,7 +26,7 @@ function Hero() {
 						side of San Diego, CA.
 					</p>
 				</div>
-				<div className="text-center flex flex-col md:flex-row md:justify-center lg:space-x-10">
+				<div className="text-center flex justify-center space-x-4 md:flex-row md:justify-center lg:space-x-10">
 					<Link to={"/Contact"}>
 						<div className="relative">
 							<motion.button
@@ -36,7 +36,7 @@ function Hero() {
 									boxShadow: "5px 5px 0 rgba(55, 65, 81, 1)",
 								}}
 								whileTap={{ scale: 0.9 }}
-								className="relative z-20 hover:bg-mainOrange hover:text-white bg-white border-4 border-gray-700 font-bold text-gray-700 py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 md:mr-4 rounded-full"
+								className="relative z-20 hover:bg-mainOrange hover:text-white bg-white font-bold text-gray-700 py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 md:mr-4 rounded-xl"
 							>
 								Contact
 							</motion.button>
@@ -53,7 +53,7 @@ function Hero() {
 							whileHover="hover"
 							whileTap={{ scale: 0.9 }}
 							onClick={notify}
-							className="hover:bg-mainOrange hover:text-white bg-white border-4 border-gray-700 py-2 px-6 font-poppins font-bold text-gray-700 text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 md:mr-4 rounded-full"
+							className="hover:bg-mainOrange hover:text-white bg-white py-2 px-6 font-poppins font-bold text-gray-700 text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 md:mr-4 rounded-xl"
 						>
 							Resume
 						</motion.button>
