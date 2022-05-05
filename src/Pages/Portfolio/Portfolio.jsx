@@ -38,7 +38,7 @@ function Portfolio() {
 					<li>
 						<motion.button
 							whileHover="hover"
-							className="px-6 py-2 hover:underline underline-offset-4  decoration-4 decoration-mainColor"
+							className="px-6 py-2 decoration-mainColor"
 						>
 							All Projects
 						</motion.button>
@@ -46,7 +46,7 @@ function Portfolio() {
 					<li>
 						<motion.button
 							whileHover="hover"
-							className="px-6 py-2  hover:underline underline-offset-4 decoration-4 decoration-mainColor"
+							className="px-6 py-2 decoration-mainColor"
 						>
 							Design
 						</motion.button>
@@ -54,7 +54,7 @@ function Portfolio() {
 					<li>
 						<motion.button
 							whileHover="hover"
-							className="px-6 py-2  hover:underline underline-offset-4 decoration-4 decoration-mainColor"
+							className="px-6 py-2 decoration-mainColor"
 						>
 							Development
 						</motion.button>
@@ -62,35 +62,36 @@ function Portfolio() {
 					<li>
 						<motion.button
 							whileHover="hover"
-							className="px-6 py-2  hover:underline underline-offset-4 decoration-4 decoration-mainColor"
+							className="px-6 py-2 decoration-mainColor"
 						>
 							For Fun
 						</motion.button>
 					</li>
 				</ul>
 				<div className="space-y-4">
-					<div className="flex flex-col items-center mt-24 md:mt-0">
-						<div className="w-full xl:w-3/4">
+					<div className="mt-24 md:mt-0">
+						<div className="w-full">
 							<ul>
-								{allProjects.map((name, i) => (
+								{allProjects.map((project, i) => (
 									<div className="group">
-										{/* <a
-											href="blank"
-											target="_blank"
-											rel="noreferrer"
-										> */}
 										<li
 											key={i}
-											className="hover:transition-all hover:duration-300 my-4 md:my-10 border-gray-700 border-t-2 border-b-2 hover:border-t-btnOrange hover:border-b-btnOrange w-full h-28 hover:h-64 md:hover:h-96 lg:p-16 flex items-center hover:items-start hover:flex-col"
+											className="hover:transition-all hover:duration-300 my-4 md:my-10 w-full h-64 border-b-2 lg:hover:h-156 flex items-center lg:items-start lg:flex-col"
 										>
-											<h1 className="font-poppins font-bold text-mainOrange lg:text-5xl">
-												{name.name}
-											</h1>
-											<h3 className="font-poppins lg:text-3xl text-gray-700 h-28 invisible group-hover:visible group-hover:transition group-hover:duration-300 opacity-0 group-hover:opacity-100">
-												Project Details
-											</h3>
+											<a
+												href={project.to}
+												target="_blank"
+												rel="noreferrer"
+												className=""
+											>
+												<h1 className="font-poppins font-bold text-gray-700 lg:text-4xl p-8 lg:p-16 hover:scale-200 hover:underline hover:underline-offset-4  decoration-4 hover:decoration-mainColor">
+													{project.name}
+												</h1>
+											</a>
+											<div
+												className={`${project.thumbnail} lg:h-full lg:w-full shadow-mainBoxShadow opacity-0 group-hover:opacity-100 group-hover:transition-all`}
+											></div>
 										</li>
-										{/* </a> */}
 									</div>
 								))}
 							</ul>
