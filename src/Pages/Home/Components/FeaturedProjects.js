@@ -27,7 +27,7 @@ function FeaturedProjects() {
 			className="container mx-auto max-w-xs py-20 md:max-w-lg xl:p-0 xl:flex lg:max-w-5xl lg:flex lg:p-24 lg:items-center xl:py-44 lg:justify-evenly space-y-20 xl:space-y-0"
 		>
 			<div className="container mx-auto">
-				<h1 className="text-gray-700 text-center font-poppins font-light text-3xl mb-12 xl:mb-32">
+				<h1 className="text-gray-700 text-center font-poppins font-light text-3xl md:text-4xl mb-12 xl:mb-32">
 					Featured Projects
 				</h1>
 

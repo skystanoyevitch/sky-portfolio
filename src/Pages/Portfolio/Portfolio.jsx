@@ -36,9 +36,13 @@ function Portfolio() {
 				animate={inView ? "animate" : "initial"}
 				className="container mx-auto md:max-w-2xl lg:max-w-screen-2xl py-10 px-8 xl:p-0 md:my-12 xl:my-32"
 			>
-				<h3 className="text-center font-poppins font-light text-5xl mb-6 md:text-6xl xl:text-7xl md:mb-10">
-					<span className="text-mainOrange">Projects</span>
+				<h3 className="text-left font-poppins font-bold text-5xl mb-6 md:text-6xl xl:text-7xl md:mb-10">
+					<span className="text-mainOrange">Projects Gallery</span>
 				</h3>
+				<p className="font-poppins text-primary text-lg md:text-xl xl:text-2xl leading-normal  lg:max-w-3xl xl:max-w-6xl">
+					From Personal Projects to Professional work, this is a list
+					of all that i have done.
+				</p>
 
 				<ul className="hidden md:visible md:flex justify-evenly md:mx-auto lg:max-w-2xl xl:max-w-none md:my-12 lg:my-20 font-poppins font-light lg:text-xl">
 					<li>
@@ -93,7 +97,7 @@ function Portfolio() {
 											}my-4 md:my-10 w-full items-center lg:items-start`}
 										>
 											<h1
-												className={`font-caveat text-gray-700 lg:text-4xl p-8 lg:p-16 hover:underline hover:underline-offset-4  decoration-4 hover:decoration-mainColor ${
+												className={`font-caveat text-gray-700 text-xl lg:text-4xl p-8 lg:p-16 hover:underline hover:underline-offset-4  decoration-4 hover:decoration-mainColor ${
 													projectDeets ===
 														project.id &&
 													"underline underline-offset-4 decoration-4 decoration-mainColor"
@@ -126,7 +130,11 @@ function Portfolio() {
 																: "opacity-0 "
 														}`}
 													>
-														<code>Take a look!</code>
+														(
+														<code>
+															Take a look!
+														</code>
+														)
 													</p>
 												</a>
 											</div>
