@@ -37,7 +37,7 @@ export const Nav = ({ navLinks }) => {
 
 	useEffect(() => {
 		window.onscroll = () => {
-			if (window.scrollY > 50) {
+			if (window.scrollY > 600) {
 				// console.log(window.scrollY);
 				setNavFixed(true);
 				// divRef.current.classList.add("fixed");
