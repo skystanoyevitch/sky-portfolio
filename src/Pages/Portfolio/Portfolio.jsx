@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { allProjects } from "./allProjects";
-console.log(allProjects[0]);
 
 const page2Variant = {
 	initial: {
@@ -23,9 +22,10 @@ function Portfolio() {
 		triggerOnce: true,
 	});
 
-	function handleClick() {
+	function handleClick(id) {
+		// const projId =
 		console.log(projectDeets);
-		setProjectDeets((prevState) => !prevState);
+		setProjectDeets(id);
 	}
 	return (
 		<div className="">
@@ -74,22 +74,23 @@ function Portfolio() {
 						</motion.button>
 					</li>
 				</ul>
-				<div className="space-y-4">
+				<div className="space-y-8">
 					<div className="mt-24 md:mt-0">
 						<div className="w-full">
 							<ul>
-								{allProjects.map((project, i) => (
-									<div
-										className="group"
-										onClick={handleClick}
-									>
+								{allProjects.map((project) => (
+									<div className="group">
+										{/* {console.log(project)} */}
 										<li
-											key={i}
+											key={project.id}
+											onClick={() =>
+												handleClick(project.id)
+											}
 											className={`${
-												projectDeets
-													? "transition-all duration-300 h-156 "
-													: "h-64 flex"
-											}hover:transition-all hover:duration-300 my-4 md:my-10 w-full border-b-2 lg:h-64 lg:hover:h-156 items-center lg:items-start lg:flex-col`}
+												projectDeets === project.id
+													? "transition-all duration-300 lg:h-156 "
+													: "lg:h-96 "
+											}my-4 md:my-10 w-full border-b-2 items-center lg:items-start`}
 										>
 											<a
 												href={project.to}
@@ -107,10 +108,10 @@ function Portfolio() {
 												className={`${
 													project.thumbnail
 												} ${
-													projectDeets
-														? "transition-all duration-300 opacity-100 w-full h-48 "
-														: "transition-all duration-300 opactiy-0 "
-												} lg:h-full lg:w-full shadow-mainBoxShadow group-hover:opacity-100 group-hover:transition-all`}
+													projectDeets === project.id
+														? "transition-all duration-300 opacity-100 w-full h-1/2 "
+														: "transition-all duration-300 opacity-0 "
+												} lg:w-full shadow-mainBoxShadow`}
 											></div>
 										</li>
 									</div>
@@ -125,3 +126,15 @@ function Portfolio() {
 }
 
 export default Portfolio;
+
+// ${
+// 	projectDeets
+// 		? "transition-all duration-300 h-156 "
+// 		: "h-64 flex"
+// }
+
+// ${
+// 	projectDeets
+// 		? "transition-all duration-300 opacity-100 w-full h-48 "
+// 		: "transition-all duration-300 opactiy-0 "
+// }
