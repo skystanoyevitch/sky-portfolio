@@ -51,13 +51,13 @@ export const Nav = ({ navLinks }) => {
 
 	return (
 		// Desktop Navigation Top Menu
-		<div className={"bg-primaryNav md:flex md:flex-col"}>
+		<div className={"shadow-md md:flex md:flex-col"}>
 			<nav className="container mx-auto hidden md:visible md:flex md:justify-center flex-1">
 				{navLinks.map((link) => (
-					<ul className="md:p-10 md:space-x-16 lg:space-x-24 flex p-x font-poppins lg:text-xl xl:text-2xl text-black place-items-center">
+					<ul className="md:p-10 md:space-x-16 lg:space-x-24 flex text-gray-700 place-items-center">
 						<li>
 							<Link key={link.id} to={link.to}>
-								<button className=" hover:text-mainOrange">
+								<button className=" hover:text-mainOrange font-poppins lg:text-xl">
 									{link.name}
 								</button>
 							</Link>
@@ -69,10 +69,10 @@ export const Nav = ({ navLinks }) => {
 			{/* Moible Navigation Hamburger Menu */}
 			<div
 				className={`${
-					navFixed ? "fixed" : "sticky"
-				} md:hidden container mx-auto flex flex-col items-start shadow-lg bg-body z-40`}
+					navFixed ? "fixed" : ""
+				} md:hidden container mx-auto flex flex-col items-start shadow-md bg-white z-40`}
 			>
-				<div className="px-5 py-5 rounded-lg">
+				<div className="px-5 py-5 rounded-lg flex justify-between">
 					<div className=" p-2 rounded-lg">
 						<motion.button
 							initial={false}
@@ -97,6 +97,9 @@ export const Nav = ({ navLinks }) => {
 							></motion.div>
 						</motion.button>
 					</div>
+					<h3 className=" text-center ml-4 flex items-center font-caveat text-mainOrange text-xl">
+						Menu
+					</h3>
 				</div>
 
 				<motion.nav
@@ -104,7 +107,7 @@ export const Nav = ({ navLinks }) => {
 					animate={open ? "open" : "closed"}
 					variants={menuVar}
 				>
-					<ul className="font-poppins text-3xl space-y-6 p-10">
+					<ul className="font-poppins text-2xl space-y-4 p-10 text-gray-700">
 						{navLinks.map((link) => (
 							<motion.li onClick={setOpen} open={open}>
 								<Link key={link.id} to={link.to}>
