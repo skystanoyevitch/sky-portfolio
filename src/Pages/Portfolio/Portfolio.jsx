@@ -89,31 +89,47 @@ function Portfolio() {
 											className={`${
 												projectDeets === project.id
 													? "transition-all duration-300 lg:h-156 h-120 "
-													: "transition-all duration-300 lg:h-96 h-64 "
-											}my-4 md:my-10 w-full border-b-2 items-center lg:items-start`}
+													: "transition-all duration-300 lg:h-96 h-28 border-b-2 "
+											}my-4 md:my-10 w-full items-center lg:items-start`}
 										>
 											<h1
-												className={`font-caveat font- text-gray-700 lg:text-4xl p-8 lg:p-16 hover:underline hover:underline-offset-4  decoration-4 hover:decoration-mainColor`}
+												className={`font-caveat text-gray-700 lg:text-4xl p-8 lg:p-16 hover:underline hover:underline-offset-4  decoration-4 hover:decoration-mainColor ${
+													projectDeets ===
+														project.id &&
+													"underline underline-offset-4 decoration-4 decoration-mainColor"
+												}`}
 											>
 												{project.name}
 											</h1>
-											<a
-												href={project.to}
-												target="_blank"
-												rel="noreferrer"
-												className=""
-											>
-												<div
-													className={`${
-														project.thumbnail
-													} ${
-														projectDeets ===
-														project.id
-															? "transition-all duration-300 w-full h-1/2 lg:h-3/4 "
-															: "transition-all duration-300 h-0 w-0"
-													} lg:w-full shadow-mainBoxShadow`}
-												></div>
-											</a>
+											<div
+												className={`${
+													project.thumbnail
+												} ${
+													projectDeets === project.id
+														? "transition-all duration-300 lg:w-1/2 h-1/2 lg:h-3/4 "
+														: "transition-all duration-300 h-0 w-0"
+												} lg:w-1/2 shadow-mainBoxShadow`}
+											></div>
+
+											<div className="p-4">
+												<a
+													href={project.to}
+													target="_blank"
+													rel="noreferrer"
+													className=""
+												>
+													<p
+														className={`text-blue-500 font-bold text-sm ${
+															projectDeets ===
+															project.id
+																? "delay-200 opacity-1 "
+																: "opacity-0 "
+														}`}
+													>
+														<code>Take a look!</code>
+													</p>
+												</a>
+											</div>
 										</li>
 									</div>
 								))}

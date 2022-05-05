@@ -4,8 +4,8 @@ const HandShake = () => {
 	return (
 		<div className="">
 			<svg
-				width="8em"
-				height="8em"
+				width="6em"
+				height="6em"
                 fill="#FF5722"
 				viewBox="0 0 256 256"
 				id="Flat"
