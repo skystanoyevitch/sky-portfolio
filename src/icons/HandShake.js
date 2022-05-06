@@ -2,7 +2,7 @@
 
 const HandShake = () => {
 	return (
-		<div className="">
+		<div>
 			<svg
 				width="6em"
 				height="6em"

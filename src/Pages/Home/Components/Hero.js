@@ -27,10 +27,10 @@ function Hero() {
 						<br />
 						if you are looking for a website that will help your
 						business grow or a personal website that you can express
-						your creative self? or possibly looking to add another laid back
-						yet comitted team member to your company, please feel
-						free to contact me.. in the mean time have a look at
-						some of my projects i've done. 🤙🏻
+						your creative self? or possibly looking to add another
+						laid back yet comitted team member to your company,
+						please feel free to contact me.. in the mean time have a
+						look at some of my projects i've done. 🤙🏻
 					</p>
 				</div>
 				<div className="text-center flex space-x-4 md:flex-row md:justify-center lg:space-x-10">
@@ -51,7 +51,11 @@ function Hero() {
 						</div>
 					</Link>
 
-					<div>
+					<a
+						href="https://github.com/skystanoyevitch"
+						target="_blank"
+						rel="noreferrer"
+					>
 						<motion.button
 							variants={buttonVarant}
 							style={{
@@ -59,13 +63,12 @@ function Hero() {
 							}}
 							whileHover="hover"
 							whileTap={{ scale: 0.9 }}
-							onClick={notify}
 							className="hover:bg-mainOrange hover:text-white bg-white py-2 px-6 font-poppins font-bold border border-gray-700  text-gray-700 text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 md:mr-4 rounded-xl"
 						>
-							Resume
+							GitHub
 						</motion.button>
 						<Toaster />
-					</div>
+					</a>
 				</div>
 			</div>
 		</div>
