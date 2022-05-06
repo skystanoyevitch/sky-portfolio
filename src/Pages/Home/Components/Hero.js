@@ -22,8 +22,15 @@ function Hero() {
 						Sky Stanoyevitch
 					</h1>
 					<p className="mt-4 font-poppins text-primary text-lg md:text-xl xl:text-2xl leading-normal  lg:max-w-3xl xl:max-w-6xl">
-						I am an experienced UI/UX Designer living in the sunny
-						side of San Diego, CA.
+						I am an experienced Front-End software developer living
+						in the sunny side of San Diego, California.
+						<br />
+						if you are looking for a website that will help your
+						business grow or a personal website that you can express
+						your creative self? or possibly looking to add another laid back
+						yet comitted team member to your company, please feel
+						free to contact me.. in the mean time have a look at
+						some of my projects i've done. 🤙🏻
 					</p>
 				</div>
 				<div className="text-center flex space-x-4 md:flex-row md:justify-center lg:space-x-10">
