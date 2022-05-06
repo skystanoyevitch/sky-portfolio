@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import toast, { Toaster } from "react-hot-toast";
-const notify = () => toast("Oppsies, Coming Soon i promise!");
+// import toast, { Toaster } from "react-hot-toast";
+// const notify = () => toast("Oppsies, Coming Soon i promise!");
 
 const buttonVarant = {
 	hover: {
@@ -67,7 +67,7 @@ function Hero() {
 						>
 							GitHub
 						</motion.button>
-						<Toaster />
+						{/* <Toaster /> */}
 					</a>
 				</div>
 			</div>
