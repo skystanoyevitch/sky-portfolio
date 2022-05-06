@@ -30,24 +30,20 @@ const hamClosed = {
 	open: { visibility: "hidden", duration: 0.2 },
 };
 export const Nav = ({ navLinks }) => {
-	// console.log(navLinks);
 	const [open, setOpen] = useCycle(false, true);
 	// const divRef = useRef(null);
-	const [navFixed, setNavFixed] = useState(false);
+	// const [navFixed, setNavFixed] = useState(false);
 
-	useEffect(() => {
-		window.onscroll = () => {
-			if (window.scrollY > 600) {
-				// console.log(window.scrollY);
-				setNavFixed(true);
-				// divRef.current.classList.add("fixed");
-			} else {
-				setNavFixed(false);
-				// divRef.current.classList.remove("fixed");
-			}
-		};
-		setNavFixed(false);
-	}, []);
+	// useEffect(() => {
+	// 	window.onscroll = () => {
+	// 		if (window.scrollY > 600) {
+	// 			setNavFixed(true);
+	// 		} else {
+	// 			setNavFixed(false);
+	// 		}
+	// 	};
+	// 	setNavFixed(false);
+	// }, []);
 
 	return (
 		// Desktop Navigation Top Menu
@@ -68,9 +64,7 @@ export const Nav = ({ navLinks }) => {
 
 			{/* Moible Navigation Hamburger Menu */}
 			<div
-				className={`${
-					navFixed ? "fixed" : ""
-				} md:hidden container mx-auto flex flex-col items-start shadow-md bg-white z-40`}
+				className={`md:hidden container mx-auto flex flex-col items-start shadow-md bg-white z-40`}
 			>
 				<div className="px-5 py-5 rounded-lg flex justify-between">
 					<div className=" p-2 rounded-lg">
