@@ -43,7 +43,7 @@ function Hero() {
 									boxShadow: "5px 5px 0 rgba(55, 65, 81, 1)",
 								}}
 								whileTap={{ scale: 0.9 }}
-								className="relative z-20 hover:bg-mainOrange hover:text-white bg-white font-bold border border-gray-700  text-gray-700 py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 md:mr-4 rounded-xl"
+								className="relative z-20 bg-mainOrange text-white hover:text-white font-bold border border-gray-700 py-2 px-6 font-poppins text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 md:mr-4 rounded-xl"
 							>
 								Contact
 							</motion.button>
@@ -63,7 +63,7 @@ function Hero() {
 							}}
 							whileHover="hover"
 							whileTap={{ scale: 0.9 }}
-							className="hover:bg-mainOrange hover:text-white bg-white py-2 px-6 font-poppins font-bold border border-gray-700  text-gray-700 text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 md:mr-4 rounded-xl"
+							className="hover:bg-gray-700 hover:text-white bg-white py-2 px-6 font-poppins font-bold border border-gray-700  text-gray-700 text-md xl:text-xl xl:w-30 mt-8 xl:mt-10 md:mr-4 rounded-xl"
 						>
 							GitHub
 						</motion.button>
