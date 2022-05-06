@@ -26,7 +26,7 @@ function Hero() {
 						side of San Diego, CA.
 					</p>
 				</div>
-				<div className="text-center flex justify-center space-x-4 md:flex-row md:justify-center lg:space-x-10">
+				<div className="text-center flex space-x-4 md:flex-row md:justify-center lg:space-x-10">
 					<Link to={"/Contact"}>
 						<div className="relative">
 							<motion.button

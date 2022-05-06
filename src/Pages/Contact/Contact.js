@@ -35,8 +35,8 @@ function Contact() {
 
 	return (
 		<div className="">
-			<div className="container mx-auto md:h-full flex flex-col justify-around xl:justify-center xl:gap-32 px-8 py-14 md:py-0 md:items-center md:my-24 md:px-20 lg:px-32 xl:my-0 xl:h-screen">
-				<div className="text-left">
+			<div className="container mx-auto md:h-full flex flex-col justify-around xl:justify-center xl:gap-32 py-14 md:py-0 md:items-center md:my-24 md:px-20 lg:px-32 xl:my-0 xl:h-screen">
+				<div className="text-left px-8">
 					<h1 className="font-poppins font-bold text-mainOrange text-5xl md:text-6xl xl:text-7xl xl:leading-normal lg:px-0">
 						Get in Touch
 					</h1>
