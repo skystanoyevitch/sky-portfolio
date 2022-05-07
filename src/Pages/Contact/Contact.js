@@ -34,8 +34,8 @@ function Contact() {
 	};
 
 	return (
-		<div className="">
-			<div className="container mx-auto md:h-full flex flex-col justify-around xl:justify-center xl:gap-32 py-14 md:py-0 md:items-center md:my-24 md:px-20 lg:px-32 xl:my-0 xl:h-screen">
+		<div>
+			<div className="container mx-auto md:h-full xl:justify-center xl:gap-32 py-14 md:py-0 md:items-center md:my-24 md:px-20 lg:px-32 xl:my-32 lg:max-w-screen-lg">
 				<div className="text-left px-8">
 					<h1 className="font-poppins font-bold text-mainOrange text-5xl md:text-6xl xl:text-7xl xl:leading-normal lg:px-0">
 						Get in Touch
@@ -47,7 +47,7 @@ function Contact() {
 					</p>
 				</div>
 
-				<div className="py-24 xl:pt-0 text-center md:text-left md:w-3/4">
+				<div className="py-24 xl:pt-0 text-center md:text-left md:w-full  flex flex-col justify-around">
 					<form
 						onSubmit={handleSubmit(onSubmit)}
 						id="contactForm"
@@ -140,7 +140,7 @@ function Contact() {
 							variants={buttonVarant}
 							type="submit"
 							value="submit"
-							className="hover:bg-mainOrange hover:text-white bg-white font-bold border border-gray-700 text-gray-700 font-poppins py-2 px-6 text-xl mt-4 mx-8 md:mx-0 rounded-xl"
+							className="text-white bg-mainOrange hover:bg-orange-700 font-bold border border-gray-700 font-poppins py-2 px-6 text-xl mt-4 mx-8 md:mx-0 rounded-xl"
 						>
 							Send
 						</motion.button>

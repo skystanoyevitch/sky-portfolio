@@ -28,13 +28,13 @@ function Portfolio() {
 		setProjectDeets((prev) => (prev === -1 ? id : -1));
 	}
 	return (
-		<div className="">
+		<div>
 			<motion.div
 				ref={ref}
 				variants={page2Variant}
 				initial="initial"
 				animate={inView ? "animate" : "initial"}
-				className="container mx-auto md:max-w-2xl lg:max-w-screen-2xl py-10 px-8 xl:p-0 md:my-12 xl:my-32"
+				className="container mx-auto md:max-w-2xl lg:max-w-screen-lg py-10 px-8 xl:p-0 md:my-12 xl:my-32"
 			>
 				<h3 className="text-left font-poppins font-bold text-5xl mb-6 md:text-6xl xl:text-7xl md:mb-10">
 					<span className="text-mainOrange">Projects Gallery</span>
@@ -44,35 +44,29 @@ function Portfolio() {
 					of all that i have done.
 				</p>
 
-				<ul className="hidden md:visible md:flex justify-evenly md:mx-auto lg:max-w-2xl xl:max-w-none md:my-12 lg:my-20 font-poppins font-light lg:text-xl">
+				<ul className="hidden space-x-8 md:visible md:flex justify-start md:mx-auto lg:max-w-2xl xl:max-w-none md:my-12 lg:my-20 font-poppins font-light lg:text-md">
 					<li>
 						<motion.button
 							whileHover="hover"
-							className="px-6 py-2 decoration-mainColor"
+							className="px-6 py-2 rounded-lg bg-gray-700 text-white"
 						>
 							All Projects
 						</motion.button>
 					</li>
 					<li>
-						<motion.button
-							whileHover="hover"
-							className="px-6 py-2 decoration-mainColor"
-						>
+						<motion.button whileHover="hover" className="px-6 py-2 bg-gray-300 rounded-lg">
 							Design
 						</motion.button>
 					</li>
 					<li>
-						<motion.button
-							whileHover="hover"
-							className="px-6 py-2 decoration-mainColor"
-						>
+						<motion.button whileHover="hover" className="px-6 py-2 bg-gray-300 rounded-lg">
 							Development
 						</motion.button>
 					</li>
 					<li>
 						<motion.button
 							whileHover="hover"
-							className="px-6 py-2 decoration-mainColor"
+							className="px-6 py-2 bg-gray-300 rounded-lg"
 						>
 							For Fun
 						</motion.button>
@@ -92,9 +86,9 @@ function Portfolio() {
 											}
 											className={`${
 												projectDeets === project.id
-													? "transition-all duration-300 lg:h-156 h-120 "
-													: "transition-all duration-300 lg:h-96 h-28 border-b-2 "
-											}my-4 md:my-10 w-full items-center lg:items-start`}
+													? "transition-all duration-300 lg:h-156 h-120 border-0"
+													: "transition-all duration-300 lg:h-40 h-28 border-b-2 "
+											}my-4 md:my-10 w-full items-center lg:items-start rounded-lg`}
 										>
 											<h1
 												className={`font-caveat text-gray-700 text-xl lg:text-4xl p-8 lg:p-16 hover:underline hover:underline-offset-4  decoration-4 hover:decoration-mainColor ${

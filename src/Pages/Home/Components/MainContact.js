@@ -48,7 +48,7 @@ const MainContact = () => {
 									boxShadow: "5px 5px 0 rgba(55, 65, 81, 1)",
 								}}
 								whileHover="hover"
-								className="hover:bg-mainOrange hover:text-white bg-white font-bold border border-gray-700 text-gray-700 py-2 px-8 font-poppins text-md xl:text-xl xl:w-30 lg:px-8 mt-8 rounded-xl"
+								className="bg-mainOrange hover:text-white font-bold border border-gray-700 text-white py-2 px-8 font-poppins text-md xl:text-xl xl:w-30 lg:px-8 mt-8 rounded-lg"
 							>
 								Get In Touch
 							</motion.button>
