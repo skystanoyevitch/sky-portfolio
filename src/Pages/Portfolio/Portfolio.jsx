@@ -23,8 +23,6 @@ function Portfolio() {
 	});
 
 	function handleClick(id) {
-		// const projId =
-		// console.log(projectDeets);
 		setProjectDeets((prev) => (prev === -1 ? id : -1));
 	}
 	return (
@@ -34,7 +32,7 @@ function Portfolio() {
 				variants={page2Variant}
 				initial="initial"
 				animate={inView ? "animate" : "initial"}
-				className="container mx-auto md:max-w-2xl lg:max-w-screen-lg py-10 px-8 xl:p-0 md:my-12 xl:my-32"
+				className="container mx-auto  max-w-xs  md:max-w-2xl lg:max-w-screen-lg py-10 xl:p-0 md:my-12 xl:my-32"
 			>
 				<h3 className="text-left font-poppins font-bold text-5xl mb-6 md:text-6xl xl:text-7xl md:mb-10">
 					<span className="text-mainOrange">Projects Gallery</span>
@@ -78,20 +76,15 @@ function Portfolio() {
 							<ul>
 								{allProjects.map((project) => (
 									<div className="group">
-										{/* {console.log(project)} */}
 										<li
 											key={project.id}
 											onClick={() =>
 												handleClick(project.id)
 											}
-											className={`${
-												projectDeets === project.id
-													? "transition-all duration-300 lg:h-156 h-120 border-0"
-													: "transition-all duration-300 lg:h-40 h-28 border-b-2 "
-											}my-4 md:my-10 w-full items-center lg:items-start rounded-lg`}
+											className="my-4 md:my-10 w-full items-center lg:items-start rounded-lg"
 										>
 											<h1
-												className={`font-caveat text-gray-700 text-xl lg:text-4xl p-8 lg:p-16 hover:underline hover:underline-offset-4  decoration-4 hover:decoration-mainColor ${
+												className={`font-poppins text-gray-700 text-xl lg:text-4xl p-8 lg:p-16 hover:underline hover:underline-offset-4  decoration-4 hover:decoration-mainColor ${
 													projectDeets ===
 														project.id &&
 													"underline underline-offset-4 decoration-4 decoration-mainColor"
@@ -102,11 +95,7 @@ function Portfolio() {
 											<div
 												className={`${
 													project.thumbnail
-												} ${
-													projectDeets === project.id
-														? "transition-all duration-300 w-full h-1/2 lg:h-3/4 "
-														: "transition-all duration-300 h-0 w-0"
-												} w-full shadow-mainBoxShadow`}
+												} w-full h-40 lg:h-96 shadow-mainBoxShadow `}
 											></div>
 
 											<div className="p-4">
@@ -114,7 +103,6 @@ function Portfolio() {
 													href={project.to}
 													target="_blank"
 													rel="noreferrer"
-													className=""
 												>
 													<p
 														className={`text-blue-500 font-bold text-sm ${
