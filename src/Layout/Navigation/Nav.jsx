@@ -50,7 +50,7 @@ export const Nav = ({ navLinks }) => {
 		<div className={"shadow-md md:flex md:flex-col"}>
 			<nav className="container mx-auto hidden md:visible md:flex md:justify-center flex-1">
 				{navLinks.map((link) => (
-					<ul className="md:p-10 md:space-x-16 lg:space-x-24 flex text-gray-700 place-items-center">
+					<ul className="md:p-4 md:space-x-16 lg:space-x-24 flex text-gray-700 place-items-center">
 						<li>
 							<Link key={link.id} to={link.to}>
 								<button className=" hover:text-mainOrange font-poppins lg:text-xl">
