@@ -6,12 +6,6 @@ export const allProjects = [
 		thumbnail: "bg-travelpal bg-cover bg-center bg-no-repeat rounded-lg",
 	},
 	{
-		name: "Todo App",
-		id: 1,
-		to: "https://github.com/RolyPolie/To-do-App",
-		thumbnail: "",
-	},
-	{
 		name: "Coffee Shop",
 		id: 2,
 		to: "https://rolypolie.github.io/SkysCafe/",
