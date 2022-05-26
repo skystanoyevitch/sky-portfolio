@@ -133,14 +133,11 @@ function Contact() {
 						</div>
 
 						<motion.button
-							style={{
-								boxShadow: "5px 5px 0 rgba(55, 65, 81, 1)",
-							}}
 							whileHover="hover"
 							variants={buttonVarant}
 							type="submit"
 							value="submit"
-							className="text-white bg-mainOrange hover:bg-orange-700 font-bold border border-gray-700 font-poppins py-2 px-6 text-xl mt-4 mx-8 md:mx-0 rounded-xl"
+							className="hover:bg-mainOrange hover:shadow-shadowGray hover:text-white text-gray-700 font-bold border-2 border-gray-700 font-poppins py-2 px-6 text-xl mt-4 mx-8 md:mx-0 rounded-xl"
 						>
 							Send
 						</motion.button>

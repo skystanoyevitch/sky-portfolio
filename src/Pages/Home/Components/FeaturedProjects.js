@@ -46,7 +46,7 @@ function FeaturedProjects() {
 							<h2 className="font-poppins lg:text-3xl font-semibold text-gray-700 pb-2 md:pb-4">
 								Travel Pal
 							</h2>
-							<div className="relative rounded-lg overflow-hidden h-60 lg:h-96 z-20 shadow-mainBoxShadow">
+							<div className="relative rounded-lg overflow-hidden h-40 lg:h-96 z-20 shadow-mainBoxShadow">
 								<div className="absolute hover:scale-110 transition-all duration-500 ease-in-out transform w-full bg-travelpal bg-cover bg-center bg-no-repeat h-60 lg:h-96"></div>
 							</div>
 						</a>
@@ -62,7 +62,7 @@ function FeaturedProjects() {
 							<h2 className="font-poppins lg:text-3xl font-semibold text-gray-700 pb-2 md:pb-4">
 								Teknipak
 							</h2>
-							<div className="relative rounded-lg overflow-hidden h-60 lg:h-96 z-20 shadow-mainBoxShadow">
+							<div className="relative rounded-lg overflow-hidden h-40 lg:h-96 z-20 shadow-mainBoxShadow">
 								<div className="absolute hover:scale-110 transition-all duration-500 ease-in-out transform h-full w-full bg-teknipak bg-center bg-cover bg-no-repeat"></div>
 							</div>
 						</a>
