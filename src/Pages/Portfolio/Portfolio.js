@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { getGitHubRepoStats } from "./api/api";
+import React, { useState } from "react";
+// import { getGitHubRepoStats } from "./api/api";
 // import Footer from "./Footer";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
