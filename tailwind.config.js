@@ -12,6 +12,11 @@ module.exports = {
 				travelpal: "url('./images/travelpal.png')",
 				teknipak: "url('./images/teknipak.png')",
 				skycafe: "url('./images/skyscoffee.png')",
+				heroBg: "url('./images/wave.svg')",
+				heroImg: "url('./images/webdev.svg')",
+				heroImg2: "url('./images/webdev2.svg')",
+				heroImg3: "url('./images/design.svg')",
+				heroImg4: "url('./images/design2.svg')",
 			}),
 			spacing: {
 				72: "18rem",
