@@ -54,7 +54,7 @@ export const Nav = ({ navLinks }) => {
 					<ul className="md:p-4 md:space-x-16 lg:space-x-24 flex text-gray-700 place-items-center">
 						<li>
 							<Link key={link.id} to={link.to}>
-								<button className=" hover:text-mainOrange font-poppins lg:text-xl">
+								<button className=" underline decoration-2 underline-offset-8 decoration-orange-600 font-poppins lg:text-xl">
 									{link.name}
 								</button>
 							</Link>
