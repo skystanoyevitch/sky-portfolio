@@ -11,9 +11,9 @@ import { motion } from "framer-motion";
 // };
 function Hero() {
 	return (
-		<div className="w-screen h-screen">
-			<div className="lg:h-5/6">
-				<div className="container mx-auto flex h-3/4">
+		<div className="w-screen h-[80vh]">
+			<div className="lg:h-4/6">
+				<div className="container mx-auto flex h-full">
 					<div className="flex flex-col flex-1 justify-center">
 						<h1 className="text-8xl">Web Designer | Developer</h1>
 						<p className="lg:pt-8 lg:pb-4 lg:text-xl">
