@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
+// import Arrows from "../../../icons/Arrows";
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import Arrows from "../../../icons/Arrows";
 
 import WebsiteIcon from "../../../images/website.svg";
 import CreativeIcon from "../../../images/creative-team.svg";
