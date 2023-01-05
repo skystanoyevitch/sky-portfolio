@@ -15,6 +15,9 @@ module.exports = {
 				heroBg: "url('./images/wave.svg')",
 				heroImg: "url('./images/webdev.svg')",
 				shapesBg: "url('./images/shapesBg.svg')",
+				websiteIcon: "url('./images/website.svg')",
+				creativeTeamIcon: "url('./images/creative-team.svg')",
+				wordpressIcon: "url('./images/wordpress-icon.svg')",
 			}),
 			spacing: {
 				72: "18rem",
