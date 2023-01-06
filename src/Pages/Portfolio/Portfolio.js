@@ -37,7 +37,6 @@ function Portfolio() {
 	}
 	return (
 		<div>
-			
 			{/* <h3>{Object.keys(cafeLanguages).map(item => (
 				<h2>{item}: {cafeLanguages[item]}</h2>
 			))}</h3> */}
@@ -66,12 +65,18 @@ function Portfolio() {
 						</motion.button>
 					</li>
 					<li>
-						<motion.button whileHover="hover" className="px-6 py-2 bg-gray-300 rounded-lg">
+						<motion.button
+							whileHover="hover"
+							className="px-6 py-2 bg-gray-300 rounded-lg"
+						>
 							Design
 						</motion.button>
 					</li>
 					<li>
-						<motion.button whileHover="hover" className="px-6 py-2 bg-gray-300 rounded-lg">
+						<motion.button
+							whileHover="hover"
+							className="px-6 py-2 bg-gray-300 rounded-lg"
+						>
 							Development
 						</motion.button>
 					</li>
@@ -107,12 +112,17 @@ function Portfolio() {
 												{project.name}
 											</h1>
 											<div
-												className={`${
-													project.thumbnail
-												} w-full h-40 lg:h-96 shadow-mainBoxShadow `}
+												className={`${project.thumbnail} w-full h-40 lg:h-96 shadow-mainBoxShadow `}
 											></div>
 											<div>
-												<h2>{projectDeets === project.id && <p>{project.language}</p>}</h2>
+												<h2>
+													{projectDeets ===
+														project.id && (
+														<p>
+															{project.language}
+														</p>
+													)}
+												</h2>
 											</div>
 
 											<div className="p-4">
