@@ -11,7 +11,7 @@ module.exports = {
 				profileImage: "url('./images/mainpicsky.jpg')",
 				travelpal: "url('./images/travelpal.png')",
 				teknipak: "url('./images/teknipak.png')",
-				skycafe: "url('./images/skyscoffee.png')",
+				relaxedDesign: "url('./images/relaxed-design.jpg')",
 				heroBg: "url('./images/wave.svg')",
 				heroImg: "url('./images/webdev.svg')",
 				shapesBg: "url('./images/shapesBg.svg')",

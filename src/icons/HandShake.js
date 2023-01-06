@@ -6,7 +6,7 @@ const HandShake = () => {
 			<svg
 				width="6em"
 				height="6em"
-                fill="#FF5722"
+                fill="#ffff"
 				viewBox="0 0 256 256"
 				id="Flat"
 				xmlns="http://www.w3.org/2000/svg"
