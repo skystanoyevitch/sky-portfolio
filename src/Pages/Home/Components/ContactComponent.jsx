@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { init, sendForm } from "emailjs-com";
+import HandShake from "../../../icons/HandShake";
 
 init("user_UjPKV0EnHoctjH33XHpvR");
 
@@ -27,8 +28,14 @@ function ContactComponent() {
 	};
 
 	return (
-		<div className="p-8" id="section-contact">
-			<div className="container mx-auto lg:max-w-lg text-center pt-32 lg:pb-12">
+		<div
+			className="p-8 container mx-auto lg:max-w-3xl"
+			id="section-contact"
+		>
+			<div className="mx-auto lg:max-w-lg text-center pt-32 lg:pb-12">
+				<div className="flex justify-center pb-6">
+					<HandShake />
+				</div>
 				<h1 className="font-poppins font-bold text-2xl pb-6 text-gray-700 lg:text-5xl lg:pb-8 lg:text-center">
 					GET IN TOUCH
 				</h1>
@@ -38,12 +45,12 @@ function ContactComponent() {
 					<br />I look Forward to hearing from you.
 				</p>
 			</div>
-			<div className="container mx-auto mt-16 bg-white rounded-lg md:h-full xl:justify-center lg:max-w-screen-lg shadow-mainBoxShadow">
-				<div className="text-center md:text-left md:w-full flex flex-col justify-around xl:p-16">
+			<div className="container mx-auto pt-8 lg:pt-0 mt-12 lg:mt-0 bg-white rounded-lg md:h-full xl:justify-center lg:max-w-screen-lg shadow-mainBoxShadow">
+				<div className="">
 					<form
 						onSubmit={handleSubmit(onSubmit)}
 						id="contactForm"
-						className="text-center"
+						className="text-center md:text-left md:w-full flex flex-col justify-around xl:p-8"
 					>
 						<div className="text-center text-red-600">
 							{errors.first_name && (
@@ -71,7 +78,7 @@ function ContactComponent() {
 								placeholder="First Name"
 							/>
 
-							<input
+							{/* <input
 								type="text"
 								{...register("last_name", {
 									required: {
@@ -82,7 +89,7 @@ function ContactComponent() {
 								className="p-2 lg:p-4 bg-body w-full rounded-lg"
 								name="last_name"
 								placeholder="Last Name"
-							/>
+							/> */}
 						</div>
 
 						<div className="flex flex-col space-y-8 px-8 md:px-0">
@@ -125,10 +132,9 @@ function ContactComponent() {
 						</div>
 
 						<button
-							whileHover="hover"
 							type="submit"
 							value="submit"
-							className="hover:bg-mainOrange hover:shadow-shadowGray hover:text-white text-gray-700 font-bold border-2 border-gray-700 font-poppins p-2 m-4 lg:py-2 lg:px-6 lg:text-xl lg:mt-4 lg:mx-8 md:mx-0 rounded-lg"
+							className="bg-[#e75d48] text-white hover:bg-white hover:text-[#e75d48] font-semibold border-2 border-[#e75d48] font-poppins p-2 mx-8 my-6 lg:mx-0 lg:px-6 rounded-lg"
 						>
 							Send
 						</button>
