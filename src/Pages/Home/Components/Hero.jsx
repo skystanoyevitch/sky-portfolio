@@ -11,16 +11,18 @@ import React from "react";
 // };
 function Hero() {
 	return (
-		<div className="w-screen h-[80vh]">
+		<div className="w-screen h-[70vh] lg:h-[80vh]">
 			<div className="lg:h-4/6">
-				<div className="container mx-auto flex h-full">
+				<div className="container mx-auto flex p-8 lg:p-0 lg:h-full">
 					<div className="flex flex-col flex-1 justify-center">
-						<h1 className="text-8xl font-poppins text-gray-800">Web Designer | Developer</h1>
-						<p className="lg:pt-8 lg:pb-8 lg:text-xl font-poppins text-gray-600">
+						<h1 className="text-5xl lg:text-8xl font-poppins text-gray-800">
+							Web Designer | Developer
+						</h1>
+						<p className="text-md py-4 lg:py-8 lg:text-xl font-poppins text-gray-600">
 							helping small businesses grow through digital
 							solutions
 						</p>
-						<button className="rounded-lg bg-[#e75d48] lg:w-1/6 lg:p-2 text-white font-poppins font-semibold">
+						<button className="rounded-lg bg-[#e75d48] w-24 p-2 lg:w-1/6 lg:p-2 text-white font-poppins font-semibold">
 							Contact
 						</button>
 					</div>
