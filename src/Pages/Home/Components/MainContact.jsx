@@ -1,6 +1,6 @@
 // import { motion } from "framer-motion";
-import React from "react";
-import { useInView } from "react-intersection-observer";
+// import React from "react";
+// import { useInView } from "react-intersection-observer";
 // import { Link } from "react-router-dom";
 // import HandShake from "../../../icons/HandShake";
 
@@ -22,15 +22,15 @@ import { useInView } from "react-intersection-observer";
 // 	},
 // };
 
-const MainContact = () => {
-	const { ref, inView } = useInView({
-		triggerOnce: true,
-	});
-	return (
-		<>
-			<section className="w-full xl:h-2/5 md:mb-24"></section>
-		</>
-	);
-};
+// const MainContact = () => {
+// 	const { ref, inView } = useInView({
+// 		triggerOnce: true,
+// 	});
+// 	return (
+// 		<>
+// 			<section className="w-full xl:h-2/5 md:mb-24"></section>
+// 		</>
+// 	);
+// };
 
-export default MainContact;
+// export default MainContact;
