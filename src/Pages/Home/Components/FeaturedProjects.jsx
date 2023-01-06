@@ -31,12 +31,15 @@ function FeaturedProjects() {
 			animate={inView ? "animate" : "initial"}
 			className="container mx-auto h-screen"
 		>
-			<div className="flex justify-evenly">
+			<h1 className="text-center lg:text-4xl font-poppins lg:mb-16 font-bold text-gray-700">
+				SERVICES🙂
+			</h1>
+			<div className="flex justify-evenly bg-white">
 				<div className="lg:w-80 border-2 border-orange-500 rounded-lg lg:p-4 shadow-mainBoxShadow">
 					<img src={CreativeIcon} alt="" srcset="" />
 
 					<div className="lg:p-6">
-						<h1 className="text-center lg:text-3xl lg:pb-4 font-poppins font-bold text-gray-800">
+						<h1 className="text-center lg:text-3xl lg:pb-4 font-poppins font-semibold text-gray-800">
 							Web Design
 						</h1>
 						<p className="text-md font-poppins font-lite text-center">
@@ -52,7 +55,7 @@ function FeaturedProjects() {
 					<img src={WebsiteIcon} alt="" srcset="" />
 
 					<div className="lg:p-6">
-						<h1 className="text-center lg:text-3xl lg:pb-4 font-poppins font-bold text-gray-800">
+						<h1 className="text-center lg:text-3xl lg:pb-4 font-poppins font-semibold text-gray-800">
 							Web Development
 						</h1>
 						<p className="text-md font-poppins font-lite text-center">
@@ -66,7 +69,7 @@ function FeaturedProjects() {
 				<div className="lg:w-80 border-2 border-orange-500 rounded-lg lg:p-4 shadow-mainBoxShadow">
 					<img src={WordPressIcon} alt="" srcset="" />
 					<div className="lg:p-6">
-						<h1 className="text-center lg:text-3xl lg:pb-4 font-poppins font-bold text-gray-800">
+						<h1 className="text-center lg:text-3xl lg:pb-4 font-poppins font-semibold text-gray-800">
 							WordPress
 						</h1>
 						<p className="text-md font-poppins font-lite text-center">
