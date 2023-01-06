@@ -6,14 +6,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // Page Component Imports //
 import Portfolio from "./Pages/Portfolio/Portfolio";
-import Contact from "./Pages/Contact/Contact";
 import Footer from "./Layout/Navigation/Footer";
 
 const navLinks = [
 	{ id: 0, name: "Home", to: "/" },
 	{ id: 1, name: "Coming Soon...", to: "#" },
 ];
-
 const App = () => (
 	<BrowserRouter>
 		<Nav navLinks={navLinks} />
@@ -21,7 +19,6 @@ const App = () => (
 		<Routes>
 			<Route path="/" element={<Homepage />} />
 			<Route path="/Portfolio" element={<Portfolio />} />
-			<Route path="/Contact" element={<Contact />} />
 		</Routes>
 		<Footer />
 	</BrowserRouter>

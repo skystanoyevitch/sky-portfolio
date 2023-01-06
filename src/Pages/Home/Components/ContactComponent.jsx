@@ -27,7 +27,7 @@ function ContactComponent() {
 	};
 
 	return (
-		<div className="p-8">
+		<div className="p-8" id="section-contact">
 			<div className="container mx-auto lg:max-w-lg text-center pt-32 lg:pb-12">
 				<h1 className="font-poppins font-bold text-2xl pb-6 text-gray-700 lg:text-5xl lg:pb-8 lg:text-center">
 					GET IN TOUCH

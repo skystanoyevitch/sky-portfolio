@@ -31,19 +31,6 @@ const hamClosed = {
 };
 export const Nav = ({ navLinks }) => {
 	const [open, setOpen] = useCycle(false, true);
-	// const divRef = useRef(null);
-	// const [navFixed, setNavFixed] = useState(false);
-
-	// useEffect(() => {
-	// 	window.onscroll = () => {
-	// 		if (window.scrollY > 600) {
-	// 			setNavFixed(true);
-	// 		} else {
-	// 			setNavFixed(false);
-	// 		}
-	// 	};
-	// 	setNavFixed(false);
-	// }, []);
 
 	return (
 		// Desktop Navigation Top Menu
