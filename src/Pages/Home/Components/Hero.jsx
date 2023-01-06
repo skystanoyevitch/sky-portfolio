@@ -15,7 +15,7 @@ function Hero() {
 							helping small businesses grow through digital
 							solutions
 						</p>
-						<a href={"/#section-contact"}>
+						<a href={"#section-contact"}>
 							<button className="rounded-lg hover:bg-white hover:text-gray-500 hover:border-2 hover:border-[#e75d48] bg-[#e75d48] w-24 p-2 lg:w-1/6 lg:p-2 text-white font-poppins font-semibold">
 								Contact
 							</button>

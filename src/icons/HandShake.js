@@ -6,7 +6,7 @@ const HandShake = () => {
 			<svg
 				width="6em"
 				height="6em"
-                fill="#e75d48"
+				fill="#e75d48"
 				viewBox="0 0 256 256"
 				id="Flat"
 				xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +17,4 @@ const HandShake = () => {
 	);
 };
 
-export default HandShake
+export default HandShake;
