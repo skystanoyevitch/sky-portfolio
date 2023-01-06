@@ -35,10 +35,10 @@ function FeaturedProjects() {
 				SERVICES🙂
 			</h1>
 			<div className="flex flex-col space-y-10 lg:space-y-0 lg:flex lg:flex-row lg:justify-evenly bg-white">
-				<div className="lg:w-80 rounded-lg p-4 shadow-mainBoxShadow">
+				<div className="lg:w-80 rounded-lg px-4 shadow-mainBoxShadow">
 					<img src={CreativeIcon} alt="" srcset="" />
 
-					<div className="lg:p-6">
+					<div className="pb-8 lg:p-6">
 						<h1 className="text-center text-xl pb-6 lg:text-3xl lg:pb-4 font-poppins font-semibold text-gray-800">
 							Web Design
 						</h1>
@@ -51,10 +51,10 @@ function FeaturedProjects() {
 						</p>
 					</div>
 				</div>
-				<div className="lg:w-80 rounded-lg p-4 shadow-mainBoxShadow">
-					<img src={WebsiteIcon} alt="" srcset="" />
+				<div className="lg:w-80 rounded-lg px-4 shadow-mainBoxShadow">
+					<img src={WebsiteIcon} alt="website" />
 
-					<div className="lg:p-6">
+					<div className="pb-8 lg:p-6">
 						<h1 className="text-center text-xl lg:text-3xl pb-6 lg:pb-4 font-poppins font-semibold text-gray-800">
 							Web Development
 						</h1>
@@ -66,9 +66,9 @@ function FeaturedProjects() {
 						</p>
 					</div>
 				</div>
-				<div className="lg:w-80 rounded-lg p-4 shadow-mainBoxShadow">
+				<div className="lg:w-80 rounded-lg px-4 shadow-mainBoxShadow">
 					<img src={WordPressIcon} alt="" srcset="" />
-					<div className="lg:p-6">
+					<div className="pb-8 lg:p-6">
 						<h1 className="text-center text-xl lg:text-3xl lg:pb-4 font-poppins font-semibold text-gray-800">
 							WordPress
 						</h1>
