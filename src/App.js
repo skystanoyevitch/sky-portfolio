@@ -11,8 +11,7 @@ import Footer from "./Layout/Navigation/Footer";
 
 const navLinks = [
 	{ id: 0, name: "Home", to: "/" },
-	{ id: 1, name: "Portfolio", to: "/portfolio" },
-	{ id: 2, name: "Contact", to: "/contact" },
+	{ id: 1, name: "Coming Soon...", to: "#" },
 ];
 
 const App = () => (
