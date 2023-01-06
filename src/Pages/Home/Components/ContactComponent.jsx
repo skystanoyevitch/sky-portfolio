@@ -27,18 +27,18 @@ function ContactComponent() {
 	};
 
 	return (
-		<div>
-			<div className="container mx-auto lg:max-w-lg text-center lg:pt-32 lg:pb-12">
-				<h1 className="font-poppins font-bold text-gray-700 lg:text-5xl lg:pb-8 text-center">
-					Get in Touch
+		<div className="p-8">
+			<div className="container mx-auto lg:max-w-lg text-center pt-32 lg:pb-12">
+				<h1 className="font-poppins font-bold text-2xl pb-6 text-gray-700 lg:text-5xl lg:pb-8 lg:text-center">
+					GET IN TOUCH
 				</h1>
-				<p className="font-poppins text-lg">
+				<p className="font-poppins lg:text-lg">
 					Need a Website? please don't hesitate to contact me with any
 					questions you have using the form below,
 					<br />I look Forward to hearing from you.
 				</p>
 			</div>
-			<div className="container mx-auto border-2 border-orange-500 bg-white rounded-lg md:h-full xl:justify-center lg:max-w-screen-lg shadow-mainBoxShadow">
+			<div className="container mx-auto mt-16 bg-white rounded-lg md:h-full xl:justify-center lg:max-w-screen-lg shadow-mainBoxShadow">
 				<div className="text-center md:text-left md:w-full flex flex-col justify-around xl:p-16">
 					<form
 						onSubmit={handleSubmit(onSubmit)}
@@ -66,7 +66,7 @@ function ContactComponent() {
 									maxLength: 15,
 								})}
 								type="text"
-								className="p-4 bg-body w-full rounded-lg"
+								className="p-2 lg:p-4 bg-body w-full rounded-lg"
 								name="first_name"
 								placeholder="First Name"
 							/>
@@ -79,7 +79,7 @@ function ContactComponent() {
 										message: "Last Name is Required",
 									},
 								})}
-								className="p-4 bg-body w-full rounded-lg"
+								className="p-2 lg:p-4 bg-body w-full rounded-lg"
 								name="last_name"
 								placeholder="Last Name"
 							/>
@@ -94,7 +94,7 @@ function ContactComponent() {
 										message: "Email is Required",
 									},
 								})}
-								className="p-4 bg-body rounded-lg"
+								className="p-2 lg:p-4 bg-body rounded-lg"
 								name="email"
 								placeholder="Email"
 							/>
@@ -102,13 +102,13 @@ function ContactComponent() {
 							<input
 								type="text"
 								{...register("subject", { maxLength: 15 })}
-								className="p-4 bg-body rounded-lg"
+								className="p-2 lg:p-4 bg-body rounded-lg"
 								name="subject"
 								placeholder="Subject"
 							/>
 
 							<textarea
-								className="h-24 p-4 bg-body rounded-lg"
+								className="h-24 p-2 lg:p-4 bg-body rounded-lg"
 								type="text"
 								{...register("message", {
 									required: {
@@ -128,7 +128,7 @@ function ContactComponent() {
 							whileHover="hover"
 							type="submit"
 							value="submit"
-							className="hover:bg-mainOrange hover:shadow-shadowGray hover:text-white text-gray-700 font-bold border-2 border-gray-700 font-poppins py-2 px-6 text-xl mt-4 mx-8 md:mx-0 rounded-lg"
+							className="hover:bg-mainOrange hover:shadow-shadowGray hover:text-white text-gray-700 font-bold border-2 border-gray-700 font-poppins p-2 m-4 lg:py-2 lg:px-6 lg:text-xl lg:mt-4 lg:mx-8 md:mx-0 rounded-lg"
 						>
 							Send
 						</button>
