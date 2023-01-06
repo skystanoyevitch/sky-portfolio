@@ -10,22 +10,8 @@ export const FooterNav = () => {
 						<NavLink to="/">Home</NavLink>
 					</li>
 					<li className="">
-						<NavLink
-							to="/Portfolio"
-							activeStyle={{ color: "orange" }}
-						>
-							Portfolio
-						</NavLink>
-					</li>
-					<li className="">
-						<NavLink
-							to="/Contact"
-							activeStyle={{
-								color: "#FF5722",
-								fontWeight: "bold",
-							}}
-						>
-							Contact
+						<NavLink to="#" activeStyle={{ color: "orange" }}>
+							Coming Soon...
 						</NavLink>
 					</li>
 				</ul>
