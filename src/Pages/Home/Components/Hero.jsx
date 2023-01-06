@@ -15,12 +15,12 @@ function Hero() {
 			<div className="lg:h-4/6">
 				<div className="container mx-auto flex h-full">
 					<div className="flex flex-col flex-1 justify-center">
-						<h1 className="text-8xl">Web Designer | Developer</h1>
-						<p className="lg:pt-8 lg:pb-4 lg:text-xl">
+						<h1 className="text-8xl font-poppins text-gray-800">Web Designer | Developer</h1>
+						<p className="lg:pt-8 lg:pb-8 lg:text-xl font-poppins text-gray-600">
 							helping small businesses grow through digital
 							solutions
 						</p>
-						<button className="rounded-lg bg-[#e75d48] lg:w-1/6 lg:p-2 text-white">
+						<button className="rounded-lg bg-[#e75d48] lg:w-1/6 lg:p-2 text-white font-poppins font-semibold">
 							Contact
 						</button>
 					</div>
