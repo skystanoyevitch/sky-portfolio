@@ -1,14 +1,7 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-// import { motion } from "framer-motion";
 // import toast, { Toaster } from "react-hot-toast";
 // const notify = () => toast("Oppsies, Coming Soon i promise!");
 
-// const buttonVarant = {
-// 	hover: {
-// 		scale: 1.03,
-// 	},
-// };
 function Hero() {
 	return (
 		<div className="w-screen h-[60vh] lg:h-[80vh]">
@@ -22,9 +15,11 @@ function Hero() {
 							helping small businesses grow through digital
 							solutions
 						</p>
-						<button className="rounded-lg bg-[#e75d48] w-24 p-2 lg:w-1/6 lg:p-2 text-white font-poppins font-semibold">
-							Contact
-						</button>
+						<a href={"/#section-contact"}>
+							<button className="rounded-lg hover:bg-white hover:text-gray-500 hover:border-2 hover:border-[#e75d48] bg-[#e75d48] w-24 p-2 lg:w-1/6 lg:p-2 text-white font-poppins font-semibold">
+								Contact
+							</button>
+						</a>
 					</div>
 					<div className="flex-1 bg-heroImg bg-no-repeat"></div>
 				</div>
