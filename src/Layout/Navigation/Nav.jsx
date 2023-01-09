@@ -34,27 +34,29 @@ export const Nav = ({ navLinks }) => {
 
 	return (
 		// Desktop Navigation Top Menu
-		<div className={"shadow-md md:flex md:flex-col"}>
-			<nav className="container mx-auto hidden md:visible md:flex md:justify-center lg:place-items-center flex-1 lg:p-4">
-				<h1 className="lg:text-5xl flex-1 font-caveat">Sky</h1>
-				{navLinks.map((link) => (
-					<ul className="md:p-4 md:space-x-16 lg:space-x-24 flex text-gray-700 place-items-center">
-						<li>
-							<Link key={link.id} to={link.to}>
-								<button className=" underline decoration-2 underline-offset-8 decoration-orange-600 font-poppins lg:text-xl">
-									{link.name}
-								</button>
-							</Link>
-						</li>
-					</ul>
-				))}
-			</nav>
+		<div className="md:flex md:flex-col p-4">
+			<div className="rounded-lg shadow-md">
+				<nav className="container mx-auto hidden md:visible md:flex md:justify-center lg:place-items-center flex-1 lg:p-4">
+					<h1 className="lg:text-5xl flex-1 font-caveat">Sky</h1>
+					{navLinks.map((link) => (
+						<ul className="md:p-4 md:space-x-16 lg:space-x-24 flex text-gray-700 place-items-center">
+							<li>
+								<Link key={link.id} to={link.to}>
+									<button className=" underline decoration-2 underline-offset-8 decoration-orange-600 font-poppins lg:text-xl">
+										{link.name}
+									</button>
+								</Link>
+							</li>
+						</ul>
+					))}
+				</nav>
+			</div>
 
 			{/* Moible Navigation Hamburger Menu */}
 			<div
-				className={`md:hidden container mx-auto flex flex-col items-start shadow-md bg-white z-40`}
+				className={`md:hidden container mx-auto flex flex-col items-start bg-white z-40 shadow-md rounded-lg`}
 			>
-				<div className="px-5 py-5 rounded-lg flex justify-between">
+				<div className=" rounded-lg flex justify-between">
 					<div className=" p-2 rounded-lg">
 						<motion.button
 							initial={false}
