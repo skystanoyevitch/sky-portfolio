@@ -9,9 +9,9 @@ module.exports = {
 			},
 			backgroundImage: (theme) => ({
 				profileImage: "url('./images/mainpicsky.jpg')",
-				travelpal: "url('./images/travelpal.png')",
+				ptpImg: "url('./images/ptp-image.png')",
 				teknipak: "url('./images/teknipak.png')",
-				relaxedDesign: "url('./images/relaxed-design.jpg')",
+				codeImg: "url('./images/codeImg.jpg')",
 				heroBg: "url('./images/wave.svg')",
 				heroImg: "url('./images/webdev.svg')",
 				shapesBg: "url('./images/shapesBg.svg')",
