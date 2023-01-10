@@ -1,5 +1,3 @@
-// import { motion } from "framer-motion";
-// import Arrows from "../../../icons/Arrows";
 import React from "react";
 import { useInView } from "react-intersection-observer";
 
@@ -32,10 +30,10 @@ function FeaturedProjects() {
 			className="container mx-auto px-8 py-32 lg:py-0 lg:h-screen"
 		>
 			<h1 className="mb-6 text-2xl text-center lg:text-4xl font-poppins lg:mb-16 font-bold text-gray-700">
-				SERVICES🙂
+				SERVICES
 			</h1>
 			<div className="flex flex-col space-y-10 lg:space-y-0 lg:flex lg:flex-row lg:justify-evenly bg-white">
-				<div className="lg:w-80 rounded-lg px-4 shadow-mainBoxShadow">
+				<div className="lg:w-80 px-4 shadow-mainBoxShadow">
 					<img src={CreativeIcon} alt="" srcset="" />
 
 					<div className="pb-8 lg:p-6">
@@ -51,7 +49,7 @@ function FeaturedProjects() {
 						</p>
 					</div>
 				</div>
-				<div className="lg:w-80 rounded-lg px-4 shadow-mainBoxShadow">
+				<div className="lg:w-80 px-4 shadow-mainBoxShadow">
 					<img src={WebsiteIcon} alt="website" />
 
 					<div className="pb-8 lg:p-6">
@@ -66,7 +64,7 @@ function FeaturedProjects() {
 						</p>
 					</div>
 				</div>
-				<div className="lg:w-80 rounded-lg px-4 shadow-mainBoxShadow">
+				<div className="lg:w-80 px-4 shadow-mainBoxShadow">
 					<img src={WordPressIcon} alt="" srcset="" />
 					<div className="pb-8 lg:p-6">
 						<h1 className="text-center text-xl lg:text-3xl lg:pb-4 font-poppins font-semibold text-gray-800">

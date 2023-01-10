@@ -10,7 +10,7 @@ function Portfolio() {
 						<h1 className="font-poppins mb-6 text-xl lg:text-3xl">{ project.name }</h1>
 						<li
 							key={key.id}
-							className={`${project.thumbnail} h-80 lg:h-[33rem] shadow-mainBoxShadow rounded-lg mb-12 lg:mb-32`}
+							className={`${project.thumbnail} h-80 lg:h-[33rem] shadow-mainBoxShadow mb-12 lg:mb-32`}
 						></li>
 					</ul>
 				);
