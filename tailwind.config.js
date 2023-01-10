@@ -12,6 +12,7 @@ module.exports = {
 				ptpImg: "url('./images/ptp-image.png')",
 				teknipak: "url('./images/teknipak.png')",
 				codeImg: "url('./images/codeImg.jpg')",
+				relaxedDesign: "url('./images/relaxed-design.jpg')",
 				heroBg: "url('./images/wave.svg')",
 				heroImg: "url('./images/webdev.svg')",
 				shapesBg: "url('./images/shapesBg.svg')",

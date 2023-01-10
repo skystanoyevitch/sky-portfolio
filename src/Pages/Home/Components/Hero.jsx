@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Arrows from "../../../icons/Arrows";
 // import toast, { Toaster } from "react-hot-toast";
 // const notify = () => toast("Oppsies, Coming Soon i promise!");
 
@@ -26,8 +27,8 @@ function Hero() {
 							href="#section-contact"
 							onClick={(e) => e.preventDefault}
 						>
-							<button className="rounded-lg hover:bg-white hover:text-gray-500 hover:border-2 hover:border-[#e75d48] bg-[#e75d48] w-24 p-2 lg:w-1/6 lg:p-2 text-white font-poppins font-semibold">
-								Contact
+							<button className="flex rounded-lg fill-white hover:fill-orange-500 hover:bg-white hover:text-[#e75d48] hover:border-2 hover:border-[#e75d48] bg-[#e75d48] p-2 lg:p-4 text-white font-poppins font-semibold">
+								Work with me <Arrows />
 							</button>
 						</a>
 					</div>
