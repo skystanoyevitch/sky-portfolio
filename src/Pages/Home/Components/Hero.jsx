@@ -27,7 +27,7 @@ function Hero() {
 							href="#section-contact"
 							onClick={(e) => e.preventDefault}
 						>
-							<button className="flex rounded-lg fill-white hover:fill-orange-500 hover:bg-white hover:text-[#e75d48] hover:border-2 hover:border-[#e75d48] bg-[#e75d48] p-2 lg:p-4 text-white font-poppins font-semibold">
+							<button className="flex rounded-lg fill-white hover:fill-orange-500 hover:bg-white hover:text-[#e75d48] hover:border-2 hover:border-[#e75d48] bg-[#e75d48] p-4 text-white font-poppins font-semibold">
 								Work with me <Arrows />
 							</button>
 						</a>
