@@ -45,7 +45,7 @@ function ContactComponent() {
 					<br />I look Forward to hearing from you.
 				</p>
 			</div>
-			<div className="container mx-auto pt-8 lg:pt-0 mt-12 lg:mt-0 bg-white md:h-full xl:justify-center lg:max-w-screen-lg shadow-mainBoxShadow">
+			<div className="container mx-auto pt-8 lg:pt-0 mt-12 lg:mt-0 bg-white md:h-full xl:justify-center lg:max-w-screen-lg shadow-shadowNeo">
 				<div className="">
 					<form
 						onSubmit={handleSubmit(onSubmit)}
