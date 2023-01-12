@@ -10,7 +10,7 @@ import Footer from "./Layout/Navigation/Footer";
 
 const navLinks = [
 	{ id: 0, name: "Home", to: "/" },
-	{ id: 1, name: "Work", to: "/portfolio" },
+	{ id: 1, name: "Coming Soon...", to: "/" },
 ];
 const App = () => (
 	<BrowserRouter>
