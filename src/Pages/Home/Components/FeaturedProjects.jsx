@@ -29,7 +29,7 @@ function FeaturedProjects() {
 			animate={inView ? "animate" : "initial"}
 			className="container mx-auto px-8 py-32 lg:py-0 lg:h-screen"
 		>
-			<h1 className="mb-6 text-2xl text-center lg:text-4xl font-poppins lg:mb-16 font-bold text-gray-700">
+			<h1 className="mb-6 text-2xl text-center lg:text-4xl font-poppins lg:mb-16 font-bold text-gray-900">
 				SERVICES
 			</h1>
 			<div className="flex flex-col space-y-10 lg:space-y-0 lg:flex lg:flex-row lg:justify-evenly bg-white">

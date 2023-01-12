@@ -134,7 +134,7 @@ function ContactComponent() {
 						<button
 							type="submit"
 							value="submit"
-							className="bg-[#e75d48] text-white hover:bg-white hover:text-[#e75d48] font-semibold border-2 border-[#e75d48] font-poppins p-2 mx-8 my-6 lg:mx-0 lg:px-6 rounded-lg"
+							className="bg-[#e75d48] text-white hover:bg-white hover:text-[#e75d48] font-semibold border-2 border-[#e75d48] font-poppins p-2 mx-8 my-6 lg:mx-0 rounded-lg"
 						>
 							Send
 						</button>

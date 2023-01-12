@@ -16,10 +16,11 @@ function Hero() {
 			<div className="lg:h-full">
 				<div className="container mx-auto flex p-8 lg:p-0 lg:h-full">
 					<div className="flex flex-col flex-1 justify-center">
-						<h1 className="text-6xl lg:text-8xl font-poppins text-gray-800">
-							Web Designer | Developer
+						<h1 className="text-6xl lg:text-8xl font-poppins font-light text-gray-900">
+							<span className="font-semibold">Web</span> Designer
+							| Developer
 						</h1>
-						<p className="text-md py-4 lg:py-8 lg:text-xl font-poppins text-gray-600">
+						<p className="text-md py-4 lg:py-8 lg:text-xl font-poppins text-gray-800">
 							Grow your business with a professional and custom
 							website design
 						</p>
@@ -27,7 +28,7 @@ function Hero() {
 							href="#section-contact"
 							onClick={(e) => e.preventDefault}
 						>
-							<button className="flex rounded-lg fill-white hover:fill-orange-500 hover:bg-white hover:text-[#e75d48] hover:border-2 hover:border-[#e75d48] bg-[#e75d48] p-4 text-white font-poppins font-semibold">
+							<button className="flex rounded-lg fill-white hover:fill-orange-500 hover:bg-white hover:text-[#e75d48] hover:border-2 hover:border-[#e75d48] bg-[#e75d48] border-2 border-[#e75d48] p-2 lg:p-4 text-white font-poppins font-semibold">
 								Work with me <Arrows />
 							</button>
 						</a>
