@@ -17,8 +17,7 @@ function Hero() {
 				<div className="container mx-auto flex p-8 lg:p-0 lg:h-full">
 					<div className="flex flex-col flex-1 justify-center">
 						<h1 className="text-6xl lg:text-8xl font-poppins font-light text-gray-900">
-							<span className="font-semibold">Web</span> Designer
-							| Developer
+							<span className="">Web</span> <span className="animate-text bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">Designer | Developer</span>
 						</h1>
 						<p className="text-md py-4 lg:py-8 lg:text-xl font-poppins text-gray-800">
 							Grow your business with a professional and custom
