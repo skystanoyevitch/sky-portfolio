@@ -14,9 +14,9 @@ function Hero() {
 	return (
 		<div className="w-screen lg:h-[90vh]">
 			<div className="lg:h-full">
-				<div className="container mx-auto flex flex-col lg:flex-row p-8 lg:p-0 lg:h-full">
+				<div className="container mx-auto flex flex-col lg:flex-row p-8 lg:p-8 xl:p-0 lg:h-full">
 					<div className="flex flex-col flex-1 lg:justify-center">
-						<h1 className="text-5xl lg:text-8xl tracking-wide font-poppins font-bold text-gray-900 animate-text bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
+						<h1 className="text-5xl md:text-6xl lg:text-8xl tracking-wide font-poppins font-bold text-gray-900 animate-text bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
 							<span>Web</span> <br />
 						 Design & Development
 						</h1>
@@ -33,7 +33,7 @@ function Hero() {
 							</button>
 						</a>
 					</div>
-					<div className="h-80 w-full my-8 lg:w-full lg:h-full lg:flex-1 lg:mt-20 bg-heroImg bg-no-repeat"></div>
+					<div className="h-80 w-full my-8 md:h-96 md:w-full lg:w-full lg:h-full lg:flex-1 lg:mt-20 bg-heroImg bg-no-repeat"></div>
 				</div>
 			</div>
 		</div>

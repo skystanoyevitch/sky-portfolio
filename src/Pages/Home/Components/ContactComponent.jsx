@@ -45,12 +45,12 @@ function ContactComponent() {
 					<br />I look Forward to hearing from you.
 				</p>
 			</div>
-			<div className="container mx-auto pt-8 lg:pt-0 mt-12 lg:mt-0 bg-white md:h-full xl:justify-center lg:max-w-screen-lg shadow-shadowNeo rounded-xl">
+			<div className="container mx-auto pt-8 lg:pt-0 mt-12 lg:mt-0 bg-white md:h-full lg:max-w-screen-lg shadow-shadowNeo rounded-xl">
 				<div className="">
 					<form
 						onSubmit={handleSubmit(onSubmit)}
 						id="contactForm"
-						className="text-center md:text-left md:w-full flex flex-col justify-around xl:p-8"
+						className="text-center md:text-left md:w-full flex flex-col justify-around md:px-12 lg:p-8"
 					>
 						<div className="text-center text-red-600">
 							{errors.first_name && (
@@ -134,7 +134,7 @@ function ContactComponent() {
 						<button
 							type="submit"
 							value="submit"
-							className="bg-[#e75d48] text-white hover:bg-white hover:text-[#e75d48] font-semibold border-2 border-[#e75d48] font-poppins p-2 mx-8 my-6 lg:mx-0 rounded-lg"
+							className="bg-[#e75d48] text-white hover:bg-white hover:text-[#e75d48] font-semibold border-2 border-[#e75d48] font-poppins p-2 mx-8 my-6 md:mx-0 rounded-lg"
 						>
 							Send
 						</button>
