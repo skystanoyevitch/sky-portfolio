@@ -47,7 +47,7 @@ module.exports = {
         mainBoxShadow:
           "2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),12.5px 12.5px 10px rgba(0, 0, 0, 0.035),22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),100px 100px 80px rgba(0, 0, 0, 0.07)",
         shadowGray: "5px 5px 0 rgba(55, 65, 81, 1)",
-        shadowNeo: "9px 9px 18px #c5c5c5, -9px -9px 18px #fbfbfb",
+        shadowNeo: "9px 9px 18px #c5c5c5, -1px -1px 18px #0000",
       },
       animation: {
         text: "text 5s ease infinite",
@@ -62,14 +62,6 @@ module.exports = {
             "background-size": "200% 200%",
             "background-position": "200% center",
           },
-          //   "100%": {
-          //     "background-size": "200% 200%",
-          //     "background-position": "200% center",
-          //   },
-          //   '0%': {
-          // 	'background-size':'200% 200%',
-          // 	 'background-position': 'center'
-          //  }
         },
       },
     },
