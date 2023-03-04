@@ -35,20 +35,23 @@ export const Nav = ({ navLinks }) => {
 	return (
 		// Desktop Navigation Top Menu
 		<div className="md:flex md:flex-col p-4 bg-[#F5F5F5]">
-			<div className="rounded-xl shadow-md bg-white">
-				<nav className="container mx-auto hidden md:visible md:flex md:justify-center lg:place-items-center flex-1 lg:p-4">
-					<h1 className="lg:text-5xl flex-1 font-caveat">Sky</h1>
-					{navLinks.map((link) => (
-						<ul className="md:p-4 md:space-x-16 lg:space-x-24 flex text-gray-700 place-items-center">
+			<div className="rounded-xl shadow-sm bg-white">
+				<nav className="container mx-auto hidden md:visible md:flex md:justify-evenly lg:place-items-center lg:py-4">
+					<div className="font-caveat text-orange-500 lg:text-5xl flex-1">Sky</div>
+					<div className="flex">
+						{navLinks.map((link) => (
+						<ul className="md:p-4 md:space-x-16 lg:space-x-24 text-gray-700">
 							<li>
 								<Link key={link.id} to={link.to}>
-									<button className=" underline decoration-2 underline-offset-8 decoration-orange-600 font-poppins lg:text-xl">
+									<button className=" tracking-wide font-lite hover:underline hover:decoration-2 hover:underline-offset-8 hover:decoration-orange-600 font-poppins lg:text-xl">
 										{link.name}
 									</button>
 								</Link>
 							</li>
 						</ul>
 					))}
+					</div>
+					
 				</nav>
 			</div>
 
