@@ -16,8 +16,9 @@ function Hero() {
 			<div className="lg:h-full">
 				<div className="container mx-auto flex flex-col lg:flex-row p-8 lg:p-0 lg:h-full">
 					<div className="flex flex-col flex-1 lg:justify-center">
-						<h1 className="text-6xl lg:text-8xl font-poppins font-light text-gray-900">
-						 <span className="animate-text bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">Web Design | Development</span>
+						<h1 className="text-4xl lg:text-8xl font-poppins font-bold text-gray-900 animate-text bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
+							<span>Web</span> <br />
+						 Design & Development
 						</h1>
 						<p className="text-md py-4 lg:py-8 lg:text-xl font-poppins text-gray-800">
 							Grow your business with a professional and custom
@@ -28,7 +29,7 @@ function Hero() {
 							onClick={(e) => e.preventDefault}
 						>
 							<button className="flex rounded-lg fill-white hover:fill-orange-500 hover:bg-white hover:text-[#e75d48] hover:border-2 hover:border-[#e75d48] bg-[#e75d48] border-2 border-[#e75d48] p-2 lg:p-4 text-white font-poppins font-semibold">
-								Work with me <Arrows />
+								Contact <Arrows />
 							</button>
 						</a>
 					</div>
