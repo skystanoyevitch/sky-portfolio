@@ -32,8 +32,8 @@ function FeaturedProjects() {
 			<h1 className="mb-6 text-2xl text-center lg:text-4xl font-poppins lg:mb-16 font-bold text-gray-900">
 				SERVICES
 			</h1>
-			<div className="flex flex-col space-y-10 lg:space-y-0 lg:flex lg:flex-row lg:justify-evenly bg-white">
-				<div className="lg:w-80 px-4 shadow-shadowNeo">
+			<div className="flex flex-col space-y-10 lg:space-y-0 lg:flex lg:flex-row lg:justify-evenly">
+				<div className="lg:w-80 px-4 shadow-shadowNeo rounded-xl">
 					<img src={CreativeIcon} alt="" srcset="" />
 
 					<div className="pb-8 lg:p-6">
@@ -49,7 +49,7 @@ function FeaturedProjects() {
 						</p>
 					</div>
 				</div>
-				<div className="lg:w-80 px-4 shadow-shadowNeo">
+				<div className="lg:w-80 px-4 shadow-shadowNeo rounded-xl">
 					<img src={WebsiteIcon} alt="website" />
 
 					<div className="pb-8 lg:p-6">
@@ -64,7 +64,7 @@ function FeaturedProjects() {
 						</p>
 					</div>
 				</div>
-				<div className="lg:w-80 px-4 shadow-shadowNeo">
+				<div className="lg:w-80 px-4 shadow-shadowNeo rounded-xl">
 					<img src={WordPressIcon} alt="" srcset="" />
 					<div className="pb-8 lg:p-6">
 						<h1 className="text-center text-xl lg:text-3xl lg:pb-4 font-poppins font-semibold text-gray-800">
@@ -72,8 +72,8 @@ function FeaturedProjects() {
 						</h1>
 						<p className="text-sm lg:text-md font-poppins font-lite text-center">
 							From custom designs that are mobile responsive to
-							maintanence and repairs to get your site back like
-							new again, wory free.
+							maintenance and repairs to get your site back like
+							new again, worry free.
 						</p>
 					</div>
 				</div>
