@@ -32,7 +32,7 @@ function Hero() {
 							</button>
 						</a>
 					</div>
-					<div className="h-60 w-80 lg:w-full lg:h-full lg:flex-1 lg:mt-20 bg-heroImg bg-no-repeat"></div>
+					<div className="h-60 w-80 my-8 lg:w-full lg:h-full lg:flex-1 lg:mt-20 bg-heroImg bg-no-repeat"></div>
 				</div>
 			</div>
 		</div>
