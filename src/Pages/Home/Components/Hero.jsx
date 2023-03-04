@@ -12,9 +12,9 @@ function Hero() {
 	}, [navigate]);
 
 	return (
-		<div className="w-screen h-[70vh] lg:h-[90vh]">
+		<div className="w-screen h-[70vh] lg:h-[90vh] mb-12">
 			<div className="lg:h-full">
-				<div className="container mx-auto flex p-8 lg:p-0 lg:h-full">
+				<div className="container mx-auto flex flex-col lg:flex-row p-8 lg:p-0 lg:h-full">
 					<div className="flex flex-col flex-1 justify-center">
 						<h1 className="text-6xl lg:text-8xl font-poppins font-light text-gray-900">
 							<span className="">Web</span> <span className="animate-text bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">Designer | Developer</span>
@@ -32,7 +32,7 @@ function Hero() {
 							</button>
 						</a>
 					</div>
-					<div className=" flex-auto bg-heroImg bg-no-repeat"></div>
+					<div className="h-60 w-80 lg:w-full lg:h-full lg:flex-1 lg:mt-20 bg-heroImg bg-no-repeat"></div>
 				</div>
 			</div>
 		</div>
