@@ -6,21 +6,21 @@ import Emoji from "./Assests/heart-emoji";
 import { FooterNav } from "./Components/FooterNav";
 
 const Footer = () => {
-	return (
-		<>
-			<footer className="md:p-6 lg:p-8 bg-[#F5F5F5]">
-				<div className="flex flex-col p-4 w-full h-full justify-center">
-					<div className="flex flex-row justify-center">
-						<FooterNav />
-					</div>
-				</div>
-				<p className="bottom-0 text-center text-xs lg:text-sm inset-x-1/4">
-					Made With <Emoji symbol="❤" label="sheep" /> by Sky - {""}
-					<span className="text-[#e75d48] font-bold">2023</span>
-				</p>
-			</footer>
-		</>
-	);
+  return (
+    <>
+      <footer className="md:p-6 lg:p-8 bg-[#F5F5F5]">
+        <div className="flex flex-col p-4 w-full h-full justify-center">
+          <div className="flex flex-row justify-center">
+            <FooterNav />
+          </div>
+        </div>
+        <p className="bottom-0 text-center text-xs lg:text-sm inset-x-1/4">
+          Made With <Emoji symbol="❤" label="sheep" /> by Sky - {""}
+          <span className="text-[#e75d48] font-bold">2023</span>
+        </p>
+      </footer>
+    </>
+  );
 };
 
 export default Footer;
