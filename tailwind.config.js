@@ -8,7 +8,7 @@ module.exports = {
         caveat: ['"Caveat"', "cursive"],
       },
       backgroundImage: (theme) => ({
-        profileImage: "url('./images/mainpicsky.jpg')",
+        logo: "url('./images/Sky.png')",
         ptpImg: "url('./images/ptp-image.png')",
         teknipak: "url('./images/teknipak.png')",
         codeImg: "url('./images/codeImg.jpg')",
