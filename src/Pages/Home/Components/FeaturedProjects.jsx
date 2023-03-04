@@ -33,41 +33,40 @@ function FeaturedProjects() {
 				SERVICES
 			</h1>
 			<div className="flex flex-col space-y-10 lg:space-y-0 lg:flex lg:flex-row lg:justify-evenly">
-				<div className="lg:w-80 px-4 shadow-shadowNeo rounded-xl">
-					<img src={CreativeIcon} alt="" srcset="" />
-
-					<div className="pb-8 lg:p-6">
-						<h1 className="text-center text-xl pb-6 lg:text-3xl lg:pb-4 font-poppins font-semibold text-gray-800">
+				<div className="lg:w-80 p-8 lg:p-6 shadow-shadowNeo rounded-xl bg-white text-center">
+					<img src={CreativeIcon} alt="" srcset="" className="" />
+					<div className="">
+						<h1 className="text-xl pb-6 lg:text-3xl lg:pb-4 font-poppins font-semibold text-gray-800">
 							Web Design
 						</h1>
-						<p className="text-sm lg:text-md font-poppins font-lite text-center">
-							Stand out from the growded market with a design
-							taiolored to your business, custom built using the
+						<p className="text-sm lg:text-md font-poppins font-lite">
+							Stand out from the crowded market with a design
+							tailored to your business, custom built using the
 							latest UI and UX design principles that results in
 							an engaging website that you and your visitors will
 							love.
 						</p>
 					</div>
 				</div>
-				<div className="lg:w-80 px-4 shadow-shadowNeo rounded-xl">
+				<div className="lg:w-80 p-8 lg:p-6 shadow-shadowNeo rounded-xl bg-white text-center">
 					<img src={WebsiteIcon} alt="website" />
 
-					<div className="pb-8 lg:p-6">
-						<h1 className="text-center text-xl lg:text-3xl pb-6 lg:pb-4 font-poppins font-semibold text-gray-800">
+					<div className="">
+						<h1 className=" text-xl lg:text-3xl pb-4 lg:pb-4 font-poppins font-semibold text-gray-800">
 							Web Development
 						</h1>
-						<p className="text-sm lg:text-md font-poppins font-lite text-center">
+						<p className="text-sm lg:text-md font-poppins font-lite">
 							Enjoy a Custom Built website using the latest
-							technoligies with an emphasis on performance and
+							technologies with an emphasis on performance and
 							security to get your business up and running on the
 							web.
 						</p>
 					</div>
 				</div>
-				<div className="lg:w-80 px-4 shadow-shadowNeo rounded-xl">
+				<div className="lg:w-80 p-8 lg:p-6 shadow-shadowNeo rounded-xl bg-white">
 					<img src={WordPressIcon} alt="" srcset="" />
-					<div className="pb-8 lg:p-6">
-						<h1 className="text-center text-xl lg:text-3xl lg:pb-4 font-poppins font-semibold text-gray-800">
+					<div className="">
+						<h1 className="text-center text-xl pb-4 lg:text-3xl lg:pb-4 font-poppins font-semibold text-gray-800">
 							WordPress
 						</h1>
 						<p className="text-sm lg:text-md font-poppins font-lite text-center">
