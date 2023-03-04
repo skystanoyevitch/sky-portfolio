@@ -8,7 +8,7 @@ import { FooterNav } from "./Components/FooterNav";
 const Footer = () => {
 	return (
 		<>
-			<footer className="md:p-6 lg:p-8">
+			<footer className="md:p-6 lg:p-8 bg-[#F5F5F5]">
 				<div className="flex flex-col p-4 w-full h-full justify-center">
 					<div className="flex flex-row justify-center">
 						<FooterNav />

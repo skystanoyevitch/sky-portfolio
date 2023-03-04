@@ -5,7 +5,7 @@ import ContactComponent from "./Components/ContactComponent";
 
 const Homepage = () => {
 	return (
-		<div className="bg-shapesBg">
+		<div className="bg-[#F5F5F5]">
 			<Hero />
 			<FeaturedProjects />
 			<OurWork />

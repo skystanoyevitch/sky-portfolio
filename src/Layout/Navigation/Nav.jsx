@@ -34,8 +34,8 @@ export const Nav = ({ navLinks }) => {
 
 	return (
 		// Desktop Navigation Top Menu
-		<div className="md:flex md:flex-col p-4">
-			<div className="rounded-lg shadow-md">
+		<div className="md:flex md:flex-col p-4 bg-[#F5F5F5]">
+			<div className="rounded-xl shadow-md bg-white">
 				<nav className="container mx-auto hidden md:visible md:flex md:justify-center lg:place-items-center flex-1 lg:p-4">
 					<h1 className="lg:text-5xl flex-1 font-caveat">Sky</h1>
 					{navLinks.map((link) => (
@@ -52,7 +52,7 @@ export const Nav = ({ navLinks }) => {
 				</nav>
 			</div>
 
-			{/* Moible Navigation Hamburger Menu */}
+			{/* Mobile Navigation Hamburger Menu */}
 			<div
 				className={`md:hidden container mx-auto flex flex-col items-start bg-white z-40 shadow-md rounded-lg`}
 			>
