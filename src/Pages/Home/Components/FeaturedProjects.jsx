@@ -36,7 +36,7 @@ function FeaturedProjects() {
 				<div className="lg:w-80 p-8 lg:p-6 shadow-shadowNeo rounded-xl bg-white text-center">
 					<img src={CreativeIcon} alt="" srcset="" className="" />
 					<div className="">
-						<h1 className="text-xl pb-6 lg:text-3xl lg:pb-4 font-poppins font-semibold text-gray-800">
+						<h1 className="text-xl pb-6 lg:text-2xl lg:pb-4 font-poppins font-semibold text-gray-700">
 							Web Design
 						</h1>
 						<p className="text-sm lg:text-md font-poppins font-lite">
@@ -52,7 +52,7 @@ function FeaturedProjects() {
 					<img src={WebsiteIcon} alt="website" />
 
 					<div className="">
-						<h1 className=" text-xl lg:text-3xl pb-4 lg:pb-4 font-poppins font-semibold text-gray-800">
+						<h1 className=" text-xl lg:text-2xl pb-4 lg:pb-4 font-poppins font-semibold text-gray-700">
 							Web Development
 						</h1>
 						<p className="text-sm lg:text-md font-poppins font-lite">
@@ -64,9 +64,9 @@ function FeaturedProjects() {
 					</div>
 				</div>
 				<div className="lg:w-80 p-8 lg:p-6 shadow-shadowNeo rounded-xl bg-white">
-					<img src={WordPressIcon} alt="" srcset="" />
+					<img src={WordPressIcon} alt="" srcset="" className="" />
 					<div className="">
-						<h1 className="text-center text-xl pb-4 lg:text-3xl lg:pb-4 font-poppins font-semibold text-gray-800">
+						<h1 className="text-center text-xl pb-4 lg:text-2xl lg:pb-4 font-poppins font-semibold text-gray-700">
 							WordPress
 						</h1>
 						<p className="text-sm lg:text-md font-poppins font-lite text-center">
