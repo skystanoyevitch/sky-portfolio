@@ -34,8 +34,8 @@ export const Nav = ({ navLinks }) => {
 
   return (
     // Desktop Navigation Top Menu
-    <div className="md:flex md:flex-col p-4 bg-[#F5F5F5]">
-      <div className="rounded-xl shadow-sm bg-white">
+    <div className="md:flex md:flex-col p-4">
+      <div className="rounded-xl shadow-lg bg-white">
         <nav className="container mx-auto hidden md:visible md:flex md:justify-center md:place-items-center md:p-2 lg:p-4">
           <div className="font-caveat text-orange-500 md:text-4xl lg:text-5xl flex-1">
             Sky

@@ -14,13 +14,15 @@ const navLinks = [
 ];
 const App = () => (
   <BrowserRouter>
-    <Nav navLinks={navLinks} />
-    <ScrollToTop />
-    <Routes>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/Portfolio" element={<Portfolio />} />
-    </Routes>
-    <Footer />
+    <div className="polka">
+      <Nav navLinks={navLinks} />
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/Portfolio" element={<Portfolio />} />
+      </Routes>
+      <Footer />
+    </div>
   </BrowserRouter>
 );
 

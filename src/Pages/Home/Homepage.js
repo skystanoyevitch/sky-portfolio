@@ -6,7 +6,7 @@ import Portfolio from "./Components/Portfolio";
 
 const Homepage = () => {
   return (
-    <div className="bg-[#F5F5F5]">
+    <div>
       <Hero />
       <FeaturedProjects />
       <OurWork />
