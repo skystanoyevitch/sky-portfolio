@@ -19,6 +19,7 @@ module.exports = {
         websiteIcon: "url('./images/website.svg')",
         creativeTeamIcon: "url('./images/creative-team.svg')",
         wordpressIcon: "url('./images/wordpress-icon.svg')",
+        alternateBg: "url('./images/bg.svg')"
       }),
       spacing: {
         72: "18rem",
