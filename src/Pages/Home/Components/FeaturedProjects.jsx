@@ -33,7 +33,7 @@ function FeaturedProjects() {
         SERVICES
       </h1>
       <div className="flex flex-col space-y-10 md:space-y-0 md:flex md:flex-row md:space-x-6 xl:space-x-0 xl:justify-evenly">
-        <div className="md:w-1/3 lg:w-80 p-8 md:p-6 shadow-shadowNeo rounded-xl bg-white text-center">
+        <div className="md:w-1/3 lg:w-80 p-8 md:p-6 border bg-slate-50 hover:border-[#e75d48] hover:border-2 shadow-shadowNeo rounded-xl text-center">
           <img src={CreativeIcon} alt="" srcset="" className="" />
           <div className="">
             <h1 className="text-xl pb-6 lg:text-2xl lg:pb-4 font-poppins font-semibold text-gray-700">
@@ -47,7 +47,7 @@ function FeaturedProjects() {
             </p>
           </div>
         </div>
-        <div className="md:w-1/3 lg:w-80 p-8 md:p-6 shadow-shadowNeo rounded-xl bg-white text-center">
+        <div className="md:w-1/3 lg:w-80 p-8 md:p-6 border bg-slate-50 hover:border-[#e75d48] hover:border-2 shadow-shadowNeo rounded-xl text-center">
           <img src={WebsiteIcon} alt="website" />
 
           <div className="">
@@ -61,7 +61,7 @@ function FeaturedProjects() {
             </p>
           </div>
         </div>
-        <div className="md:w-1/3 lg:w-80 p-8 md:p-6 shadow-shadowNeo rounded-xl bg-white">
+        <div className="md:w-1/3 lg:w-80 p-8 md:p-6 border bg-slate-50 hover:border-[#e75d48] hover:border-2 shadow-shadowNeo rounded-xl">
           <img src={WordPressIcon} alt="" srcset="" className="" />
           <div className="">
             <h1 className="text-center text-xl pb-4 lg:text-2xl lg:pb-4 font-poppins font-semibold text-gray-700">
