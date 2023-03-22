@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion, useCycle } from "framer-motion";
+import logo from "../../images/mwd-logo.png";
 
 const menuVar = {
   open: {
@@ -37,9 +38,14 @@ export const Nav = ({ navLinks }) => {
     <div className="md:flex md:flex-col p-4">
       <div className="rounded-xl shadow-lg bg-white">
         <nav className="container mx-auto hidden md:visible md:flex md:justify-center md:place-items-center md:p-2 lg:p-4">
-          <div className="font-caveat text-orange-500 md:text-4xl lg:text-5xl flex-1">
-            Sky
+          <div className="text-xl lg:text-2xl font-poppins font-bold flex-1">
+            {" "}
+            <span className="text-[#e75d48]">Modern</span>{" "}
+            <span className="bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] bg-clip-text text-transparent">
+              Web Design
+            </span>
           </div>
+          {/* <img src={logo} alt="logo" className=" object-cover" /> */}
           <div className="flex">
             {navLinks.map((link) => (
               <ul className="md:p-2 md:space-x-16 lg:space-x-24 text-gray-700">
@@ -85,8 +91,11 @@ export const Nav = ({ navLinks }) => {
               ></motion.div>
             </motion.button>
           </div>
-          <h3 className=" text-center ml-4 flex items-center font-caveat text-mainOrange text-xl">
-            Menu
+          <h3 className=" text-center ml-4 flex items-center font-poppins text-mainOrange text-md font-bold">
+            M{" "}
+            <span className="bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] bg-clip-text text-transparent">
+              WD
+            </span>
           </h3>
         </div>
 
