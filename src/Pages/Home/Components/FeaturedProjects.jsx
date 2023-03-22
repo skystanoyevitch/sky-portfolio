@@ -29,9 +29,17 @@ function FeaturedProjects() {
       animate={inView ? "animate" : "initial"}
       className="container mx-auto px-8 py-32 lg:py-0 lg:h-screen"
     >
-      {/* <h1 className="mb-6 text-2xl text-center lg:text-4xl font-poppins lg:mb-16 font-bold text-gray-700">
-        SERVICES
-      </h1> */}
+      <div className="mb-6 lg:mb-16 md:text-center container mx-auto max-w-lg">
+        <h1 className="text-2xl lg:text-4xl font-poppins font-bold text-gray-700 pb-4">
+          What can we do for you <span className="text-[#e75d48]">?</span>
+        </h1>
+        <p className="">
+          below is the main services we offer that can help bring your idea to
+          life on the web, or if you are looking for something specific you can
+          contact us and we would love to help you out.
+        </p>
+      </div>
+
       <div className="flex flex-col space-y-10 md:space-y-0 md:flex md:flex-row md:space-x-6 xl:space-x-0 xl:justify-evenly">
         <div className="md:w-1/3 lg:w-80 p-8 md:p-6 bg-slate-50 border-[#e75d48] border-2 shadow-shadowNeo rounded-xl text-center">
           <img src={CreativeIcon} alt="" srcset="" className="" />

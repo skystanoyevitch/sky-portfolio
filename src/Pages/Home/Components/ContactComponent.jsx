@@ -37,12 +37,11 @@ function ContactComponent() {
           <HandShake />
         </div>
         <h1 className="font-poppins font-bold text-2xl pb-6 text-gray-700 lg:text-5xl lg:pb-8 lg:text-center">
-          GET IN TOUCH
+          Lets work <span className="text-[#e75d48]">together</span>
         </h1>
         <p className="font-poppins lg:text-lg">
           Need a Website? please don't hesitate to contact me with any questions
-          you have using the form below,
-          <br />I look Forward to hearing from you.
+          you have using the form below, I look Forward to hearing from you.
         </p>
       </div>
       <div className="container mx-auto pt-8 lg:pt-0 mt-12 lg:mt-0 border bg-slate-50 md:h-full lg:max-w-screen-lg shadow-shadowNeo rounded-xl">
@@ -73,19 +72,6 @@ function ContactComponent() {
                 name="first_name"
                 placeholder="First Name"
               />
-
-              {/* <input
-								type="text"
-								{...register("last_name", {
-									required: {
-										value: true,
-										message: "Last Name is Required",
-									},
-								})}
-								className="p-2 lg:p-4 bg-body w-full rounded-lg"
-								name="last_name"
-								placeholder="Last Name"
-							/> */}
             </div>
 
             <div className="flex flex-col space-y-8 px-8 md:px-0">
