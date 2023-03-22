@@ -16,7 +16,7 @@ function Hero() {
       <div className="lg:h-full">
         <div className="container mx-auto flex flex-col lg:flex-row p-8 lg:p-8 xl:p-0 lg:h-full">
           <div className="flex flex-col flex-1 lg:justify-center">
-            <h1 className="text-5xl md:text-6xl lg:text-8xl tracking-wide font-poppins font-bold text-gray-900 animate-text bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
+            <h1 className="text-5xl md:text-6xl lg:text-8xl tracking-wide font-poppins font-bold animate-text bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
               Custom Websites built for you
             </h1>
             <p className="text-md py-4 lg:py-8 lg:text-2xl font-poppins text-gray-800">
