@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion, useCycle } from "framer-motion";
-import logo from "../../images/mwd-logo.png";
+// import logo from "../../images/mwd-logo.png";
 
 const menuVar = {
   open: {
