@@ -28,8 +28,11 @@ function ContactComponent() {
   };
 
   return (
-    <div className="p-8 container mx-auto lg:max-w-3xl" id="section-contact">
-      <div className="mx-auto lg:max-w-lg text-center pt-32 lg:pb-12">
+    <div
+      className="p-8 container mx-auto lg:max-w-3xl mb-12 lg:mb-24"
+      id="section-contact"
+    >
+      <div className="mx-auto lg:max-w-lg text-center mt-12 lg:mt-24">
         <div className="flex justify-center pb-6">
           <HandShake />
         </div>

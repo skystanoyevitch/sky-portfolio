@@ -12,7 +12,7 @@ function Hero() {
   }, [navigate]);
 
   return (
-    <div className="w-screen lg:h-[90vh]">
+    <div className="w-screen lg:h-screen">
       <div className="lg:h-full">
         <div className="container mx-auto flex flex-col lg:flex-row p-8 lg:p-8 xl:p-0 lg:h-full">
           <div className="flex flex-col flex-1 lg:justify-center">
