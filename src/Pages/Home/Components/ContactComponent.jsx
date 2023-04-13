@@ -16,7 +16,7 @@ function ContactComponent() {
   const successMessage = "Success";
 
   const onSubmit = (data) => {
-    sendForm("service_b25r6f3", "template_nfydqkj", "#contactForm").then(
+    sendForm("service_b25r6f3", "template_m47i27q", "#contactForm").then(
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
         reset();
@@ -40,8 +40,8 @@ function ContactComponent() {
           Lets work <span className="text-[#e75d48]">together</span>
         </h1>
         <p className="font-poppins lg:text-lg">
-          please don't hesitate to contact us with any questions
-          you have using the form below, We look Forward to hearing from you.
+          please don't hesitate to contact us with any questions you have using
+          the form below, We look Forward to hearing from you.
         </p>
       </div>
       <div className="container mx-auto pt-8 lg:pt-0 mt-12 lg:mt-0 border bg-slate-50 md:h-full lg:max-w-screen-lg shadow-shadowNeo rounded-xl">
