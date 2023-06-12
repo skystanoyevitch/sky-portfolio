@@ -89,9 +89,8 @@ export const Nav = ({ navLinks }) => {
             </motion.button>
           </div>
           <h3 className=" text-center ml-4 flex items-center font-poppins text-mainOrange text-md font-bold">
-            M{" "}
             <span className="bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] bg-clip-text text-transparent">
-              WD
+              [ SS ]
             </span>
           </h3>
         </div>

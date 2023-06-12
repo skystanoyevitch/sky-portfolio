@@ -24,9 +24,9 @@ function Portfolio() {
       variants={aboutSectionVariant}
       initial="initial"
       animate={inView ? "animate" : "initial"}
-      className="container mx-auto px-8 py-32 lg:py-0 lg:h-screen lg: flex lg:flex-col lg:place-content-center"
+      className="container mx-auto px-8 py-32 lg:py-0 lg:h-screen lg: flex flex-col lg:flex-col lg:place-content-center"
     >
-      <div className="mb-6 lg:mb-16 md:text-center container mx-auto max-w-lg">
+      <div className="mb-6 lg:mb-16 text-center container mx-auto max-w-lg">
         <h1 className="text-2xl lg:text-4xl font-poppins font-bold text-gray-700 pb-4">
           Projects <span className="text-[#e75d48] font-normal"> | </span> Work
         </h1>
@@ -39,9 +39,9 @@ function Portfolio() {
               key={key.id}
               className="container mx-auto px-8 lg:px-0 space-y-10"
             >
-              <li className="lg:h-80 lg:w-full">
+              <li className="h-40 w-full md:h-52 lg:h-80 lg:w-full">
                 <div
-                  className={`${project.thumbnail} lg:h-full md:w-full my-10 md:my-0`}
+                  className={`${project.thumbnail} h-full w-full my-10 md:my-0 shadow-shadowNeo`}
                 ></div>
               </li>
             </ul>
