@@ -1,8 +1,5 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Arrows from "../../../icons/Arrows";
-// import toast, { Toaster } from "react-hot-toast";
-// const notify = () => toast("Oppsies, Coming Soon i promise!");
 
 function Hero() {
   const navigate = useNavigate();
@@ -14,22 +11,25 @@ function Hero() {
   return (
     <div className="w-screen lg:h-screen">
       <div className="lg:h-full">
-        <div className="container mx-auto flex flex-col lg:flex-row p-8 lg:p-8 xl:p-0 lg:h-full">
-          <div className="flex flex-col flex-1 lg:justify-center">
-            <h1 className="text-5xl md:text-6xl lg:text-8xl tracking-wide font-poppins font-bold animate-text bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
-              Custom Websites built for you
+        <div className="container mx-auto flex flex-col lg:justify-center text-center lg:flex-row p-8 lg:p-8 xl:p-0 lg:h-full">
+          <div className="flex flex-col justify-center">
+            <h1 className="lg:h-40 text-5xl md:text-6xl lg:text-9xl font-poppins font-bold animate-text bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
+              Sky
             </h1>
-            <p className="text-md py-4 lg:py-8 lg:text-2xl font-poppins text-gray-800">
-              Grow your business with a professional and custom website design
-              tailored to your business needs, no copy cats here.
+            <h3 className=" lg:text-6xl font-poppins font-semibold lg:h-20 animate-text bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
+              Stanojevic
+            </h3>
+            <p className="text-md py-4 lg:text-2xl font-mono text-gray-800">
+              Frontend Developer | Designer
             </p>
-            <a href="#section-contact" onClick={(e) => e.preventDefault}>
-              <button className="flex rounded-lg fill-white hover:fill-orange-500 hover:bg-white hover:text-[#e75d48] hover:border-2 hover:border-[#e75d48] bg-[#e75d48] border-2 border-[#e75d48] p-2 lg:p-4 text-white font-poppins font-semibold">
-                Contact <Arrows />
-              </button>
-            </a>
+            <div className="flex justify-center">
+              <a href="#section-contact" onClick={(e) => e.preventDefault}>
+                <button className="flex rounded-md fill-white hover:fill-orange-500 hover:bg-white hover:text-[#e75d48] hover:border-2 hover:border-[#e75d48] bg-[#e75d48] border-2 border-[#e75d48] p-2 lg:px-6 lg:py-2 text-white font-poppins font-semibold">
+                  Contact
+                </button>
+              </a>
+            </div>
           </div>
-          <div className="h-80 w-full my-8 md:h-96 md:w-full lg:w-full lg:h-full lg:flex-1 lg:mt-20 bg-heroImg bg-no-repeat"></div>
         </div>
       </div>
     </div>
