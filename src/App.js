@@ -14,7 +14,7 @@ const navLinks = [
 ];
 const App = () => (
   <BrowserRouter>
-    <div className="polka">
+    <div className="">
       <Nav navLinks={navLinks} />
       <ScrollToTop />
       <Routes>

@@ -35,11 +35,10 @@ export const Nav = ({ navLinks }) => {
 
   return (
     // Desktop Navigation Top Menu
-    <div className="md:flex md:flex-col p-4">
-      <div className="rounded-xl shadow-xl shadow-gray-300 bg-white">
+    <div className="md:flex md:flex-col">
+      <div className="shadow-xl shadow-gray-300 bg-white">
         <nav className="container mx-auto hidden md:visible md:flex md:justify-center md:place-items-center md:p-2 lg:p-4">
           <div className="text-xl lg:text-2xl font-poppins font-bold flex-1">
-            {/* <span className="text-[#e75d48]"></span> */}
             <span className="bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] bg-clip-text text-transparent">
               [ SS ]
             </span>

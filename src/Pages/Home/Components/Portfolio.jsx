@@ -39,9 +39,9 @@ function Portfolio() {
               key={key.id}
               className="container mx-auto px-8 lg:px-0 space-y-10"
             >
-              <li className="lg:h-80 lg:w-full shadow-shadowNeo">
+              <li className="lg:h-80 lg:w-full">
                 <div
-                  className={`${project.thumbnail} lg:h-full md:w-full my-10 md:my-0 rounded-md`}
+                  className={`${project.thumbnail} lg:h-full md:w-full my-10 md:my-0`}
                 ></div>
               </li>
             </ul>
