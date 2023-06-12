@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { init, sendForm } from "emailjs-com";
-import HandShake from "../../../icons/HandShake";
+// import HandShake from "../../../icons/HandShake";
 
 init("user_UjPKV0EnHoctjH33XHpvR");
 
@@ -32,16 +32,17 @@ function ContactComponent() {
       className="p-8 container mx-auto lg:max-w-3xl mb-12 lg:mb-24"
       id="section-contact"
     >
-      <div className="mx-auto lg:max-w-lg text-center mt-12 lg:mt-24">
-        <div className="flex justify-center pb-6">
+      <div className="mx-auto lg:max-w-lg text-center mt-12 lg:mt-24 lg:mb-10">
+        {/* <div className="flex justify-center pb-6">
           <HandShake />
-        </div>
-        <h1 className="font-poppins font-bold text-2xl pb-6 text-gray-700 lg:text-5xl lg:pb-8 lg:text-center">
-          Lets work <span className="text-[#e75d48]">together</span>
+        </div> */}
+        <h1 className="font-poppins font-bold text-2xl pb-6 text-gray-700 lg:text-4xl lg:pb-8 lg:text-center">
+          <span className="text-[#e75d48]">Contact </span> Me
         </h1>
-        <p className="font-poppins lg:text-lg">
-          please don't hesitate to contact us with any questions you have using
-          the form below, We look Forward to hearing from you.
+        <p className="font-mono lg:text-lg">
+          Want to work together on a project or looking to hire a frontend dev?
+          please don't hesitate to contact me below, look forward to hearing
+          from you
         </p>
       </div>
       <div className="container mx-auto pt-8 lg:pt-0 mt-12 lg:mt-0 border bg-slate-50 md:h-full lg:max-w-screen-lg shadow-shadowNeo rounded-xl">
