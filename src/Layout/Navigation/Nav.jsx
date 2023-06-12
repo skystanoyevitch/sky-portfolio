@@ -39,13 +39,11 @@ export const Nav = ({ navLinks }) => {
       <div className="rounded-xl shadow-xl shadow-gray-300 bg-white">
         <nav className="container mx-auto hidden md:visible md:flex md:justify-center md:place-items-center md:p-2 lg:p-4">
           <div className="text-xl lg:text-2xl font-poppins font-bold flex-1">
-            {" "}
-            <span className="text-[#e75d48]">Modern</span>{" "}
+            {/* <span className="text-[#e75d48]"></span> */}
             <span className="bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] bg-clip-text text-transparent">
-              Web Design
+              [ SS ]
             </span>
           </div>
-          {/* <img src={logo} alt="logo" className=" object-cover" /> */}
           <div className="flex">
             {navLinks.map((link) => (
               <ul className="md:p-2 md:space-x-16 lg:space-x-24 text-gray-700">
