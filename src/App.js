@@ -5,7 +5,7 @@ import ScrollToTop from "./Global-Components/ScrollToTop";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // Page Component Imports //
-import Portfolio from "./Pages/Portfolio/Portfolio";
+import Portfolio from "./Pages/Home/Components/Portfolio";
 import Footer from "./Layout/Navigation/Footer";
 
 const navLinks = [
