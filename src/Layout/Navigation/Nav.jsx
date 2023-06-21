@@ -36,7 +36,7 @@ export const Nav = ({ navLinks }) => {
   return (
     // Desktop Navigation Top Menu
     <div className="md:flex md:flex-col">
-      <div className="shadow-xl shadow-gray-300 bg-white">
+      <div className="">
         <nav className="container mx-auto hidden md:visible md:flex md:justify-center md:place-items-center md:p-2 lg:p-4">
           <div className="text-xl lg:text-2xl font-poppins font-bold flex-1">
             <span className="bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] bg-clip-text text-transparent">
@@ -45,10 +45,10 @@ export const Nav = ({ navLinks }) => {
           </div>
           <div className="flex">
             {navLinks.map((link) => (
-              <ul className="md:p-2 md:space-x-16 lg:space-x-24 text-gray-700">
+              <ul className="md:p-2 md:space-x-16 lg:space-x-24 text-slate-50">
                 <li>
                   <Link key={link.id} to={link.to}>
-                    <button className=" tracking-wide font-lite hover:underline hover:decoration-2 hover:underline-offset-8 hover:decoration-orange-600 font-poppins lg:text-xl">
+                    <button className="tracking-wide hover:underline hover:decoration-2 hover:underline-offset-8 hover:decoration-orange-600 font-light lg:text-xl">
                       {link.name}
                     </button>
                   </Link>

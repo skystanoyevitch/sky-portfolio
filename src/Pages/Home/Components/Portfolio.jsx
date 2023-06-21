@@ -27,8 +27,8 @@ function Portfolio() {
       className="container mx-auto px-8 py-32 lg:py-0 lg:h-screen lg: flex flex-col lg:flex-col lg:place-content-center"
     >
       <div className="mb-6 lg:mb-16 text-center container mx-auto max-w-lg">
-        <h1 className="text-2xl lg:text-4xl font-poppins font-bold text-gray-700 pb-4">
-          Projects <span className="text-[#e75d48] font-normal"> | </span> Work
+        <h1 className="text-2xl lg:text-4xl font-poppins font-bold pb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
+          Projects i've worked on
         </h1>
       </div>
 
@@ -40,9 +40,13 @@ function Portfolio() {
               className="container mx-auto px-8 lg:px-0 space-y-10"
             >
               <li className="h-40 w-full md:h-52 lg:h-80 lg:w-full">
-                <div
-                  className={`${project.thumbnail} h-full w-full my-10 md:my-0 shadow-shadowNeo`}
-                ></div>
+                <div className="h-full w-full p-[0.8px] bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
+                  <div className="h-full w-full relative bg-[#1A1D25]">
+                    <div
+                      className={`${project.thumbnail} absolute h-full w-full my-10 md:my-0 right-6 bottom-6`}
+                    ></div>
+                  </div>
+                </div>
               </li>
             </ul>
           );

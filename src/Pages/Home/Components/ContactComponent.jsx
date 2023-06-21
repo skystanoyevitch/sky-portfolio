@@ -36,13 +36,12 @@ function ContactComponent() {
         {/* <div className="flex justify-center pb-6">
           <HandShake />
         </div> */}
-        <h1 className="font-poppins font-bold text-2xl pb-6 text-gray-700 lg:text-4xl lg:pb-8 lg:text-center">
-          <span className="text-[#e75d48]">Contact </span> Me
+        <h1 className="font-poppins font-semibold text-2xl md:text-4xl pb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] lg:text-4xl lg:pb-8 lg:text-center">
+          Contact Me
         </h1>
-        <p className="font-poppins text-gray-600 lg:text-lg">
+        <p className="font-light tracking-wide text-[#9CCDE9] lg:text-2xl">
           Want to work together on a project or looking to hire a frontend dev?
-          please don't hesitate to contact me below, look forward to hearing
-          from you
+          please don't hesitate to contact using the form below.
         </p>
       </div>
       <div className="container mx-auto pt-8 lg:pt-0 mt-12 lg:mt-0 md:h-full lg:max-w-lg">
@@ -68,7 +67,7 @@ function ContactComponent() {
                 maxLength: 15,
               })}
               type="text"
-              className="p-2 lg:p-4 bg-body w-full rounded-lg"
+              className="p-2 lg:p-4 bg-slate-700 w-full rounded-lg"
               name="first_name"
               placeholder="First Name"
             />
@@ -83,7 +82,7 @@ function ContactComponent() {
                   message: "Email is Required",
                 },
               })}
-              className="p-2 lg:p-4 bg-body rounded-lg"
+              className="p-2 lg:p-4 bg-slate-700 rounded-lg"
               name="email"
               placeholder="Email"
             />
@@ -91,13 +90,13 @@ function ContactComponent() {
             <input
               type="text"
               {...register("subject", { maxLength: 15 })}
-              className="p-2 lg:p-4 bg-body rounded-lg"
+              className="p-2 lg:p-4 bg-slate-700 rounded-lg"
               name="subject"
               placeholder="Subject"
             />
 
             <textarea
-              className="h-24 p-2 lg:p-4 bg-body rounded-lg"
+              className="h-24 p-2 lg:p-4 bg-slate-700 rounded-lg"
               type="text"
               {...register("message", {
                 required: {
