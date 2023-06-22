@@ -60,10 +60,8 @@ export const Nav = ({ navLinks }) => {
       </div>
 
       {/* Mobile Navigation Hamburger Menu */}
-      <div
-        className={`md:hidden container mx-auto flex flex-col items-start border-b`}
-      >
-        <div className=" rounded-lg flex justify-between">
+      <div className={`md:hidden container mx-auto flex flex-col items-start`}>
+        <div className=" rounded-lg flex justify-between p-2">
           <div className=" p-2 rounded-lg">
             <motion.button
               initial={false}
@@ -74,17 +72,17 @@ export const Nav = ({ navLinks }) => {
               <motion.div
                 animate={open ? "open" : "closed"}
                 variants={ham1}
-                className="w-8 h-1 bg-gray-700 rounded-full"
+                className="w-8 h-1 bg-[#9CCDE9] rounded-full"
               ></motion.div>
               <motion.div
                 animate={open ? "open" : "closed"}
                 variants={hamClosed}
-                className="w-8 h-1 bg-gray-700 rounded-full"
+                className="w-8 h-1 bg-[#9CCDE9] rounded-full"
               ></motion.div>
               <motion.div
                 animate={open ? "open" : "closed"}
                 variants={ham3}
-                className="w-8 h-1 bg-gray-700 rounded-full"
+                className="w-8 h-1 bg-[#9CCDE9] rounded-full"
               ></motion.div>
             </motion.button>
           </div>
