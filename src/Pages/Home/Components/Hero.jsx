@@ -13,7 +13,7 @@ function Hero() {
       <div className="lg:h-full">
         <div className="container mx-auto flex flex-col lg:justify-center md:text-center lg:flex-row p-8 lg:p-8 xl:p-0 lg:h-full">
           <div className="flex flex-col justify-center container mx-auto max-w-sm md:max-w-lg lg:min-w-full">
-            <h1 className=" text-5xl md:text-7xl font-poppins font-bold animate-text bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
+            <h1 className="text-4xl md:text-7xl font-poppins font-bold animate-text bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
               Sky Stanoyevitch
             </h1>
             <p className="text-md md:text-xl font-light py-4 lg:text-2xl tracking-wide text-[#9CCDE9]">
