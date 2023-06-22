@@ -36,7 +36,7 @@ export const Nav = ({ navLinks }) => {
   return (
     // Desktop Navigation Top Menu
     <div className="md:flex md:flex-col">
-      <div className="">
+      <div className="border-b">
         <nav className="container mx-auto hidden md:visible md:flex md:justify-center md:place-items-center md:p-2 lg:p-4">
           <div className="text-xl lg:text-2xl font-poppins font-bold flex-1">
             <span className="bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] bg-clip-text text-transparent">
@@ -61,7 +61,7 @@ export const Nav = ({ navLinks }) => {
 
       {/* Mobile Navigation Hamburger Menu */}
       <div
-        className={`md:hidden container mx-auto flex flex-col items-start bg-white z-40 shadow-xl shadow-gray-300 rounded-lg`}
+        className={`md:hidden container mx-auto flex flex-col items-start border-b`}
       >
         <div className=" rounded-lg flex justify-between">
           <div className=" p-2 rounded-lg">

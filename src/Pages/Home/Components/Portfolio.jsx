@@ -32,18 +32,18 @@ function Portfolio() {
         </h1>
       </div>
 
-      <div className="container mx-auto lg:max-w-4xl md:space-y-0 md:flex md:flex-row md:space-x-6 lg:space-x-16">
+      <div className="container mx-auto lg:max-w-4xl md:space-y-0 flex flex-col space-y-16 md:flex md:flex-row md:space-x-6 lg:space-x-16">
         {allProjects.map((project, key) => {
           return (
             <ul
               key={key.id}
               className="container mx-auto px-8 lg:px-0 space-y-10"
             >
-              <li className="h-40 w-full md:h-52 lg:h-80 lg:w-full">
+              <li className="h-32 w-full md:h-52 lg:h-80 lg:w-full">
                 <div className="h-full w-full p-[0.8px] bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
                   <div className="h-full w-full relative bg-[#1A1D25]">
                     <div
-                      className={`${project.thumbnail} absolute h-full w-full my-10 md:my-0 right-6 bottom-6`}
+                      className={`${project.thumbnail} absolute h-full w-full md:my-0 right-2 bottom-2 md:right-4 md:bottom-4 lg:right-6 lg:bottom-6`}
                     ></div>
                   </div>
                 </div>

@@ -29,7 +29,7 @@ function ContactComponent() {
 
   return (
     <div
-      className="p-8 container mx-auto lg:max-w-3xl mb-12 lg:mb-24"
+      className="p-8 container mx-auto w-2/3 lg:max-w-3xl mb-12 lg:mb-24"
       id="section-contact"
     >
       <div className="mx-auto lg:max-w-lg text-center mt-12 lg:mt-24 lg:mb-10">
