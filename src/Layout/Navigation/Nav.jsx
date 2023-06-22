@@ -100,7 +100,7 @@ export const Nav = ({ navLinks }) => {
           animate={open ? "open" : "closed"}
           variants={menuVar}
         >
-          <ul className="font-poppins text-2xl space-y-4 p-10 text-gray-700">
+          <ul className="tracking-wide text-2xl space-y-4 p-10 text-[#9CCDE9]">
             {navLinks.map((link) => (
               <motion.li onClick={setOpen} open={open}>
                 <Link key={link.id} to={link.to}>
