@@ -32,7 +32,7 @@ function Portfolio() {
         </h1>
       </div>
 
-      <div className="container mx-auto lg:max-w-4xl md:space-y-0 flex flex-col space-y-16 md:flex md:flex-row md:space-x-6 lg:space-x-16">
+      <div className="md:container mx-auto lg:max-w-4xl md:space-y-0 flex flex-col space-y-16 md:flex md:flex-row md:space-x-6 lg:space-x-16">
         {allProjects.map((project, key) => {
           return (
             <ul

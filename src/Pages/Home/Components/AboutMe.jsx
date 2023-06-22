@@ -3,7 +3,7 @@ import React from "react";
 function AboutMe() {
   return (
     <>
-      <section className="md:container md:mx-auto w-4/5 lg:w-2/3 md:flex md:flex-row md:justify-center mb-20 md:divide-x-2 ">
+      <section className="container mx-auto w-4/5 lg:w-2/3 md:flex md:flex-row md:justify-center mb-20 md:divide-x-2 ">
         <div className="md:flex md:flex-col md:justify-center md:w-1/2">
           <h2 className="text-xl md:text-4xl font-poppins font-semibold bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
             Some Info about me...
