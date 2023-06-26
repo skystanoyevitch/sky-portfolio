@@ -9,12 +9,12 @@ function Hero() {
   }, [navigate]);
 
   return (
-    <div className="w-screen h-96 flex flex-col justify-center md:h-screen">
+    <div className="w-screen h-120 flex flex-col justify-center md:h-screen">
       <div className="lg:h-full">
-        <div className="container mx-auto flex flex-col lg:justify-center md:text-center lg:flex-row p-8 lg:p-8 xl:p-0 lg:h-full">
+        <div className="container mx-auto flex flex-col lg:justify-center text-center lg:flex-row p-8 lg:p-8 xl:p-0 lg:h-full">
           <div className="flex flex-col justify-center container mx-auto max-w-sm md:max-w-lg lg:min-w-full">
             <div>
-              <h1 className="text-5xl md:text-7xl xl:text-9xl font-caveat h-14 md:h-36 font-bold animate-text bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
+              <h1 className="text-6xl md:text-7xl xl:text-9xl font-caveat h-16 md:h-36 font-bold animate-text bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
                 Sky Stanojevic
               </h1>
               <p className="text-md md:text-xl font-light my-3 lg:text-2xl tracking-wide text-[#9CCDE9]">
@@ -23,7 +23,7 @@ function Hero() {
               </p>
             </div>
 
-            <div className="md:flex md:justify-center">
+            <div className="flex justify-center">
               <a href="#section-contact" onClick={(e) => e.preventDefault}>
                 <button className="rounded-md flex py-1 px-2 md:p-2 lg:px-6 lg:py-2 text-sm md:text-base bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] transition ease-in-out hover:scale-125 duration-300 text-white">
                   Contact
