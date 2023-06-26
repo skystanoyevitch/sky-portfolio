@@ -28,7 +28,7 @@ function Portfolio() {
     >
       <div className="mb-6 lg:mb-16 text-center container mx-auto max-w-lg">
         <h1 className="text-2xl lg:text-4xl font-poppins font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
-          Projects i've worked on
+          Projects
         </h1>
         <p className="text-md md:text-xl font-light pt-3 lg:text-2xl tracking-wide text-[#9CCDE9]">
           Below is a list of personal projects (non-tutorial based) and work
@@ -44,7 +44,7 @@ function Portfolio() {
               className="container mx-auto px-8 lg:px-0 space-y-10"
             >
               <li className="h-40 w-60 md:w-full md:h-52 lg:h-80">
-                <div className="h-full w-full p-3 bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
+                <div className="h-full w-full p-1 md:p-3 bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
                   <div className="h-full w-full relative bg-[#1A1D25]">
                     <div
                       className={`${project.thumbnail} absolute h-full w-full md:my-0 right-2 bottom-2 md:right-4 md:bottom-4 lg:right-6 lg:bottom-6`}
