@@ -10,7 +10,7 @@ import Footer from "./Layout/Navigation/Footer";
 
 const navLinks = [
   { id: 0, name: "Home", to: "/" },
-  { id: 1, name: "Portfolio", to: "/" },
+  { id: 1, name: "Portfolio", to: "/#portfolio" },
 ];
 const App = () => (
   <BrowserRouter>
@@ -19,7 +19,7 @@ const App = () => (
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/Portfolio" element={<Portfolio />} />
+        <Route path="/" />
       </Routes>
       <Footer />
     </div>

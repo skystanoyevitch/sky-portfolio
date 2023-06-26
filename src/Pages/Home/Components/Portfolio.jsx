@@ -24,6 +24,7 @@ function Portfolio() {
       variants={aboutSectionVariant}
       initial="initial"
       animate={inView ? "animate" : "initial"}
+      id="#portfolio"
       className="container mx-auto px-8 py-32 lg:py-0 lg:h-screen lg: flex flex-col lg:flex-col lg:place-content-center"
     >
       <div className="mb-6 lg:mb-16 text-center container mx-auto max-w-lg">
@@ -31,8 +32,8 @@ function Portfolio() {
           Projects
         </h1>
         <p className="text-md md:text-xl font-light pt-3 lg:text-2xl tracking-wide text-[#9CCDE9]">
-          Below you'll find a list of personal projects (non-tutorial based) and work
-          that i am proud of building.
+          Below you'll find a list of personal projects (non-tutorial based) and
+          work that i am proud of building.
         </p>
       </div>
 
@@ -44,10 +45,10 @@ function Portfolio() {
               className="container mx-auto px-8 lg:px-0 space-y-10"
             >
               <li className="h-40 w-60 md:w-full md:h-52 lg:h-80">
-                <div className="h-full w-full p-1 md:p-3 bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
+                <div className="h-full w-full p-1 bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
                   <div className="h-full w-full relative bg-[#1A1D25]">
                     <div
-                      className={`${project.thumbnail} absolute h-full w-full md:my-0 right-2 bottom-2 md:right-4 md:bottom-4 lg:right-6 lg:bottom-6`}
+                      className={`${project.thumbnail} absolute h-full w-full md:my-0 right-4 bottom-4 md:right-6 md:bottom-6 lg:right-6 lg:bottom-6`}
                     ></div>
                   </div>
                 </div>
