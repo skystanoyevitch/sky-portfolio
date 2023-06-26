@@ -45,10 +45,10 @@ function Portfolio() {
               className="container mx-auto px-8 lg:px-0 space-y-10"
             >
               <li className="h-40 w-60 md:w-full md:h-52 lg:h-80">
-                <div className="h-full w-full p-1 bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
+                <div className="rounded-md h-full w-full p-1 bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
                   <div className="h-full w-full relative bg-[#1A1D25]">
                     <div
-                      className={`${project.thumbnail} absolute h-full w-full md:my-0 right-4 bottom-4 md:right-6 md:bottom-6 lg:right-6 lg:bottom-6`}
+                      className={`${project.thumbnail} absolute rounded-md h-full w-full md:my-0 right-4 bottom-4 md:right-6 md:bottom-6 lg:right-6 lg:bottom-6`}
                     ></div>
                   </div>
                 </div>
