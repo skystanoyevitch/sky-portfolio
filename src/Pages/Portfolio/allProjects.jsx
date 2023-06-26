@@ -2,7 +2,7 @@
 
 export const allProjects = [
   {
-    name: "Part Time Professionals",
+    name: "theparttimeprofesionals.com",
     id: 2,
     to: "#",
     thumbnail: "bg-ptpImg bg-cover bg-center bg-no-repeat",
@@ -12,7 +12,7 @@ export const allProjects = [
     name: "Teknipak",
     id: 3,
     to: "https://teknipak.com/",
-    thumbnail: "bg-teknipak bg-cover bg-center bg-no-repeat",
+    thumbnail: "bg-jobBoardBg bg-cover bg-center bg-no-repeat",
     language: "",
   },
 ];
