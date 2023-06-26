@@ -25,7 +25,7 @@ function Hero() {
 
             <div className="flex justify-center">
               <a href="#section-contact" onClick={(e) => e.preventDefault}>
-                <button className="rounded-md flex py-1 px-2 md:p-2 lg:px-6 lg:py-2 text-sm md:text-base bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] transition ease-in-out hover:scale-125 duration-300 text-white">
+                <button className="rounded-md flex py-1 px-4 md:p-2 lg:px-6 lg:py-2 text-md md:text-base bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] transition ease-in-out hover:scale-125 duration-300 text-white">
                   Contact
                 </button>
               </a>

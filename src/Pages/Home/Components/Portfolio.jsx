@@ -31,8 +31,8 @@ function Portfolio() {
           Projects
         </h1>
         <p className="text-md md:text-xl font-light pt-3 lg:text-2xl tracking-wide text-[#9CCDE9]">
-          Below is a list of personal projects (non-tutorial based) and work
-          that i am proud of
+          Below you'll find a list of personal projects (non-tutorial based) and work
+          that i am proud of building.
         </p>
       </div>
 

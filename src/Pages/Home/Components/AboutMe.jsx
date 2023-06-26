@@ -6,12 +6,12 @@ function AboutMe() {
       <section className="container mx-auto w-4/5 lg:w-2/3 md:flex md:flex-col md:items-center mb-20">
         <div className="md:flex md:flex-col md:justify-center md:w-2/3 text-center mb-8 md:mb-16">
           <h2 className="text-xl md:text-4xl font-poppins font-semibold bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
-            Some Info about me...
+            About Me
           </h2>
           <p className="text-sm md:text-lg text-[#e75d48] font-light font-poppins">
-            I reside in San Diego, CA
+            - San Diego, CA -
           </p>
-          <p className="text-md font-light pt-4 pr-5 lg:text-2xl tracking-wide text-[#9CCDE9]">
+          <p className="text-md font-light pt-4 lg:text-2xl tracking-wide text-[#9CCDE9]">
             I am a Software engineer in the field of technology specializing in
             the Front-End programming as well as UI/UX Design.
           </p>

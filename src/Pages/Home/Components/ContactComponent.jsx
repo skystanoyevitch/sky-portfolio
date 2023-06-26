@@ -116,7 +116,7 @@ function ContactComponent() {
             <button
               type="submit"
               value="submit"
-              className="w-32 text-white font-semibold font-poppins py-2 mx-8 my-6 md:mx-0 rounded-md bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] transition ease-in-out hover:scale-125 duration-300"
+              className="px-4 text-white font-poppins py-1 my-6 md:mx-0 rounded-md bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] transition ease-in-out hover:scale-125 duration-300"
             >
               Send
             </button>
