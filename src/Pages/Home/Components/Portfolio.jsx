@@ -48,7 +48,7 @@ function Portfolio() {
                 <div className="h-full w-full p-1 bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
                   <div className="h-full w-full relative">
                     <div
-                      className={`${project.thumbnail} absolute h-full w-full md:my-0 right-4 bottom-4 md:right-6 md:bottom-6 lg:right-3 lg:bottom-2`}
+                      className={`${project.thumbnail} absolute h-full w-full md:my-0`}
                     ></div>
                   </div>
                 </div>
