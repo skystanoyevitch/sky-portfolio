@@ -7,10 +7,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // Page Component Imports //
 // import Portfolio from "./Pages/Home/Components/Portfolio";
 import Footer from "./Layout/Navigation/Footer";
+import Portfolio from "./Pages/Portfolio/Portfolio";
 
 const navLinks = [
   { id: 0, name: "Home", to: "/" },
-  { id: 1, name: "Portfolio", to: "/#portfolio" },
+  { id: 1, name: "Portfolio", to: "/portfolio" },
 ];
 const App = () => (
   <BrowserRouter>
@@ -19,7 +20,7 @@ const App = () => (
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/" />
+        <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
       <Footer />
     </div>
