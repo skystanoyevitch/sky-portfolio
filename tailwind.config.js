@@ -6,6 +6,7 @@ module.exports = {
         poppins: ['"Poppins"', "sans-serif"],
         bebas: ['"Bebas Neue"', "cursive"],
         caveat: ['"Caveat"', "cursive"],
+        sriracha: ['"Sriracha"', "cursive"],
       },
       backgroundImage: (theme) => ({
         logo: "url('./images/mwd-logo.png')",

@@ -15,7 +15,7 @@ function Hero() {
         <div className="container mx-auto flex flex-col lg:justify-center text-center lg:flex-row p-8 lg:p-8 xl:p-0 lg:h-full">
           <div className="flex flex-col justify-center container mx-auto max-w-sm md:max-w-lg lg:min-w-full">
             <div>
-              <h1 className="text-6xl md:text-7xl xl:text-9xl font-caveat h-16 md:h-36 font-bold animate-text bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
+              <h1 className="text-4xl md:text-5xl xl:text-8xl font-sriracha h-16 md:h-36 font-bold animate-text bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
                 Sky Stanojevic
               </h1>
               <p className="text-md md:text-xl font-light my-3 lg:text-2xl tracking-wide text-[#9CCDE9]">
