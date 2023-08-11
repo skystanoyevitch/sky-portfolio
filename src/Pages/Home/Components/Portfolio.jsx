@@ -29,7 +29,7 @@ function Portfolio() {
     >
       <div className="mb-6 lg:mb-16 text-center container mx-auto max-w-lg">
         <h1 className="text-2xl lg:text-4xl font-poppins font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
-          Projects
+          Featured Projects
         </h1>
         <p className="text-md md:text-xl font-light pt-3 lg:text-2xl tracking-wide text-[#9CCDE9]">
           Below you'll find a list of personal projects (non-tutorial based) and
