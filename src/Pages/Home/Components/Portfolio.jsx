@@ -48,7 +48,7 @@ function Portfolio() {
                 <div className="h-full w-full p-1">
                   <div className="h-full w-full relative">
                     <div
-                      className={`${project.thumbnail} rounded-md absolute h-full w-full md:my-0 border-b-4 border-orange-700`}
+                      className={`${project.thumbnail} rounded-md absolute h-full w-full md:my-0 border-b-8 border-r-8 border-orange-700`}
                     ></div>
                   </div>
                 </div>
