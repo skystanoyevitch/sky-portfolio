@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Portfolio() {
+  const [buttonOpen, setButtonOpen] = useState(false);
+  console.log(buttonOpen);
   return (
     <>
-      <div className="text-white flex flex-col justify-center">
+      <div className="h-screen text-white flex flex-col justify-center">
         <div className="container mx-auto">
           <div className="">
             <div className="border">
-              <div className="border h-80">Col 1</div>
-              <div className="border h-80">Col 1</div>
-              <div className="border h-80">Col 1</div>
-              <div className="border h-80">Col 1</div>
-              <div className="border h-80">Col 1</div>
+              <button
+                type="button"
+                className={`border h-20 ${
+                  buttonOpen ? "h-60" : "h-20"
+                } w-full transition-all`}
+                onClick={() => setButtonOpen(!buttonOpen)}
+              >
+                Col 1
+              </button>
             </div>
           </div>
         </div>
