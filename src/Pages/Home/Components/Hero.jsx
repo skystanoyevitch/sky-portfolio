@@ -26,17 +26,25 @@ function Hero() {
 
             <div className="flex justify-center">
               <a href="#section-contact" onClick={(e) => e.preventDefault}>
-                <button className="rounded-full flex py-1 px-4 md:py-1 lg:px-6 lg:py-1 text-md md:text-base lg:text-lg bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] transition-all border-2 border-[#1A1D25] md:hover:border-[#e75d48] md:hover:bg-none text-white focus:scale focus:scale-90 md:hover:scale-100">
+                <button className="rounded-lg flex py-1 px-4 md:py-1 lg:px-6 lg:py-1 text-md md:text-base lg:text-lg bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] transition-all border-2 border-[#1A1D25] md:hover:border-[#e75d48] md:hover:bg-none md:hover:border-b-4 text-white focus:scale focus:scale-90 md:hover:scale-100">
                   Contact
                 </button>
               </a>
             </div>
             <div className="flex justify-center space-x-4 text-3xl xl:text-4xl mt-6">
               <a href="https://github.com/skystanoyevitch" target="blank">
-                <VscGithub style={{ color: "#9CCDE9" }} className="hover:bg-white" />
+                <VscGithub
+                  style={{ color: "#9CCDE9" }}
+                  onMouseOver={({ target }) => (target.style.color = "#348ec2")}
+                  onMouseOut={({ target }) => (target.style.color = "#9CCDE9")}
+                />
               </a>
               <a href="https://twitter.com/Sky_webdev" target="blank">
-                <VscTwitter style={{ color: "#9CCDE9" }} />
+                <VscTwitter
+                  style={{ color: "#9CCDE9" }}
+                  onMouseOver={({ target }) => (target.style.color = "#348ec2")}
+                  onMouseOut={({ target }) => (target.style.color = "#9CCDE9")}
+                />
               </a>
             </div>
           </div>
