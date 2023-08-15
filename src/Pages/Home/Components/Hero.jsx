@@ -33,7 +33,7 @@ function Hero() {
 								href="#section-contact"
 								onClick={(e) => e.preventDefault}
 							>
-								<button className="rounded-lg flex py-1 px-4 md:py-1 lg:px-6 lg:py-1 text-md md:text-base lg:text-lg font-bold bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] transition-all text-white md:border-b-2 md:border-r-2 md:border-white">
+								<button className="rounded-lg flex py-1 px-4 md:py-1 lg:px-6 lg:py-1 text-md md:text-base lg:text-lg font-bold bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] transition-all text-white border-b-2 border-r-2 md:border-[#9CCDE9">
 									Contact
 								</button>
 							</a>

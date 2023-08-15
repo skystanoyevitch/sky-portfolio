@@ -46,7 +46,7 @@ function ContactComponent() {
 				<form
 					onSubmit={handleSubmit(onSubmit)}
 					id="contactForm"
-					className="text-center md:text-left md:w-full flex flex-col justify-around md:px-12 lg:p-0"
+					className="text-center md:text-left md:w-full flex flex-col justify-around md:px-12 px-8 lg:p-0"
 				>
 					<div className="text-center text-red-600">
 						{errors.first_name && (
@@ -57,7 +57,7 @@ function ContactComponent() {
 						{errors.message && <p>{errors.message.message}</p>}
 					</div>
 					<h3>{isSubmitSuccessful && successMessage}</h3>
-					<div className="flex flex-col px-8 md:px-0 lg:flex lg:flex-row lg:place-items-end space-y-8 pb-8 lg:space-x-9">
+					<div className="flex flex-col md:px-0 lg:flex lg:flex-row lg:place-items-end space-y-8 pb-8 lg:space-x-9">
 						<input
 							{...register("first_name", {
 								required: {
@@ -73,7 +73,7 @@ function ContactComponent() {
 						/>
 					</div>
 
-					<div className="flex flex-col space-y-8 px-8 md:px-0">
+					<div className="flex flex-col space-y-8 md:px-0">
 						<input
 							type="text"
 							{...register("email", {
@@ -116,7 +116,7 @@ function ContactComponent() {
 						<button
 							type="submit"
 							value="submit"
-							className="md:py-2 w-full text-lg text-white font-poppins py-1 my-6 md:mx-0 rounded-lg bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] md:border-b-4 md:border-r-4 border-[#9CCDE9"
+							className="md:py-2 w-full text-lg text-white font-poppins py-1 my-6 md:mx-0 rounded-lg bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] border-b-2 border-r-2 md:border-b-4 md:border-r-4 border-[#9CCDE9]"
 						>
 							Send
 						</button>
