@@ -37,16 +37,16 @@ function Portfolio() {
 				</p>
 			</div>
 
-			<div className=" rounded-md md:container mx-auto lg:max-w-4xl md:space-y-0 flex flex-col space-y-16 md:flex md:flex-row md:space-x-6 lg:space-x-16 lg:p-10 bg-gray-800">
+			<div className=" rounded-md md:container mx-auto lg:max-w-4xl md:space-y-0 flex flex-col space-y-16 md:flex md:flex-row md:space-x-6 lg:space-x-16 p-8 lg:p-10 bg-gray-800">
 				{allProjects.map((project, key) => {
 					return (
 						<ul
 							key={key.id}
-							className="container mx-auto px-8 lg:px-0 space-y-10"
+							className="container mx-auto lg:px-0 space-y-10"
 						>
 							<li className="h-40 w-60 md:w-full md:h-52 lg:h-80">
-								<div className="h-full w-full p-1">
-									<div className="h-full w-full p-4 outline outline-[#9CCDE9] outline-1 hover:outline-orange-700 hover:outline-4 transition-all ease-in-out">
+								<div className="h-full w-full">
+									<div className="h-full w-full p-2 md:p-4 outline outline-[#9CCDE9] outline-1 hover:outline-orange-700 hover:outline-4 transition-all ease-in-out">
 										<div
 											className={`${project.thumbnail} h-full w-full md:my-0`}
 										></div>
