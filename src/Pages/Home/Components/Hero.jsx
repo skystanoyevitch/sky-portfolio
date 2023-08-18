@@ -15,11 +15,11 @@ function Hero() {
 				<div className="container mx-auto flex flex-col lg:justify-center text-center lg:flex-row p-8 lg:p-8 xl:p-0 lg:h-full">
 					<div className="flex flex-col justify-center container mx-auto max-w-sm md:max-w-lg lg:min-w-full">
 						<div>
-							<h1 className="text-4xl md:text-5xl xl:text-8xl font-sriracha h-16 md:h-36 font-bold animate-text bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
+							<h1 className="text-5xl md:text-5xl xl:text-9xl font-sriracha pb-4 md:h-36 font-bold animate-text bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
 								Sky Stanojevic
 							</h1>
-							<p className="text-md md:text-xl font-light my-3 lg:text-2xl tracking-wide text-[#9CCDE9]">
-								Frontend Developer{" "}
+							<p className="text-md md:text-xl lg:text-2xl tracking-widest text-[#9CCDE9]">
+								Developer{" "}
 								<span className="text-[#e75d48] font-normal">
 									{" "}
 									|{" "}
@@ -33,12 +33,12 @@ function Hero() {
 								href="#section-contact"
 								onClick={(e) => e.preventDefault}
 							>
-								<button className="rounded-lg flex py-1 px-4 md:py-1 lg:px-6 lg:py-1 text-md md:text-base lg:text-lg font-bold bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] transition-all text-white border-b-2 border-r-2 md:border-[#9CCDE9">
+								<button className="rounded-lg flex py-1 px-4 md:py-1 lg:px-8 lg:py-2 text-md md:text-base lg:text-lg font-bold bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] transition-all text-white my-8 md:my-10">
 									Contact
 								</button>
 							</a>
 						</div>
-						<div className="flex justify-center space-x-4 text-3xl xl:text-4xl mt-6">
+						<div className="flex justify-center space-x-4 text-3xl xl:text-4xl">
 							<a
 								href="https://github.com/skystanoyevitch"
 								target="blank"
