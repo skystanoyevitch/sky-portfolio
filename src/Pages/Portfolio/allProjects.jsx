@@ -2,7 +2,7 @@
 
 export const allProjects = [
 	{
-		name: "theparttimeprofesionals.com",
+		name: "Sky's Robot Shop",
 		id: 2,
 		to: "#",
 		thumbnail: "bg-ptpImg bg-cover bg-center bg-no-repeat",
@@ -10,10 +10,10 @@ export const allProjects = [
 		active: false,
 	},
 	{
-		name: "Teknipak",
+		name: "Developer Job Board",
 		id: 3,
 		to: "https://teknipak.com/",
-		thumbnail: "bg-jobBoardBg bg-cover bg-center bg-no-repeat",
+		thumbnail: "bg-jobBoardBg bg-contain bg-center bg-no-repeat",
 		language: "",
 		active: false,
 	},
