@@ -31,7 +31,7 @@ function Portfolio() {
 										className="h-20 w-full z-100"
 										onClick={() => handleClick(project.id)}
 									>
-										<div className="text-left pl-8 font-sriracha">
+										<div className="text-center md:text-left md:pl-6 font-poppins text-lg md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
 											{project.name}
 										</div>
 									</button>
