@@ -31,7 +31,7 @@ function Portfolio() {
 										className="h-20 md:h-40 z-20 w-full md:pl-4"
 										onClick={() => handleClick(project.id)}
 									>
-										<div className="text-center font-poppins text-lg md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
+										<div className="text-center font-poppins text-lg md:text-3xl lg:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
 											{project.name}
 										</div>
 									</button>
