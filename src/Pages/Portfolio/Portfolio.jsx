@@ -24,7 +24,7 @@ function Portfolio() {
 										buttonOpen[project.id]
 											? "h-80 md:h-120"
 											: "h-20 md:h-40"
-									} rounded-lg transition-all w-80 z-0 md:w-full md:max-w-3xl border border-[#9CCDE9] border-b-8 border-r-8 shadow-md`}
+									} rounded-lg transition-all w-80 z-0 md:w-full md:max-w-3xl border border-[#9CCDE9] border-b-8 border-r-8 shadow-md bg-gray-800`}
 								>
 									<button
 										type="button"
@@ -39,13 +39,18 @@ function Portfolio() {
 									{/* {buttonOpen[project.id] && (
 										<div className="h-1/2 md:h-1/2 m-8 bg-techJobs bg-cover bg-no-repeat rounded-md"></div>
 									)} */}
-									<div
-										className={`${
-											buttonOpen[project.id]
-												? "h-1/2 md:h-1/2 m-8"
-												: "h-0"
-										} bg-techJobs bg-cover bg-no-repeat bg-center md:bg-top rounded-md transition-all`}
-									></div>
+
+									<a href={project.to} target="blank">
+										<div
+											className={`${
+												buttonOpen[project.id]
+													? "h-1/2 md:h-1/2 m-8"
+													: "h-0"
+											} ${
+												project.thumbnail
+											}md:bg-top rounded-md transition-all`}
+										></div>
+									</a>
 								</li>
 							</ul>
 						);

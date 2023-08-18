@@ -14,7 +14,7 @@ module.exports = {
 				teknipak: "url('./images/teknipak.png')",
 				codeImg: "url('./images/codeImg.jpg')",
 				relaxedDesign: "url('./images/relaxed-design.jpg')",
-				heroBg: "url('./images/wave.svg')",
+				robotShop: "url('./images/robotshop.png')",
 				heroImg: "url('./images/webdev.svg')",
 				jobBoardBg: "url('./images/jobboard.png')",
 				websiteIcon: "url('./images/website.svg')",

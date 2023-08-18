@@ -2,18 +2,18 @@
 
 export const allProjects = [
 	{
-		name: "Sky's Robot Shop",
+		name: "Robot Shop App",
 		id: 2,
-		to: "#",
-		thumbnail: "bg-ptpImg bg-cover bg-center bg-no-repeat",
+		to: "",
+		thumbnail: "bg-robotShop bg-cover bg-center bg-no-repeat",
 		language: "",
 		active: false,
 	},
 	{
 		name: "Developer Job Board",
 		id: 3,
-		to: "https://teknipak.com/",
-		thumbnail: "bg-jobBoardBg bg-contain bg-center bg-no-repeat",
+		to: "https://job-board-app-pink.vercel.app/",
+		thumbnail: "bg-techJobs bg-cover bg-no-repeat bg-center",
 		language: "",
 		active: false,
 	},
