@@ -116,7 +116,7 @@ function ContactComponent() {
 						<button
 							type="submit"
 							value="submit"
-							className="md:py-2 w-full text-lg text-white font-poppins py-1 my-6 md:mx-0 rounded-lg bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] border-b-2 border-r-2 md:border-b-4 md:border-r-4 border-[#9CCDE9]"
+							className="md:py-2 w-full text-lg text-white font-poppins py-1 my-6 md:mx-0 rounded-lg bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] md:hover:border-b-4 md:hover:border-r-4 border-[#9CCDE9] transition-all"
 						>
 							Send
 						</button>
