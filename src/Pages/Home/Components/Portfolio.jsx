@@ -1,5 +1,6 @@
 import { allProjects } from "../../Portfolio/allProjects";
 import { useInView } from "react-intersection-observer";
+import Atropos from "atropos/react";
 
 const aboutSectionVariant = {
 	initial: {
@@ -40,20 +41,30 @@ function Portfolio() {
 			<div className=" rounded-md md:container mx-auto lg:max-w-4xl md:space-y-0 flex flex-col space-y-16 md:flex md:flex-row md:space-x-6 lg:space-x-16 p-[3rem] lg:p-14 bg-gray-800">
 				{allProjects.map((project, key) => {
 					return (
-						<ul
-							key={key.id}
-							className="container mx-auto lg:px-0 space-y-10"
-						>
-							<li className="h-40 w-60 md:w-full md:h-52 lg:h-80">
-								<div className="h-full w-full">
-									<div className="rounded-md h-full w-full outline outline-transparent hover:outline-orange-700 hover:outline-8 transition-all ease-in-out">
-										<div
-											className={`${project.thumbnail} h-full w-full md:my-0 rounded-md`}
-										></div>
-									</div>
-								</div>
-							</li>
-						</ul>
+						<>
+							<ul
+								key={key.id}
+								className="container mx-auto lg:px-0 space-y-10"
+							>
+								<Atropos
+									rotateYMax={10}
+									rotateXMax={10}
+									shadowOffset={10}
+									shadowScale={1}
+								>
+									<li className="h-40 w-60 md:w-full md:h-52 lg:h-80">
+										<div className="h-full w-full">
+											<div className="rounded-md h-full w-full outline outline-transparent">
+												<div
+													data-atropos-offset="3"
+													className={`${project.thumbnail} h-full w-full md:my-0 rounded-md`}
+												></div>
+											</div>
+										</div>
+									</li>
+								</Atropos>
+							</ul>
+						</>
 					);
 				})}
 			</div>
