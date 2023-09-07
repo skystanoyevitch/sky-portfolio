@@ -8,6 +8,7 @@ export const allProjects = [
 		thumbnail: "bg-robotShop bg-cover bg-center bg-no-repeat",
 		language: "",
 		active: false,
+		description: ""
 	},
 	{
 		name: "Developer Job Board",

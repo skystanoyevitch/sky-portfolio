@@ -49,7 +49,6 @@ function Portfolio() {
 								<Atropos
 									rotateYMax={10}
 									rotateXMax={10}
-									shadowOffset={10}
 									shadowScale={1}
 								>
 									<li className="h-40 w-60 md:w-full md:h-52 lg:h-80">
