@@ -22,23 +22,20 @@ function Hero() {
               Heyo!
             </p>
             <div className="text-4xl md:text-5xl xl:text-8xl font-sans font-bold text-neutral-300">
-              I'm{" "}
-              <span className="bg-clip-text text-cyan-500">
-                Sky 🤙
-              </span>
-              , Software engineer and Designer.
+              I'm <span className="bg-clip-text text-cyan-500">Sky 🤙</span>,
+              Software engineer and Designer.
             </div>
             <div className="text-white font-mono flex space-x-4">
-              <button
-                type="button"
+              <a
+                href="/portfolio"
                 className="border rounded-xl py-1 px-2 flex place-items-center space-x-2"
               >
                 <FaLaptop />
                 <div>My Projects</div>
-              </button>
+              </a>
               <a
-                href="dfasdf"
-                type="button"
+                href="https://twitter.com/Sky_webdev"
+                target="blank_"
                 className="border rounded-xl py-1 px-2 flex place-items-center space-x-2"
               >
                 <FaXTwitter />
