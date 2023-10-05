@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { VscGithub, VscTwitter } from "react-icons/vsc";
+// import { VscGithub, VscTwitter } from "react-icons/vsc";
 
 function Hero() {
   const navigate = useNavigate();
