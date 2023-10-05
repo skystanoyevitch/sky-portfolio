@@ -16,7 +16,7 @@ const navLinks = [
 const App = () => (
   <BrowserRouter>
     <div className="bg-[#1A1D25]">
-      <Nav navLinks={navLinks} />
+      {/* <Nav navLinks={navLinks} /> */}
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Homepage />} />
