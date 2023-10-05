@@ -14,22 +14,22 @@ function Hero() {
   }, [navigate]);
 
   return (
-    <div className="w-screen h-120 flex flex-col justify-center md:h-screen">
+    <div className="w-screen h-screen flex flex-col justify-center md:h-screen">
       <div className="lg:h-full">
         <div className="container mx-auto flex flex-col lg:justify-center lg:flex-row p-8 lg:p-8 xl:p-0 lg:h-full">
           <div className="flex flex-col justify-center space-y-4 container mx-auto max-w-sm md:max-w-lg lg:max-w-6xl">
-            <p className="text-4xl md:text-5xl xl:text-8xl font-caveat font-bold text-neutral-300">
+            <p className="text-5xl md:text-6xl xl:text-8xl font-caveat font-bold text-neutral-300">
               Heyo!
             </p>
-            <div className="text-4xl md:text-5xl xl:text-8xl font-sans font-bold text-neutral-300">
+            <div className="text-4xl md:text-6xl xl:text-8xl font-bold text-neutral-300">
               I'm <span className="bg-clip-text text-cyan-500">Sky</span>, a
               Software Engineer and Designer.{" "}
-              <span className="text-7xl">🧑‍💻</span>
+              <span className="md:text-4xl lg:text-7xl">🧑‍💻</span>
             </div>
-            <div className="text-white font-mono flex space-x-4">
+            <div className="text-white text-sm md:text-base font-mono flex space-x-4">
               <a
                 href="/portfolio"
-                className="border rounded-xl py-1 px-2 flex place-items-center space-x-2"
+                className="border-green-600 border border-r-2 border-b-2 rounded-md py-1 px-2 flex place-items-center space-x-2"
               >
                 {/* <FaLaptop /> */}
                 <div>My Projects 💻 </div>
@@ -37,7 +37,7 @@ function Hero() {
               <a
                 href="https://twitter.com/Sky_webdev"
                 target="blank_"
-                className="border rounded-xl py-1 px-2 flex place-items-center space-x-2"
+                className="border border-r-2 border-b-2 border-orange-500 rounded-md py-1 px-2 flex place-items-center space-x-2"
               >
                 {/* <FaXTwitter /> */}
                 <div>Contact Me 📲</div>
