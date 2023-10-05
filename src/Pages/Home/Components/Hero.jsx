@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 // import { VscGithub, VscTwitter } from "react-icons/vsc";
 
 //third party imports
-import { FaXTwitter } from "react-icons/fa6";
-import { FaLaptop } from "react-icons/fa6";
+// import { FaXTwitter } from "react-icons/fa6";
+// import { FaLaptop } from "react-icons/fa6";
 
 function Hero() {
   const navigate = useNavigate();
