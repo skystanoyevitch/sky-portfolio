@@ -1,15 +1,6 @@
-import React, { useState } from "react";
 import { allProjects } from "./allProjects";
 
 function Portfolio() {
-  const [buttonOpen, setButtonOpen] = useState({});
-
-  const handleClick = (id) => {
-    setButtonOpen((prev) => ({
-      ...prev,
-      [id]: !prev[id],
-    }));
-  };
 
   return (
     <>
