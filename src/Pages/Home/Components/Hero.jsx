@@ -19,12 +19,11 @@ function Hero() {
         <div className="container mx-auto flex flex-col lg:justify-center lg:flex-row p-8 lg:p-8 xl:p-0 lg:h-full">
           <div className="flex flex-col justify-center space-y-4 container mx-auto max-w-sm md:max-w-lg lg:max-w-6xl">
             <p className="text-5xl md:text-6xl xl:text-8xl font-caveat font-bold text-neutral-300">
-              Heyo!
+              Heyo! <span className="text-3xl md:text-7xl">🤙</span>
             </p>
-            <div className="text-4xl md:text-6xl xl:text-8xl font-bold text-neutral-300">
-              I'm <span className="bg-clip-text text-cyan-500">Sky</span>, a
-              Software Engineer and Designer.{" "}
-              <span className="md:text-4xl lg:text-7xl">🧑‍💻</span>
+            <div className="text-5xl md:text-5xl xl:text-8xl font-poppins font-bold text-neutral-300">
+              I'm Sky, a Software Engineer and Designer.{" "}
+              {/* <span className="md:text-4xl lg:text-7xl">🧑</span> */}
             </div>
             <div className="text-white text-sm md:text-base font-mono flex space-x-4">
               <a

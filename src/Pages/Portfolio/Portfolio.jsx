@@ -21,8 +21,8 @@ function Portfolio() {
                     target="blank_"
                     className=" w-full flex justify-between items-center"
                   >
-                    <div className="font-bold text-2xl md:text-4xl text-neutral-300">
-                      {project.name} <span className="text-cyan-500">🡽</span> 
+                    <div className="font-poppins font-bold text-2xl md:text-4xl text-neutral-300">
+                      {project.name} <span className="text-cyan-500">↗</span> 
                     </div>
                   </a>
                 </li>
