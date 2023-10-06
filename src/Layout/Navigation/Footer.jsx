@@ -1,9 +1,5 @@
 import React from "react";
-// import { RiInstagramFill } from "react-icons/ri";
-// import { FaTwitterSquare } from "react-icons/fa";
-// import { AiTwotoneMail } from "react-icons/ai";
 import Emoji from "./Assests/heart-emoji";
-import { FooterNav } from "./Components/FooterNav";
 
 const Footer = () => {
   return (
