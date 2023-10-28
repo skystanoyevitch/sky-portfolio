@@ -9,7 +9,7 @@ function Hero() {
 	const navigate = useNavigate();
 	const boxRef = useRef();
 
-	console.log("woooo");
+	console.log("whoops");
 
 	useEffect(() => {
 		navigate("/", { replace: true });
@@ -33,7 +33,10 @@ function Hero() {
 							Heyo!{" "}
 							<span className="text-3xl md:text-7xl">🤙</span>
 						</p>
-						<div className="text-5xl md:text-5xl xl:text-8xl font-poppins font-bold text-neutral-300">
+						<div
+							ref={boxRef}
+							className="text-5xl md:text-5xl xl:text-8xl font-poppins font-bold text-neutral-300"
+						>
 							I'm Sky, a Software Engineer and Designer.{" "}
 							{/* <span className="md:text-4xl lg:text-7xl">🧑</span> */}
 						</div>
