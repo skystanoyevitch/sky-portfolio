@@ -13,7 +13,7 @@ import Portfolio from "./Pages/Portfolio/Portfolio";
 // ];
 const App = () => (
   <BrowserRouter>
-    <div className="bg-[#081734]">
+    <div className="bg-[#060116]">
       {/* <Nav navLinks={navLinks} /> */}
       <ScrollToTop />
       <Routes>
