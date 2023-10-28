@@ -8,42 +8,44 @@ import { gsap } from "gsap";
 function Hero() {
 	const navigate = useNavigate();
 	const boxRef = useRef();
-
-	console.log("whoops");
+	// const app = useRef();
+	const comp = useRef();
+	const circle = useRef();
 
 	useEffect(() => {
 		navigate("/", { replace: true });
 	}, [navigate]);
 
 	useLayoutEffect(() => {
-		console.log(boxRef);
-		gsap.to(boxRef.current, {
-			rotation: "+=300",
-		});
+		let ctx = gsap.context(() => {
+			gsap.to(".box", { rotation: "+=180" });
+		}, comp);
 
-		return () => {};
+		return () => {
+			ctx.revert();
+		};
 	}, []);
 
 	return (
 		<div className="w-screen h-screen flex flex-col justify-center md:h-screen">
 			<div className="lg:h-full">
 				<div className="container mx-auto flex flex-col lg:justify-center lg:flex-row p-8 lg:p-8 xl:p-0 lg:h-full">
-					<div className="flex flex-col justify-center space-y-4 container mx-auto max-w-sm md:max-w-lg lg:max-w-6xl">
+					<div
+						ref={comp}
+						className="flex flex-col justify-center space-y-4 container mx-auto max-w-sm md:max-w-lg lg:max-w-6xl"
+					>
 						<p className="text-5xl md:text-6xl xl:text-8xl font-caveat font-bold text-neutral-300">
 							Heyo!{" "}
 							<span className="text-3xl md:text-7xl">🤙</span>
 						</p>
-						<div
-							ref={boxRef}
-							className="text-5xl md:text-5xl xl:text-8xl font-poppins font-bold text-neutral-300"
-						>
+						<div className="box text-5xl md:text-5xl xl:text-8xl font-poppins font-bold text-neutral-300">
 							I'm Sky, a Software Engineer and Designer.{" "}
 							{/* <span className="md:text-4xl lg:text-7xl">🧑</span> */}
 						</div>
-						<div className="text-white text-sm md:text-base font-mono flex space-x-4">
+						<div className="text-white text-sm md:text-base font-poppins font-light flex space-x-4">
 							<a
 								href="/portfolio"
-								className="bg-orange-800 rounded-lg py-1 px-2 flex place-items-center space-x-2"
+								className="bg-orange-600 rounded-lg py-1 px-3 flex place-items-center space-x-2"
 							>
 								{/* <FaLaptop /> */}
 								<div>My Projects</div>
@@ -51,7 +53,7 @@ function Hero() {
 							<a
 								href="https://twitter.com/Sky_webdev"
 								target="blank_"
-								className="bg-orange-800 rounded-lg py-1 px-2 flex place-items-center space-x-2"
+								className="bg-cyan-600 rounded-lg py-1 px-3 flex place-items-center space-x-2"
 							>
 								{/* <FaXTwitter /> */}
 								<div>Contact Me</div>
