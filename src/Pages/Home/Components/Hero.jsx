@@ -8,7 +8,6 @@ import { gsap } from "gsap";
 function Hero() {
 	const navigate = useNavigate();
 	const comp = useRef();
-	const el = useRef();
 	const tl = useRef();
 
 	useEffect(() => {
