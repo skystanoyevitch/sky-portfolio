@@ -1,17 +1,28 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
+import { useLayoutEffect } from "react";
 import { useNavigate } from "react-router-dom";
-// import { VscGithub, VscTwitter } from "react-icons/vsc";
 
-//third party imports
-// import { FaXTwitter } from "react-icons/fa6";
-// import { FaLaptop } from "react-icons/fa6";
+// Other Imports
+import { gsap } from "gsap";
 
 function Hero() {
 	const navigate = useNavigate();
+	const boxRef = useRef();
+
+	console.log("woooo");
 
 	useEffect(() => {
 		navigate("/", { replace: true });
 	}, [navigate]);
+
+	useLayoutEffect(() => {
+		console.log(boxRef);
+		gsap.to(boxRef.current, {
+			rotation: "+=300",
+		});
+
+		return () => {};
+	}, []);
 
 	return (
 		<div className="w-screen h-screen flex flex-col justify-center md:h-screen">
