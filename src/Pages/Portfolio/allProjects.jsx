@@ -2,7 +2,7 @@
 
 export const allProjects = [
 	{
-		name: "Robot Shop App",
+		name: "Robot Shop",
 		id: 2,
 		to: "",
 		thumbnail: "bg-robotShop bg-cover bg-center bg-no-repeat",

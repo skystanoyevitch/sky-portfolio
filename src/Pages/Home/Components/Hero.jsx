@@ -1,78 +1,52 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { VscGithub, VscTwitter } from "react-icons/vsc";
+// import { VscGithub, VscTwitter } from "react-icons/vsc";
+
+//third party imports
+// import { FaXTwitter } from "react-icons/fa6";
+// import { FaLaptop } from "react-icons/fa6";
 
 function Hero() {
-	const navigate = useNavigate();
+  const navigate = useNavigate();
 
-	useEffect(() => {
-		navigate("/", { replace: true });
-	}, [navigate]);
+  useEffect(() => {
+    navigate("/", { replace: true });
+  }, [navigate]);
 
-	return (
-		<div className="w-screen h-120 flex flex-col justify-center md:h-screen">
-			<div className="lg:h-full">
-				<div className="container mx-auto flex flex-col lg:justify-center text-center lg:flex-row p-8 lg:p-8 xl:p-0 lg:h-full">
-					<div className="flex flex-col justify-center container mx-auto max-w-sm md:max-w-lg lg:min-w-full">
-						<div>
-							<h1 className="text-5xl md:text-7xl xl:text-9xl font-sriracha pb-4 md:pb-6 lg:pb-8 font-bold animate-text bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48]">
-								Sky Stanojevic
-							</h1>
-							<p className="text-md md:text-xl lg:text-2xl tracking-widest text-[#9CCDE9]">
-								Developer{" "}
-								<span className="text-[#e75d48] font-normal">
-									{" "}
-									|{" "}
-								</span>{" "}
-								Designer
-							</p>
-						</div>
-
-						<div className="flex justify-center">
-							<a
-								href="#section-contact"
-								onClick={(e) => e.preventDefault}
-							>
-								<button className="rounded-lg flex py-1 px-4 md:py-1 lg:px-8 lg:py-2 text-md md:text-base lg:text-lg font-bold bg-gradient-to-r from-cyan-500 via-indigo-500 to-[#e75d48] transition-all text-white my-8 md:my-10">
-									Contact
-								</button>
-							</a>
-						</div>
-						<div className="flex justify-center space-x-4 text-3xl xl:text-4xl">
-							<a
-								href="https://github.com/skystanoyevitch"
-								target="blank"
-							>
-								<VscGithub
-									style={{ color: "#9CCDE9" }}
-									onMouseOver={({ target }) =>
-										(target.style.color = "#348ec2")
-									}
-									onMouseOut={({ target }) =>
-										(target.style.color = "#9CCDE9")
-									}
-								/>
-							</a>
-							<a
-								href="https://twitter.com/Sky_webdev"
-								target="blank"
-							>
-								<VscTwitter
-									style={{ color: "#9CCDE9" }}
-									onMouseOver={({ target }) =>
-										(target.style.color = "#348ec2")
-									}
-									onMouseOut={({ target }) =>
-										(target.style.color = "#9CCDE9")
-									}
-								/>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
+  return (
+    <div className="w-screen h-screen flex flex-col justify-center md:h-screen">
+      <div className="lg:h-full">
+        <div className="container mx-auto flex flex-col lg:justify-center lg:flex-row p-8 lg:p-8 xl:p-0 lg:h-full">
+          <div className="flex flex-col justify-center space-y-4 container mx-auto max-w-sm md:max-w-lg lg:max-w-6xl">
+            <p className="text-5xl md:text-6xl xl:text-8xl font-caveat font-bold text-neutral-300">
+              Heyo! <span className="text-3xl md:text-7xl">🤙</span>
+            </p>
+            <div className="text-5xl md:text-5xl xl:text-8xl font-poppins font-bold text-neutral-300">
+              I'm Sky, a Software Engineer and Designer.{" "}
+              {/* <span className="md:text-4xl lg:text-7xl">🧑</span> */}
+            </div>
+            <div className="text-white text-sm md:text-base font-mono flex space-x-4">
+              <a
+                href="/portfolio"
+                className="border-green-600 border border-r-2 border-b-2 rounded-md py-1 px-2 flex place-items-center space-x-2"
+              >
+                {/* <FaLaptop /> */}
+                <div>My Projects 💻 </div>
+              </a>
+              <a
+                href="https://twitter.com/Sky_webdev"
+                target="blank_"
+                className="border border-r-2 border-b-2 border-orange-500 rounded-md py-1 px-2 flex place-items-center space-x-2"
+              >
+                {/* <FaXTwitter /> */}
+                <div>Contact Me 📲</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Hero;

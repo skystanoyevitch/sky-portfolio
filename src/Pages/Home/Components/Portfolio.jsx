@@ -1,6 +1,6 @@
-import { allProjects } from "../../Portfolio/allProjects";
+// import { allProjects } from "../../Portfolio/allProjects";
 import { useInView } from "react-intersection-observer";
-import Atropos from "atropos/react";
+// import Atropos from "atropos/react";
 
 const aboutSectionVariant = {
 	initial: {
@@ -38,7 +38,7 @@ function Portfolio() {
 				</p>
 			</div>
 
-			<div className=" rounded-md md:container mx-auto lg:max-w-4xl md:space-y-0 flex flex-col space-y-16 md:flex md:flex-row md:space-x-6 lg:space-x-16 p-[3rem] lg:p-14 bg-gray-800">
+			{/* <div className=" rounded-md md:container mx-auto lg:max-w-4xl md:space-y-0 flex flex-col space-y-16 md:flex md:flex-row md:space-x-6 lg:space-x-16 p-[3rem] lg:p-14 bg-gray-800">
 				{allProjects.map((project, key) => {
 					return (
 						<>
@@ -66,7 +66,7 @@ function Portfolio() {
 						</>
 					);
 				})}
-			</div>
+			</div> */}
 		</section>
 	);
 }
