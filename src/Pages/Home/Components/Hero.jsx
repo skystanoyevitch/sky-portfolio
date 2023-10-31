@@ -48,24 +48,26 @@ function Hero() {
 						</p> */}
 
 						<div className="box">
-							<div className="text-5xl md:text-5xl xl:text-8xl font-caveat text-neutral-300">
-								Heyo i'm Sky,
+							<div className="text-5xl md:text-5xl xl:text-8xl font-caveat font-semibold text-neutral-200">
+								<span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500">
+									Hey There i'm Sky,
+								</span>
 								<br />{" "}
-								<span className="font-mono">
-									[Software Engineer and Designer]{" "}
+								<span className="font-sans font-bold">
+									Software Engineer and Designer.{" "}
 								</span>
 							</div>
-							<div className="text-white text-sm md:text-base font-poppins font-semibold flex space-x-4 pt-8">
+							<div className="text-white text-sm md:text-base font-sans font-semibold flex space-x-4 pt-8">
 								<a
 									href="/portfolio"
-									className="bg-none border-2 border-orange-500 rounded-lg py-1 px-3 flex place-items-center"
+									className="bg-none border-2 border-cyan-500 rounded-full py-2 px-4 flex place-items-center"
 								>
 									<div>My Projects</div>
 								</a>
 								<a
 									href="https://twitter.com/Sky_webdev"
 									target="blank_"
-									className="bg-none border-2 border-cyan-500 rounded-lg py-1 px-3 flex place-items-center"
+									className="bg-none border-2 border-cyan-500 rounded-full py-2 px-4 flex place-items-center"
 								>
 									<div>Contact Me</div>
 								</a>
