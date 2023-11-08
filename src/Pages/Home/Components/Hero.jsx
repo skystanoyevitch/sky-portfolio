@@ -43,21 +43,17 @@ function Hero() {
 						ref={comp}
 						className=" flex flex-col justify-center space-y-4 container mx-auto max-w-sm md:max-w-lg lg:max-w-6xl"
 					>
-						{/* <p className="heyo text-5xl md:text-6xl xl:text-8xl font-poppins font-light text-neutral-300">
-							Heyo{" "}
-						</p> */}
-
 						<div className="box">
-							<div className="text-5xl md:text-5xl xl:text-8xl font-caveat font-semibold text-neutral-200">
-								<span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500">
-									Hey There i'm Sky,
+							<div className="font-bold pb-4 bg-clip-text text-transparent bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-amber-300 via-red-400 to-slate-700">
+								<span className="text-4xl md:text-5xl xl:text-6xl">
+									Welcome, i'm Sky,
 								</span>
 								<br />{" "}
-								<span className="font-sans font-bold">
+								<span className="text-4xl md:text-5xl xl:text-6xl lg:text-7xl font-sans font-bold">
 									Software Engineer and Designer.{" "}
 								</span>
 							</div>
-							<div className="text-white text-sm md:text-base font-sans font-semibold flex space-x-4 pt-8">
+							<div className="text-white text-sm md:text-base font-sans font-semibold flex space-x-4 pt-2">
 								<a
 									href="/portfolio"
 									className="bg-none border-2 border-cyan-500 rounded-full py-2 px-4 flex place-items-center"
