@@ -21,7 +21,7 @@ function Portfolio() {
 									<a
 										href={project.link}
 										target="blank_"
-										className=" w-full flex justify-between items-center"
+										className="w-full flex justify-between items-center"
 									>
 										<div className="font-sans text-2xl md:text-4xl text-neutral-300">
 											{project.name}{" "}
