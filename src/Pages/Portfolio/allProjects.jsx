@@ -31,4 +31,14 @@ export const allProjects = [
 		link: "https://github.com/skystanoyevitch/getitdone-todo-list",
 		description: "",
 	},
+	{
+		name: "Workout Logger",
+		id: 3,
+		to: "",
+		thumbnail: "",
+		language: "",
+		active: false,
+		link: "https://github.com/skystanoyevitch/workout-logger",
+		description: "",
+	},
 ];
