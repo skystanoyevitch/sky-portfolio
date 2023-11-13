@@ -8,7 +8,7 @@ function Portfolio() {
 			<div className="h-screen text-white flex flex-col justify-center">
 				<div className="h-full py-24 md:pt-0 md:h-1/2 container mx-auto w-80 md:w-full md:max-w-2xl lg:max-w-3xl space-y-8 md:space-y-10">
 					<div className="text-5xl text-red-400 transition-all hover:scale-105 hover:text-red-300">
-						<a href="http:/">
+						<a href="/">
 							<BsArrowLeftCircle />
 						</a>
 					</div>
