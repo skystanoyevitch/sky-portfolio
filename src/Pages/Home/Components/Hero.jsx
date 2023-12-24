@@ -44,12 +44,12 @@ function Hero() {
             className=" flex flex-col justify-center space-y-4 container mx-auto max-w-sm md:max-w-lg lg:max-w-6xl"
           >
             <div className="box">
-              <div className="font-bold pb-4 bg-clip-text text-transparent font-cutiveMono text-[#FF6036]">
+              <div className="font-bold pb-4 bg-clip-text text-transparent font-cutiveMono">
                 <span className="text-4xl md:text-5xl xl:text-6xl lg:text-7xl text-gray-800">
                   Sky Stanojevic
                 </span>
                 <br />{" "}
-                <span className="text-4xl md:text-5xl xl:text-6xl lg:text-7xl font-bold">
+                <span className="text-[#FF6036] text-4xl md:text-5xl xl:text-6xl lg:text-7xl font-bold">
                   Doing things with a computer and keyboard.{" "}
                 </span>
               </div>
