@@ -9,7 +9,7 @@ import Portfolio from "./Pages/Portfolio/Portfolio";
 
 const App = () => (
   <BrowserRouter>
-    <div className="bg-black">
+    <div className="bg-[#FDF8EC]">
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/portfolio" element={<Portfolio />} />
