@@ -52,12 +52,7 @@ function Hero() {
 									</span>
 								</span>
 								<br />{" "}
-								<span className="text-gray-800 text-4xl md:text-5xl xl:text-6xl lg:text-7xl font-bold">
-									echo{" "}
-									<span className="text-[#FF6036]">
-										"Doing things"
-									</span>
-								</span>
+								<span className="text-gray-800 text-4xl md:text-5xl xl:text-6xl lg:text-7xl font-bold"></span>
 							</div>
 							<div className="text-white transition-all ease-in-out text-sm md:text-base font-sans font-semibold flex space-x-4 pt-2">
 								<a
