@@ -25,9 +25,8 @@ function Portfolio() {
 										target="blank_"
 										className="w-full flex justify-between items-center"
 									>
-										<div className="font-cutiveMono text-2xl md:text-4xl text-gray-800">
+										<div className="font-cutiveMono hover:italic text-2xl md:text-4xl text-gray-800 hover:text-gray-900">
 											{project.name}{" "}
-											{/* <span className="text-slate-500"></span> */}
 										</div>
 									</a>
 								</li>
