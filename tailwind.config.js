@@ -7,6 +7,8 @@ module.exports = {
         bebas: ['"Bebas Neue"', "cursive"],
         caveat: ['"Caveat"', "cursive"],
         cutiveMono: ['"Cutive Mono"', "monospace"],
+        vt: ["VT323", "monospace"],
+        j15: ['"Jersey 15"', "sans-serif"],
       },
       backgroundImage: (theme) => ({}),
       spacing: {
@@ -52,6 +54,9 @@ module.exports = {
             "background-position": "200% center",
           },
         },
+      },
+      textShadow: {
+        "3d": "3px 3px 0px #000", // Creates the 3D effect
       },
     },
     divideColor: (theme) => ({
