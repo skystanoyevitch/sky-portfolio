@@ -46,7 +46,7 @@ function Hero() {
           >
             <div className="box font-j15">
               <div className="pb-4 font-j15">
-                <span className="text-3xl md:text-5xl xl:text-6xl lg:text-7xl text-slate-300">
+                <span className="text-5xl xl:text-6xl lg:text-7xl text-slate-300">
                   SKY STANOJEVIC
                 </span>
                 <Portfolio />

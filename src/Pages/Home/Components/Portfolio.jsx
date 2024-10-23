@@ -16,7 +16,7 @@ function Portfolio() {
                   target="blank_"
                   className="w-full flex justify-between items-center"
                 >
-                  <div className="text-3xl md:text-3xl">{project.name}</div>
+                  <div className="text-2xl md:text-3xl">{project.name}</div>
                 </a>
               </li>
             </ul>
