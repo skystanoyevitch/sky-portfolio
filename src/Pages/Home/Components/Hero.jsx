@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { gsap } from "gsap";
 import Portfolio from "./Portfolio";
 import Terminal from "../../../Layout/Navigation/Components/Terminal/Terminal";
+import initProject3DEffects from "../../../Layout/Navigation/Components/ThreeD/ProjectsHoverEffect";
 
 function Hero() {
   const navigate = useNavigate();
@@ -38,6 +39,13 @@ function Hero() {
     if (projectsSectionRef.current) {
       if (projectsVisible) {
         projectsSectionRef.current.style.display = "block";
+
+        // Small delay to ensure DOM is updated before initializing 3D effects
+        const timer = setTimeout(() => {
+          initProject3DEffects();
+        }, 100);
+
+        return () => clearTimeout(timer);
       } else {
         projectsSectionRef.current.style.display = "none";
       }
