@@ -117,6 +117,56 @@ body {
   animation: blink 1s step-end infinite;
 }
 
+/* Project 3D hover effects */
+.project-3d-hover {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-3d-hover:hover {
+  transform: translateY(-2px) scale(1.01) rotateX(2deg);
+  box-shadow: 0 5px 15px rgba(0, 255, 0, 0.1);
+}
+
+.project-3d-hover .project-name {
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.project-3d-hover:hover .project-name {
+  transform: translateZ(5px);
+  text-shadow: 0 0 8px rgba(0, 255, 0, 0.5);
+}
+
+.project-3d-hover .project-status {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project-3d-hover:hover .project-status {
+  transform: translateZ(3px);
+  background-color: rgba(0, 255, 0, 0.15);
+}
+
+.project-3d-hover .project-arrow {
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.project-3d-hover:hover .project-arrow {
+  transform: translateZ(6px) translateX(3px);
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.7);
+}
+
+.project-3d-hover .project-description,
+.project-3d-hover .project-language {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-3d-hover:hover .project-description,
+.project-3d-hover:hover .project-language {
+  transform: translateZ(2px);
+  opacity: 0.9;
+}
+
 /* Scan Line Effect */
 @keyframes scan {
   0% {
