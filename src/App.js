@@ -1,12 +1,14 @@
 import "./App.css";
 import Homepage from "./Pages/Home/Homepage";
+import StrongHabit from "./Pages/StrongHabit/StrongHabit";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => (
   <BrowserRouter>
-    <div className="bg-slate-900">
+    <div className="min-h-screen bg-terminal-black font-vt">
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/strong-habit/*" element={<StrongHabit />} />
       </Routes>
     </div>
   </BrowserRouter>
