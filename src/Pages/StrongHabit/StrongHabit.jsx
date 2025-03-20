@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Routes, Route, NavLink, useNavigate } from "react-router-dom";
 import { gsap } from "gsap";
 import Terminal from "../../Layout/Navigation/Components/Terminal/Terminal";
+import initProject3DEffects from "../../Layout/Navigation/Components/ThreeD/ProjectsHoverEffect";
 
 // Import components for each tab
 import Features from "./Components/Features";
@@ -13,17 +14,14 @@ const StrongHabit = () => {
   const componentRef = useRef();
   const [activeTab, setActiveTab] = useState("features");
 
-  // Animation effects
+  // Initialize 3D effects on tab change
   useEffect(() => {
-    let ctx = gsap.context(() => {
-      gsap.fromTo(
-        ".page-content",
-        { opacity: 0, y: 20 },
-        { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }
-      );
-    }, componentRef);
+    // Small delay to ensure DOM is updated
+    const timer = setTimeout(() => {
+      initProject3DEffects();
+    }, 100);
 
-    return () => ctx.revert();
+    return () => clearTimeout(timer);
   }, [activeTab]);
 
   // Handle tab changes
