@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Routes, Route, NavLink, useNavigate } from "react-router-dom";
-import { gsap } from "gsap";
+// import { gsap } from "gsap";
 import Terminal from "../../Layout/Navigation/Components/Terminal/Terminal";
 import initProject3DEffects from "../../Layout/Navigation/Components/ThreeD/ProjectsHoverEffect";
 
