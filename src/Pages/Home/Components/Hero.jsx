@@ -12,7 +12,7 @@ function Hero() {
   const [projectsVisible, setProjectsVisible] = useState(false); // Changed to false by default
   const [showHelp, setShowHelp] = useState(false);
   const projectsSectionRef = useRef();
-  const helpSectionRef = useRef();
+  // const helpSectionRef = useRef();
 
   useEffect(() => {
     navigate("/", { replace: true });
