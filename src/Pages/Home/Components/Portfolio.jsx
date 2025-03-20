@@ -28,8 +28,8 @@ function Portfolio({ terminalStyle = false }) {
             }`}
           >
             {terminalStyle ? (
-              // Terminal style project listing
-              <div className="group hover:bg-terminal-green hover:bg-opacity-10 p-3 transition-colors cursor-pointer border border-terminal-green border-opacity-50 hover:border-opacity-100">
+              // Terminal style project listing with 3D hover effect
+              <div className="group hover:bg-terminal-green hover:bg-opacity-10 p-3 transition-colors cursor-pointer border border-terminal-green border-opacity-50 hover:border-opacity-100 project-3d-hover">
                 <a
                   href={project.link}
                   target="_blank"
@@ -38,23 +38,25 @@ function Portfolio({ terminalStyle = false }) {
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex items-center">
-                      <span className="text-terminal-green-dark mr-3 px-2 py-1 bg-terminal-green bg-opacity-10 border border-terminal-green border-opacity-30">
+                      <span className="text-terminal-green-dark mr-3 px-2 py-1 bg-terminal-green bg-opacity-10 border border-terminal-green border-opacity-30 project-status">
                         [{status}]
                       </span>
-                      <span className="mr-2 text-lg">{project.name}</span>
+                      <span className="mr-2 text-lg project-name">
+                        {project.name}
+                      </span>
                     </div>
-                    <span className="text-terminal-green-light group-hover:translate-x-1 transition-transform duration-300 ease-in-out">
+                    <span className="text-terminal-green-light group-hover:translate-x-1 transition-transform duration-300 ease-in-out project-arrow">
                       ACCESS &gt;
                     </span>
                   </div>
                   {project.description && (
-                    <div className="text-sm text-terminal-green-dark mt-2 pl-4 border-l border-terminal-green border-opacity-30">
+                    <div className="text-sm text-terminal-green-dark mt-2 pl-4 border-l border-terminal-green border-opacity-30 project-description">
                       {project.description}
                     </div>
                   )}
                   {project.language && (
                     <div className="mt-2 flex justify-end">
-                      <span className="text-xs text-terminal-green-dark px-2 py-1 border border-terminal-green border-opacity-20 rounded">
+                      <span className="text-xs text-terminal-green-dark px-2 py-1 border border-terminal-green border-opacity-20 rounded project-language">
                         {project.language}
                       </span>
                     </div>
