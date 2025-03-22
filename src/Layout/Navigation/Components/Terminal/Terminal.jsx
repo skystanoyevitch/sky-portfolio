@@ -48,17 +48,17 @@ const Terminal = ({
           }
         }
 
-        setTimeout(typeChar, Math.random() * 50 + 30); // Random delay for realistic typing
+        setTimeout(typeChar, Math.random() * 20 + 10); // Faster typing speed with smaller random delay
       } else {
         setTimeout(() => {
           setCommandHistory((prev) => [...prev, command]);
           setCurrentCommand("");
           setCurrentIndex((prev) => prev + 1);
-        }, 500);
+        }, 200); // Reduced delay between commands
       }
     };
 
-    setTimeout(typeChar, 800);
+    setTimeout(typeChar, 300); // Reduced initial delay
   }, [initialCommands, currentIndex]);
 
   // Animation setup
@@ -82,8 +82,14 @@ const Terminal = ({
     return () => ctx.revert();
   }, []);
 
-  // Auto-scroll to bottom of terminal
+  // Auto-scroll to bottom of terminal and limit command history
   useEffect(() => {
+    // Limit command history to most recent 3 commands
+    if (commandHistory.length > 3) {
+      setCommandHistory((prev) => prev.slice(prev.length - 3));
+    }
+
+    // Auto-scroll
     if (terminalRef.current) {
       const outputArea = terminalRef.current.querySelector(".terminal-output");
       if (outputArea) {
@@ -141,14 +147,14 @@ const Terminal = ({
         {/* Terminal output */}
         <div className="p-5 font-vt text-terminal-green h-full">
           {/* Boot sequence and command history - scrollable area */}
-          <div className="terminal-output max-h-48 overflow-y-auto mb-4 border-b border-terminal-green border-opacity-30 pb-2 relative">
+          <div className="terminal-output max-h-36 overflow-y-auto mb-4 border-b border-terminal-green border-opacity-30 pb-2 relative">
             {/* Scroll indicator */}
             <div className="absolute right-0 top-0 px-1 text-xs text-terminal-green-dark border-l border-b border-terminal-green border-opacity-30">
               [SCROLL↕]
             </div>
 
-            {/* Command history */}
-            {commandHistory.map((cmd, i) => (
+            {/* Command history - limited to last 3 commands */}
+            {commandHistory.slice(-3).map((cmd, i) => (
               <div key={i} className="mb-2 pr-16">
                 <span className="text-terminal-green-dark">$ </span>
                 <span>{cmd}</span>
