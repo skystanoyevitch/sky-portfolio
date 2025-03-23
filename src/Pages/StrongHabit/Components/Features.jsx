@@ -1,28 +1,7 @@
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import Terminal from "../../../Layout/Navigation/Components/Terminal/Terminal";
+// Features.jsx
+// import React, { useEffect, useRef } from "react";
 
 const Features = () => {
-  const featuresRef = useRef();
-
-  useEffect(() => {
-    let ctx = gsap.context(() => {
-      gsap.fromTo(
-        ".feature-item",
-        { x: -20, opacity: 0 },
-        {
-          x: 0,
-          opacity: 1,
-          stagger: 0.1,
-          duration: 0.4,
-          ease: "power2.out",
-        }
-      );
-    }, featuresRef);
-
-    return () => ctx.revert();
-  }, []);
-
   const featuresList = [
     {
       title: "HABIT TRACKING",
@@ -57,41 +36,39 @@ const Features = () => {
   ];
 
   return (
-    <div ref={featuresRef} className="font-vt text-terminal-green">
-      <Terminal title="FEATURES MODULE" className="mb-6">
-        <div className="mb-4">
-          <p className="text-terminal-green-dark">
-            LISTING PRIMARY FEATURES OF STRONG HABIT APPLICATION...
-          </p>
-        </div>
-      </Terminal>
+    <div className="text-text">
+      <div className="mb-6">
+        <h2 className="text-xl text-secondary font-bold mb-4">
+          FEATURES OVERVIEW
+        </h2>
+        <p className="text-text-secondary mb-4">
+          Discover the powerful features that make Strong Habit the perfect
+          companion for your habit building journey.
+        </p>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {featuresList.map((feature, index) => (
           <div
             key={index}
-            className="feature-item border border-terminal-green p-4 hover:bg-terminal-green hover:bg-opacity-5 transition-colors"
+            className="bg-primary-dark border border-border rounded-lg p-4 hover:border-accent transition-all duration-300"
           >
-            <h3 className="text-xl mb-2">{feature.title}</h3>
-            <p className="text-terminal-green-dark">{feature.description}</p>
+            <h3 className="text-xl mb-2 text-secondary">{feature.title}</h3>
+            <p className="text-text-secondary">{feature.description}</p>
           </div>
         ))}
       </div>
 
-      <div className="mt-8 p-4 border border-terminal-green border-opacity-50">
-        <h3 className="text-xl mb-3">DOWNLOAD OPTIONS</h3>
+      <div className="mt-8 p-4 border border-border border-opacity-50 rounded-lg bg-primary-dark">
+        <h3 className="text-xl mb-3 text-secondary">DOWNLOAD OPTIONS</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="p-3 border border-terminal-green hover:bg-terminal-green hover:bg-opacity-10 transition-colors cursor-pointer text-center">
-            <span className="block mb-1">iOS APP STORE</span>
-            <span className="text-sm text-terminal-green-dark">
-              VERSION 1.2.1
-            </span>
+          <div className="p-3 border border-border hover:border-accent hover:bg-accent hover:bg-opacity-10 transition-all duration-300 rounded-lg cursor-pointer text-center">
+            <span className="block mb-1 text-text">iOS APP STORE</span>
+            <span className="text-sm text-text-secondary">VERSION 1.2.1</span>
           </div>
-          <div className="p-3 border border-terminal-green hover:bg-terminal-green hover:bg-opacity-10 transition-colors cursor-pointer text-center">
-            <span className="block mb-1">ANDROID PLAY STORE</span>
-            <span className="text-sm text-terminal-green-dark">
-              VERSION 1.2.0
-            </span>
+          <div className="p-3 border border-border hover:border-accent hover:bg-accent hover:bg-opacity-10 transition-all duration-300 rounded-lg cursor-pointer text-center">
+            <span className="block mb-1 text-text">ANDROID PLAY STORE</span>
+            <span className="text-sm text-text-secondary">VERSION 1.2.0</span>
           </div>
         </div>
       </div>
