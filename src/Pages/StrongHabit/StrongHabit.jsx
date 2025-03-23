@@ -1,28 +1,13 @@
-import React, { useState, useEffect, useRef } from "react";
+// StrongHabit.jsx
+import React, { useState, useEffect } from "react";
 import { Routes, Route, NavLink, useNavigate } from "react-router-dom";
-// import { gsap } from "gsap";
-import Terminal from "../../Layout/Navigation/Components/Terminal/Terminal";
-import initProject3DEffects from "../../Layout/Navigation/Components/ThreeD/ProjectsHoverEffect";
-
-// Import components for each tab
 import Features from "./Components/Features";
 import PrivacyPolicy from "./Components/PrivacyPolicy";
 import Terms from "./Components/Terms";
 
 const StrongHabit = () => {
   const navigate = useNavigate();
-  const componentRef = useRef();
   const [activeTab, setActiveTab] = useState("features");
-
-  // Initialize 3D effects on tab change
-  useEffect(() => {
-    // Small delay to ensure DOM is updated
-    const timer = setTimeout(() => {
-      initProject3DEffects();
-    }, 100);
-
-    return () => clearTimeout(timer);
-  }, [activeTab]);
 
   // Handle tab changes
   useEffect(() => {
@@ -32,51 +17,33 @@ const StrongHabit = () => {
     }
   }, [navigate]);
 
-  // Terminal initial commands - Adding more text to demonstrate scrolling
-  const bootSequence = [
-    "LOADING STRONG HABIT APPLICATION...",
-    "ACCESSING DATA STORAGE API...",
-    "INITIALIZING USER INTERFACE COMPONENTS...",
-    "LOADING HABIT TRACKING MODULES...",
-    "CONNECTING TO SYNCHRONIZATION SERVICES...",
-    "RUNNING SYSTEM DIAGNOSTICS...",
-    "ALL SYSTEMS OPERATIONAL",
-    "STRONG HABIT v1.2.1 READY",
-  ];
-
   return (
-    <div
-      ref={componentRef}
-      className="min-h-screen bg-terminal-black bg-terminal-grid py-8 px-4"
-    >
+    <div className="min-h-screen bg-primary bg-gradient-autumn py-8 px-4">
       <div className="container mx-auto max-w-5xl">
         <div className="mb-8">
           <NavLink
             to="/"
-            className="text-terminal-green hover:underline inline-flex items-center"
+            className="text-secondary hover:text-accent inline-flex items-center transition-colors"
           >
-            <span className="mr-2">←</span> RETURN TO MAIN TERMINAL
+            <span className="mr-2">←</span> RETURN TO MAIN PAGE
           </NavLink>
         </div>
 
-        <Terminal
-          title="STRONG HABIT OS v1.2.1"
-          initialCommands={bootSequence}
-          className="mb-6"
-        >
-          <div className="mb-4">
-            <h1 className="text-3xl text-terminal-green mb-2 font-vt">
+        {/* Header Card - Replaces Terminal */}
+        <div className="bg-primary-light rounded-lg border border-border shadow-autumn mb-6 overflow-hidden">
+          <div className="p-6 border-b border-border">
+            <h1 className="text-3xl text-secondary mb-2 font-bold">
               STRONG HABIT
             </h1>
-            <p className="text-terminal-green-dark">
+            <p className="text-text-secondary">
               A powerful habit tracking application designed to build
               consistency and track progress.
             </p>
           </div>
-        </Terminal>
+        </div>
 
         {/* Navigation Tabs */}
-        <div className="flex border-b border-terminal-green mb-6">
+        <div className="flex border-b border-border mb-6">
           <TabLink
             to="/strong-habit/features"
             active={activeTab === "features"}
@@ -101,7 +68,7 @@ const StrongHabit = () => {
         </div>
 
         {/* Page Content */}
-        <div className="page-content">
+        <div className="page-content bg-primary-light rounded-lg border border-border p-6 shadow-autumn">
           <Routes>
             <Route
               path="/"
@@ -121,10 +88,10 @@ const StrongHabit = () => {
 const TabLink = ({ children, to, active, onClick }) => (
   <NavLink
     to={to}
-    className={`px-4 py-2 font-vt ${
+    className={`px-4 py-2 font-medium ${
       active
-        ? "text-terminal-green border-b-2 border-terminal-green"
-        : "text-terminal-green-dark hover:text-terminal-green"
+        ? "text-accent border-b-2 border-accent"
+        : "text-text-secondary hover:text-secondary"
     }`}
     onClick={onClick}
   >
