@@ -1,0 +1,103 @@
+/* Strong Habit specific styles */
+.feature-item {
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.download-option {
+  transition: all 0.3s ease;
+}
+
+.download-option:hover {
+  background-color: rgba(255, 131, 100, 0.1);
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+/* Section headings in terms and privacy policies */
+.section-heading {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-heading::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: var(--color-accent);
+  border-radius: 3px;
+}
+
+/* Tab highlight animation */
+@keyframes tabHighlight {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.tab-active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  animation: tabHighlight 0.3s forwards;
+}
+
+/* Autumn Warmth consistency for Strong Habit page */
+.sh-section {
+  background-color: var(--bg-secondary);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--color-border);
+  transition: all 0.3s ease;
+}
+
+.sh-section:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--box-shadow);
+}
+
+.sh-title {
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sh-text {
+  color: var(--color-text-secondary);
+}
+
+.sh-accent {
+  color: var(--color-accent);
+}
+
+.sh-button {
+  padding: 0.6rem 1.2rem;
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  color: var(--color-primary);
+  transition: all 0.3s ease;
+}
+
+.sh-button:hover {
+  background-color: rgba(255, 131, 100, 0.1);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
