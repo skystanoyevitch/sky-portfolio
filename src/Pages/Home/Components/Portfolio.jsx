@@ -1,85 +1,96 @@
+// Portfolio.jsx
 import React from "react";
 import { allProjects } from "../../Portfolio/allProjects";
 
-function Portfolio({ terminalStyle = false }) {
+function Portfolio() {
   const getProjectStatus = (project) => {
     if (project.active === false) {
       return "COMPLETED";
     }
-    return "ONLINE";
+    return "ACTIVE";
+  };
+
+  // Define technology tags for each project
+  const projectTechnologies = {
+    1: ["React", "Tailwind", "GSAP"],
+    2: ["React", "Next.js", "Firebase"],
+    3: ["JavaScript", "CSS3", "HTML5"],
+    4: ["React", "Node.js", "MongoDB"],
   };
 
   return (
-    <div
-      className={
-        terminalStyle ? "text-terminal-green font-vt" : "text-slate-300"
-      }
-    >
-      {allProjects.map((project, index) => {
+    <div className="space-y-4">
+      {allProjects.map((project) => {
         const status = getProjectStatus(project);
+        const technologies = projectTechnologies[project.id] || [];
 
         return (
           <div
             key={project.id}
-            className={`project-item ${
-              index !== 0
-                ? "border-t border-terminal-green border-opacity-30 pt-3 mt-3"
-                : ""
-            }`}
+            className="bg-primary-dark rounded-lg border border-border hover:border-accent transition-all duration-300 overflow-hidden hover:shadow-autumn-lg transform hover:-translate-y-1"
           >
-            {terminalStyle ? (
-              // Terminal style project listing with 3D hover effect
-              <div className="group hover:bg-terminal-green hover:bg-opacity-10 p-3 transition-colors cursor-pointer border border-terminal-green border-opacity-50 hover:border-opacity-100 project-3d-hover">
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block"
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block p-4"
+              aria-label={`View ${project.name} project`}
+            >
+              <div className="flex items-start justify-between mb-3">
+                <h3 className="text-lg font-bold text-secondary">
+                  {project.name}
+                </h3>
+                <span
+                  className={`text-xs px-3 py-1 rounded-full ${
+                    status === "ACTIVE"
+                      ? "bg-accent bg-opacity-15 text-gray-700"
+                      : "bg-text-secondary bg-opacity-15 text-text-secondary-dark"
+                  }`}
+                  role="status"
                 >
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center">
-                      <span className="text-terminal-green-dark mr-3 px-2 py-1 bg-terminal-green bg-opacity-10 border border-terminal-green border-opacity-30 project-status">
-                        [{status}]
-                      </span>
-                      <span className="mr-2 text-lg project-name">
-                        {project.name}
-                      </span>
-                    </div>
-                    <span className="text-terminal-green-light group-hover:translate-x-1 transition-transform duration-300 ease-in-out project-arrow">
-                      ACCESS &gt;
-                    </span>
-                  </div>
-                  {project.description && (
-                    <div className="text-sm text-terminal-green-dark mt-2 pl-4 border-l border-terminal-green border-opacity-30 project-description">
-                      {project.description}
-                    </div>
-                  )}
-                  {project.language && (
-                    <div className="mt-2 flex justify-end">
-                      <span className="text-xs text-terminal-green-dark px-2 py-1 border border-terminal-green border-opacity-20 rounded project-language">
-                        {project.language}
-                      </span>
-                    </div>
-                  )}
-                </a>
+                  {status}
+                </span>
               </div>
-            ) : (
-              // Original style (fallback)
-              <ul>
-                <li
-                  className={`transition-transform w-60 z-0 md:w-full md:max-w-3xl hover:scale-105 hover:underline hover:underline-offset-1 hover:decoration-green-400 hover:decoration-4`}
-                >
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full flex justify-between items-center"
+
+              {project.description && (
+                <p className="text-text-secondary text-sm mb-4">
+                  {project.description}
+                </p>
+              )}
+
+              {/* Technology tags */}
+              <div className="flex flex-wrap gap-2 mb-3">
+                {technologies.map((tech, i) => (
+                  <span
+                    key={`${project.id}-${tech}`}
+                    className="text-xs px-3 py-1 rounded-md bg-secondary bg-opacity-10 text-secondary border border-secondary border-opacity-20"
                   >
-                    <div className="text-2xl md:text-3xl">{project.name}</div>
-                  </a>
-                </li>
-              </ul>
-            )}
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex justify-end pt-2 border-t border-border mt-2">
+                <span className="text-accent text-sm flex items-center hover:underline">
+                  View Project
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 ml-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </a>
           </div>
         );
       })}
