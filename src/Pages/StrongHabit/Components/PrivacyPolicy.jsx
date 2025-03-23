@@ -1,22 +1,14 @@
+// PrivacyPolicy.jsx
 import React from "react";
-import Terminal from "../../../Layout/Navigation/Components/Terminal/Terminal";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="font-vt text-terminal-green">
-      <Terminal title="PRIVACY POLICY" className="mb-6">
-        <div className="mb-4">
-          <p className="text-terminal-green-dark">
-            ACCESSING PRIVACY DOCUMENTATION...
-          </p>
-        </div>
-      </Terminal>
-
-      <div className="border border-terminal-green p-4 mb-6">
-        <h2 className="text-xl border-b border-terminal-green border-opacity-50 pb-2 mb-4">
+    <div className="text-text">
+      <div className="border border-border p-4 mb-6 rounded-lg bg-primary-dark">
+        <h2 className="text-xl text-secondary font-bold mb-4 pb-2 border-b border-border">
           STRONGHABIT PRIVACY POLICY
         </h2>
-        <p className="mb-4">Last Updated: MARCH 21, 2025</p>
+        <p className="mb-4 text-text-secondary">Last Updated: MARCH 21, 2025</p>
       </div>
 
       <div className="space-y-6">
@@ -35,33 +27,33 @@ const PrivacyPolicy = () => {
         </Section>
 
         <Section title="INFORMATION WE COLLECT">
-          <h4 className="text-terminal-green mb-2">
+          <h4 className="text-secondary mb-2">
             Information Stored on Your Device
           </h4>
           <p>
             StrongHabit stores all your data locally on your device. This
             includes:
           </p>
-          <ul className="list-disc pl-6 mt-2 space-y-1 text-terminal-green-dark">
+          <ul className="list-disc pl-6 mt-2 space-y-1 text-text-secondary">
             <li>
-              <span className="text-terminal-green">Habit tracking data:</span>{" "}
-              The habits you create, complete, and track
+              <span className="text-text">Habit tracking data:</span> The habits
+              you create, complete, and track
             </li>
             <li>
-              <span className="text-terminal-green">Streak information:</span>{" "}
-              Your consistency records and achievements
+              <span className="text-text">Streak information:</span> Your
+              consistency records and achievements
             </li>
             <li>
-              <span className="text-terminal-green">App preferences:</span> Your
+              <span className="text-text">App preferences:</span> Your
               personalized settings within the app
             </li>
             <li>
-              <span className="text-terminal-green">Reminder settings:</span>{" "}
-              Any notification preferences you configure
+              <span className="text-text">Reminder settings:</span> Any
+              notification preferences you configure
             </li>
           </ul>
 
-          <h4 className="text-terminal-green mt-4 mb-2">
+          <h4 className="text-secondary mt-4 mb-2">
             We Do Not Collect Personal Information
           </h4>
           <p>
@@ -76,7 +68,7 @@ const PrivacyPolicy = () => {
             Since all data is stored locally on your device, we use your
             information only to:
           </p>
-          <ul className="list-disc pl-6 mt-2 space-y-1 text-terminal-green-dark">
+          <ul className="list-disc pl-6 mt-2 space-y-1 text-text-secondary">
             <li>Display your habits and tracking data within the app</li>
             <li>Calculate statistics and achievements</li>
             <li>Send local notifications for habit reminders (when enabled)</li>
@@ -84,7 +76,7 @@ const PrivacyPolicy = () => {
         </Section>
 
         <Section title="DATA STORAGE AND SECURITY">
-          <ul className="list-disc pl-6 space-y-1 text-terminal-green-dark">
+          <ul className="list-disc pl-6 space-y-1 text-text-secondary">
             <li>
               All data is stored locally on your device using secure storage
               methods
@@ -100,7 +92,7 @@ const PrivacyPolicy = () => {
 
         <Section title="PUSH NOTIFICATIONS">
           <p>If you enable push notifications:</p>
-          <ul className="list-disc pl-6 mt-2 space-y-1 text-terminal-green-dark">
+          <ul className="list-disc pl-6 mt-2 space-y-1 text-text-secondary">
             <li>These are processed locally on your device</li>
             <li>Notification settings are stored only on your device</li>
             <li>We cannot and do not access the content of notifications</li>
@@ -108,14 +100,14 @@ const PrivacyPolicy = () => {
         </Section>
 
         <Section title="DATA BACKUP AND DELETION">
-          <ul className="list-disc pl-6 space-y-1 text-terminal-green-dark">
+          <ul className="list-disc pl-6 space-y-1 text-text-secondary">
             <li>
-              <span className="text-terminal-green">Data Backup:</span> You can
-              export your data for personal backup purposes
+              <span className="text-text">Data Backup:</span> You can export
+              your data for personal backup purposes
             </li>
             <li>
-              <span className="text-terminal-green">Data Deletion:</span> You
-              can delete your data at any time by either:
+              <span className="text-text">Data Deletion:</span> You can delete
+              your data at any time by either:
               <ul className="list-disc pl-6 mt-1">
                 <li>Deleting individual habits within the app</li>
                 <li>
@@ -139,10 +131,8 @@ const PrivacyPolicy = () => {
             If you have any questions about this Privacy Policy, please contact
             us at:
           </p>
-          <p className="mt-2 text-terminal-green">
-            Email: contact@stronghabit.app
-          </p>
-          <p className="mt-4 text-terminal-green-dark">
+          <p className="mt-2 text-secondary">Email: contact@stronghabit.app</p>
+          <p className="mt-4 text-text-secondary">
             This policy was last updated on March 21, 2025.
           </p>
         </Section>
@@ -153,9 +143,9 @@ const PrivacyPolicy = () => {
 
 // Helper component for sections
 const Section = ({ title, children }) => (
-  <div className="border-l-2 border-terminal-green pl-4">
-    <h3 className="text-xl mb-2">{title}</h3>
-    <div className="text-terminal-green-dark">{children}</div>
+  <div className="border-l-2 border-accent pl-4">
+    <h3 className="text-xl mb-2 text-secondary">{title}</h3>
+    <div className="text-text-secondary">{children}</div>
   </div>
 );
 
