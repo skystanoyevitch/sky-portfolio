@@ -1,5 +1,6 @@
 // Features.jsx
-// import React, { useEffect, useRef } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Features = () => {
   const featuresList = [
@@ -71,6 +72,21 @@ const Features = () => {
             <span className="text-sm text-text-secondary">VERSION 1.2.0</span>
           </div>
         </div>
+      </div>
+
+      {/* Support Section */}
+      <div className="mt-8 p-4 border border-border border-opacity-50 rounded-lg bg-primary-dark">
+        <h3 className="text-xl mb-3 text-secondary">NEED HELP?</h3>
+        <p className="text-text-secondary mb-4">
+          Having trouble with Strong Habit? Our support team is ready to assist
+          you.
+        </p>
+        <Link
+          to="/strong-habit/support"
+          className="inline-block px-4 py-2 bg-secondary bg-opacity-10 hover:bg-opacity-20 text-secondary rounded-lg transition-colors border border-secondary border-opacity-20"
+        >
+          VISIT SUPPORT PAGE →
+        </Link>
       </div>
     </div>
   );
