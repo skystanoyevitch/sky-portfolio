@@ -18,7 +18,7 @@ function Hero() {
           {/* Header section */}
           <div className="p-6 border-b border-border">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text mb-2">
-              SKY STANOJEVIC
+              SKY STANOYEVITCH
             </h1>
             <p className="text-text-secondary text-lg">
               APP DEVELOPER | DESIGNER
@@ -32,7 +32,10 @@ function Hero() {
                 Profile
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <ProfileItem label="ABOUT" value="Code Junkie and Tech Enthusiest" />
+                <ProfileItem
+                  label="ABOUT"
+                  value="Code Junkie and Tech Enthusiest"
+                />
                 <ProfileItem label="ROLE" value="Developer/Designer" />
                 <ProfileItem label="LOCATION" value="San Diego, CA" />
                 <ProfileItem
