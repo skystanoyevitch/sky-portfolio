@@ -147,7 +147,7 @@ const Support = () => {
         <form
           name="stronghabit-support"
           method="POST"
-          netlify
+          data-netlify="true"
           netlify-honeypot="bot-field"
           onSubmit={handleSubmit}
           className="space-y-4"
