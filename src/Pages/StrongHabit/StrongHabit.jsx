@@ -4,6 +4,7 @@ import { Routes, Route, NavLink, useNavigate } from "react-router-dom";
 import Features from "./Components/Features";
 import PrivacyPolicy from "./Components/PrivacyPolicy";
 import Terms from "./Components/Terms";
+import Support from "./Components/Support";
 
 const StrongHabit = () => {
   const navigate = useNavigate();
@@ -52,6 +53,13 @@ const StrongHabit = () => {
             FEATURES
           </TabLink>
           <TabLink
+            to="/strong-habit/support"
+            active={activeTab === "support"}
+            onClick={() => setActiveTab("support")}
+          >
+            SUPPORT
+          </TabLink>
+          <TabLink
             to="/strong-habit/privacy"
             active={activeTab === "privacy"}
             onClick={() => setActiveTab("privacy")}
@@ -75,6 +83,7 @@ const StrongHabit = () => {
               element={<Navigate to="/strong-habit/features" />}
             />
             <Route path="/features" element={<Features />} />
+            <Route path="/support" element={<Support />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<Terms />} />
           </Routes>
