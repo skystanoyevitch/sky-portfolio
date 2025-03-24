@@ -12,11 +12,11 @@ export const allProjects = [
   {
     name: "Developer Job Board",
     id: 2,
-    to: "https://job-board-app-pink.vercel.app/",
+    to: "/",
     thumbnail: "",
     language: "React",
     active: false,
-    link: "https://job-board-app-pink.vercel.app/",
+    link: "/",
     description: "Platform for tech job listings and applications",
   },
   {
@@ -26,7 +26,7 @@ export const allProjects = [
     thumbnail: "",
     language: "JavaScript",
     active: false,
-    link: "https://github.com/skystanoyevitch/getitdone-todo-list",
+    link: "/",
     description: "Task management application with priority sorting",
   },
   {
@@ -36,7 +36,7 @@ export const allProjects = [
     thumbnail: "",
     language: "React",
     active: false,
-    link: "https://github.com/skystanoyevitch/workout-logger",
+    link: "/",
     description: "Exercise tracking tool for fitness enthusiasts",
   },
 ];
