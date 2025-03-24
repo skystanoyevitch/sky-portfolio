@@ -1,4 +1,4 @@
-// Support.jsx with updated Netlify Form handling
+// Support.jsx with fixed form submission handling
 import React, { useState } from "react";
 
 const Support = () => {
@@ -62,6 +62,15 @@ const Support = () => {
     return Object.keys(newErrors).length === 0;
   };
 
+  // Proper encoding function for form data
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -72,29 +81,33 @@ const Support = () => {
     }
 
     setIsSubmitting(true);
+    setSubmitError(false);
+    setSubmitSuccess(false);
 
-    // Important: The key to working with Netlify forms in React
-    // is the encode function and proper headers
-    const encode = (data) => {
-      return Object.keys(data)
-        .map(
-          (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-        )
-        .join("&");
+    // Add all form data, including the form name
+    const submissionData = {
+      "form-name": "stronghabit-support",
+      ...formData,
     };
+
+    // Log the data being sent
+    console.log("Submitting form data:", submissionData);
 
     fetch("/", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": "stronghabit-support",
-        ...formData,
-      }),
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: encode(submissionData),
     })
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Form submission failed: ${response.status}`);
         }
+        return response;
+      })
+      .then(() => {
+        console.log("Form successfully submitted");
         setSubmitSuccess(true);
         setFormData({
           name: "",
@@ -146,9 +159,11 @@ const Support = () => {
           </div>
         ) : null}
 
+        {/* Netlify Form */}
         <form
           name="stronghabit-support"
           method="POST"
+          netlify-honeypot="bot-field"
           onSubmit={handleSubmit}
           className="space-y-4"
         >
@@ -289,9 +304,6 @@ const Support = () => {
           </div>
         </form>
       </div>
-
-      {/* FAQ Section and other content remains the same */}
-      {/* ... */}
     </div>
   );
 };
