@@ -5,7 +5,7 @@ import { allProjects } from "../../Portfolio/allProjects";
 function Portfolio() {
   const getProjectStatus = (project) => {
     if (project.active === false) {
-      return "COMPLETED";
+      return "INACTIVE";
     }
     return "ACTIVE";
   };
@@ -31,7 +31,6 @@ function Portfolio() {
           >
             <a
               href={project.link}
-              target="_blank"
               rel="noopener noreferrer"
               className="block p-4"
               aria-label={`View ${project.name} project`}
