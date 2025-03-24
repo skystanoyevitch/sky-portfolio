@@ -21,7 +21,7 @@ function Hero() {
               SKY STANOJEVIC
             </h1>
             <p className="text-text-secondary text-lg">
-              WEB DEVELOPER | REACT SPECIALIST
+              APP DEVELOPER | DESIGNER
             </p>
           </div>
 
@@ -32,9 +32,9 @@ function Hero() {
                 Profile
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <ProfileItem label="NAME" value="SKY STANOJEVIC" />
-                <ProfileItem label="ROLE" value="WEB DEVELOPER" />
-                <ProfileItem label="LOCATION" value="[REDACTED]" />
+                <ProfileItem label="ABOUT" value="Code Junkie and Tech Enthusiest" />
+                <ProfileItem label="ROLE" value="Developer/Designer" />
+                <ProfileItem label="LOCATION" value="San Diego, CA" />
                 <ProfileItem
                   label="STATUS"
                   value="ONLINE"
