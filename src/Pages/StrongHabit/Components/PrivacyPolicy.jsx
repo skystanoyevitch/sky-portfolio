@@ -4,7 +4,7 @@ import React from "react";
 const PrivacyPolicy = () => {
   return (
     <div className="text-text">
-      <div className="border border-border p-4 mb-6 rounded-lg bg-primary-dark">
+      <div className="p-4 mb-6 rounded-lg bg-primary-dark">
         <h2 className="text-xl text-secondary font-bold mb-4 pb-2 border-b border-border">
           STRONGHABIT PRIVACY POLICY
         </h2>
