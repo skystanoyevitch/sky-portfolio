@@ -3,9 +3,9 @@
   background: linear-gradient(135deg, #2c2b3c 0%, #3d3c53 100%);
 }
 
-.text-shadow-autumn {
+/* .text-shadow-autumn {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .transition-autumn {
   transition: all 0.3s ease;
