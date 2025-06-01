@@ -5,6 +5,7 @@ module.exports = {
       fontFamily: {
         sans: ['"Open Sans"', "sans-serif"], // Changed to Open Sans for body
         serif: ['"DM Serif Display"', "serif"], // Added DM Serif Display for titles
+        audiowide: ['"Audiowide"', "sans-serif"], // Added Audiowide
       },
       colors: {
         primary: {

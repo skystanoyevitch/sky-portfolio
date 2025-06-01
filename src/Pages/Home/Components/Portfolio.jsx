@@ -12,64 +12,56 @@ function Portfolio() {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {/* Adjusted to md:grid-cols-2 for a more standard grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {/* Increased gap for better spacing */}
       {allProjects.map((project) => {
         const technologies = projectTechnologies[project.id] || [];
-
-        // Removed colSpan and rowSpan definitions for a regular grid layout
 
         return (
           <div
             key={project.id}
-            // Removed colSpan and rowSpan from className
-            className={`bg-primary-dark hover:bg-primary-light transition-all duration-300 overflow-hidden transform hover:-translate-y-1`}
+            className={`bg-primary transition-all duration-300 
+              overflow-hidden shadow-am hover:shadow-lg shadow-slate-500 hover:shadow-slate-300
+              transform hover:-translate-y-2 border border-slate-600`}
           >
             <a
               href={project.link}
               rel="noopener noreferrer"
-              className="block p-6" // Increased padding
+              className="block p-6"
               aria-label={`View ${project.name} project`}
             >
-              <div className="flex items-start justify-between mb-3">
-                <h3 className="text-xl font-semibold text-secondary">
-                  {" "}
-                  {/* Increased font size */}
+              <div className="flex items-start justify-between mb-4">
+                <h3 className="text-xl font-audiowide text-secondary-dark relative">
                   {project.name}
+                  <span className="absolute -bottom-1 left-0 w-8 h-0.5 bg-accent"></span>
                 </h3>
-                {/* Removed status indicator */}
               </div>
 
               {project.description && (
-                <p className="text-text-secondary font-light text-base mb-4">
+                <p className="text-text-secondary font-mono text-base mb-5 leading-relaxed">
                   {project.description}
                 </p>
               )}
 
-              {/* Technology tags */}
-              <div className="flex flex-wrap gap-2 mb-4">
-                {" "}
-                {/* Increased margin bottom */}
+              {/* Technology tags with improved styling */}
+              <div className="flex flex-wrap gap-2 mb-5">
                 {technologies.map((tech) => (
                   <span
                     key={`${project.id}-${tech}`}
-                    className="text-sm px-3 py-1 rounded-md bg-secondary bg-opacity-10 text-secondary" // Simplified tag styling
+                    className="text-xs px-3 py-1 rounded-full bg-secondary bg-opacity-5 
+                      text-secondary-dark border border-secondary border-opacity-10"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
 
-              <div className="flex justify-end pt-3 mt-3">
-                {" "}
-                {/* Adjusted padding and margin */}
-                <span className="text-accent text-base flex items-center hover:underline">
-                  {" "}
-                  {/* Increased font size */}
+              <div className="flex justify-end pt-3 mt-3 border-t border-border">
+                <span className="text-accent text-base flex items-center group">
                   View Project
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 ml-1" // Increased icon size
+                    className="h-5 w-5 ml-1 transform group-hover:translate-x-1 transition-transform duration-200"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
