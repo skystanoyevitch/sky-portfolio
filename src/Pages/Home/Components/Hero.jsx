@@ -20,10 +20,10 @@ function Hero() {
         <div className="overflow-hidden">
           {/* Header section */}
           <div className="">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-sans text-text mb-2">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-thin text-text mb-2">
               Sky Stanoyevitch
             </h1>
-            <p className="text-md md:text-lg my-4">APP DEVELOPER • DESIGNER</p>
+            <p className="text-md md:text-lg text-text-secondary my-4">App Developer • Designer</p>
             {/* Location */}
 
             <div className="flex items-center">
