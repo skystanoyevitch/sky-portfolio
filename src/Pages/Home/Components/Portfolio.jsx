@@ -32,7 +32,7 @@ function Portfolio() {
               aria-label={`View ${project.name} project`}
             >
               <div className="flex items-start justify-between mb-3">
-                <h3 className="text-xl font-bold text-secondary">
+                <h3 className="text-xl font-semibold text-secondary">
                   {" "}
                   {/* Increased font size */}
                   {project.name}
@@ -41,9 +41,7 @@ function Portfolio() {
               </div>
 
               {project.description && (
-                <p className="text-text-secondary text-base mb-4">
-                  {" "}
-                  {/* Increased font size */}
+                <p className="text-text-secondary font-light text-base mb-4">
                   {project.description}
                 </p>
               )}

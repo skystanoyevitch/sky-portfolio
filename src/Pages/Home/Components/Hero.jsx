@@ -20,7 +20,7 @@ function Hero() {
         <div className="overflow-hidden">
           {/* Header section */}
           <div className="">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif text-text mb-2">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-sans text-text mb-2">
               Sky Stanoyevitch
             </h1>
             <p className="text-md md:text-lg my-4">APP DEVELOPER • DESIGNER</p>
@@ -38,9 +38,8 @@ function Hero() {
             {/* Projects Section */}
             <div className="rounded-lg">
               <h2 className="text-xl font-sans text-secondary mt-12 mb-6 sm:mt-16">
-                Work
-              </h2>{" "}
-              {/* Adjusted margins */}
+                Work ⎯
+              </h2>
               <Portfolio />
             </div>
           </div>
