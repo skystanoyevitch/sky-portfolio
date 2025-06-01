@@ -11,12 +11,16 @@ function Hero() {
   }, [navigate]);
 
   return (
-    <div className="w-full min-h-screen bg-primary py-8 px-4">
-      <div className="container mx-auto h-full flex flex-col max-w-5xl">
+    <div className="w-full py-8 px-4">
+      {" "}
+      {/* Removed min-h-screen and bg-primary */}
+      <div className="container mx-auto flex flex-col max-w-5xl">
+        {" "}
+        {/* Removed h-full */}
         <div className="overflow-hidden">
           {/* Header section */}
           <div className="">
-            <h1 className="text-6xl md:text-7xl lg:text-9xl font-serif text-text mb-2">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif text-text mb-2">
               Sky Stanoyevitch
             </h1>
             <p className="text-md md:text-lg my-4">APP DEVELOPER • DESIGNER</p>
@@ -28,11 +32,15 @@ function Hero() {
               </span>
             </div>
           </div>
-
+          <hr className="my-8 md:my-12 border-gray-300 dark:border-gray-600" />{" "}
+          {/* Added hr */}
           <div className="">
             {/* Projects Section */}
             <div className="rounded-lg">
-              <h2 className="text-xl font-sans text-secondary my-6">Work</h2>
+              <h2 className="text-xl font-sans text-secondary mt-12 mb-6 sm:mt-16">
+                Work
+              </h2>{" "}
+              {/* Adjusted margins */}
               <Portfolio />
             </div>
           </div>
