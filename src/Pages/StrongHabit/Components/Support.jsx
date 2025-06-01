@@ -23,7 +23,7 @@ const Support = () => {
       </div>
 
       {/* Email Support Section */}
-      <div className="bg-primary-dark border border-border rounded-lg p-6 hover:border-accent transition-all duration-300 mb-6">
+      <div className="bg-primary-dark rounded-lg p-6 hover:bg-primary-light transition-all duration-300 mb-6">
         <h3 className="text-xl mb-4 text-secondary">EMAIL SUPPORT</h3>
         <p className="text-text-secondary mb-4">
           For the fastest response, please email us at:
@@ -34,7 +34,7 @@ const Support = () => {
           </span>
           <button
             onClick={copyToClipboard}
-            className="px-4 py-2 bg-secondary bg-opacity-10 hover:bg-opacity-20 text-secondary rounded-lg transition-colors border border-secondary border-opacity-20"
+            className="px-4 py-2 bg-secondary bg-opacity-10 hover:bg-opacity-20 text-secondary rounded-lg transition-colors"
           >
             {copySuccess ? "Copied!" : "Copy Email"}
           </button>
@@ -45,7 +45,7 @@ const Support = () => {
       </div>
 
       {/* FAQ Section */}
-      <div className="bg-primary-dark border border-border rounded-lg p-6 hover:border-accent transition-all duration-300 mb-6">
+      <div className="bg-primary-dark rounded-lg p-6 hover:bg-primary-light transition-all duration-300 mb-6">
         <h3 className="text-xl mb-4 text-secondary">
           FREQUENTLY ASKED QUESTIONS
         </h3>
@@ -74,7 +74,7 @@ const Support = () => {
       </div>
 
       {/* Support Hours */}
-      <div className="bg-primary-dark border border-border rounded-lg p-6 hover:border-accent transition-all duration-300">
+      <div className="bg-primary-dark rounded-lg p-6 hover:bg-primary-light transition-all duration-300">
         <h3 className="text-xl mb-4 text-secondary">SUPPORT HOURS</h3>
         <p className="text-text-secondary mb-2">
           Our support team is available Monday through Friday:
