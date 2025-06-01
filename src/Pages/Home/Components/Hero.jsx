@@ -19,14 +19,13 @@ function Hero() {
             <h1 className="text-6xl md:text-7xl lg:text-9xl font-serif text-text mb-2">
               Sky Stanoyevitch
             </h1>
-            <p className="text-md md:text-lg mb-1">APP DEVELOPER • DESIGNER</p>
+            <p className="text-md md:text-lg my-4">APP DEVELOPER • DESIGNER</p>
             {/* Location */}
-            <div className="flex space-x-4 mt-2">
-              <div className="flex items-center">
-                <span className="text-text text-sm font-medium">
-                  San Diego, CA
-                </span>
-              </div>
+
+            <div className="flex items-center">
+              <span className="text-text text-sm font-medium">
+                San Diego, CA
+              </span>
             </div>
           </div>
 
