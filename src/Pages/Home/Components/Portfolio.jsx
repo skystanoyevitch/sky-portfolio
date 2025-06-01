@@ -3,13 +3,6 @@ import React from "react";
 import { allProjects } from "../../Portfolio/allProjects";
 
 function Portfolio() {
-  const getProjectStatus = (project) => {
-    if (project.active === false) {
-      return "INACTIVE";
-    }
-    return "ACTIVE";
-  };
-
   // Define technology tags for each project
   const projectTechnologies = {
     1: ["React", "Tailwind", "GSAP"],
@@ -19,62 +12,66 @@ function Portfolio() {
   };
 
   return (
-    <div className="space-y-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {/* Adjusted to md:grid-cols-2 for a more standard grid */}
       {allProjects.map((project) => {
-        const status = getProjectStatus(project);
         const technologies = projectTechnologies[project.id] || [];
+
+        // Removed colSpan and rowSpan definitions for a regular grid layout
 
         return (
           <div
             key={project.id}
-            className="bg-primary-dark rounded-lg border border-border hover:border-accent transition-all duration-300 overflow-hidden hover:shadow-autumn-lg transform hover:-translate-y-1"
+            // Removed colSpan and rowSpan from className
+            className={`bg-primary-dark hover:bg-primary-light transition-all duration-300 overflow-hidden transform hover:-translate-y-1`}
           >
             <a
               href={project.link}
               rel="noopener noreferrer"
-              className="block p-4"
+              className="block p-6" // Increased padding
               aria-label={`View ${project.name} project`}
             >
               <div className="flex items-start justify-between mb-3">
-                <h3 className="text-lg font-bold text-secondary">
+                <h3 className="text-xl font-bold text-secondary">
+                  {" "}
+                  {/* Increased font size */}
                   {project.name}
                 </h3>
-                <span
-                  className={`text-xs px-3 py-1 rounded-full ${
-                    status === "ACTIVE"
-                      ? "bg-accent bg-opacity-15 text-gray-700"
-                      : "bg-text-secondary bg-opacity-15 text-text-secondary-dark"
-                  }`}
-                  role="status"
-                >
-                  {status}
-                </span>
+                {/* Removed status indicator */}
               </div>
 
               {project.description && (
-                <p className="text-text-secondary text-sm mb-4">
+                <p className="text-text-secondary text-base mb-4">
+                  {" "}
+                  {/* Increased font size */}
                   {project.description}
                 </p>
               )}
 
               {/* Technology tags */}
-              <div className="flex flex-wrap gap-2 mb-3">
-                {technologies.map((tech, i) => (
+              <div className="flex flex-wrap gap-2 mb-4">
+                {" "}
+                {/* Increased margin bottom */}
+                {technologies.map((tech) => (
                   <span
                     key={`${project.id}-${tech}`}
-                    className="text-xs px-3 py-1 rounded-md bg-secondary bg-opacity-10 text-secondary border border-secondary border-opacity-20"
+                    className="text-sm px-3 py-1 rounded-md bg-secondary bg-opacity-10 text-secondary" // Simplified tag styling
                   >
                     {tech}
                   </span>
                 ))}
               </div>
 
-              <div className="flex justify-end pt-2 border-t border-border mt-2">
-                <span className="text-accent text-sm flex items-center hover:underline">
+              <div className="flex justify-end pt-3 mt-3">
+                {" "}
+                {/* Adjusted padding and margin */}
+                <span className="text-accent text-base flex items-center hover:underline">
+                  {" "}
+                  {/* Increased font size */}
                   View Project
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4 ml-1"
+                    className="h-5 w-5 ml-1" // Increased icon size
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
