@@ -19,7 +19,9 @@ const StrongHabit = () => {
   }, [navigate]);
 
   return (
-    <div className="min-h-screen bg-primary bg-gradient-autumn py-8 px-4">
+    <div className="min-h-screen bg-primary py-8 px-4">
+      {" "}
+      {/* Removed bg-gradient-autumn */}
       <div className="container mx-auto max-w-5xl">
         <div className="mb-8">
           <NavLink
@@ -33,7 +35,9 @@ const StrongHabit = () => {
         {/* Header Card - Replaces Terminal */}
         <div className="rounded-lg border border-border mb-6 overflow-hidden">
           <div className="p-6 border-b border-border">
-            <h1 className="text-3xl text-secondary mb-2 font-bold">
+            <h1 className="text-3xl font-thin text-text mb-2">
+              {" "}
+              {/* Changed font weight and color */}
               STRONG HABIT
             </h1>
             <p className="text-text-secondary">
@@ -100,7 +104,7 @@ const TabLink = ({ children, to, active, onClick }) => (
     className={`px-4 py-2 font-medium ${
       active
         ? "text-accent border-b-2 border-accent"
-        : "text-text-secondary hover:text-secondary"
+        : "text-text-secondary hover:text-text" /* Changed hover state */
     }`}
     onClick={onClick}
   >
