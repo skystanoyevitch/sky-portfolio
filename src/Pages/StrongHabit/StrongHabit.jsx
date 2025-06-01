@@ -31,7 +31,7 @@ const StrongHabit = () => {
         </div>
 
         {/* Header Card - Replaces Terminal */}
-        <div className="bg-primary-light rounded-lg border border-border shadow-autumn mb-6 overflow-hidden">
+        <div className="rounded-lg border border-border mb-6 overflow-hidden">
           <div className="p-6 border-b border-border">
             <h1 className="text-3xl text-secondary mb-2 font-bold">
               STRONG HABIT
@@ -76,7 +76,7 @@ const StrongHabit = () => {
         </div>
 
         {/* Page Content */}
-        <div className="page-content bg-primary-light rounded-lg border border-border p-6 shadow-autumn">
+        <div className="page-content rounded-lg border border-border p-6">
           <Routes>
             <Route
               path="/"
