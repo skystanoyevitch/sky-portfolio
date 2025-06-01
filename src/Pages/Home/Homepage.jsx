@@ -4,8 +4,8 @@ import Footer from "../../Layout/Navigation/Footer";
 
 const Homepage = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-autumn">
-      <div className="flex-grow">
+    <div className="flex flex-col min-h-screen bg-primary">
+      <div className="flex-grow container mx-auto px-4 py-8">
         <Hero />
       </div>
       <Footer />
