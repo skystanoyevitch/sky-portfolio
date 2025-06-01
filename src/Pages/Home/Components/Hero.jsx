@@ -19,18 +19,18 @@ function Hero() {
         {/* Removed h-full */}
         <div className="overflow-hidden">
           {/* Header section */}
-          <h1 className="h-32 md:h-20 text-5xl md:text-6xl lg:text-7xl font-thin my-2 bg-gradient-to-r from-[#0077BE] via-[#00A8CC] to-[#FFC845] bg-clip-text text-transparent">
+          <h1 className="h-28 md:h-20 text-5xl md:text-6xl lg:text-7xl font-extrabold bg-[linear-gradient(to_right,_#0077BE,_#00A8CC,_#FFC845,_#FFFFFF)] bg-clip-text text-transparent">
             Sky Stanoyevitch
           </h1>
-          <p className="text-md md:text-lg text-text-secondary my-4">
-            App Developer • Designer
+          <p className="text-md md:text-lg font-sans text-text-secondary my-4">
+            APP DEVELOPER • DESIGNER
           </p>
           {/* Location */}
 
           <div className="flex items-center">
             <span className="text-text text-sm font-medium">San Diego, CA</span>
           </div>
-          <hr className="my-8 md:my-12 h-0.5 border-0 bg-gradient-to-r from-[#0077BE] via-[#00A8CC] to-[#FFC845]" />
+          <hr className="my-8 md:my-12 h-0.5 border-0 bg-[linear-gradient(to_right,_#0077BE,_#00A8CC,_#FFC845,_#FFFFFF)]" />
           <div className="">
             {/* Projects Section */}
             <div className="rounded-lg">
