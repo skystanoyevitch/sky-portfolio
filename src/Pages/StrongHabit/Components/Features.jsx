@@ -52,7 +52,7 @@ const Features = () => {
         {featuresList.map((feature, index) => (
           <div
             key={index}
-            className="bg-primary-dark border border-border rounded-lg p-4 hover:border-accent transition-all duration-300"
+            className="bg-primary-dark rounded-lg p-4 hover:bg-primary-light transition-all duration-300"
           >
             <h3 className="text-xl mb-2 text-secondary">{feature.title}</h3>
             <p className="text-text-secondary">{feature.description}</p>
@@ -60,7 +60,7 @@ const Features = () => {
         ))}
       </div>
 
-      <div className="mt-8 p-4 border border-border border-opacity-50 rounded-lg bg-primary-dark">
+      <div className="mt-8 p-4 rounded-lg bg-primary-dark">
         <h3 className="text-xl mb-3 text-secondary">DOWNLOAD OPTIONS</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-3 border border-border hover:border-accent hover:bg-accent hover:bg-opacity-10 transition-all duration-300 rounded-lg cursor-pointer text-center">
@@ -75,7 +75,7 @@ const Features = () => {
       </div>
 
       {/* Support Section */}
-      <div className="mt-8 p-4 border border-border border-opacity-50 rounded-lg bg-primary-dark">
+      <div className="mt-8 p-4 rounded-lg bg-primary-dark">
         <h3 className="text-xl mb-3 text-secondary">NEED HELP?</h3>
         <p className="text-text-secondary mb-4">
           Having trouble with Strong Habit? Our support team is ready to assist
@@ -83,7 +83,7 @@ const Features = () => {
         </p>
         <Link
           to="/strong-habit/support"
-          className="inline-block px-4 py-2 bg-secondary bg-opacity-10 hover:bg-opacity-20 text-secondary rounded-lg transition-colors border border-secondary border-opacity-20"
+          className="inline-block px-4 py-2 bg-secondary bg-opacity-10 hover:bg-opacity-20 text-secondary rounded-lg transition-colors"
         >
           VISIT SUPPORT PAGE →
         </Link>
