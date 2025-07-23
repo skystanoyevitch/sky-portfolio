@@ -11,11 +11,43 @@
   transition: all 0.3s ease;
 }
 
-/* Hover effects for project cards */
-.project-card-hover:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  transform: translateY(-5px);
-  border-color: var(--color-accent);
+/* Floating effect for project cards */
+.floating-card {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12), 0 4px 10px rgba(0, 0, 0, 0.08);
+  animation: float 8s ease-in-out infinite;
+  margin: 16px 8px; /* Add margin to prevent shadow clipping */
+}
+
+.floating-card:nth-child(even) {
+  animation-delay: 4s;
+}
+
+.floating-card:nth-child(3n) {
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.floating-card:hover {
+  transform: translateY(-12px) !important;
+  animation-play-state: paused;
+  box-shadow: 0 20px 50px rgba(59, 130, 246, 0.2),
+    0 10px 25px rgba(59, 130, 246, 0.15);
+}
+
+.floating-card:active {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 15px 40px rgba(59, 130, 246, 0.25),
+    0 8px 20px rgba(59, 130, 246, 0.2);
 }
 
 /* Subtle animations */

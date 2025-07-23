@@ -5,7 +5,7 @@ export const FooterNav = () => {
   return (
     <>
       <nav className="text-white">
-        <ul className="flex font-poppins space-x-8 m-6">
+        <ul className="flex space-x-8 m-6">
           <li className="">
             <NavLink to="/">Home</NavLink>
           </li>

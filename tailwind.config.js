@@ -3,9 +3,27 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Open Sans"', "sans-serif"], // Changed to Open Sans for body
-        serif: ['"DM Serif Display"', "serif"], // Added DM Serif Display for titles
-        audiowide: ['"Audiowide"', "sans-serif"], // Added Audiowide
+        sans: [
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Helvetica Neue",
+          "Arial",
+          "sans-serif",
+        ],
+        serif: ["Georgia", "Cambria", "Times New Roman", "Times", "serif"],
+        mono: [
+          "ui-monospace",
+          "SFMono-Regular",
+          "Menlo",
+          "Monaco",
+          "Consolas",
+          "Liberation Mono",
+          "Courier New",
+          "monospace",
+        ],
       },
       colors: {
         primary: {
@@ -27,6 +45,13 @@ module.exports = {
           DEFAULT: "#111827", // Near black for body text (strong contrast)
           secondary: "#374151", // Dark gray for less important text
           muted: "rgba(107, 114, 128, 0.8)", // Muted gray
+        },
+        terminal: {
+          black: "#0c0c0c", // Terminal black background
+          green: {
+            DEFAULT: "#00ff00", // Bright terminal green
+            dark: "#00cc00", // Darker terminal green
+          },
         },
         border: "rgba(209, 213, 219, 0.7)", // Softer border color
       },

@@ -29,9 +29,7 @@ const Support = () => {
           For the fastest response, please email us at:
         </p>
         <div className="flex flex-col sm:flex-row items-center gap-4 bg-primary p-4 rounded-lg border border-border">
-          <span className="text-secondary font-mono">
-            skystanoyevitch@proton.me
-          </span>
+          <span className="text-secondary">skystanoyevitch@proton.me</span>
           <button
             onClick={copyToClipboard}
             className="px-4 py-2 bg-secondary bg-opacity-10 hover:bg-opacity-20 text-secondary rounded-lg transition-colors"

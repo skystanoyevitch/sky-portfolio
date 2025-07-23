@@ -130,10 +130,10 @@ const Terminal = ({
           <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
           <div className="w-3 h-3 rounded-full bg-green-500"></div>
         </div>
-        <div className="text-sm text-terminal-green font-vt text-shadow-terminal">
+        <div className="text-sm text-terminal-green font-mono text-shadow-terminal">
           {title}
         </div>
-        <div className="text-sm text-terminal-green font-vt">[SYSTEM]</div>
+        <div className="text-sm text-terminal-green font-mono">[SYSTEM]</div>
       </div>
 
       {/* Terminal content */}
@@ -145,7 +145,7 @@ const Terminal = ({
         <div className="scan-line absolute w-full h-1 bg-terminal-green bg-opacity-10 top-0 left-0 z-20"></div>
 
         {/* Terminal output */}
-        <div className="p-5 font-vt text-terminal-green h-full">
+        <div className="p-5 font-mono text-terminal-green h-full">
           {/* Boot sequence and command history - scrollable area */}
           <div className="terminal-output max-h-36 overflow-y-auto mb-4 border-b border-terminal-green border-opacity-30 pb-2 relative">
             {/* Scroll indicator */}
@@ -188,7 +188,7 @@ const Terminal = ({
                   value={inputCommand}
                   onChange={(e) => setInputCommand(e.target.value)}
                   onKeyDown={handleKeyDown}
-                  className="bg-transparent border-none outline-none text-terminal-green font-vt w-full"
+                  className="bg-transparent border-none outline-none text-terminal-green font-mono w-full"
                   aria-label="Terminal command input"
                 />
                 {!inputCommand && (
