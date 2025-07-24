@@ -8,7 +8,7 @@ const Terms = () => {
         <h2 className="text-xl text-secondary font-bold mb-4 pb-2 border-b border-border">
           STRONGHABIT TERMS OF SERVICE
         </h2>
-        <p className="mb-4 text-text-secondary">Last Updated: MARCH 21, 2025</p>
+        <p className="mb-4 text-text-secondary">Last Updated: JUNE 27, 2025</p>
       </div>
 
       <div className="space-y-6">
@@ -58,7 +58,12 @@ const Terms = () => {
             </li>
             <li>
               For complete information on data handling, please refer to our
-              Privacy Policy
+              <a
+                href="https://www.skystanoyevitch.com/strong-habit/privacy"
+                className="text-accent hover:underline"
+              >
+                Privacy Policy
+              </a>
             </li>
           </ul>
         </TermSection>
@@ -180,9 +185,11 @@ const Terms = () => {
           <p>
             If you have any questions about these Terms, please contact us at:
           </p>
-          <p className="mt-2 text-secondary">Email: contact@stronghabit.app</p>
+          <p className="mt-2 text-secondary">
+            Email: skystanoyevitch@proton.me
+          </p>
           <p className="mt-4 text-text-secondary">
-            These Terms of Service were last updated on March 21, 2025.
+            These Terms of Service were last updated on June 27, 2025.
           </p>
         </TermSection>
       </div>
