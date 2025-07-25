@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => (
   <BrowserRouter>
-    <div className="min-h-screen bg-background font-sans text-text-primary">
+    <div className="min-h-screen bg-background dark:bg-dark-background font-sans text-text-primary dark:text-dark-text-primary transition-colors duration-300">
       <CustomCursor />
       <Routes>
         <Route path="/" element={<Homepage />} />

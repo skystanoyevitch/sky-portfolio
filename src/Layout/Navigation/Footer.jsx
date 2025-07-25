@@ -5,7 +5,7 @@ import Emoji from "./Assests/heart-emoji";
 
 const Footer = () => {
   return (
-    <footer className="relative border-t border-border bg-surface/50 backdrop-blur-md">
+    <footer className="relative border-t border-border dark:border-dark-border bg-surface/50 dark:bg-dark-surface/50 backdrop-blur-md">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-r from-accent/5 via-transparent to-accent-secondary/5"></div>
 
@@ -18,9 +18,9 @@ const Footer = () => {
             transition={{ duration: 0.6 }}
             className="flex items-center gap-4"
           >
-            <div className="flex items-center gap-2 px-3 py-1 bg-surface-elevated rounded-full border border-border">
+            <div className="flex items-center gap-2 px-3 py-1 bg-surface-elevated dark:bg-dark-surface-elevated rounded-full border border-border dark:border-dark-border">
               <div className="w-2 h-2 bg-accent-secondary rounded-full animate-pulse"></div>
-              <span className="text-text-muted text-xs font-medium">
+              <span className="text-text-muted dark:text-dark-text-muted text-xs font-medium">
                 LAST UPDATE: 2025.07.24
               </span>
             </div>
@@ -33,10 +33,13 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-center"
           >
-            <p className="text-text-secondary text-sm">
+            <p className="text-text-secondary dark:text-dark-text-secondary text-sm">
               Crafted with{" "}
               <Emoji symbol="❤️" label="heart" className="text-accent mx-1" />{" "}
-              by <span className="text-text-primary font-semibold">Sky</span>
+              by{" "}
+              <span className="text-text-primary dark:text-dark-text-primary font-semibold">
+                Sky
+              </span>
               {" • "}
               <span className="text-accent font-semibold">2025</span>
             </p>
@@ -54,7 +57,7 @@ const Footer = () => {
               href="https://github.com/skystanoyevitch"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 bg-surface-elevated border border-border rounded-full flex items-center justify-center text-text-secondary hover:text-text-primary hover:border-accent hover:bg-accent/10 transition-all duration-300"
+              className="w-10 h-10 bg-surface-elevated dark:bg-dark-surface-elevated border border-border dark:border-dark-border rounded-full flex items-center justify-center text-text-secondary dark:text-dark-text-secondary hover:text-text-primary dark:hover:text-dark-text-primary hover:border-accent hover:bg-accent/10 transition-all duration-300"
               whileHover={{ scale: 1.1, y: -2 }}
               whileTap={{ scale: 0.95 }}
               aria-label="GitHub Profile"
@@ -67,7 +70,7 @@ const Footer = () => {
             {/* Email */}
             <motion.a
               href="mailto:skystanoyevitch@proton.me"
-              className="w-10 h-10 bg-surface-elevated border border-border rounded-full flex items-center justify-center text-text-secondary hover:text-text-primary hover:border-accent hover:bg-accent/10 transition-all duration-300"
+              className="w-10 h-10 bg-surface-elevated dark:bg-dark-surface-elevated border border-border dark:border-dark-border rounded-full flex items-center justify-center text-text-secondary dark:text-dark-text-secondary hover:text-text-primary dark:hover:text-dark-text-primary hover:border-accent hover:bg-accent/10 transition-all duration-300"
               whileHover={{ scale: 1.1, y: -2 }}
               whileTap={{ scale: 0.95 }}
               aria-label="Email Contact"

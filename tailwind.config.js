@@ -1,5 +1,6 @@
 module.exports = {
   content: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -74,6 +75,29 @@ module.exports = {
           sage: "#84CC16", // Coastal sage
           mist: "#E2E8F0", // Morning marine layer
         },
+        // Dark mode colors with proper contrast ratios
+        dark: {
+          background: {
+            DEFAULT: "#0F172A", // Deep ocean night
+            secondary: "#1E293B", // Darker slate
+            tertiary: "#334155", // Medium slate
+          },
+          surface: {
+            DEFAULT: "#1E293B", // Dark surface
+            elevated: "#334155", // Elevated dark surface
+            hover: "#475569", // Hover dark surface
+          },
+          text: {
+            primary: "#F8FAFC", // High contrast white
+            secondary: "#CBD5E1", // Medium contrast
+            muted: "#94A3B8", // Lower contrast
+            dim: "#64748B", // Dim text
+          },
+          border: {
+            DEFAULT: "rgba(71, 85, 105, 0.3)", // Dark border
+            hover: "rgba(100, 116, 139, 0.4)", // Dark hover border
+          },
+        },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -82,6 +106,11 @@ module.exports = {
         "gradient-coastal":
           "linear-gradient(135deg, #0EA5E9 0%, #7DD3FC 50%, #FEF3C7 100%)",
         "gradient-mist": "linear-gradient(180deg, #FAFBFC 0%, #F8F9FA 100%)",
+        // Dark mode gradients
+        "gradient-dark-mist":
+          "linear-gradient(180deg, #0F172A 0%, #1E293B 100%)",
+        "gradient-dark-coastal":
+          "linear-gradient(135deg, #0EA5E9 0%, #334155 100%)",
       },
       boxShadow: {
         subtle:

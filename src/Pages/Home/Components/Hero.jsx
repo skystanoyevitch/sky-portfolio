@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { allProjects } from "../../Portfolio/allProjects";
+import DarkModeToggle from "../../../components/DarkModeToggle";
 
 function Hero() {
   const { ref: heroRef, inView: heroInView } = useInView({
@@ -52,7 +53,10 @@ function Hero() {
   };
 
   return (
-    <div className="min-h-screen w-full bg-gradient-mist text-text-primary">
+    <div className="min-h-screen w-full bg-gradient-mist dark:bg-gradient-dark-mist text-text-primary dark:text-dark-text-primary transition-colors duration-300">
+      {/* Dark Mode Toggle */}
+      <DarkModeToggle />
+
       {/* Hero Section */}
       <motion.div
         ref={heroRef}
@@ -70,8 +74,10 @@ function Hero() {
             variants={itemVariants}
             className="text-5xl md:text-6xl lg:text-7xl font-display mb-2 tracking-tight leading-loose py-4"
           >
-            <span className="block text-text-primary">Sky</span>
-            <span className="block h-24 bg-gradient-ocean bg-clip-text text-transparent">
+            <span className="block text-text-primary dark:text-dark-text-primary">
+              Sky
+            </span>
+            <span className="block h-28 bg-gradient-ocean bg-clip-text text-transparent">
               Stanoyevitch
             </span>
           </motion.h1>
@@ -87,7 +93,7 @@ function Hero() {
           {/* Brief Description */}
           <motion.p
             variants={itemVariants}
-            className="text-lg md:text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl text-text-secondary dark:text-dark-text-secondary max-w-3xl mx-auto leading-relaxed"
           >
             I create digital experiences that blend clean design with robust
             functionality. Focused on building applications that are both
@@ -108,7 +114,7 @@ function Hero() {
           {/* Section Title */}
           <motion.h2
             variants={itemVariants}
-            className="text-xl md:text-2xl font-medium mb-12 text-text-primary text-center"
+            className="text-xl md:text-2xl font-medium mb-12 text-text-primary dark:text-dark-text-primary text-center"
           >
             Work
           </motion.h2>
@@ -121,9 +127,9 @@ function Hero() {
                 variants={projectVariants}
                 className="group"
               >
-                <div className="bg-surface rounded-2xl p-6 shadow-card hover:shadow-hover transition-all duration-300 h-full flex flex-col border border-border hover:border-accent/20">
+                <div className="bg-surface dark:bg-dark-surface rounded-2xl p-6 shadow-card hover:shadow-hover transition-all duration-300 h-full flex flex-col border border-border dark:border-dark-border">
                   {/* Project Image Placeholder */}
-                  <div className="aspect-square bg-gradient-to-br from-sandiego-mist to-surface-elevated rounded-xl mb-4 overflow-hidden flex items-center justify-center">
+                  <div className="aspect-square bg-gradient-to-br from-sandiego-mist to-surface-elevated dark:from-dark-surface-elevated dark:to-dark-surface-tertiary rounded-xl mb-4 overflow-hidden flex items-center justify-center">
                     {project.thumbnail ? (
                       <img
                         src={project.thumbnail}
@@ -149,13 +155,9 @@ function Hero() {
 
                   {/* Project Info */}
                   <div className="flex-1 flex flex-col">
-                    <h3 className="text-base font-semibold text-text-primary mb-3 group-hover:text-accent transition-colors duration-300 line-clamp-2 leading-snug">
+                    <h3 className="text-base font-semibold text-text-primary dark:text-dark-text-primary mb-3 group-hover:text-accent transition-colors duration-300 line-clamp-2 leading-snug">
                       {project.name}
                     </h3>
-
-                    <p className="text-sm text-text-secondary mb-4 leading-relaxed flex-1 line-clamp-3">
-                      {project.description}
-                    </p>
 
                     {/* Links */}
                     <div className="flex gap-4 text-sm mt-auto">
