@@ -52,29 +52,34 @@ function Hero() {
   };
 
   return (
-    <div className="min-h-screen w-full bg-background text-text-primary">
+    <div className="min-h-screen w-full bg-gradient-mist text-text-primary">
       {/* Hero Section */}
       <motion.div
         ref={heroRef}
         variants={containerVariants}
         initial="hidden"
         animate={heroInView ? "visible" : "hidden"}
-        className="container mx-auto px-6 sm:px-8 pt-20 pb-24"
+        className="container mx-auto px-6 sm:px-8 pt-24 pb-32 relative"
       >
-        <div className="max-w-3xl mx-auto text-center">
+        {/* Subtle background accent */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-coastal opacity-5 rounded-full blur-3xl"></div>
+
+        <div className="max-w-4xl mx-auto text-center relative z-10">
           {/* Name */}
           <motion.h1
             variants={itemVariants}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-6 tracking-tight leading-tight"
+            className="text-5xl md:text-6xl lg:text-7xl font-display mb-2 tracking-tight leading-loose py-4"
           >
-            <span className="block text-text-primary">SKY</span>
-            <span className="block text-text-secondary">STANOYEVITCH</span>
+            <span className="block text-text-primary">Sky</span>
+            <span className="block h-24 bg-gradient-ocean bg-clip-text text-transparent">
+              Stanoyevitch
+            </span>
           </motion.h1>
 
           {/* Role */}
           <motion.p
             variants={itemVariants}
-            className="text-lg md:text-xl text-text-muted mb-8 font-medium"
+            className="text-xl md:text-2xl text-accent-secondary mb-8 font-medium"
           >
             Full-Stack Developer & Designer
           </motion.p>
@@ -82,7 +87,7 @@ function Hero() {
           {/* Brief Description */}
           <motion.p
             variants={itemVariants}
-            className="text-base md:text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed"
           >
             I create digital experiences that blend clean design with robust
             functionality. Focused on building applications that are both
@@ -99,13 +104,13 @@ function Hero() {
         animate={projectsInView ? "visible" : "hidden"}
         className="container mx-auto px-6 sm:px-8 pb-20"
       >
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           {/* Section Title */}
           <motion.h2
             variants={itemVariants}
-            className="text-2xl md:text-3xl font-semibold mb-12 text-text-primary text-center"
+            className="text-xl md:text-2xl font-medium mb-12 text-text-primary text-center"
           >
-            Selected Work
+            Work
           </motion.h2>
 
           {/* Projects Grid */}
@@ -116,9 +121,9 @@ function Hero() {
                 variants={projectVariants}
                 className="group"
               >
-                <div className="bg-surface rounded-xl p-5 hover:bg-surface-hover transition-all duration-300 h-full flex flex-col">
+                <div className="bg-surface rounded-2xl p-6 shadow-card hover:shadow-hover transition-all duration-300 h-full flex flex-col border border-border hover:border-accent/20">
                   {/* Project Image Placeholder */}
-                  <div className="aspect-square bg-surface-elevated rounded-lg mb-4 overflow-hidden flex items-center justify-center">
+                  <div className="aspect-square bg-gradient-to-br from-sandiego-mist to-surface-elevated rounded-xl mb-4 overflow-hidden flex items-center justify-center">
                     {project.thumbnail ? (
                       <img
                         src={project.thumbnail}
@@ -126,9 +131,9 @@ function Hero() {
                         className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                       />
                     ) : (
-                      <div className="w-10 h-10 bg-text-dim rounded-lg flex items-center justify-center">
+                      <div className="w-12 h-12 bg-gradient-ocean rounded-xl flex items-center justify-center shadow-sm">
                         <svg
-                          className="w-5 h-5 text-background"
+                          className="w-6 h-6 text-white"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                         >
@@ -144,41 +149,45 @@ function Hero() {
 
                   {/* Project Info */}
                   <div className="flex-1 flex flex-col">
-                    <h3 className="text-sm font-semibold text-text-primary mb-3 group-hover:text-accent transition-colors duration-300 line-clamp-2 leading-snug">
+                    <h3 className="text-base font-semibold text-text-primary mb-3 group-hover:text-accent transition-colors duration-300 line-clamp-2 leading-snug">
                       {project.name}
                     </h3>
 
-                    <p className="text-xs text-text-secondary mb-4 leading-relaxed flex-1 line-clamp-3">
+                    <p className="text-sm text-text-secondary mb-4 leading-relaxed flex-1 line-clamp-3">
                       {project.description}
                     </p>
 
-                    {/* Technology */}
-                    {project.language && (
-                      <div className="mb-3">
-                        <span className="px-2 py-1 bg-surface-elevated text-text-muted text-xs rounded-md">
-                          {project.language}
-                        </span>
-                      </div>
-                    )}
-
                     {/* Links */}
-                    <div className="flex gap-3 text-xs mt-auto">
+                    <div className="flex gap-4 text-sm mt-auto">
                       {project.link && project.link !== "/" && (
                         <a
                           href={project.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-text-primary hover:text-accent transition-colors duration-300 font-medium"
+                          className="text-accent hover:text-accent-secondary transition-colors duration-300 font-medium flex items-center gap-1"
                         >
-                          View →
+                          View
+                          <svg
+                            className="w-3 h-3"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                            />
+                          </svg>
                         </a>
                       )}
                       {project.to && project.to !== "/" && (
                         <a
                           href={project.to}
-                          className="text-text-secondary hover:text-text-primary transition-colors duration-300 font-medium"
+                          className="text-text-muted hover:text-text-primary transition-colors duration-300 font-medium"
                         >
-                          More →
+                          Learn More
                         </a>
                       )}
                     </div>

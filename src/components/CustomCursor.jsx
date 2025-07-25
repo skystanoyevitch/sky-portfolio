@@ -55,20 +55,20 @@ const CustomCursor = () => {
 
   const variants = {
     default: {
-      x: mousePosition.x - 6,
-      y: mousePosition.y - 6,
-      width: 12,
-      height: 12,
-      backgroundColor: "rgba(255, 255, 255, 0.1)",
-      border: "1px solid rgba(255, 255, 255, 0.2)",
+      x: mousePosition.x - 8,
+      y: mousePosition.y - 8,
+      width: 16,
+      height: 16,
+      backgroundColor: "rgba(14, 165, 233, 0.1)",
+      border: "1px solid rgba(14, 165, 233, 0.2)",
     },
     hover: {
-      x: mousePosition.x - 12,
-      y: mousePosition.y - 12,
-      width: 24,
-      height: 24,
-      backgroundColor: "rgba(255, 255, 255, 0.05)",
-      border: "1px solid rgba(255, 255, 255, 0.3)",
+      x: mousePosition.x - 16,
+      y: mousePosition.y - 16,
+      width: 32,
+      height: 32,
+      backgroundColor: "rgba(14, 165, 233, 0.05)",
+      border: "1px solid rgba(14, 165, 233, 0.3)",
     },
   };
 

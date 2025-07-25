@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: [
+          "Comfortaa",
           "Inter",
           "system-ui",
           "-apple-system",
@@ -15,7 +16,8 @@ module.exports = {
           "sans-serif",
         ],
         display: [
-          "Space Grotesk",
+          "Pacifico",
+          "cursive",
           "Inter",
           "system-ui",
           "-apple-system",
@@ -35,44 +37,60 @@ module.exports = {
         ],
       },
       colors: {
-        // Subtle minimalist color palette
+        // San Diego coastal-inspired minimal palette
         background: {
-          DEFAULT: "#0F0F0F", // Rich black
-          secondary: "#151515", // Slightly lighter
-          tertiary: "#1A1A1A", // Card backgrounds
+          DEFAULT: "#FAFBFC", // Soft morning sky
+          secondary: "#F8F9FA", // Light cloud
+          tertiary: "#F1F3F5", // Subtle variation
         },
         surface: {
-          DEFAULT: "#161616", // Primary surface
-          elevated: "#1D1D1D", // Elevated surfaces
-          hover: "#222222", // Hover states
+          DEFAULT: "#FFFFFF", // Pure white like sand
+          elevated: "#F8F9FB", // Elevated surface
+          hover: "#F1F4F7", // Gentle hover state
         },
         text: {
-          primary: "#FFFFFF", // Pure white for headings
-          secondary: "#A1A1A1", // Medium gray for body text
-          muted: "#6B6B6B", // Muted text
-          dim: "#4A4A4A", // Very dim text
+          primary: "#1A2332", // Deep ocean blue-grey
+          secondary: "#3B4A5C", // Medium ocean tone
+          muted: "#6B7785", // Soft grey like morning mist
+          dim: "#8B95A3", // Very light grey
         },
         accent: {
-          DEFAULT: "#FFFFFF", // Clean white accent
-          secondary: "#E5E5E5", // Light gray
-          muted: "#999999", // Muted accent
+          DEFAULT: "#0EA5E9", // San Diego bay blue
+          secondary: "#0284C7", // Deeper ocean blue
+          muted: "#7DD3FC", // Light sky blue
+          warm: "#F59E0B", // Sunset amber
+          coral: "#F97316", // Sunset coral
         },
         border: {
-          DEFAULT: "rgba(255, 255, 255, 0.08)", // Subtle border
-          hover: "rgba(255, 255, 255, 0.12)", // Hover border
+          DEFAULT: "rgba(203, 213, 225, 0.3)", // Soft border
+          hover: "rgba(148, 163, 184, 0.4)", // Hover border
+        },
+        // San Diego signature colors
+        sandiego: {
+          ocean: "#0EA5E9", // Pacific blue
+          sand: "#FEF3C7", // Beach sand
+          sunset: "#F59E0B", // Golden hour
+          coral: "#F97316", // Sunset coral
+          sage: "#84CC16", // Coastal sage
+          mist: "#E2E8F0", // Morning marine layer
         },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        noise:
-          "url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZGVmcz4KICAgIDxmaWx0ZXIgaWQ9Im5vaXNlIiB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPgogICAgICA8ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9IjAuOSIgbnVtT2N0YXZlcz0iNCIgcmVzdWx0PSJub2lzZSIgc2VlZD0iMSIgLz4KICAgICAgPGZlQ29sb3JNYXRyaXggaW49Im5vaXNlIiB0eXBlPSJzYXR1cmF0ZSIgdmFsdWVzPSIwIi8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsdGVyPSJ1cmwoI25vaXNlKSIgb3BhY2l0eT0iMC4wMSIvPgo8L3N2Zz4=')",
+        "gradient-ocean": "linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%)",
+        "gradient-sunset": "linear-gradient(135deg, #F59E0B 0%, #F97316 100%)",
+        "gradient-coastal":
+          "linear-gradient(135deg, #0EA5E9 0%, #7DD3FC 50%, #FEF3C7 100%)",
+        "gradient-mist": "linear-gradient(180deg, #FAFBFC 0%, #F8F9FA 100%)",
       },
       boxShadow: {
         subtle:
-          "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-        card: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+          "0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03)",
+        card: "0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)",
         hover:
-          "0 8px 25px -5px rgba(0, 0, 0, 0.1), 0 4px 10px -6px rgba(0, 0, 0, 0.1)",
+          "0 8px 25px -5px rgba(14, 165, 233, 0.08), 0 4px 10px -6px rgba(14, 165, 233, 0.05)",
+        ocean: "0 10px 30px -10px rgba(14, 165, 233, 0.2)",
+        sunset: "0 10px 30px -10px rgba(245, 158, 11, 0.2)",
       },
       borderRadius: {
         "2xl": "1rem",
