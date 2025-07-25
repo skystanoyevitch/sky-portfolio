@@ -1,145 +1,194 @@
-// Hero.jsx
-import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+// Hero.jsx - Minimalist One-Page Portfolio
+import React from "react";
 import { motion } from "framer-motion";
-import Portfolio from "./Portfolio";
+import { useInView } from "react-intersection-observer";
+import { allProjects } from "../../Portfolio/allProjects";
 
 function Hero() {
-  const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState("about");
+  const { ref: heroRef, inView: heroInView } = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
 
-  useEffect(() => {
-    navigate("/", { replace: true });
-  }, [navigate]);
+  const { ref: projectsRef, inView: projectsInView } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
 
-  const handleSwipe = (event, info) => {
-    if (info.offset.x > 100) {
-      // Swipe right - go to about tab
-      setActiveTab("about");
-    } else if (info.offset.x < -100) {
-      // Swipe left - go to work tab
-      setActiveTab("work");
-    }
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        staggerChildren: 0.1,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  const projectVariants = {
+    hidden: { y: 30, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
   };
 
   return (
-    <div className="w-full py-8 px-6">
-      <div className="container mx-auto flex flex-col max-w-6xl">
-        <div className="overflow-hidden">
-          {/* Tab Navigation */}
-          <div className="flex border-b border-border mb-8 relative">
-            <button
-              onClick={() => setActiveTab("about")}
-              className={`px-8 py-4 font-semibold text-lg transition-all duration-300 ${
-                activeTab === "about"
-                  ? "text-accent border-b-2 border-accent"
-                  : "text-text-secondary hover:text-text"
-              }`}
-            >
-              Sky Stanoyevitch
-            </button>
-            <button
-              onClick={() => setActiveTab("work")}
-              className={`px-8 py-4 font-semibold text-lg transition-all duration-300 ${
-                activeTab === "work"
-                  ? "text-accent border-b-2 border-accent"
-                  : "text-text-secondary hover:text-text"
-              }`}
-            >
-              Work
-            </button>
-            {/* Swipe indicator for mobile */}
-            <div className="absolute right-4 top-1/2 transform -translate-y-1/2 md:hidden">
-              <div className="flex items-center space-x-1 text-text-secondary text-sm">
-                <span>swipe</span>
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M7 16l4-4m0 0l4-4m-4 4H3m18 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-
-          {/* Tab Content */}
-          <motion.div
-            className="min-h-[60vh]"
-            drag="x"
-            dragConstraints={{ left: 0, right: 0 }}
-            onDragEnd={handleSwipe}
-            dragElastic={0.2}
+    <div className="min-h-screen w-full bg-background text-text-primary">
+      {/* Hero Section */}
+      <motion.div
+        ref={heroRef}
+        variants={containerVariants}
+        initial="hidden"
+        animate={heroInView ? "visible" : "hidden"}
+        className="container mx-auto px-6 sm:px-8 pt-20 pb-24"
+      >
+        <div className="max-w-3xl mx-auto text-center">
+          {/* Name */}
+          <motion.h1
+            variants={itemVariants}
+            className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-6 tracking-tight leading-tight"
           >
-            {activeTab === "about" && (
+            <span className="block text-text-primary">SKY</span>
+            <span className="block text-text-secondary">STANOYEVITCH</span>
+          </motion.h1>
+
+          {/* Role */}
+          <motion.p
+            variants={itemVariants}
+            className="text-lg md:text-xl text-text-muted mb-8 font-medium"
+          >
+            Full-Stack Developer & Designer
+          </motion.p>
+
+          {/* Brief Description */}
+          <motion.p
+            variants={itemVariants}
+            className="text-base md:text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed"
+          >
+            I create digital experiences that blend clean design with robust
+            functionality. Focused on building applications that are both
+            beautiful and performant.
+          </motion.p>
+        </div>
+      </motion.div>
+
+      {/* Projects Section */}
+      <motion.div
+        ref={projectsRef}
+        variants={containerVariants}
+        initial="hidden"
+        animate={projectsInView ? "visible" : "hidden"}
+        className="container mx-auto px-6 sm:px-8 pb-20"
+      >
+        <div className="max-w-5xl mx-auto">
+          {/* Section Title */}
+          <motion.h2
+            variants={itemVariants}
+            className="text-2xl md:text-3xl font-semibold mb-12 text-text-primary text-center"
+          >
+            Selected Work
+          </motion.h2>
+
+          {/* Projects Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            {allProjects.map((project, index) => (
               <motion.div
-                className="animate-fadeIn"
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 20 }}
-                transition={{ duration: 0.3 }}
+                key={project.id}
+                variants={projectVariants}
+                className="group"
               >
-                <div className="max-w-4xl">
-                  <div className="mb-8">
-                    <div className="flex flex-col md:flex-row md:items-center md:space-x-4 mb-6">
-                      <p className="text-2xl md:text-3xl font-semibold text-text mb-2 md:mb-0">
-                        APP DEVELOPER • DESIGNER
-                      </p>
-                      <div className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
-                        <span className="text-text-secondary text-lg">
-                          Available for work
+                <div className="bg-surface rounded-xl p-5 hover:bg-surface-hover transition-all duration-300 h-full flex flex-col">
+                  {/* Project Image Placeholder */}
+                  <div className="aspect-square bg-surface-elevated rounded-lg mb-4 overflow-hidden flex items-center justify-center">
+                    {project.thumbnail ? (
+                      <img
+                        src={project.thumbnail}
+                        alt={project.name}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    ) : (
+                      <div className="w-10 h-10 bg-text-dim rounded-lg flex items-center justify-center">
+                        <svg
+                          className="w-5 h-5 text-background"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Project Info */}
+                  <div className="flex-1 flex flex-col">
+                    <h3 className="text-sm font-semibold text-text-primary mb-3 group-hover:text-accent transition-colors duration-300 line-clamp-2 leading-snug">
+                      {project.name}
+                    </h3>
+
+                    <p className="text-xs text-text-secondary mb-4 leading-relaxed flex-1 line-clamp-3">
+                      {project.description}
+                    </p>
+
+                    {/* Technology */}
+                    {project.language && (
+                      <div className="mb-3">
+                        <span className="px-2 py-1 bg-surface-elevated text-text-muted text-xs rounded-md">
+                          {project.language}
                         </span>
                       </div>
-                    </div>
-                    <p className="text-xl md:text-2xl text-text-secondary max-w-3xl leading-relaxed mb-6">
-                      I strive to create digital experiences that blend
-                      beautiful design with clean, efficient code. Passionate
-                      about technology and what makes it so powerful.
-                    </p>
-                    <div className="flex items-center space-x-2">
-                      <svg
-                        className="w-5 h-5 text-accent"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                      <span className="text-text text-xl font-medium">
-                        San Diego, CA
-                      </span>
+                    )}
+
+                    {/* Links */}
+                    <div className="flex gap-3 text-xs mt-auto">
+                      {project.link && project.link !== "/" && (
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-text-primary hover:text-accent transition-colors duration-300 font-medium"
+                        >
+                          View →
+                        </a>
+                      )}
+                      {project.to && project.to !== "/" && (
+                        <a
+                          href={project.to}
+                          className="text-text-secondary hover:text-text-primary transition-colors duration-300 font-medium"
+                        >
+                          More →
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>
               </motion.div>
-            )}
-
-            {activeTab === "work" && (
-              <motion.div
-                className="animate-fadeIn"
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -20 }}
-                transition={{ duration: 0.3 }}
-              >
-                <div className="px-4">
-                  <Portfolio />
-                </div>
-              </motion.div>
-            )}
-          </motion.div>
+            ))}
+          </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
