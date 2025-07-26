@@ -117,7 +117,7 @@ function Portfolio() {
               whileHover={{ y: -8 }}
               transition={{ duration: 0.4, ease: "easeOut" }}
             >
-              <div className="bg-surface-glass border border-border-glass rounded-3xl backdrop-blur-xl overflow-hidden h-full hover:shadow-bento-hover hover:border-accent/30 transition-all duration-500">
+              <div className="bg-surface-glass border border-border-glass rounded-lg backdrop-blur-xl overflow-hidden h-full hover:shadow-bento-hover hover:border-accent/30 transition-all duration-500">
                 <a
                   href={project.link}
                   rel="noopener noreferrer"
@@ -150,7 +150,7 @@ function Portfolio() {
 
                     {/* Project Icon */}
                     <motion.div
-                      className="w-16 h-16 bg-gradient-to-br from-accent/20 to-accent-secondary/20 rounded-2xl flex items-center justify-center ml-6"
+                      className="w-16 h-16 bg-gradient-to-br from-accent/20 to-accent-secondary/20 rounded-lg flex items-center justify-center ml-6"
                       whileHover={{ rotate: 360, scale: 1.1 }}
                       transition={{ duration: 0.6 }}
                     >
@@ -172,7 +172,7 @@ function Portfolio() {
 
                   {/* Project Image Placeholder */}
                   {layout.size === "large" && (
-                    <div className="relative mb-6 h-48 bg-gradient-to-br from-surface-elevated to-surface-hover rounded-2xl overflow-hidden group-hover:scale-[1.02] transition-transform duration-300">
+                    <div className="relative mb-6 h-48 bg-gradient-to-br from-surface-elevated to-surface-hover rounded-lg overflow-hidden group-hover:scale-[1.02] transition-transform duration-300">
                       <div className="absolute inset-0 bg-gradient-primary opacity-10" />
                       <div className="absolute inset-0 flex items-center justify-center">
                         <motion.div
@@ -200,7 +200,7 @@ function Portfolio() {
                         {technologies.map((tech, techIndex) => (
                           <motion.span
                             key={`${project.id}-${tech.name}`}
-                            className="inline-flex items-center gap-2 px-3 py-2 bg-surface-elevated border border-border rounded-xl text-sm font-medium text-text-primary hover:scale-105 transition-transform duration-200"
+                            className="inline-flex items-center gap-2 px-3 py-2 bg-surface-elevated border border-border rounded-lg text-sm font-medium text-text-primary hover:scale-105 transition-transform duration-200"
                             style={{
                               borderColor: `${tech.color}30`,
                               backgroundColor: `${tech.color}10`,
@@ -274,7 +274,7 @@ function Portfolio() {
           ].map((stat, index) => (
             <motion.div
               key={index}
-              className="bg-surface-glass border border-border-glass rounded-2xl p-6 backdrop-blur-xl text-center hover:shadow-bento-hover transition-all duration-300"
+              className="bg-surface-glass border border-border-glass rounded-lg p-6 backdrop-blur-xl text-center hover:shadow-bento-hover transition-all duration-300"
               whileHover={{ y: -4, scale: 1.02 }}
             >
               <div className="text-3xl mb-2">{stat.icon}</div>
@@ -291,7 +291,7 @@ function Portfolio() {
 
       {/* CTA Section */}
       <motion.div variants={cardVariants} className="text-center">
-        <div className="bg-surface-glass border border-border-glass rounded-3xl p-12 backdrop-blur-xl hover:shadow-bento-hover transition-all duration-500">
+        <div className="bg-surface-glass border border-border-glass rounded-lg p-12 backdrop-blur-xl hover:shadow-bento-hover transition-all duration-500">
           <motion.div
             className="text-4xl mb-6"
             animate={{

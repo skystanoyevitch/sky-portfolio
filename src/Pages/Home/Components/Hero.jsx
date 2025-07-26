@@ -74,10 +74,10 @@ function Hero() {
             variants={itemVariants}
             className="text-5xl md:text-6xl lg:text-7xl font-display mb-2 tracking-tight leading-loose py-4"
           >
-            <span className="block text-text-primary dark:text-dark-text-primary">
+            <span className="block text-text-primary dark:text-dark-text-primary font-title">
               Sky
             </span>
-            <span className="block h-28 bg-gradient-ocean bg-clip-text text-transparent">
+            <span className="block h-28 bg-gradient-ocean bg-clip-text text-transparent font-title">
               Stanoyevitch
             </span>
           </motion.h1>

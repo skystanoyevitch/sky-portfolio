@@ -5,9 +5,9 @@ import { useInView } from "react-intersection-observer";
 import { allProjects } from "../../Portfolio/allProjects";
 
 function Portfolio() {
-  const { ref: portfolioRef, inView: isInView } = useInView({ 
+  const { ref: portfolioRef, inView: isInView } = useInView({
     threshold: 0.1,
-    triggerOnce: true 
+    triggerOnce: true,
   });
 
   // Enhanced technology mapping with colors
@@ -126,7 +126,7 @@ function Portfolio() {
                     </div>
 
                     {/* Project Icon/Logo placeholder */}
-                    <div className="w-12 h-12 bg-gradient-to-br from-accent/20 to-accent-secondary/20 rounded-xl flex items-center justify-center ml-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-accent/20 to-accent-secondary/20 rounded-lg flex items-center justify-center ml-4">
                       <svg
                         className="w-6 h-6 text-accent"
                         fill="none"

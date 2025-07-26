@@ -320,7 +320,7 @@ function Hero() {
               {/* Main About Card */}
               <motion.div
                 variants={itemVariants}
-                className="lg:col-span-2 bg-surface-glass border border-border-glass rounded-3xl p-8 backdrop-blur-xl hover:shadow-bento-hover transition-all duration-300"
+                className="lg:col-span-2 bg-surface-glass border border-border-glass rounded-xl p-8 backdrop-blur-xl hover:shadow-bento-hover transition-all duration-300"
               >
                 <h2 className="text-4xl font-bold text-text-primary mb-6">
                   Building Digital Dreams

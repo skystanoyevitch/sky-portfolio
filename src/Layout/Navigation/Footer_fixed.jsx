@@ -1,7 +1,7 @@
 // Footer.jsx
 import React from "react";
 import { motion } from "framer-motion";
-// import Emoji from "./Assests/heart-emoji";
+import Emoji from "./Assests/heart-emoji";
 
 const Footer = () => {
   return (

@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import custom fonts */
+@import "./assets/fonts/fonts.css";
+
+/* Ensure consistent dark mode background */
+@layer base {
+  html {
+    @apply bg-background dark:bg-dark-background transition-colors duration-300;
+  }
+
+  body {
+    @apply bg-background dark:bg-dark-background transition-colors duration-300;
+  }
+}
+
 /* Text truncation utilities */
 @layer utilities {
   .line-clamp-2 {

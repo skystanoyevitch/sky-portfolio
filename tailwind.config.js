@@ -25,6 +25,17 @@ module.exports = {
           "BlinkMacSystemFont",
           "sans-serif",
         ],
+        // Custom font for your title name
+        title: [
+          "Jacatra", // Your THE_JACATRA.otf font
+          "Pacifico",
+          "cursive",
+          "Inter",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "sans-serif",
+        ],
         mono: [
           "JetBrains Mono",
           "ui-monospace",
